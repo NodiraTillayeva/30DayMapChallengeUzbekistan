@@ -1,4 +1,6 @@
 # 30 Day Map Challenge – Uzbekistan Community Repository
+<img width="1970" height="1176" alt="image" src="https://github.com/user-attachments/assets/433b0bbb-3494-4221-af65-d25dc0074d38" />
+
 
 Welcome to the **30 Day Map Challenge Uzbekistan Community Repository**! 🎉  
 
