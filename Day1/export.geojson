@@ -1,0 +1,4504 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-11-01T10:51:14Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2312684",
+        "amenity": "theatre",
+        "building": "yes",
+        "name": "Цирк",
+        "name:en": "Circus",
+        "name:ru": "Цирк",
+        "theatre:genre": "circus",
+        "type": "multipolygon",
+        "wikidata": "Q59590271",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2430401,
+          41.3247505
+        ]
+      },
+      "id": "relation/2312684"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3412518",
+        "addr:housenumber": "101",
+        "building": "yes",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:name": "Дизельная",
+        "height": "15",
+        "name": "Центр современного искусства",
+        "old_name": "Дизельная",
+        "roof:angle": "21",
+        "roof:colour": "red",
+        "roof:shape": "gabled",
+        "tourism": "museum",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2804814,
+          41.3053601
+        ]
+      },
+      "id": "relation/3412518"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31962395",
+        "addr:city": "Toshkent",
+        "addr:city:en": "Tashkent",
+        "addr:housenumber": "28",
+        "addr:street": "Zarafshan ko'chasi",
+        "amenity": "theatre",
+        "architect:wikipedia": "ru:Щусев,_Алексей_Викторович",
+        "building": "civic",
+        "building:levels": "5",
+        "building:material": "brick",
+        "check_date": "2023-02-26",
+        "contact:facebook": "https://www.facebook.com/gabtnavoi",
+        "contact:telegram": "https://t.me/gabtuzb",
+        "email": "info@gabt.uz",
+        "fax": "+998 71 233 35 28",
+        "name": "Navoiy Teatri",
+        "name:en": "Navoi Theater",
+        "name:fa": "تئاتر نوایی",
+        "name:fr": "Théâtre Navoi",
+        "name:ru": "ГАБТ им. Навои",
+        "name:uz": "Navoiy Teatri",
+        "phone": "+998 71 233 90 81",
+        "start_date": "1947",
+        "website": "https://gabt.uz/",
+        "wikidata": "Q3354568",
+        "wikimedia_commons": "Category:Alisher Navoi Opera and Ballet Theatre",
+        "wikipedia": "ru:Большой театр имени Алишера Навои",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2715218,
+          41.309219
+        ]
+      },
+      "id": "way/31962395"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31972619",
+        "addr:city": "Toshkent",
+        "addr:city:en": "Tashkent",
+        "addr:housenumber": "1",
+        "addr:postcode": "100000",
+        "addr:street": "Amir Temur shoh ko'chasi",
+        "alt_name": "Музей Амира Темура",
+        "building": "museum",
+        "check_date": "2023-02-25",
+        "museum": "history",
+        "name": "Temuriylar tarixi davlat muzeyi",
+        "name:en": "State Museum of Timurid History",
+        "name:fa": "موزه دولتی تاریخ تیموریان",
+        "name:ru": "Государственный музей истории Тимуридов",
+        "name:uz": "Temuriylar Tarixi Davlat Muzeyi",
+        "start_date": "1996",
+        "tourism": "museum",
+        "wikidata": "Q4120971",
+        "wikimedia_commons": "Category:Amir Timur Museum",
+        "wikipedia": "uz:Temuriylar tarixi davlat muzeyi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2789874,
+          41.3136825
+        ]
+      },
+      "id": "way/31972619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31974956",
+        "addr:city": "Toshkent",
+        "addr:housenumber": "3",
+        "addr:street": "Sharof Rashidov ko'chasi",
+        "building": "yes",
+        "email": "uzb.histoeymuseum@umail.com",
+        "fee": "yes",
+        "name": "O'zbekiston Tarixi Davlat Muzeyi",
+        "name:en": "State Museum of History of Uzbekistan",
+        "name:fa": "موزه دولتی تاریخ ازبکستان",
+        "name:ru": "Государственный музей истории Узбекистана",
+        "old_name": "музей Ленина",
+        "opening_hours": "Tu-Su 10:00-18:00",
+        "phone": "+998712391779",
+        "tourism": "museum",
+        "website": "https://www.history-museum.uz/",
+        "wikidata": "Q1835285",
+        "wikimedia_commons": "Category:State Museum of History of Uzbekistan",
+        "wikipedia": "en:State Museum of History of Uzbekistan",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.269333,
+          41.311623
+        ]
+      },
+      "id": "way/31974956"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31974982",
+        "addr:city": "Toshkent",
+        "addr:housenumber": "40",
+        "addr:street": "Sharof Rashidov ko'chasi",
+        "building": "public",
+        "building:levels": "4",
+        "museum": "art",
+        "name": "O'zbekiston San'at Akademiyaso Markaziy Ko'rgazmalar Zali",
+        "name:en": "Exhibition hall Uzbek Academy of Arts",
+        "name:fa": "سالن نمایشگاه مرکزی آکادمی هنر ازبکستان",
+        "name:ru": "Центральный Выставочный зал Академии художеств Узбекистана",
+        "opening_hours": "Tu-Su 10:00-17:00",
+        "operator": "Академия художеств Узбекистана",
+        "phone": "+998712565146",
+        "tourism": "gallery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2663652,
+          41.3089424
+        ]
+      },
+      "id": "way/31974982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31982722",
+        "addr:housenumber": "32",
+        "addr:postcode": "100060",
+        "addr:street": "Istiqbol ko'chasi",
+        "building": "yes",
+        "building:levels": "3",
+        "name": "Музей здравоохранения",
+        "name:en": "Museum of health",
+        "name:ru": "Музей здравоохранения",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "phone": "+998712334153",
+        "roof:shape": "hipped",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2878437,
+          41.3020676
+        ]
+      },
+      "id": "way/31982722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/32002697",
+        "addr:housenumber": "18",
+        "addr:place": "Buyuk Ipak Yo'li (C-1) daxasi",
+        "building": "yes",
+        "building:levels": "4",
+        "tourism": "gallery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.290984,
+          41.3146074
+        ]
+      },
+      "id": "way/32002697"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/32133277",
+        "addr:housenumber": "34",
+        "addr:street": "Navoiy shoh ko'chasi",
+        "amenity": "theatre",
+        "building": "yes",
+        "building:levels": "4",
+        "designation": "улица Навои, 34",
+        "name": "Oʻzbek milliy akademik drama teatri",
+        "name:fa": "تئاتر درام دانشگاهی ملی ازبکستان",
+        "name:ru": "Узбекский Национальный Академический Театр Драмы",
+        "name:uz": "Oʻzbek milliy akademik drama teatri",
+        "phone": "+998 71 2441751",
+        "wikidata": "Q24934965",
+        "wikimedia_commons": "Category:Uzbek National Academic Drama Theater",
+        "wikipedia": "uz:Oʻzbek milliy akademik drama teatri",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2452852,
+          41.3227302
+        ]
+      },
+      "id": "way/32133277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/32883041",
+        "addr:city": "Tashkent",
+        "addr:country": "UZ",
+        "addr:housenumber": "2",
+        "addr:postcode": "100000",
+        "addr:street": "Navoiy shoh ko'chasi",
+        "amenity": "arts_centre",
+        "building": "yes",
+        "building:levels": "5",
+        "name": "\"Turkiston\" saroyi",
+        "name:en": "Turkistan Palace",
+        "name:fa": "کاخ ترکستان",
+        "name:ru": "Дворец \"Туркистан\"",
+        "wikidata": "Q25522763",
+        "wikimedia_commons": "Category:Turkiston Palace",
+        "wikipedia": "ru:Дворец Туркестана",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.269606,
+          41.3209659
+        ]
+      },
+      "id": "way/32883041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/32928931",
+        "addr:city": "Tashkent",
+        "addr:country": "UZ",
+        "addr:housenumber": "10",
+        "addr:place": "Tashselmash daxasi",
+        "addr:postcode": "100047",
+        "amenity": "arts_centre",
+        "building": "public",
+        "building:levels": "2",
+        "name": "ДК \"Тенгдош\"",
+        "name:ru": "ДК \"Тенгдош\"",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3076446,
+          41.3075812
+        ]
+      },
+      "id": "way/32928931"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/33503892",
+        "addr:city": "Tashkent",
+        "addr:country": "UZ",
+        "addr:housenumber": "1",
+        "addr:postcode": "100115",
+        "addr:street": "Chilonzor ko'chasi",
+        "amenity": "arts_centre",
+        "building": "yes",
+        "building:levels": "4",
+        "name": "Uzbekfilm",
+        "name:ru": "Узбекфильм",
+        "website": "http://uzbekfilm.uz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2374619,
+          41.2943648
+        ]
+      },
+      "id": "way/33503892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/44864779",
+        "addr:city": "Toshkent",
+        "addr:street": "Afrosiyob ko'chasi",
+        "building": "museum",
+        "name": "Oqsaroy ilmiy-ma'rifiy majmuasi",
+        "name:en": "\"Aksaray\" - Islam Karimov Memorial Museum",
+        "name:fa": "\"آکسارای\" - موزه یادبود اسلام کریموف",
+        "name:ru": "\"Аксарай\" - Мемориальный музей Ислама Каримова",
+        "name:uz": "\"Ok Saroy\"- Islom Karimov Hotira Muzeyi",
+        "opening_hours": "8:30-21:00; Mo off",
+        "tourism": "museum",
+        "type": "building",
+        "wikidata": "Q12829268",
+        "wikimedia_commons": "Category:Oqsaroy",
+        "wikipedia": "ru:Оксарой",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2598583,
+          41.3082912
+        ]
+      },
+      "id": "way/44864779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/44865278",
+        "addr:housenumber": "24",
+        "addr:postcode": "100029",
+        "addr:street": "Zarafshan ko'chasi",
+        "amenity": "theatre",
+        "building": "yes",
+        "building:levels": "4",
+        "name": "Русский драматический театр Узбекистана",
+        "name:en": "Russian Drama Theatre of Uzbekistan",
+        "name:ru": "Русский драматический театр Узбекистана",
+        "name:uz": "Oʻzbekiston rus akademik drama teatri",
+        "wikidata": "Q21193621",
+        "wikipedia": "uz:Oʻzbekiston rus akademik drama teatri",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2725732,
+          41.3103268
+        ]
+      },
+      "id": "way/44865278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/44928476",
+        "addr:housenumber": "13",
+        "addr:street": "Afrosiyob ko'chasi",
+        "amenity": "theatre",
+        "building": "yes",
+        "name": "Respublika qo‘g‘irchoq teatri",
+        "name:de": "Staatliches Puppentheater",
+        "name:en": "Republican puppet theater",
+        "name:fa": "تئاتر عروسکی جمهوری",
+        "name:fr": "Théâtre des marionnettes",
+        "name:ru": "Республиканский кукольный театр",
+        "source": "DuMont Reise-Handbuch Usbekistan",
+        "wikidata": "Q23780949",
+        "wikipedia": "uz:Oʻzbekiston qoʻgʻirchoq teatri",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2609097,
+          41.3071353
+        ]
+      },
+      "id": "way/44928476"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/58888812",
+        "building": "yes",
+        "height": "10",
+        "name": "Museum of army",
+        "name:ru": "Музей ТуркВО",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3337031,
+          41.3314784
+        ]
+      },
+      "id": "way/58888812"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/71882594",
+        "addr:city": "Ташкент",
+        "addr:housenumber": "53",
+        "addr:place": "Chilonzor 3 mavzesi",
+        "amenity": "cinema",
+        "building": "yes",
+        "name": "Бывший кинотеатр им. Гагарина",
+        "name:en": "Ex. Cinema \"Gagarin\"",
+        "name:ru": "Бывший кинотеатр им. Гагарина",
+        "old_name": "Кинотеатр Чайка",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2231745,
+          41.2840377
+        ]
+      },
+      "id": "way/71882594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/86985545",
+        "addr:housenumber": "2/1",
+        "addr:postcode": "100000",
+        "addr:street": "Mirzo Ulug'bek shoh ko'chasi",
+        "amenity": "arts_centre",
+        "building": "commercial",
+        "building:levels": "2",
+        "name": "O`zbekiston Davlat filarmoniyasi Musika saroyi",
+        "name:ru": "Государственная филармония Узбекистана Дворец музыки",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3098825,
+          41.3059687
+        ]
+      },
+      "id": "way/86985545"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/95513981",
+        "addr:city": "Tashkent",
+        "addr:country": "UZ",
+        "addr:housenumber": "1",
+        "addr:postcode": "100027",
+        "addr:street": "Botir Zokirov ko'chasi",
+        "amenity": "arts_centre",
+        "building": "university",
+        "name": "O’zbekiston davlat konservatoriyasi",
+        "name:en": "The State Conservatory of Uzbekistan",
+        "name:fa": "کنسرواتوار دولتی ازبکستان",
+        "name:ru": "Государственная консерватория Узбекистана",
+        "office": "research",
+        "opening_hours": "Mo-Sa 09:00-17:00",
+        "website": "https://www.konservatoriya.uz",
+        "wikidata": "Q25522007",
+        "wikimedia_commons": "Category:State Conservatory of Uzbekistan",
+        "wikipedia": "uz:Oʻzbekiston konservatoriyasi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2552941,
+          41.3142415
+        ]
+      },
+      "id": "way/95513981"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103024003",
+        "building": "yes",
+        "name": "Музей Авиации",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3112752,
+          41.3009689
+        ]
+      },
+      "id": "way/103024003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103024534",
+        "amenity": "cinema",
+        "building": "yes",
+        "designation": "летный кинотеатр",
+        "name": "Летний кинотеатр",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.310951,
+          41.3007119
+        ]
+      },
+      "id": "way/103024534"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103024578",
+        "amenity": "arts_centre",
+        "barrier": "fence",
+        "construction": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3075283,
+          41.3075596
+        ]
+      },
+      "id": "way/103024578"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/105693182",
+        "addr:housenumber": "13",
+        "addr:postcode": "100011",
+        "addr:street": "Abdulla Qodiriy ko'chasi",
+        "alt_name": "ТЮЗ",
+        "amenity": "theatre",
+        "building": "yes",
+        "building:levels": "3",
+        "name": "Yosh tomoshobinlar teatri",
+        "name:ru": "Театр юного зрителя (ТЮЗ)",
+        "old_name": "Дом Лектора",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2542696,
+          41.3240817
+        ]
+      },
+      "id": "way/105693182"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/109077220",
+        "addr:postcode": "100000",
+        "building": "roof",
+        "building:levels": "4",
+        "historic": "archaeological_site",
+        "name": "городище «Минг Урик»",
+        "name:en": "Ming Urik",
+        "name:ru": "городище «Минг Урик»",
+        "roof:colour": "green",
+        "roof:orientation": "across",
+        "roof:shape": "mansard",
+        "start_date": "~C01",
+        "tourism": "museum",
+        "wikipedia": "ru:Мингурюк",
+        "wikipedia:ru": "Мингурюк",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2859285,
+          41.2984062
+        ]
+      },
+      "id": "way/109077220"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/128164594",
+        "addr:housenumber": "2",
+        "addr:street": "Buyuk Turon ko'chasi",
+        "building": "yes",
+        "height": "15",
+        "name": "Oʻzbekiston tasviriy sanʼat galereyasi",
+        "name:en": "Fine Arts Gallery of  Uzbekistan",
+        "name:fa": "گالری هنرهای زیبای ازبکستان",
+        "name:fr": "Gallerie d'Art d'Ouzbékistan",
+        "name:ru": "Галерея изобразительного искусства Узбекистана",
+        "name:uz": "uz:Oʻzbekiston tasviriy sanʼat galereyasi",
+        "opening_hours": "Tu-Sa 10:00-17:00",
+        "phone": "712335674",
+        "tourism": "museum",
+        "type": "building",
+        "wikidata": "Q25527827",
+        "wikipedia": "uz:Oʻzbekiston tasviriy sanʼat galereyasi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2712588,
+          41.3155212
+        ]
+      },
+      "id": "way/128164594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/135401118",
+        "building": "yes",
+        "name": "Музей железнодорожной техники",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2894673,
+          41.2947543
+        ]
+      },
+      "id": "way/135401118"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/135401603",
+        "addr:housenumber": "6",
+        "alt_name": "Toshkent temir yoʻllar texnikasi muzeyi",
+        "alt_name:ru": "Музей паровозов",
+        "barrier": "fence",
+        "fee": "4000",
+        "fence_type": "split_rail",
+        "name": "Temir yo'l texnikasi muzeyi",
+        "name:en": "Museum of railway equipment",
+        "name:eo": "Muzeo de fervojo ekipaĵo",
+        "name:ru": "Музей железнодорожной техники",
+        "name:uk": "Музей залізничної техніки",
+        "name:uz": "Temir yo'l texnikasi muzeyi",
+        "opening_hours": "09:00-18:00",
+        "operator:wikidata": "Q2093569",
+        "operator:wikipedia": "uz:Oʻzbekiston temir yoʻllari",
+        "phone": "+99871 299-70-40;+99871 259-67-08",
+        "start_date": "1989.8.4",
+        "tourism": "museum",
+        "wikidata": "Q1283029",
+        "wikipedia": "uz:Toshkent temir yoʻllar texnikasi muzeyi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2911725,
+          41.2959171
+        ]
+      },
+      "id": "way/135401603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/137207610",
+        "addr:postcode": "100035",
+        "addr:street": "Yozuvchilar xiyoboni",
+        "building": "yes",
+        "building:levels": "3",
+        "name": "Toshkent tarixi muzeyi",
+        "name:en": "Tashkent History Museum",
+        "name:fa": "موزه تاریخ تاشکند",
+        "name:ru": "Музей истории Ташкента",
+        "opening_hours": "Tu-Su 09:00-17:30",
+        "shop": "art",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2384603,
+          41.3024969
+        ]
+      },
+      "id": "way/137207610"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/140356382",
+        "addr:postcode": "100000",
+        "building": "yes",
+        "name": "Музей памяти жертв репрессий",
+        "name:de": "Gedenkstätte für die Opfer von Unterdrückung",
+        "name:en": "Museum of Victims of Political Repression",
+        "name:ja": "抑圧犠牲者の博物館",
+        "name:ru": "Музей памяти жертв репрессий",
+        "opening_hours": "Mo-Fr 09:00-17:00; Sa 10:00-16:00",
+        "outdoor_seating": "no",
+        "phone": "2123685",
+        "source": "DuMont Reise-Handbuch Usbekistan",
+        "tourism": "museum",
+        "wikidata": "Q21472881",
+        "wikimedia_commons": "Category:Museum of Victims of Repressions, Tashkent",
+        "wikipedia": "ru:Музей памяти жертв репрессий",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2882001,
+          41.346979
+        ]
+      },
+      "id": "way/140356382"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/142166237",
+        "addr:housenumber": "12Б",
+        "addr:street": "Zarqaynar ko'cha",
+        "building": "yes",
+        "building:levels": "5",
+        "name": "O'zbekiston davlat tabiat muzeyi",
+        "name:en": "State Museum of Nature of Uzbekistan",
+        "name:ru": "Государственный музей природы Узбекистана",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2388203,
+          41.329617
+        ]
+      },
+      "id": "way/142166237"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/144714783",
+        "addr:housenumber": "6",
+        "addr:street": "Zarqaynar ko'chasi",
+        "building": "yes",
+        "building:part": "yes",
+        "height": "7 m",
+        "name": "Mirzo Ulug'bek nomidagi planetariy",
+        "name:ru": "Планетарий им. Улугбека",
+        "start_date": "1863",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2421939,
+          41.3266153
+        ]
+      },
+      "id": "way/144714783"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/175452992",
+        "amenity": "theatre",
+        "check_date": "2023-02-24",
+        "lit": "no",
+        "theatre:type": "amphi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2545194,
+          41.2906641
+        ]
+      },
+      "id": "way/175452992"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/181556021",
+        "addr:city": "Ташкент",
+        "addr:country": "UZ",
+        "addr:housenumber": "55",
+        "addr:street": "Navoiy shoh ko'chasi",
+        "amenity": "theatre",
+        "building": "yes",
+        "name": "Молодежный театр Узбекистана",
+        "name:fa": "تئاتر جوانان ازبکستان",
+        "name:ru": "Молодежный театр Узбекистана",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.255745,
+          41.3198077
+        ]
+      },
+      "id": "way/181556021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/182221485",
+        "addr:city": "Toshkent",
+        "addr:country": "UZ",
+        "addr:housenumber": "3",
+        "addr:street": "Istiqbol ko'chasi",
+        "amenity": "arts_centre",
+        "building": "yes",
+        "building:levels": "2",
+        "museum": "art",
+        "name": "Tashkent Photo House",
+        "name:en": "Tashkent Photo House",
+        "name:ru": "Ташкентский Дом Фотографии",
+        "roof:shape": "hipped",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2812794,
+          41.3090997
+        ]
+      },
+      "id": "way/182221485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/189871698",
+        "addr:housenumber": "28a/1",
+        "addr:place": "Xadra (C-14) daxasi",
+        "addr:street": "Navoiy shoh ko'chasi",
+        "building": "yes",
+        "email": "muzey@uznet.net",
+        "name": "Музей истории связи",
+        "name:ru": "Музей истории связи",
+        "roof:shape": "hipped",
+        "tourism": "museum",
+        "website": "https://aloqamuzeyi.uz/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2528186,
+          41.3230906
+        ]
+      },
+      "id": "way/189871698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/192205777",
+        "name": "Вагон-музей",
+        "name:ru": "Вагон-музей",
+        "note": "Вагон-музей",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "operator:wikidata": "Q1283029",
+        "operator:wikipedia": "ru:Ташкентский музей железнодорожной техники",
+        "phone": "+99871 299-70-40, +99871 259-67-08",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2904749,
+          41.2952965
+        ]
+      },
+      "id": "way/192205777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/305562737",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.4444405,
+          41.2557941
+        ]
+      },
+      "id": "way/305562737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/340238439",
+        "amenity": "theatre",
+        "theatre:type": "amphi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2827818,
+          41.3413295
+        ]
+      },
+      "id": "way/340238439"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/470097818",
+        "addr:city": "Tashkent",
+        "addr:housenumber": "18",
+        "addr:street": "Лашкарбеги улица",
+        "building": "disused",
+        "building:levels": "2",
+        "name": "Дом-музей Сергея Бородина",
+        "name:en": "House museum of Sergey Borodin (writer)",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2944928,
+          41.3215007
+        ]
+      },
+      "id": "way/470097818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/471761355",
+        "access": "no",
+        "addr:city": "Tashkent",
+        "addr:housenumber": "16",
+        "addr:postcode": "100060",
+        "addr:street": "Amir Temur shoh ko'chasi",
+        "building": "yes",
+        "contact:facebook": "https://www.facebook.com/stateartmuseum.uz",
+        "email": "stateartmuseum@inbox.uz",
+        "fax": "+998 (71) 236-74-36",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Uzbekistan_State_Art_Museum.JPG",
+        "name": "O'zbekiston Respublikasi davlat san'at muzeyi",
+        "name:en": "State Art Museum",
+        "name:fa": "موزه هنر دولتی جمهوری ازبکستان",
+        "name:fr": "Musée des arts d'Ouzbékistan",
+        "name:ru": "Государственный музей искусств Узбекистана",
+        "note": "Закрыт на реконструкцию с 11 июня 2019 г. сроком на 1 год. https://www.gazeta.uz/ru/2019/06/13/museum/",
+        "note:en": "Under renovation for one year starting from June 11, 2019 year",
+        "opening_hours": "Tu-Su 10:00-17:00",
+        "phone": "+998 (71) 236-74-36;+998 (71) 236-34-44",
+        "state": "1974",
+        "tourism": "museum",
+        "website": "http://www.stateartmuseum.uz/",
+        "wikidata": "Q4146885",
+        "wikimedia_commons": "Category:State Art Museum of Uzbekistan",
+        "wikipedia": "ru:Государственный музей искусств Узбекистана",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2779676,
+          41.302788
+        ]
+      },
+      "id": "way/471761355"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/480222998",
+        "addr:city": "Ташкент",
+        "addr:housenumber": "1",
+        "addr:postcode": "100000",
+        "building": "yes",
+        "name": "Дом-музей Тамары Ханум",
+        "name:de": "Hausmuseum von Tamara Khanum",
+        "name:en": "Tamara Khanum Museum",
+        "name:ru": "Дом-музей Тамары Ханум",
+        "tourism": "museum",
+        "wikidata": "Q21663575",
+        "wikipedia": "ru:Мемориальный музей Тамары Ханум",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3014461,
+          41.3194679
+        ]
+      },
+      "id": "way/480222998"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/528058882",
+        "addr:housenumber": "3",
+        "addr:street": "Bunyodkor shoh ko'chasi",
+        "amenity": "arts_centre",
+        "architect": "С. Адылов, Е. Букина, Е. Розанов, Е. Суханова, Ф. Турсунов, В. Шестопалов, Е. Шумов и др",
+        "building": "yes",
+        "height": "3",
+        "name": "Xalqlar Do'stligi saroyi",
+        "name:de": "\"Halklar Dustligi\"-Palast",
+        "name:en": "\"Halklar Dustligi\" Concert Hall",
+        "name:fa": "کاخ دوستی مردم",
+        "name:ru": "Дворец Дружбы Народов",
+        "old_name": "Дворец Дружбы Народов;Дворец Истиклол",
+        "phone": "+998 712455609;+998 72459251",
+        "source": "DuMont Reise-Handbuch Usbekistan",
+        "start_date": "1981",
+        "wikidata": "Q21660944",
+        "wikimedia_commons": "Category:Istiklol Palace",
+        "wikipedia": "uz:Xalqlar doʻstligi saroyi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2413375,
+          41.3086414
+        ]
+      },
+      "id": "way/528058882"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/563671516",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "name": "Alisher Navoi",
+        "name:ru": "Алишер Навои",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2412562,
+          41.3038175
+        ]
+      },
+      "id": "node/563671516"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/565344475",
+        "abandoned:historic": "monument",
+        "artwork_type": "statue",
+        "name": "Бюст Якоба Коласа",
+        "name:ru": "памятник Якобу Коласу",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2769941,
+          41.3022033
+        ]
+      },
+      "id": "node/565344475"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/568785371",
+        "alt_name": "космонавт Дженебеков",
+        "artwork_type": "sculpture",
+        "historic": "memorial",
+        "name": "Покорители космоса",
+        "name:en": "Space Explorers",
+        "name:ru": "Покорители космоса",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2645334,
+          41.305147
+        ]
+      },
+      "id": "node/568785371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/569749450",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "name": "Aleksandr Pushkin",
+        "name:en": "Alexander Pushkin",
+        "name:ru": "Александр Пушкин",
+        "tourism": "artwork",
+        "wikidata": "Q21643722",
+        "wikipedia": "ru:Памятник А. С. Пушкину (Ташкент)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2539939,
+          41.2871266
+        ]
+      },
+      "id": "node/569749450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/597162520",
+        "addr:housenumber": "14",
+        "addr:street": "Iftihor 1-o'tish ko'chasi",
+        "building": "house",
+        "name": "Дом-музей Айбека",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2717343,
+          41.3430934
+        ]
+      },
+      "id": "way/597162520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/734882527",
+        "addr:housenumber": "15/a",
+        "addr:postcode": "100031",
+        "addr:street": "Rakatboshi ko'chasi",
+        "name": "Oʻzbekiston Respublikasi Amaliy Sanʼati Muzeyi",
+        "name:en": "Uzbekistan State Museum of Applied Art",
+        "name:fa": "موزه هنرهای کاربردی جمهوری ازبکستان",
+        "name:fr": "Musée Arts Appliqués D'Ouzbékistan",
+        "name:ru": "Музей прикладного искусства",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "outdoor_seating": "no",
+        "tourism": "museum",
+        "wikidata": "Q3330166",
+        "wikimedia_commons": "Category:Museum of Applied Arts (Tashkent)",
+        "wikipedia": "ru:Государственный музей прикладного искусства Узбекистана"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.259586,
+          41.3010161
+        ]
+      },
+      "id": "node/734882527"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/790949485",
+        "building": "mosque",
+        "name": "Orifjonboy Masjidi",
+        "tourism": "museum",
+        "wikidata": "Q122672271",
+        "wikipedia": "uz:Orifjonboy masjidi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2510343,
+          41.3172613
+        ]
+      },
+      "id": "way/790949485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/834609722",
+        "amenity": "theatre",
+        "theatre:type": "amphi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2682281,
+          41.3245101
+        ]
+      },
+      "id": "way/834609722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/882016318",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "name": "Lal Bahodur Shastri haykali",
+        "name:en": "Lal Bahadur Shastri monumemt",
+        "name:fa": "بنای یادبود لعل بهادر شاستری",
+        "name:ru": "Памятник Лал Бахадуру Шастри",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2920912,
+          41.3121516
+        ]
+      },
+      "id": "node/882016318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/963189790",
+        "addr:housenumber": "43",
+        "addr:street": "Kichik Mirobod ko'chasi",
+        "building": "yes",
+        "contact:instagram": "humanhousegallery",
+        "fee": "no",
+        "name": "Human House",
+        "opening_hours": "Mo-Su 10:00-19:00",
+        "phone": "+998 (71) 255‒16‒22 +998 90‒937‒83‒73",
+        "tourism": "gallery",
+        "website": "https://human-house.com/",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2652423,
+          41.2891648
+        ]
+      },
+      "id": "way/963189790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/978070184",
+        "building": "yes",
+        "name": "Хван Маг Гым",
+        "name:ru": "Хван Маг Гым",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.434235,
+          41.2555758
+        ]
+      },
+      "id": "way/978070184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/980019850",
+        "amenity": "theatre",
+        "theatre:type": "amphi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3214448,
+          41.2911476
+        ]
+      },
+      "id": "way/980019850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1030655072",
+        "artwork_type": "mosaic",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3424304,
+          41.2932112
+        ]
+      },
+      "id": "node/1030655072"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1055140119",
+        "addr:city": "Toshkent",
+        "landuse": "residential",
+        "name": "Abdulla Qodiriy uy muzeyi",
+        "name:en": "House-Museum of Abdullah Kadiri",
+        "name:ru": "Дом-музей Абдуллы Кадыри",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2187153,
+          41.3136837
+        ]
+      },
+      "id": "way/1055140119"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1055190196",
+        "amenity": "theatre",
+        "building": "yes",
+        "name": "Амфитеатр",
+        "name:en": "Amfiteatr",
+        "name:ru": "Амфитеатр",
+        "theatre:type": "amphi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.4393242,
+          41.3293089
+        ]
+      },
+      "id": "way/1055190196"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1080191656",
+        "building": "university",
+        "building:levels": "5",
+        "tourism": "museum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3410918,
+          41.3413724
+        ]
+      },
+      "id": "way/1080191656"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1091890423",
+        "addr:housenumber": "187",
+        "amenity": "theatre",
+        "building": "yes",
+        "building:material": "brick",
+        "name": "театр им. Мукими",
+        "name:en": "Mukimi Theatre",
+        "name:ru": "театр им. Мукими",
+        "roof:colour": "red",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2469083,
+          41.3062905
+        ]
+      },
+      "id": "way/1091890423"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1106841119",
+        "area": "yes",
+        "name": "Самарканд",
+        "tourism": "artwork",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2491823,
+          41.3095183
+        ]
+      },
+      "id": "way/1106841119"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1124921307",
+        "amenity": "theatre",
+        "theatre:type": "amphi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2237074,
+          41.3537451
+        ]
+      },
+      "id": "way/1124921307"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1125129697",
+        "amenity": "theatre",
+        "theatre:type": "amphi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2254435,
+          41.354563
+        ]
+      },
+      "id": "way/1125129697"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1125331243",
+        "area": "yes",
+        "artwork_type": "mural",
+        "tourism": "artwork",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2229422,
+          41.3540861
+        ]
+      },
+      "id": "way/1125331243"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1126958365",
+        "amenity": "theatre",
+        "theatre:type": "amphi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.267904,
+          41.3275533
+        ]
+      },
+      "id": "way/1126958365"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1141921741",
+        "artist_name": "Дмитрий Рябичев",
+        "artwork_type": "statue",
+        "building": "yes",
+        "historic": "monument",
+        "name": "Монумент \"Мужество\"",
+        "name:de": "Erdbebendenkmal",
+        "name:en": "Monument of Сourage",
+        "name:ru": "Монумент \"Мужество\"",
+        "name:uk": "Меморіальний комплекс «Мужність»",
+        "source": "DuMont Reise-Handbuch Usbekistan",
+        "start_date": "1976-05-20",
+        "tourism": "artwork",
+        "wikidata": "Q28934106",
+        "wikimedia_commons": "Category:Monument of Courage",
+        "wikipedia": "uk:Меморіальний комплекс «Мужність» (Ташкент)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2724534,
+          41.3237004
+        ]
+      },
+      "id": "node/1141921741"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1156064842",
+        "amenity": "theatre",
+        "building": "yes",
+        "check_date": "2023-02-25",
+        "theatre:type": "amphi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2442177,
+          41.3025902
+        ]
+      },
+      "id": "way/1156064842"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1227533830",
+        "area": "yes",
+        "name": "Бухара",
+        "tourism": "artwork",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2491762,
+          41.3092891
+        ]
+      },
+      "id": "way/1227533830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1227533831",
+        "area": "yes",
+        "name": "Хива",
+        "tourism": "artwork",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2489849,
+          41.3092867
+        ]
+      },
+      "id": "way/1227533831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1234706954",
+        "amenity": "cinema"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3161558,
+          41.2910784
+        ]
+      },
+      "id": "node/1234706954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1249961409",
+        "addr:city": "Ташкент",
+        "addr:housenumber": "1",
+        "addr:postcode": "100000",
+        "name": "Дом-музей Тамары Ханум",
+        "name:de": "Hausmuseum von Tamara Khanum",
+        "name:en": "Tamara Khanum Museum",
+        "name:ru": "Дом-музей Тамары Ханум",
+        "tourism": "museum",
+        "wikidata": "Q21663575",
+        "wikipedia": "ru:Мемориальный музей Тамары Ханум"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3014526,
+          41.3194523
+        ]
+      },
+      "id": "node/1249961409"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1330692190",
+        "amenity": "theatre",
+        "building": "yes",
+        "building:levels": "5",
+        "name": "Оперный театр",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2502443,
+          41.3125832
+        ]
+      },
+      "id": "way/1330692190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1502769151",
+        "alt_name": "Театр Оперетты",
+        "amenity": "theatre",
+        "name": "Государственный Театр Музыкальной Комедии (Оперетты)",
+        "name:en": "State Theatre of Musical Comedy (Operetta)",
+        "name:ru": "Государственный Театр Музыкальной Комедии (Оперетты)",
+        "name:uz": "Davlat Musiqiy Komediya teatri (Operetta)",
+        "phone": "+998712738591",
+        "website": "http://teatr-operetta.skm.uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2078286,
+          41.2833007
+        ]
+      },
+      "id": "node/1502769151"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1539294720",
+        "amenity": "cinema",
+        "name": "Taj-Mahal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.248753,
+          41.3273574
+        ]
+      },
+      "id": "node/1539294720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1780600187",
+        "name": "Muxtor Ashrafiy uy-muzeyi",
+        "name:en": "House museum of Mukhtar Ashrafi (composer)",
+        "name:ru": "Дом-музей Мухтара Ашрафи",
+        "tourism": "museum",
+        "wikidata": "Q12818661",
+        "wikimedia_commons": "Category:Mukhtar Ashrafi museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2904662,
+          41.3142546
+        ]
+      },
+      "id": "node/1780600187"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1840732100",
+        "amenity": "cinema",
+        "name": "Asia",
+        "old_name": "Камила Ярматова",
+        "old_name:ru": "Камила Ярматова",
+        "opening_hours": "10:00-22:00",
+        "phone": "2242111, (95)1992742",
+        "website": "www.asiacinema.uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2803169,
+          41.3638482
+        ]
+      },
+      "id": "node/1840732100"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1853169369",
+        "artwork_type": "statue",
+        "historic": "memorial",
+        "memorial": "statue",
+        "name": "Alisher Navoiy",
+        "name:en": "Alisher Navoiy",
+        "name:ru": "Алишер Навои",
+        "name:uz": "Alisher Navoiy",
+        "tourism": "artwork",
+        "wikimedia_commons": "File:Monument to Nizami Ganjavi in Tashkent.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2519432,
+          41.2931369
+        ]
+      },
+      "id": "node/1853169369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1853256886",
+        "artwork_type": "sculpture",
+        "historic": "monument",
+        "name": "Колокол Мира",
+        "name:en": "Peace Bell",
+        "name:ru": "Колокол Мира",
+        "tourism": "artwork",
+        "wikimedia_commons": "File:Колокол мира в парке дружбы.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2549516,
+          41.2898265
+        ]
+      },
+      "id": "node/1853256886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2004316377",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "name": "Максим Горький",
+        "name:en": "Maxim Gorky",
+        "name:ru": "Максим Горький",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1883354,
+          41.3092534
+        ]
+      },
+      "id": "node/2004316377"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2012720166",
+        "name": "Olimpiya shon-shuhrati muzeyi",
+        "name:en": "Museum of Olympic Glory",
+        "name:fa": "موزه افتخار المپیک",
+        "name:ru": "Музей Олимпийской славы",
+        "tourism": "museum",
+        "wikidata": "Q12829077",
+        "wikimedia_commons": "Category:Museum of Olympic Glory",
+        "wikipedia": "ru:Музей олимпийской славы"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2711228,
+          41.3246839
+        ]
+      },
+      "id": "node/2012720166"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2103282384",
+        "amenity": "cinema",
+        "name": "кинотеатр Гунча",
+        "name:ru": "кинотеатр Гунча"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2219628,
+          41.3302872
+        ]
+      },
+      "id": "node/2103282384"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2105113521",
+        "artwork_type": "statue",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2560653,
+          41.2889469
+        ]
+      },
+      "id": "node/2105113521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2117483202",
+        "name": "музей геологии",
+        "name:en": "Geology Museum",
+        "name:ru": "Музей Геологии",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "phone": "(+99871) 256-11-72; (+99871) 256-13-41",
+        "tourism": "museum",
+        "website": "https://www.uzgeolcom.uz/ru/",
+        "wikidata": "Q19654019",
+        "wikimedia_commons": "Category:Museum of Geology, Tashkent",
+        "wikipedia": "ru:Геологический музей Узбекистана"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2768608,
+          41.3008367
+        ]
+      },
+      "id": "node/2117483202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2119681044",
+        "amenity": "arts_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.289543,
+          41.3158405
+        ]
+      },
+      "id": "node/2119681044"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3456870107",
+        "alt_name": "Дом Художников",
+        "alt_name:ru": "Дом Художников",
+        "name": "Дом-музей Урала Тансыкбаева",
+        "name:en": "Home-museum of Ural Tansykbaev",
+        "name:ru": "Дом-музей Урала Тансыкбаева",
+        "tourism": "museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3311572,
+          41.3345909
+        ]
+      },
+      "id": "node/3456870107"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4121848890",
+        "name": "Арт Студия \"Пикассо\"",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2812938,
+          41.3206523
+        ]
+      },
+      "id": "node/4121848890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4149393593",
+        "addr:housenumber": "13",
+        "addr:street": "Amir Temur shoh ko'chasi",
+        "email": "info@politomuseum.uz",
+        "museum": "technology",
+        "name": "Ташкентский политехнический музей",
+        "name:en": "Tashkent Polytechnic Museum",
+        "name:ru": "Ташкентский политехнический музей",
+        "name:uz": "Toshkent politexnika muzeyi",
+        "opening_hours": "10:00-18:00",
+        "phone": "(+998-71)-232-34-30;(+998-71)-232-34-08",
+        "tourism": "museum",
+        "website": "https://politomuseum.uz/",
+        "wikidata": "Q24089737",
+        "wikipedia": "uz:Toshkent politexnika muzeyi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2784674,
+          41.307332
+        ]
+      },
+      "id": "node/4149393593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4201555217",
+        "access": "yes",
+        "artwork_type": "bust",
+        "inscription": "Константин Циолковский",
+        "name": "Константин Циолковский",
+        "name:en": "Konstantin Tsiolkovsky",
+        "name:es": "Konstantín Tsiolkovski",
+        "name:ru": "Константин Циолковский",
+        "name:tr": "Konstantin Tsiolkovski",
+        "name:uz": "Konstantin Siolkovskiy",
+        "subject:wikidata": "Q41239",
+        "subject:wikipedia": "ru:Циолковский, Константин Эдуардович",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2800205,
+          41.2679222
+        ]
+      },
+      "id": "node/4201555217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4340959794",
+        "amenity": "cinema",
+        "fee": "10000-28000",
+        "name": "Premier Hall",
+        "phone": "+998712521625",
+        "website": "http://premier-hall.uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.268827,
+          41.2967627
+        ]
+      },
+      "id": "node/4340959794"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4497015242",
+        "artwork_type": "statue",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1733115,
+          41.3503931
+        ]
+      },
+      "id": "node/4497015242"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4642266002",
+        "artwork_type": "statue",
+        "genus:ru": "Дуб",
+        "name": "Дуб с котом ученым",
+        "name:en": "Oak with a cat scientist",
+        "tourism": "artwork",
+        "wikimedia_commons": "File:Дуб с котом ученым.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2535969,
+          41.2873298
+        ]
+      },
+      "id": "node/4642266002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4643858990",
+        "name": "Квест Рум \"Outlast\"",
+        "name:en": "Quest Room \"Outlast\"",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.245123,
+          41.3084588
+        ]
+      },
+      "id": "node/4643858990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4697494396",
+        "name": "Музей Автодорожного колледжа",
+        "name:en": "Kolledj Muzeyi",
+        "name:ru": "Музей Автодорожного колледжа",
+        "operator": "Ташкентский Автодорожний кодледж",
+        "tourism": "museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2144832,
+          41.2998763
+        ]
+      },
+      "id": "node/4697494396"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4789828981",
+        "name": "Юнуса Раджаби музей",
+        "name:ru": "Юнуса Раджаби музей",
+        "tourism": "museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2607894,
+          41.3047987
+        ]
+      },
+      "id": "node/4789828981"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4831208821",
+        "name": "РКБ (Республиканская клиническая больница) N 1",
+        "name:en": "РКБ N 1",
+        "name:ru": "Музей РКБ N 1",
+        "tourism": "museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2834084,
+          41.3020567
+        ]
+      },
+      "id": "node/4831208821"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4853754821",
+        "amenity": "cinema",
+        "name": "кинотеатр Salom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3430886,
+          41.3277242
+        ]
+      },
+      "id": "node/4853754821"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4956143221",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2337924,
+          41.379824
+        ]
+      },
+      "id": "node/4956143221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5009288218",
+        "addr:city": "Tashkent",
+        "addr:housenumber": "3",
+        "addr:street": "Cho'lpon 1-o'tish ko'chasi",
+        "amenity": "arts_centre",
+        "email": "smartum.uzbekistan@gmail.com",
+        "name": "Академия ментальной арифметики \"Smartum\"",
+        "opening_hours": "Mo-Sa 09:00-18:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3540968,
+          41.2956256
+        ]
+      },
+      "id": "node/5009288218"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5012624322",
+        "addr:city": "Tashkent",
+        "addr:housenumber": "20A",
+        "addr:postcode": "100047",
+        "addr:street": "Sodiq Azimov 3-o'tish ko'chasi",
+        "contact:instagram": "bonafact",
+        "name": "Bonum Factum Gallery",
+        "name:en": "Bonum Factum Gallery",
+        "opening_hours": "Tu-Th, Sa-Su 12:00-20:00",
+        "phone": "+998 71 232 03 60",
+        "tourism": "gallery",
+        "website": "https://t.me/bonum_factum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2939784,
+          41.3050645
+        ]
+      },
+      "id": "node/5012624322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5033224922",
+        "amenity": "theatre",
+        "name": "Дийдор",
+        "name:ru": "Дийдор"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2900792,
+          41.3149517
+        ]
+      },
+      "id": "node/5033224922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5040071029",
+        "artwork_type": "statue",
+        "name": "Лев",
+        "name:en": "Lion",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2094048,
+          41.2900976
+        ]
+      },
+      "id": "node/5040071029"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5040071030",
+        "artwork_type": "statue",
+        "name": "Лев",
+        "name:en": "Lion",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2093105,
+          41.2900063
+        ]
+      },
+      "id": "node/5040071030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5107266622",
+        "addr:city": "Toshkent",
+        "addr:housenumber": "40/2",
+        "addr:street": "Sharof Rashidov ko'chasi",
+        "museum": "art",
+        "name": "Музей искусства миниатюры Востока имени Камолиддина Бехзада",
+        "name:en": "Museum of Oriental Miniature Art Named after Kamoliddin Bekhzod",
+        "name:ru": "Музей искусства миниатюры Востока имени Камолиддина Бехзада",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "operator": "Академия художеств Узбекистана",
+        "operator:type": "public",
+        "tourism": "museum",
+        "website": "https://kbmsm.uz/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2656374,
+          41.3087617
+        ]
+      },
+      "id": "node/5107266622"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5196878421",
+        "addr:floor": "3",
+        "amenity": "cinema",
+        "check_date": "2023-02-24",
+        "internet_access": "wlan",
+        "level": "2",
+        "name": "Кинотеатр Next",
+        "name:en": "Next Cinema"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.249383,
+          41.2978932
+        ]
+      },
+      "id": "node/5196878421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5206110074",
+        "artwork_type": "bust",
+        "name": "Владимир Джанибеков",
+        "name:en": "Vladimir Dzhanibekov",
+        "name:ru": "Владимир Джанибеков",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2649973,
+          41.3050463
+        ]
+      },
+      "id": "node/5206110074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5277818130",
+        "artwork_type": "sculpture",
+        "historic": "monument",
+        "name": "Караван",
+        "name:en": "Karavan",
+        "name:ru": "Караван",
+        "start_date": "2017-12-09",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1908047,
+          41.2545793
+        ]
+      },
+      "id": "node/5277818130"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5287903124",
+        "amenity": "cinema",
+        "name": "Кинотеатр Вега",
+        "name:en": "Vega Cinema",
+        "name:ru": "Кинотеатр Вега",
+        "phone": "5707800"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.224072,
+          41.2599898
+        ]
+      },
+      "id": "node/5287903124"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5300318322",
+        "name": "Дом Шукур Бурханов",
+        "name:ru": "Дом Шукур Бурханов",
+        "subject:wikipedia": "ru:Бурханов,_Шукур",
+        "tourism": "museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3615917,
+          41.3340898
+        ]
+      },
+      "id": "node/5300318322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5300318531",
+        "amenity": "cinema",
+        "name": "ФЕРУЗА",
+        "name:ru": "ФЕРУЗА"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3620754,
+          41.3552932
+        ]
+      },
+      "id": "node/5300318531"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5326968622",
+        "addr:housenumber": "432",
+        "addr:street": "Buyuk Ipak Yo'li ko'chasi",
+        "amenity": "theatre",
+        "email": "nodman96@gmail.com",
+        "name": "Государственный театр сатиры Узбекистана",
+        "name:en": "State Satire Theater of Uzbekistan",
+        "opening_hours": "24/7",
+        "phone": "2643279",
+        "website": "http://www.satirateatri.madaniyat.uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3882762,
+          41.3528627
+        ]
+      },
+      "id": "node/5326968622"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5354996144",
+        "addr:city": "Toshkent",
+        "addr:postcode": "100000",
+        "addr:street": "Xamid Olimjon maydoni",
+        "description": "Арт галерея проводит выставки современного искусства, организуем мероприятия, лекции, музыкальные, театральные, поэтические вечера, встречи с художниками, презентации и т.д.. Занимается продажами произведений искусства узбекских художников 20-21 вв..",
+        "name": "Арт-галерея \"ZERO LINE gallery\"",
+        "tourism": "gallery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2910352,
+          41.316788
+        ]
+      },
+      "id": "node/5354996144"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5550509921",
+        "amenity": "cinema",
+        "name": "Compass Cinema"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3290396,
+          41.2394441
+        ]
+      },
+      "id": "node/5550509921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5566771021",
+        "amenity": "cinema",
+        "name": "Заравшан",
+        "name:en": "Zaravshan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2735826,
+          41.3126164
+        ]
+      },
+      "id": "node/5566771021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5599945692",
+        "amenity": "theatre",
+        "name": "Ильхом",
+        "name:en": "Ilhom Theatre",
+        "wikidata": "Q2365125",
+        "wikipedia": "ru:Ильхом"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2615933,
+          41.3183674
+        ]
+      },
+      "id": "node/5599945692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5622003961",
+        "artwork_type": "installation",
+        "name": "I♥CHILANZAR",
+        "name:en": "I♥CHILANZAR",
+        "name:ru": "Я♥ЧИЛАНЗАР",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2069132,
+          41.2790762
+        ]
+      },
+      "id": "node/5622003961"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5793728016",
+        "artwork_type": "mosaic",
+        "name": "Туркменка",
+        "name:en": "Turkmenka",
+        "name:ru": "Туркменка",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1906862,
+          41.2897122
+        ]
+      },
+      "id": "node/5793728016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5806962217",
+        "artwork_type": "installation",
+        "name": "I♥CHILANZAR",
+        "name:en": "I♥CHILANZAR",
+        "name:ru": "Я♥ЧИЛАНЗАР",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2134245,
+          41.2823094
+        ]
+      },
+      "id": "node/5806962217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5839705738",
+        "artwork_type": "mosaic",
+        "name": "Узбечка",
+        "name:en": "Uzbechka",
+        "name:ru": "Узбечка",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1938177,
+          41.2923224
+        ]
+      },
+      "id": "node/5839705738"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6138661682",
+        "addr:city": "Ташкент",
+        "addr:street": "Ahmad Donish ko'chasi",
+        "amenity": "cinema",
+        "name": "MegaCinema"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2911387,
+          41.3672385
+        ]
+      },
+      "id": "node/6138661682"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6318746790",
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3426239,
+          41.3350705
+        ]
+      },
+      "id": "node/6318746790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6520828985",
+        "addr:housenumber": "20",
+        "name": "Музей Сергея Есенина",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "tourism": "museum",
+        "wikidata": "Q21661032",
+        "wikimedia_commons": "Category:Sergei Yesenin museum in Tashkent",
+        "wikipedia": "ru:Музей Сергея Есенина (Ташкент)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2979956,
+          41.3200436
+        ]
+      },
+      "id": "node/6520828985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6570063218",
+        "name": "ШТАНГИСТ",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2164768,
+          41.2967816
+        ]
+      },
+      "id": "node/6570063218"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6594121185",
+        "addr:city": "Toshkent",
+        "addr:city:en": "Tashkent",
+        "amenity": "theatre",
+        "name": "\"Tomosha\" bolalar musiqali teatr studiyasi",
+        "name:en": "Tomosha Children's Musical Theater-Studio",
+        "name:fa": "استودیوی تئاتر موزیکال کودکان \"توموشا\"",
+        "name:ru": "Детская музыкальная театр-студия \"Томоша\""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.276654,
+          41.3097424
+        ]
+      },
+      "id": "node/6594121185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6709401261",
+        "artwork_type": "relief",
+        "name": "Икар",
+        "name:en": "Icarus",
+        "name:ru": "Икар",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3414489,
+          41.292343
+        ]
+      },
+      "id": "node/6709401261"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6709411525",
+        "artwork_type": "mosaic",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3381048,
+          41.287095
+        ]
+      },
+      "id": "node/6709411525"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6781674185",
+        "name:en": "Museum of Communications history",
+        "tourism": "museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2519687,
+          41.3219007
+        ]
+      },
+      "id": "node/6781674185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7114613185",
+        "name": "Sevimli TV",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2879765,
+          41.2953798
+        ]
+      },
+      "id": "node/7114613185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7282434388",
+        "name": "Кирпич огнеупорный Серёга",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.338606,
+          41.2851485
+        ]
+      },
+      "id": "node/7282434388"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7288636985",
+        "name": "Расписной потолок",
+        "name:en": "Decorated ceiling",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.28399,
+          41.3198935
+        ]
+      },
+      "id": "node/7288636985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7394168568",
+        "amenity": "theatre",
+        "name": "Летающий театр"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2474053,
+          41.3149314
+        ]
+      },
+      "id": "node/7394168568"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7416354665",
+        "artwork_type": "sculpture",
+        "name": "Стела \"Ракета\"",
+        "name:en": "Stele \"Rocket\"",
+        "name:ru": "Стела \"Ракета\"",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2205908,
+          41.2813299
+        ]
+      },
+      "id": "node/7416354665"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7984337785",
+        "email": "muzey.qahhor@mail.ru",
+        "internet_access": "wlan",
+        "name": "Дом-музей Абдуллы Каххара",
+        "name:en": "House-Museum of Abdullah Kahkhar",
+        "name:ru": "Дом-музей Абдуллы Каххара",
+        "opening_hours": "Mo-Fr 09:00-13:00, 14:00-18:00",
+        "phone": "+998712560804",
+        "tourism": "museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2601718,
+          41.3051983
+        ]
+      },
+      "id": "node/7984337785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8282193117",
+        "amenity": "cinema",
+        "name": "Planetarium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2473925,
+          41.3151845
+        ]
+      },
+      "id": "node/8282193117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9084671798",
+        "artwork_type": "statue",
+        "name": "Алишер Навои",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3126603,
+          41.2850938
+        ]
+      },
+      "id": "node/9084671798"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9084671802",
+        "artwork_type": "statue",
+        "material": "concrete",
+        "name": "Бумажный бегемот",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3118241,
+          41.2849196
+        ]
+      },
+      "id": "node/9084671802"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9128799080",
+        "artwork_type": "statue",
+        "name": "Голый мальчик",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3002095,
+          41.3195071
+        ]
+      },
+      "id": "node/9128799080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9128799088",
+        "artwork_type": "statue",
+        "name": "Деревянный идол",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3015689,
+          41.3204021
+        ]
+      },
+      "id": "node/9128799088"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9128799089",
+        "artwork_type": "statue",
+        "name": "Деревянный идол",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3022452,
+          41.3203206
+        ]
+      },
+      "id": "node/9128799089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9128799090",
+        "artwork_type": "statue",
+        "name": "Деревянный идол",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.301894,
+          41.3205242
+        ]
+      },
+      "id": "node/9128799090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9128815923",
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2950242,
+          41.3118428
+        ]
+      },
+      "id": "node/9128815923"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9128815924",
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2948604,
+          41.3119022
+        ]
+      },
+      "id": "node/9128815924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9128815938",
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2958977,
+          41.3077452
+        ]
+      },
+      "id": "node/9128815938"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9247022856",
+        "artwork_type": "installation",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.206632,
+          41.3458703
+        ]
+      },
+      "id": "node/9247022856"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9501131078",
+        "artwork_type": "installation",
+        "name": "TASHKENT♥YOU",
+        "name:en": "TASHKENT♥YOU",
+        "name:ru": "ТАШКЕНТ♥ТЕБЯ",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2579938,
+          41.2770299
+        ]
+      },
+      "id": "node/9501131078"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692769890",
+        "amenity": "cinema",
+        "name": "Magic Cinema"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2450854,
+          41.3045498
+        ]
+      },
+      "id": "node/9692769890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828676",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Muhammad Yusuf",
+        "name:en": "Muhammad Yusuf",
+        "name:ru": "Мухаммад Юсуф",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2382538,
+          41.3015072
+        ]
+      },
+      "id": "node/9692828676"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828677",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "To'lepbergen Tayipbergenov",
+        "name:en": "Tulepbergen Tayipbergenov",
+        "name:ru": "Тулепберген Каипбергенов",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2387056,
+          41.3014117
+        ]
+      },
+      "id": "node/9692828677"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828678",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Abdulla Oripov",
+        "name:en": "Abdullah Aripov",
+        "name:ru": "Абдулла Арипов",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2383961,
+          41.3019468
+        ]
+      },
+      "id": "node/9692828678"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828679",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Erkin Vohidov",
+        "name:en": "Erkin Vakhidov",
+        "name:ru": "Эркин Вахидов",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.238802,
+          41.3018182
+        ]
+      },
+      "id": "node/9692828679"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828680",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Aleksandr Faynberg",
+        "name:en": "Alexander Faynberg",
+        "name:ru": "Александр Файнберг",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2390631,
+          41.3015576
+        ]
+      },
+      "id": "node/9692828680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828681",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Ibroyim Yusupov",
+        "name:en": "Ibrahim Yusupov",
+        "name:ru": "Ибрагим Юсупов",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2394155,
+          41.3016039
+        ]
+      },
+      "id": "node/9692828681"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828682",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Maqsud Shayxzoda",
+        "name:en": "Maqsud Sheikhzoda",
+        "name:ru": "Максуд Шейхзаде",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2396727,
+          41.3017047
+        ]
+      },
+      "id": "node/9692828682"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828683",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "G'afur G'ulom",
+        "name:en": "Gafur Gulyam",
+        "name:ru": "Гафур Гулям",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2391255,
+          41.3020439
+        ]
+      },
+      "id": "node/9692828683"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828684",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Ozod Sharafiddinov",
+        "name:en": "Ozod Sharafiddinov",
+        "name:ru": "Озод Шарафиддинов",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.239629,
+          41.3018941
+        ]
+      },
+      "id": "node/9692828684"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828685",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Said Ahmad va Saida Zunnunova",
+        "name:en": "Said Ahmad Khusankhojaev & Saida Zunnunova",
+        "name:ru": "Саид Ахмад Хусанходжаев и Саида Зуннунова",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2396983,
+          41.3023796
+        ]
+      },
+      "id": "node/9692828685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828686",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Abdulla Qahhor",
+        "name:en": "Abdullah Kahhar",
+        "name:ru": "Абдулла Каххар",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2392345,
+          41.3023615
+        ]
+      },
+      "id": "node/9692828686"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828687",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Bobur",
+        "name:en": "Бабур",
+        "name:ru": "Бабур",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2402145,
+          41.3035383
+        ]
+      },
+      "id": "node/9692828687"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828688",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Berdaq",
+        "name:en": "Berdakh",
+        "name:ru": "Бердах",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2398524,
+          41.3034819
+        ]
+      },
+      "id": "node/9692828688"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828689",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Ogahiy",
+        "name:en": "Agakhi",
+        "name:ru": "Агахи",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2404452,
+          41.3032441
+        ]
+      },
+      "id": "node/9692828689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828690",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Furqat",
+        "name:en": "Furkat",
+        "name:ru": "Фуркат",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2402153,
+          41.3030548
+        ]
+      },
+      "id": "node/9692828690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828691",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Muqimiy",
+        "name:ru": "Мукими",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2396325,
+          41.3032602
+        ]
+      },
+      "id": "node/9692828691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828692",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Hamid Olimjon",
+        "name:en": "Hamid Alimjan",
+        "name:ru": "Хамид Алимджан",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2397726,
+          41.3029842
+        ]
+      },
+      "id": "node/9692828692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828693",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Zulfiya",
+        "name:en": "Zulfiya",
+        "name:ru": "Зульфия",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2398485,
+          41.3026697
+        ]
+      },
+      "id": "node/9692828693"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828694",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Oybek",
+        "name:en": "Aybek",
+        "name:ru": "Айбек",
+        "tourism": "artwork",
+        "wikidata": "Q122676581",
+        "wikipedia": "uz:Oybek haykali"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2392222,
+          41.3027012
+        ]
+      },
+      "id": "node/9692828694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828695",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Abdulla Qodiriy",
+        "name:en": "Abdullah Kadiri",
+        "name:ru": "Абдулла Кадыри",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2391393,
+          41.3029628
+        ]
+      },
+      "id": "node/9692828695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828696",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Cho'lpon",
+        "name:en": "Chulpan",
+        "name:ru": "Чулпан",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2385878,
+          41.30309
+        ]
+      },
+      "id": "node/9692828696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828697",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Abdulla Avloniy",
+        "name:en": "Abdullah Avloni",
+        "name:ru": "Абдулла Авлони",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2381117,
+          41.3031816
+        ]
+      },
+      "id": "node/9692828697"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9692828698",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "memorial": "statue",
+        "name": "Behbudiy",
+        "name:en": "Mahkmudkhodja Behbudiy",
+        "name:ru": "Махмудходжа Бехбуди",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2383665,
+          41.3032945
+        ]
+      },
+      "id": "node/9692828698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9720637203",
+        "artwork_type": "installation",
+        "name": "I♥TASHKENT",
+        "name:en": "I♥TASHKENT",
+        "name:ru": "Я♥ТАШКЕНТ",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2409084,
+          41.3113801
+        ]
+      },
+      "id": "node/9720637203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9720637204",
+        "artwork_type": "installation",
+        "name": "I♥SPORT",
+        "name:en": "I♥SPORT",
+        "name:ru": "Я♥СПОРТ",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2384614,
+          41.2655904
+        ]
+      },
+      "id": "node/9720637204"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9817795849",
+        "artwork_type": "installation",
+        "name": "HAVE A NICE FLIGHT ✈️",
+        "name:en": "HAVE A NICE FLIGHT ✈️",
+        "name:ru": "ПРИЯТНОГО ПОЛЁТА ✈️",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2648202,
+          41.2645005
+        ]
+      },
+      "id": "node/9817795849"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9843799119",
+        "name": "Музей тыквы",
+        "name:en": "Museum of pumpkin",
+        "tourism": "museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3757255,
+          41.3488401
+        ]
+      },
+      "id": "node/9843799119"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9955055162",
+        "artwork_type": "bust",
+        "name": "Чингиз Айтматов",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2911258,
+          41.3272351
+        ]
+      },
+      "id": "node/9955055162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10111296303",
+        "artwork_type": "statue",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2661844,
+          41.3037756
+        ]
+      },
+      "id": "node/10111296303"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10240133066",
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2945646,
+          41.3120208
+        ]
+      },
+      "id": "node/10240133066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075829",
+        "artwork_type": "installation",
+        "name": "Самолёт",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2258092,
+          41.3528731
+        ]
+      },
+      "id": "node/10287075829"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075830",
+        "artwork_type": "installation",
+        "name": "Самолёт",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2255423,
+          41.352891
+        ]
+      },
+      "id": "node/10287075830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075831",
+        "artwork_type": "installation",
+        "name": "Самолёт",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2261116,
+          41.3528497
+        ]
+      },
+      "id": "node/10287075831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075832",
+        "artwork_type": "installation",
+        "name": "Самолёт",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2263495,
+          41.3528347
+        ]
+      },
+      "id": "node/10287075832"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075833",
+        "artwork_type": "installation",
+        "name": "Самолёт",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2265353,
+          41.3528198
+        ]
+      },
+      "id": "node/10287075833"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075844",
+        "artwork_type": "installation",
+        "name": "Танк",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2264187,
+          41.3535916
+        ]
+      },
+      "id": "node/10287075844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075845",
+        "artwork_type": "installation",
+        "name": "Танк",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.226423,
+          41.353517
+        ]
+      },
+      "id": "node/10287075845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075846",
+        "artwork_type": "installation",
+        "name": "Танк",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2264382,
+          41.3534521
+        ]
+      },
+      "id": "node/10287075846"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075847",
+        "artwork_type": "installation",
+        "name": "Танк",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2264522,
+          41.3533811
+        ]
+      },
+      "id": "node/10287075847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075848",
+        "artwork_type": "installation",
+        "name": "Танк",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2264616,
+          41.3533172
+        ]
+      },
+      "id": "node/10287075848"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075849",
+        "artwork_type": "installation",
+        "name": "Танк",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2264662,
+          41.3532549
+        ]
+      },
+      "id": "node/10287075849"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075850",
+        "artwork_type": "installation",
+        "name": "Танк",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2264674,
+          41.3531866
+        ]
+      },
+      "id": "node/10287075850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075851",
+        "artwork_type": "installation",
+        "name": "Артиллерийское орудие",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2260273,
+          41.3536283
+        ]
+      },
+      "id": "node/10287075851"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075852",
+        "artwork_type": "installation",
+        "name": "Артиллерийское орудие",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2260202,
+          41.3535766
+        ]
+      },
+      "id": "node/10287075852"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075853",
+        "artwork_type": "installation",
+        "name": "Артиллерийское орудие",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2260191,
+          41.3535231
+        ]
+      },
+      "id": "node/10287075853"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075854",
+        "artwork_type": "installation",
+        "name": "Артиллерийское орудие",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2260109,
+          41.3534732
+        ]
+      },
+      "id": "node/10287075854"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075855",
+        "artwork_type": "installation",
+        "name": "Артиллерийское орудие",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2260051,
+          41.3534232
+        ]
+      },
+      "id": "node/10287075855"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075856",
+        "artwork_type": "installation",
+        "name": "Артиллерийское орудие",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2260004,
+          41.3533741
+        ]
+      },
+      "id": "node/10287075856"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075857",
+        "artwork_type": "installation",
+        "name": "Артиллерийское орудие",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2259899,
+          41.353318
+        ]
+      },
+      "id": "node/10287075857"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075858",
+        "artwork_type": "installation",
+        "name": "Артиллерийское орудие",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2259817,
+          41.3532576
+        ]
+      },
+      "id": "node/10287075858"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10287075859",
+        "artwork_type": "installation",
+        "name": "Артиллерийское орудие",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2259773,
+          41.3532015
+        ]
+      },
+      "id": "node/10287075859"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10288984406",
+        "artwork_type": "installation",
+        "name": "Поезд",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2250418,
+          41.353714
+        ]
+      },
+      "id": "node/10288984406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10586771042",
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2561849,
+          41.2805804
+        ]
+      },
+      "id": "node/10586771042"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10694831517",
+        "name": "I❤️Fencing",
+        "name:ru": "Я❤️Фехтование",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2807069,
+          41.3448804
+        ]
+      },
+      "id": "node/10694831517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10694833450",
+        "check_date": "2023-02-27",
+        "name": "Magic Museum",
+        "tourism": "museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2434362,
+          41.3033689
+        ]
+      },
+      "id": "node/10694833450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10740639385",
+        "name": "G`afur G`ulom nomli uy-muzeyi",
+        "name:en": "House-museum of Gafur Gulam",
+        "name:ru": "Дом-музей Гафура Гуляма",
+        "tourism": "museum",
+        "wikidata": "Q19615120",
+        "wikipedia": "uz:Gʻafur Gʻulom uy-muzeyi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2484351,
+          41.3066609
+        ]
+      },
+      "id": "node/10740639385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10857620505",
+        "contact:instagram": "hlmrdv_gallery",
+        "name": "Hlmrdv Gallery",
+        "tourism": "gallery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2825513,
+          41.2929155
+        ]
+      },
+      "id": "node/10857620505"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11005543211",
+        "amenity": "theatre",
+        "check_date": "2023-06-25",
+        "theatre:type": "amphi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2487184,
+          41.3165485
+        ]
+      },
+      "id": "node/11005543211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11383272661",
+        "artwork_type": "statue",
+        "name": "Амир Тимур",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.248916,
+          41.3095533
+        ]
+      },
+      "id": "node/11383272661"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11443784326",
+        "artwork_type": "mural_painting",
+        "name": "Космонавт",
+        "name:en": "Astronaut",
+        "name:ru": "Космонавт",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2246725,
+          41.2827065
+        ]
+      },
+      "id": "node/11443784326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11443784327",
+        "artwork_type": "mural_painting",
+        "name": "Космонавт",
+        "name:en": "Astronaut",
+        "name:ru": "Космонавт",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2251488,
+          41.2831441
+        ]
+      },
+      "id": "node/11443784327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11517760806",
+        "artwork_type": "mural_painting",
+        "name": "Оксана Чусовитина",
+        "name:en": "Oksana Chusovitina",
+        "name:ru": "Оксана Чусовитина",
+        "subject:wikidata": "Q60557",
+        "subject:wikipedia": "ru:Чусовитина, Оксана Александровна",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2258939,
+          41.2826862
+        ]
+      },
+      "id": "node/11517760806"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11552234305",
+        "artwork_type": "installation",
+        "name": "TASHKENT♥YOU",
+        "name:en": "TASHKENT♥YOU",
+        "name:ru": "ТАШКЕНТ♥ТЕБЯ",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3266733,
+          41.3262408
+        ]
+      },
+      "id": "node/11552234305"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11739952459",
+        "artwork_type": "installation",
+        "name": "I♥Uzbekistan",
+        "name:en": "I♥Uzbekistan",
+        "name:ru": "Я♥Узбекистан",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2422788,
+          41.3113235
+        ]
+      },
+      "id": "node/11739952459"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11757868135",
+        "artwork_type": "installation",
+        "name": "SHAHRISTAN",
+        "name:en": "SHAHRISTAN",
+        "name:ru": "ШАХРИСТАН",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2875156,
+          41.3513183
+        ]
+      },
+      "id": "node/11757868135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11761701139",
+        "amenity": "cinema",
+        "name": "iMax"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2520352,
+          41.3151269
+        ]
+      },
+      "id": "node/11761701139"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12006254869",
+        "name": "Парк Юрского Периода",
+        "name:en": "Jurassic Park",
+        "tourism": "museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.31298,
+          41.3391169
+        ]
+      },
+      "id": "node/12006254869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12199945319",
+        "artwork_type": "mosaic",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3409304,
+          41.2937106
+        ]
+      },
+      "id": "node/12199945319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12199945320",
+        "artwork_type": "mosaic",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3409198,
+          41.2935602
+        ]
+      },
+      "id": "node/12199945320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12411834714",
+        "addr:city": "Tashkent",
+        "addr:country": "UZ",
+        "addr:housenumber": "15",
+        "addr:street": "Alisher Navoiy shoh ko'chasi",
+        "alt_name": "Панорамный",
+        "amenity": "cinema",
+        "contact:instagram": "https://instagram.com/kinochilar_uyi",
+        "contact:phone": "+998 (71) 241‒34‒44",
+        "name": "PANORAMA / Дворец кино им. Алишера Навои (Панорама)",
+        "name:ru": "PANORAMA / Дворец кино им. Алишера Навои (панорама)",
+        "name:uz": "Cinema Palace Alisher Navoiy nomli kino saroyi",
+        "old_name": "Панорамный",
+        "website": "https://t.me/kinosaroy_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2595896,
+          41.3194355
+        ]
+      },
+      "id": "node/12411834714"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12812206676",
+        "amenity": "theatre",
+        "name": "Театр-студия \"Дийдор\"",
+        "name:ru": "Театр-студия \"Дийдор\""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3512111,
+          41.334262
+        ]
+      },
+      "id": "node/12812206676"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12895474780",
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2277869,
+          41.2951256
+        ]
+      },
+      "id": "node/12895474780"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12972829963",
+        "artwork_type": "mural",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2288852,
+          41.2882143
+        ]
+      },
+      "id": "node/12972829963"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13119418007",
+        "artwork_type": "statue",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2598879,
+          41.2886434
+        ]
+      },
+      "id": "node/13119418007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13130543631",
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2363975,
+          41.2953527
+        ]
+      },
+      "id": "node/13130543631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13130552725",
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2364505,
+          41.2954236
+        ]
+      },
+      "id": "node/13130552725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13134212779",
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2450921,
+          41.2832361
+        ]
+      },
+      "id": "node/13134212779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13136359676",
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2437346,
+          41.2886575
+        ]
+      },
+      "id": "node/13136359676"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13241530054",
+        "addr:city": "Ташкент",
+        "addr:housenumber": "55",
+        "addr:place": "Chilonzor 24 mavzesi \"Vatan\"",
+        "amenity": "cinema",
+        "name": "Vatan",
+        "name:ru": "Ватан",
+        "opening_hours": "Не работает"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1728121,
+          41.2776158
+        ]
+      },
+      "id": "node/13241530054"
+    }
+  ]
+}
