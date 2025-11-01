@@ -1,6 +1,6 @@
 🗺️ Day 1 — Points | 30 Day Map Challenge 2025
 
-This repository contains the map for Day 1: Points of my #30DayMapChallenge
+This file contains the map for Day 1: Points of my #30DayMapChallenge
  journey.
 
 📍 Map Theme
