@@ -14,4 +14,4 @@ All datasets were obtained from OpenStreetMap (via Overpass Turbo) and processed
 
 🧭 Tools: QGIS
 
-#gis #qgis #cartography #geospatial #remotesensing #osm #mapchallenge #30DayMapChallenge2025 #uzbekistan
+
