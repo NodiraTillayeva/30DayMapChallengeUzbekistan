@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #000;
+  font-family: Inter, Arial, sans-serif;
+}
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+/* Popup carousel styling */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 6px;
+  scroll-behavior: smooth;
+  max-width: 260px;
+  padding-bottom: 6px;
+}
+.carousel img {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+.city-popup {
+  color: rgb(206, 27, 27);
+  text-align: center;
+}
+.city-name { font-size: 1.05em; font-weight: 600; margin-bottom: 4px; }
+.year { color: #0a0a0a; font-size: 0.9em; margin-bottom: 6px; }
