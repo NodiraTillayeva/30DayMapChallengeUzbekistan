@@ -1,0 +1,82 @@
+var no2 = ee.ImageCollection("COPERNICUS/S5P/OFFL/L3_NO2")
+
+var image = no2.filterDate ('2025-01-01' , '2025-05-30')
+          .select('NO2_column_number_density')
+          .mean()
+          .clip(AOI)
+var band_viz = {
+  min: 0,
+  max: 0.0002,
+  palette: ['black', 'blue', 'purple', 'cyan', 'green', 'yellow', 'red']
+};
+
+Map.addLayer (image, band_viz)
+Map.centerObject (AOI, 10)
+
+// Create a panel to hold the legend
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+
+// Create legend title
+var legendTitle = ui.Label({
+  value: 'NO₂ Concentration (mol/m²)',
+  style: {fontWeight: 'bold', fontSize: '13px', margin: '0 0 6px 0'}
+});
+
+// Add title to legend
+legend.add(legendTitle);
+
+// Create the color bar
+var makeColorBar = function(palette) {
+  return ui.Thumbnail({
+    image: ee.Image.pixelLonLat().select(0),
+    params: {
+      bbox: [0, 0, 1, 0.1],
+      dimensions: '200x10',
+      format: 'png',
+      min: 0,
+      max: 1,
+      palette: palette
+    },
+    style: {stretch: 'horizontal', margin: '0 8px'}
+  });
+};
+
+// Add color bar to legend
+legend.add(makeColorBar(band_viz.palette));
+
+// Create min/max labels
+var legendLabels = ui.Panel({
+  widgets: [
+    ui.Label(band_viz.min.toString(), {margin: '4px 8px'}),
+    ui.Label(band_viz.max.toString(), {margin: '4px 8px', textAlign: 'right'})
+  ],
+  layout: ui.Panel.Layout.flow('horizontal')
+});
+
+// Add labels to legend
+legend.add(legendLabels);
+
+// Add the legend to the map
+Map.add(legend);
+
+// ️ Title Panel
+var title = ui.Label({
+  value: 'Nitrogen Di-Oxide Concentration over Uzbekistan (2025) ',
+  style: {
+    position: 'top-center',
+    fontWeight: 'bold',
+    fontSize: '18px',
+    color: 'black',
+    backgroundColor: 'rgba(255, 255, 255, 0.7)',
+    padding: '6px 12px',
+    border: '1px solid gray',
+    borderRadius: '8px'
+  }
+});
+
+Map.add(title);
