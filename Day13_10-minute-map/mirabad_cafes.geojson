@@ -1,0 +1,2861 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-11-15T09:50:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31963543",
+        "addr:street": "Shahrisabz ko'chasi",
+        "amenity": "cafe",
+        "building": "yes",
+        "building:levels": "6",
+        "cuisine": "tea",
+        "internet_access": "wlan",
+        "name": "Angels",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.272371,
+          41.2990971
+        ]
+      },
+      "id": "way/31963543"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103264952",
+        "addr:street": "Yangi Qo'yliq ko'chasi",
+        "amenity": "cafe",
+        "building": "yes",
+        "cuisine": "chicken;grill;oriental;friture;fish_and_chips;international;kebab;local;barbecue;asian",
+        "name": "Хаёт",
+        "name:en": "Hayot",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3021691,
+          41.2459738
+        ]
+      },
+      "id": "way/103264952"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/299405867",
+        "addr:housenumber": "786/1",
+        "addr:street": "Farg'ona Yo'li",
+        "amenity": "cafe",
+        "building": "yes",
+        "cuisine": "korean",
+        "name": "Элефант",
+        "name:en": "Elephant",
+        "name:ru": "Элефант",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.326351,
+          41.2446175
+        ]
+      },
+      "id": "way/299405867"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/429729124",
+        "addr:street": "Mirobod ko'chasi",
+        "amenity": "cafe",
+        "building": "yes",
+        "cuisine": "burger",
+        "internet_access": "no",
+        "name": "Точка Вкуса",
+        "smoking": "separated",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2686742,
+          41.3000656
+        ]
+      },
+      "id": "way/429729124"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/481033709",
+        "amenity": "cafe",
+        "building": "yes",
+        "cuisine": "burger",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.274637,
+          41.3062874
+        ]
+      },
+      "id": "way/481033709"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/582187054",
+        "addr:housenumber": "130a",
+        "addr:street": "Sariko'l ko'chasi",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Пиццерия",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2848815,
+          41.2820198
+        ]
+      },
+      "id": "way/582187054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/643104740",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Олива",
+        "name:en": "Oliva",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2731538,
+          41.2916489
+        ]
+      },
+      "id": "way/643104740"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1140349810",
+        "amenity": "cafe",
+        "cuisine": "гиждуванская",
+        "name": "Бухара кафе",
+        "name:en": "Buxara Kafe",
+        "opening_hours": "Mo-Su 10:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.299159,
+          41.2689786
+        ]
+      },
+      "id": "node/1140349810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1143235190",
+        "addr:housenumber": "18",
+        "addr:street": "Sariko'l ko'chasi",
+        "amenity": "cafe",
+        "cuisine": "regional;grill;georgian;asian;beef_bowl;korean;russian;fish_and_chips;chicken;oriental;local;deli;kebab;barbecue",
+        "internet_access": "wlan",
+        "name": "Кафе \"NOSTALGIE\"",
+        "name:en": "Cafe \"NOSTALGIE\"",
+        "opening_hours": "Tu-Su 10:00-23:00",
+        "phone": "+998 95 146 20 16",
+        "website": "https://t.me/nostalgieuz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.282978,
+          41.2860771
+        ]
+      },
+      "id": "node/1143235190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1430019327",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2669337,
+          41.2833029
+        ]
+      },
+      "id": "node/1430019327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1468383705",
+        "amenity": "cafe",
+        "name": "Восток"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3017814,
+          41.2840481
+        ]
+      },
+      "id": "node/1468383705"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1501172851",
+        "amenity": "cafe",
+        "name": "CarWash"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3158533,
+          41.2632981
+        ]
+      },
+      "id": "node/1501172851"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1560905642",
+        "amenity": "cafe",
+        "name": "Art-Max"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.318548,
+          41.2587606
+        ]
+      },
+      "id": "node/1560905642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1763884666",
+        "amenity": "cafe",
+        "name": "\"Centr\" kafe",
+        "name:ru": "\"Centr\" kafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2992701,
+          41.2727165
+        ]
+      },
+      "id": "node/1763884666"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1840765302",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2737349,
+          41.2910235
+        ]
+      },
+      "id": "node/1840765302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1912410671",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Армянский дворик"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2996961,
+          41.2743792
+        ]
+      },
+      "id": "node/1912410671"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2111829233",
+        "amenity": "cafe",
+        "name:ko": "라그만 강추!"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2761136,
+          41.2918287
+        ]
+      },
+      "id": "node/2111829233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2460340709",
+        "amenity": "cafe",
+        "name": "Бешчинор кафе-столовая"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3027119,
+          41.2810051
+        ]
+      },
+      "id": "node/2460340709"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2664870801",
+        "amenity": "cafe",
+        "contact:phone": "+998 71 256 34 04",
+        "contact:website": "http://www.abnmbgroup.com",
+        "cuisine": "breakfast;cake;coffee_shop;french",
+        "name": "Bon!",
+        "opening_hours": "Mo-Su 08:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2732036,
+          41.3053363
+        ]
+      },
+      "id": "node/2664870801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2956999558",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "Book Cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2823471,
+          41.3080237
+        ]
+      },
+      "id": "node/2956999558"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3325223822",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "internet_access": "yes",
+        "name": "CoffeeMilk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2870315,
+          41.3034688
+        ]
+      },
+      "id": "node/3325223822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3478526994",
+        "amenity": "cafe",
+        "name": "Sayhun"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3098033,
+          41.2463934
+        ]
+      },
+      "id": "node/3478526994"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3493297639",
+        "amenity": "cafe",
+        "name": "Восточный квартал"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2692439,
+          41.2856531
+        ]
+      },
+      "id": "node/3493297639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3493310664",
+        "amenity": "cafe",
+        "name": "Dolce Italia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2711993,
+          41.2971759
+        ]
+      },
+      "id": "node/3493310664"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3683609754",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "name": "Колобок",
+        "phone": "+998946725776"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3120477,
+          41.2451615
+        ]
+      },
+      "id": "node/3683609754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3788695079",
+        "addr:place": "Qo'yliq 4 daxasi",
+        "amenity": "cafe",
+        "cuisine": "burger",
+        "internet_access": "no",
+        "name": "Elite Burger"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3098033,
+          41.2469505
+        ]
+      },
+      "id": "node/3788695079"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3843503203",
+        "amenity": "cafe",
+        "check_date": "2023-02-25",
+        "name": "Cake Lab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2694592,
+          41.2960856
+        ]
+      },
+      "id": "node/3843503203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3910207983",
+        "amenity": "cafe",
+        "cuisine": "uzbek_traditional",
+        "name": "Dilshod Plov"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.294717,
+          41.28055
+        ]
+      },
+      "id": "node/3910207983"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3910234385",
+        "amenity": "cafe",
+        "cuisine": "budget",
+        "name": "Eatery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2965791,
+          41.2819745
+        ]
+      },
+      "id": "node/3910234385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3910234386",
+        "amenity": "cafe",
+        "cuisine": "kebab",
+        "name": "Mannob Shashlik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2966095,
+          41.2819577
+        ]
+      },
+      "id": "node/3910234386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3910234387",
+        "amenity": "cafe",
+        "cuisine": "tanduri_samosa",
+        "name": "Somsa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2966583,
+          41.2818004
+        ]
+      },
+      "id": "node/3910234387"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3910234388",
+        "amenity": "cafe",
+        "cuisine": "street_food",
+        "name": "Chebureki"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.296453,
+          41.2819775
+        ]
+      },
+      "id": "node/3910234388"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4080075218",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2853369,
+          41.279326
+        ]
+      },
+      "id": "node/4080075218"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4126853901",
+        "amenity": "cafe",
+        "name": "Joints",
+        "name:de": "Joints",
+        "name:ru": "joints"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2807458,
+          41.3046032
+        ]
+      },
+      "id": "node/4126853901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4126853999",
+        "amenity": "cafe",
+        "name": "Timekeeper"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2811949,
+          41.3049246
+        ]
+      },
+      "id": "node/4126853999"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4138012890",
+        "amenity": "cafe",
+        "name": "Дустлар"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2706883,
+          41.3077746
+        ]
+      },
+      "id": "node/4138012890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4151745092",
+        "addr:housenumber": "24",
+        "addr:street": "Zarafshan ko'chasi",
+        "amenity": "cafe",
+        "name": "Florya",
+        "name:ru": "Флория"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.27286,
+          41.3098281
+        ]
+      },
+      "id": "node/4151745092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4170876590",
+        "addr:housenumber": "35",
+        "addr:street": "Mirobod ko'chasi",
+        "amenity": "cafe",
+        "cuisine": "chicken;friture;grill;kebab;local;oriental;pizza",
+        "name": "Anor",
+        "name:ru": "Анор",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "phone": "+998 98 301 33 11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2711205,
+          41.2935345
+        ]
+      },
+      "id": "node/4170876590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4192222297",
+        "addr:housenumber": "40",
+        "addr:postcode": "100000",
+        "addr:street": "Fidokor ko'chasi",
+        "amenity": "cafe",
+        "contact:phone": "+998 78 150 18 34",
+        "contact:website": "http://www.abnmbgroup.com",
+        "cuisine": "french",
+        "name": "Bon!",
+        "name:fr": "BON! Boulangerie • Pâtisserie rue du Chekhov",
+        "opening_hours": "Mo-Su 07:30-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2715977,
+          41.2950106
+        ]
+      },
+      "id": "node/4192222297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4192278721",
+        "addr:housenumber": "4",
+        "addr:street": "Mirobod ko'chasi",
+        "amenity": "cafe",
+        "cuisine": "italian_pizza",
+        "name": "STUZZICO",
+        "opening_hours": "Mo-Su 11:00-22:30",
+        "phone": "2523380"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2672504,
+          41.3013956
+        ]
+      },
+      "id": "node/4192278721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4220953489",
+        "amenity": "cafe",
+        "name": "Masil.Jorrea"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2720579,
+          41.292647
+        ]
+      },
+      "id": "node/4220953489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4271235690",
+        "amenity": "cafe",
+        "name": "plov-somsa.uz",
+        "website": "http://plov-somsa.uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2822902,
+          41.3078106
+        ]
+      },
+      "id": "node/4271235690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4302073090",
+        "amenity": "cafe",
+        "name": "Do'stlar - sevgi va sadoqat bilan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2708167,
+          41.3073135
+        ]
+      },
+      "id": "node/4302073090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4327603489",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "name": "Весна Кафе",
+        "name:en": "Vesna Kafe",
+        "name:ru": "Весна Кафе",
+        "opening_hours": "Mo-Su 08:00-21:29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2893557,
+          41.2788715
+        ]
+      },
+      "id": "node/4327603489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4432304591",
+        "amenity": "cafe",
+        "name": "Крошка картошка",
+        "name:ru": "Крошка картошка"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2880125,
+          41.2955025
+        ]
+      },
+      "id": "node/4432304591"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4458589595",
+        "amenity": "cafe",
+        "name": "rePUBlic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3272218,
+          41.2432034
+        ]
+      },
+      "id": "node/4458589595"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4464545691",
+        "addr:housenumber": "73",
+        "addr:postcode": "10000",
+        "addr:street": "Buyuk Turon ko'chasi",
+        "amenity": "cafe",
+        "cuisine": "ice_cream",
+        "email": "nuriddin.talipov@mail.ru",
+        "name": "лаваш",
+        "name:en": "lavash",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "operator": "Nuriddin",
+        "phone": "+998909337064"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2685797,
+          41.3074151
+        ]
+      },
+      "id": "node/4464545691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4464586189",
+        "amenity": "cafe",
+        "cuisine": "steak_house",
+        "internet_access": "wlan",
+        "name": "TIBONE",
+        "name:ru": "TIBONE",
+        "opening_hours": "Mo-Su 12:00-03:00",
+        "phone": "+998909350888"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2885767,
+          41.3013158
+        ]
+      },
+      "id": "node/4464586189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4476674790",
+        "amenity": "cafe",
+        "name": "Дода Чойхона",
+        "name:en": "DoDa Choyxona",
+        "opening_hours": "Mo-Su 08:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2980614,
+          41.2686162
+        ]
+      },
+      "id": "node/4476674790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4497369189",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Regge Bean"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2812258,
+          41.2911654
+        ]
+      },
+      "id": "node/4497369189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4501677889",
+        "amenity": "cafe",
+        "cuisine": "burger;cake;grill;friture;arab;fish_and_chips;fish;breakfast;donut;french;tea;coffee_shop;turkish;diner;asian;chicken;american;hot_dog;kebab;ice_cream",
+        "internet_access": "wlan",
+        "name": "Sofia",
+        "name:en": "SOFIA",
+        "name:zh-Latn-pinyin": "COFESTA",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "phone": "+998951462292"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2685125,
+          41.3019274
+        ]
+      },
+      "id": "node/4501677889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4508486494",
+        "amenity": "cafe",
+        "name": "Good zone",
+        "name:en": "Good zone",
+        "name:ru": "Good zone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3003516,
+          41.2693828
+        ]
+      },
+      "id": "node/4508486494"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4509413591",
+        "amenity": "cafe",
+        "name": "кафе/виноводочный",
+        "name:en": "кафе/виноводочный",
+        "name:ru": "кафе/виноводочный"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2740872,
+          41.2771255
+        ]
+      },
+      "id": "node/4509413591"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4509456289",
+        "amenity": "cafe",
+        "name": "Очил дастурхон",
+        "name:en": "Очил дастурхон",
+        "name:ru": "Очил дастурхон"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2841236,
+          41.273048
+        ]
+      },
+      "id": "node/4509456289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4532561747",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "Black Bear Kofi",
+        "name:en": "Black Bear Kofi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2827093,
+          41.3076706
+        ]
+      },
+      "id": "node/4532561747"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4568831689",
+        "addr:housenumber": "21",
+        "addr:street": "Chimkent ko'chasi",
+        "amenity": "cafe",
+        "name": "Ош Макон (бывший ресторан \"Украина\")",
+        "name:en": "Osh Makon (former restaurant \"Ukraine\")",
+        "phone": "+998712563469"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2748282,
+          41.3049149
+        ]
+      },
+      "id": "node/4568831689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4571188293",
+        "amenity": "cafe",
+        "name": "Canteen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.284314,
+          41.3061594
+        ]
+      },
+      "id": "node/4571188293"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4589086695",
+        "amenity": "cafe",
+        "name": "ЧайКоф",
+        "name:ru": "ЧайКоф"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2806319,
+          41.2960082
+        ]
+      },
+      "id": "node/4589086695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4613617991",
+        "amenity": "cafe",
+        "cuisine": "bagel",
+        "name": "Dot donuts",
+        "opening_hours": "Mo-Su 09:00-18:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2825959,
+          41.3076128
+        ]
+      },
+      "id": "node/4613617991"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4622542489",
+        "amenity": "cafe",
+        "cuisine": "pizza;sandwich;hot_dog;burger;breakfast;coffee_shop",
+        "email": "elementn11@gmail.com",
+        "internet_access": "wlan",
+        "name": "Playstation Cafe CityZone",
+        "opening_hours": "Mo-Su 09:00-06:00",
+        "phone": "+998951428811;+998909336000",
+        "website": "https://m.facebook.com/PsClubCityZone/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.272778,
+          41.2919012
+        ]
+      },
+      "id": "node/4622542489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4624902689",
+        "amenity": "cafe",
+        "name": "Тошпулат ота ошхонаси",
+        "name:ru": "Тошпулат ота ошхонаси",
+        "opening_hours": "Mo-Su 09:00-20:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2841375,
+          41.3011741
+        ]
+      },
+      "id": "node/4624902689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4658417264",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2749254,
+          41.2892312
+        ]
+      },
+      "id": "node/4658417264"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4672270422",
+        "amenity": "cafe",
+        "name": "Лола",
+        "name:ru": "Лола"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2890473,
+          41.2858933
+        ]
+      },
+      "id": "node/4672270422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4702877789",
+        "amenity": "cafe",
+        "name": "Таверна",
+        "opening_hours": "Mo-Su 10:00-23:00",
+        "phone": "+998712837704"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2779434,
+          41.2736635
+        ]
+      },
+      "id": "node/4702877789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4733418129",
+        "amenity": "cafe",
+        "email": "biznes1515@gmail.com",
+        "name": "Шансон",
+        "name:en": "Shanson",
+        "name:ru": "Шансон",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "phone": "+998712523968"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2703032,
+          41.2987814
+        ]
+      },
+      "id": "node/4733418129"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4744727122",
+        "amenity": "cafe",
+        "name": "Узбекча гамбургер Playstation 3, 4",
+        "name:ru": "Узбекча гамбургер Playstation 3, 4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2726094,
+          41.292012
+        ]
+      },
+      "id": "node/4744727122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4752244041",
+        "addr:housenumber": "77",
+        "addr:street": "Buyuk Turon ko'chasi",
+        "amenity": "cafe",
+        "leisure": "playground",
+        "name": "Жемчуг",
+        "name:ru": "Жемчуг"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2671508,
+          41.3024841
+        ]
+      },
+      "id": "node/4752244041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4752244042",
+        "amenity": "cafe",
+        "name": "Burger land"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2668706,
+          41.3022796
+        ]
+      },
+      "id": "node/4752244042"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4754729630",
+        "amenity": "cafe",
+        "check_date": "2024-04-23",
+        "cuisine": "local",
+        "name": "Слоеная самса",
+        "name:ru": "Слоеная самса",
+        "opening_hours": "Mo-Su 06:00-20:00",
+        "phone": "+998946653550"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2852835,
+          41.2922857
+        ]
+      },
+      "id": "node/4754729630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4769608422",
+        "amenity": "cafe",
+        "cuisine": "hot_dog;sausage;local;coffee_shop;asian;noodles;buschenschank;kebab",
+        "name": "Бухара",
+        "name:en": "Buxoro",
+        "name:ru": "Бухара",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2776764,
+          41.2734516
+        ]
+      },
+      "id": "node/4769608422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4787684222",
+        "amenity": "cafe",
+        "name": "Kitchen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2711812,
+          41.2998701
+        ]
+      },
+      "id": "node/4787684222"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4809562535",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Поттермвния",
+        "name:en": "Pottermania",
+        "name:ru": "Поттермания",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2705474,
+          41.296748
+        ]
+      },
+      "id": "node/4809562535"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4811132522",
+        "amenity": "cafe",
+        "name": "SalSal",
+        "name:en": "SalSal",
+        "name:ru": "SalSal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2668765,
+          41.3020475
+        ]
+      },
+      "id": "node/4811132522"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4850462448",
+        "amenity": "cafe",
+        "name": "Анзор",
+        "name:ru": "Анзор"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3030341,
+          41.2863937
+        ]
+      },
+      "id": "node/4850462448"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4881614523",
+        "addr:housenumber": "38",
+        "addr:postcode": "100060",
+        "addr:street": "Taras Shevchenko ko'chasi",
+        "amenity": "cafe",
+        "name": "Black Bear Kofi",
+        "name:en": "Black Bear Kofi",
+        "name:ru": "Black Bear Kofi",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "phone": "+998 99 878 32 22",
+        "website": "https://www.facebook.com/kofiuz/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2806987,
+          41.2968965
+        ]
+      },
+      "id": "node/4881614523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4947426325",
+        "addr:city": "Ташкент",
+        "addr:street": "Matbuotchilar ko'chasi",
+        "amenity": "cafe",
+        "cuisine": "local",
+        "name": "Shinam (\"Эмка\", \"Дно\")",
+        "name:en": "Shinam (\"Еmka\", \"Dno\")",
+        "name:ru": "Шинам (\"Эмка\", \"Дно\")",
+        "opening_hours": "24/7 off",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2766508,
+          41.3102727
+        ]
+      },
+      "id": "node/4947426325"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4957862921",
+        "addr:housenumber": "41",
+        "addr:street": "Mirobod ko'chasi",
+        "amenity": "cafe",
+        "cuisine": "american",
+        "name:en": "Tabasco House",
+        "opening_hours": "Mo-Su 11:30-01:00",
+        "phone": "2001171"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2722201,
+          41.2925067
+        ]
+      },
+      "id": "node/4957862921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4991768422",
+        "addr:housenumber": "72",
+        "addr:street": "Mehrjon ko'chasi",
+        "amenity": "cafe",
+        "contact:phone": "+998712994982",
+        "cuisine": "asian",
+        "name": "Tangem",
+        "name:ru": "Тангем"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2837573,
+          41.2881056
+        ]
+      },
+      "id": "node/4991768422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4999069125",
+        "amenity": "cafe",
+        "cuisine": "oriental;barbecue;local;grill",
+        "name": "Beerloga",
+        "name:en": "Baku Mangal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2985205,
+          41.268725
+        ]
+      },
+      "id": "node/4999069125"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5004373023",
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "name": "Broccoli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2788908,
+          41.2974928
+        ]
+      },
+      "id": "node/5004373023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5010081049",
+        "addr:city": "Tashkent",
+        "addr:housenumber": "128 б",
+        "addr:postcode": "200007",
+        "addr:street": "Sariko'l ko'chasi",
+        "amenity": "cafe",
+        "cuisine": "pizza;burger;sandwich;american",
+        "email": "artemkanon@gmail.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "TPS",
+        "name": "Пиццерия \"tashpizza\"",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:visa": "yes",
+        "phone": "+998 97 4463636",
+        "smoking": "outside",
+        "start_date": "03.06.2016",
+        "website": "tashpizza.uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2848714,
+          41.2820259
+        ]
+      },
+      "id": "node/5010081049"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5070545321",
+        "addr:city": "Toshkent",
+        "addr:housenumber": "22",
+        "addr:street": "Shahrisabz ko'chasi",
+        "amenity": "cafe",
+        "name": "Рафе Дустлар",
+        "name:ru": "Рефе Дустлар",
+        "opening_hours": "Mo-Sa 09:00-17:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2760768,
+          41.3003616
+        ]
+      },
+      "id": "node/5070545321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5072686829",
+        "amenity": "cafe",
+        "name": "Туркистон Файз",
+        "name:en": "Turkiston Fayz",
+        "name:ru": "Туркистон Файз"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3228707,
+          41.2509959
+        ]
+      },
+      "id": "node/5072686829"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5107708435",
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "name": "Смокин Терраса",
+        "name:en": "Sokkin Open Air"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.280657,
+          41.3043763
+        ]
+      },
+      "id": "node/5107708435"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5107757121",
+        "amenity": "cafe",
+        "cuisine": "local;international",
+        "name": "Каролина",
+        "name:en": "Karolona",
+        "opening_hours": "Mo-Su 09:00-00:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.282864,
+          41.286375
+        ]
+      },
+      "id": "node/5107757121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5107757232",
+        "amenity": "cafe",
+        "name": "Смокин",
+        "name:en": "Smokkin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2760207,
+          41.3003085
+        ]
+      },
+      "id": "node/5107757232"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5109089029",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3018343,
+          41.2479749
+        ]
+      },
+      "id": "node/5109089029"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5158247832",
+        "amenity": "cafe",
+        "name": "DUR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3055926,
+          41.2817864
+        ]
+      },
+      "id": "node/5158247832"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5168475423",
+        "addr:street": "Mirobod ko'chasi",
+        "amenity": "cafe",
+        "name": "Гушт",
+        "name:de": "Gosht Burger",
+        "name:en": "Go'sht",
+        "name:ru": "Гушт",
+        "opening_hours": "Mo-Su 12:00-23:00",
+        "phone": "+998971308800",
+        "source": "DuMont Reise-Handbuch Usbekistan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2685753,
+          41.2977583
+        ]
+      },
+      "id": "node/5168475423"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5219636345",
+        "amenity": "cafe",
+        "name": "Путешествиник"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2704082,
+          41.287059
+        ]
+      },
+      "id": "node/5219636345"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5295653943",
+        "addr:street": "Oybek ko'chasi",
+        "amenity": "cafe",
+        "name": "OBED BUFET",
+        "name:en": "Obed Bufet",
+        "name:ru": "Обед Буфет"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.281701,
+          41.2911449
+        ]
+      },
+      "id": "node/5295653943"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5303620823",
+        "amenity": "cafe",
+        "name": "I'm Cake"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2750931,
+          41.3007007
+        ]
+      },
+      "id": "node/5303620823"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5331010921",
+        "amenity": "cafe",
+        "name": "Пастернак",
+        "name:en": "Pasternak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2828573,
+          41.2910803
+        ]
+      },
+      "id": "node/5331010921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5336423725",
+        "amenity": "cafe",
+        "name": "Азия"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2789886,
+          41.2870115
+        ]
+      },
+      "id": "node/5336423725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5374173524",
+        "amenity": "cafe",
+        "name": "Сомса"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.287606,
+          41.2873639
+        ]
+      },
+      "id": "node/5374173524"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5378666035",
+        "addr:street": "Sariko'l ko'chasi",
+        "amenity": "cafe",
+        "name": "Онури чикен",
+        "name:en": "Mix Beer",
+        "name:ru": "Микс Биэр"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2860016,
+          41.2810852
+        ]
+      },
+      "id": "node/5378666035"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5409225848",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2783915,
+          41.272747
+        ]
+      },
+      "id": "node/5409225848"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5409247068",
+        "addr:housenumber": "176",
+        "addr:street": "Geydar Aliev ko'chasi",
+        "amenity": "cafe",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2764301,
+          41.2744943
+        ]
+      },
+      "id": "node/5409247068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5409247069",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2773438,
+          41.2737152
+        ]
+      },
+      "id": "node/5409247069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5444583126",
+        "amenity": "cafe",
+        "name": "Бухара"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2780793,
+          41.2728718
+        ]
+      },
+      "id": "node/5444583126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5547154924",
+        "amenity": "cafe",
+        "name": "Illusion",
+        "name:en": "Illusion (hookah)",
+        "name:ru": "Illusion (кальянная)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2786069,
+          41.2984254
+        ]
+      },
+      "id": "node/5547154924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5547221722",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;cake",
+        "name": "Кальянная",
+        "name:en": "Hookah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2686736,
+          41.2972316
+        ]
+      },
+      "id": "node/5547221722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5594494721",
+        "addr:housenumber": "18",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "Java Coffee and Bakery",
+        "opening_hours": "Mo-Sa 09:00-23:00",
+        "operator": "Искандер Курбанов",
+        "website": "https://www.instagram.com/_javacoffee_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2744408,
+          41.2967734
+        ]
+      },
+      "id": "node/5594494721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5631635423",
+        "addr:street": "Farg'ona Yo'li",
+        "amenity": "cafe",
+        "name": "Омад"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3245078,
+          41.247954
+        ]
+      },
+      "id": "node/5631635423"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5632216521",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2843608,
+          41.2877086
+        ]
+      },
+      "id": "node/5632216521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5639745765",
+        "amenity": "cafe",
+        "name": "Olmos Chinoz Baliq"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3044239,
+          41.2844863
+        ]
+      },
+      "id": "node/5639745765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5660301260",
+        "addr:housenumber": "41/6",
+        "addr:postcode": "100015",
+        "amenity": "cafe",
+        "cuisine": "fish;burger;breakfast;ice_cream;tea;cake;coffee_shop;pizza;chicken;diner",
+        "email": "batutfood8@gmail.com",
+        "name": "Batut Food",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "operator": "IFly батутный центр",
+        "phone": "+998974750606",
+        "website": "http://www.facebook.com/batutfood"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.273087,
+          41.2927377
+        ]
+      },
+      "id": "node/5660301260"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5692576621",
+        "addr:street": "Avliyoota ko'chasi",
+        "amenity": "cafe",
+        "name": "Кулинария",
+        "name:en": "Kulinariya",
+        "name:ru": "Домашняя Кулинария"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.276148,
+          41.2923558
+        ]
+      },
+      "id": "node/5692576621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5775718753",
+        "amenity": "cafe",
+        "name": "MILLY",
+        "phone": "+998903587316"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2788232,
+          41.2985666
+        ]
+      },
+      "id": "node/5775718753"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5794294254",
+        "amenity": "cafe",
+        "name:en": "Milliy taomlar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3282152,
+          41.2406561
+        ]
+      },
+      "id": "node/5794294254"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5801262977",
+        "amenity": "cafe",
+        "name": "Black Bear Kofi",
+        "name:en": "Black Bear Kofi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2745645,
+          41.2969938
+        ]
+      },
+      "id": "node/5801262977"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5834157685",
+        "amenity": "cafe",
+        "name": "КУКСИ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.27621,
+          41.2923399
+        ]
+      },
+      "id": "node/5834157685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5924720967",
+        "amenity": "cafe",
+        "cuisine": "ice_cream",
+        "name": "Multimafe",
+        "source": "DuMont Reise-Handbuch Usbekistan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2732802,
+          41.3108096
+        ]
+      },
+      "id": "node/5924720967"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5972189485",
+        "addr:street": "Abu Sulaymon Banokatiy ko'chasi",
+        "amenity": "cafe",
+        "name": "У Абильфаса",
+        "name:en": "U Abilfasa",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2798561,
+          41.2719452
+        ]
+      },
+      "id": "node/5972189485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6002733991",
+        "amenity": "cafe",
+        "name:en": "Multimafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2732731,
+          41.3108016
+        ]
+      },
+      "id": "node/6002733991"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6050555285",
+        "amenity": "cafe",
+        "cuisine": "burger;greek",
+        "internet_access": "wlan",
+        "name": "Грик фуд",
+        "name:en": "Greek food",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.272706,
+          41.2920544
+        ]
+      },
+      "id": "node/6050555285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6050555286",
+        "amenity": "cafe",
+        "name": "Грик фуд",
+        "name:en": "Greek food"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2727165,
+          41.2920457
+        ]
+      },
+      "id": "node/6050555286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6280537185",
+        "addr:housenumber": "39",
+        "addr:street": "Vodil ko'chasi",
+        "amenity": "cafe",
+        "cuisine": "oriental;kebab;coffee_shop",
+        "internet_access": "wlan",
+        "name:en": "Grand Nur",
+        "opening_hours": "Mo-Sa 09:00-23:00",
+        "phone": "917764777"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3020674,
+          41.2848386
+        ]
+      },
+      "id": "node/6280537185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6366648507",
+        "addr:city": "Tashkent",
+        "addr:street": "Buyuk Turon ko'chasi",
+        "amenity": "cafe",
+        "name": "Феруза",
+        "name:ru": "Феруза"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2700085,
+          41.3107529
+        ]
+      },
+      "id": "node/6366648507"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6417669186",
+        "addr:city": "Tashkent",
+        "addr:housenumber": "42",
+        "addr:street": "Oybek ko'chasi",
+        "amenity": "cafe",
+        "capacity": "22",
+        "cuisine": "turkish;sandwich;chicken;pizza",
+        "delivery": "no",
+        "internet_access": "no",
+        "name": "Mustafa",
+        "name:ru": "Мустафа",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "payment:cash": "yes",
+        "payment:payme": "yes",
+        "phone": "+998 (93) 172-0304",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "https://instagram.com/mustafa.cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2822122,
+          41.2910529
+        ]
+      },
+      "id": "node/6417669186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6499859987",
+        "addr:housenumber": "39А",
+        "addr:street": "Taras Shevchenko ko'chasi",
+        "amenity": "cafe",
+        "contact:instagram": "socials_uz",
+        "internet_access": "wlan",
+        "level": "1",
+        "name": "Socials",
+        "opening_hours": "Mo-Su 08:00-01:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2801671,
+          41.2973798
+        ]
+      },
+      "id": "node/6499859987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6521415985",
+        "addr:housenumber": "41",
+        "addr:street": "Afrosiyob ko'chasi",
+        "amenity": "cafe",
+        "contact:facebook": "https://www.facebook.com/tokyocafeuz-2369178769987466/",
+        "contact:instagram": "https://www.instagram.com/tokyocafeuz/",
+        "cuisine": "japanese",
+        "name": "Tokyo Cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.272813,
+          41.2998272
+        ]
+      },
+      "id": "node/6521415985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6590381586",
+        "addr:housenumber": "2",
+        "addr:street": "Talimarjon ko'chasi",
+        "amenity": "cafe",
+        "cuisine": "regional;korean",
+        "name": "Масисо",
+        "name:en": "Masiso",
+        "opening_hours": "Mo-Su 09:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3041437,
+          41.2786474
+        ]
+      },
+      "id": "node/6590381586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6643668886",
+        "amenity": "cafe",
+        "name:en": "Columbina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2698926,
+          41.2963243
+        ]
+      },
+      "id": "node/6643668886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6816613787",
+        "addr:street": "Mirobod ko'chasi",
+        "amenity": "cafe",
+        "name": "Uno",
+        "opening_hours": "Mo-Su 09:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2717505,
+          41.2929345
+        ]
+      },
+      "id": "node/6816613787"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7024222385",
+        "amenity": "cafe",
+        "name": "BOUNTY COFFEE BAR",
+        "opening_hours": "24/7",
+        "website": "https://sca.uz/bountycoffeebar.tashkent"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.286986,
+          41.2775967
+        ]
+      },
+      "id": "node/7024222385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7997581291",
+        "addr:housenumber": "8",
+        "addr:street": "Talimarjon ko'chasi",
+        "amenity": "cafe",
+        "cuisine": "vietnamese",
+        "internet_access": "wlan",
+        "name": "Banh Bao",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "operator": "Le Nik",
+        "phone": "+998901216227",
+        "website": "https://instagram.com/banhbao.uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3027196,
+          41.2771853
+        ]
+      },
+      "id": "node/7997581291"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8505354617",
+        "addr:housenumber": "40",
+        "addr:postcode": "100000",
+        "amenity": "cafe",
+        "name": "Tim’s",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "outdoor_seating": "no",
+        "phone": "+998 99 777 45 85",
+        "website": "https://www.tims.uz",
+        "website:menu": "https://foodee.menu/1000121604?p=zal&t=8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2811167,
+          41.2963218
+        ]
+      },
+      "id": "node/8505354617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9085855717",
+        "amenity": "cafe",
+        "name": "Авангард"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.285632,
+          41.2815271
+        ]
+      },
+      "id": "node/9085855717"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9211773417",
+        "addr:street": "Geydar Aliev ko'chasi",
+        "amenity": "cafe",
+        "name": "Сомсахона",
+        "name:en": "Somsahona",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2730647,
+          41.2774346
+        ]
+      },
+      "id": "node/9211773417"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9500663820",
+        "amenity": "cafe",
+        "name": "Ай Су"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2843302,
+          41.2828889
+        ]
+      },
+      "id": "node/9500663820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9715646217",
+        "amenity": "cafe",
+        "name": "кафе красивое"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2834835,
+          41.2939722
+        ]
+      },
+      "id": "node/9715646217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10582264844",
+        "addr:city": "Ташкент",
+        "addr:housenumber": "31/2",
+        "addr:street": "Nukus ko'chasi",
+        "amenity": "cafe",
+        "bar": "yes",
+        "contact:instagram": "https://instagram.com/benedict_cafe_tashkent",
+        "contact:phone": "+998 33‒888‒88‒07",
+        "contact:website": "https://t.me/benedict_cafe_tashkent;https://www.instagram.com/benedict_cafe_tashkent/",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "Benedict",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "telegram": "https://t.me/benedict_cafe_tashkent"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2810999,
+          41.2931334
+        ]
+      },
+      "id": "node/10582264844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10693308271",
+        "amenity": "cafe",
+        "check_date": "2023-02-25",
+        "cuisine": "coffee_shop",
+        "internet_access": "no",
+        "outdoor_seating": "no",
+        "takeaway": "only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2729844,
+          41.2982888
+        ]
+      },
+      "id": "node/10693308271"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11001546630",
+        "amenity": "cafe",
+        "contact:email": "yavtesto@gmail.com",
+        "contact:facebook": "https://facebook.com/yavtesto",
+        "contact:instagram": "https://instagram.com/yavtesto",
+        "contact:phone": "+998 90 009 31 13",
+        "contact:twitter": "https://twitter.com/testotoday",
+        "contact:website": "https://testo.uz",
+        "name": "Testo",
+        "opening_hours": "Mo-Fr 08:00-23:00; Sa-Su 09:00-23:00",
+        "operator": "Chuchvara Zamira",
+        "telegram": "https://t.me/yavtestobot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.271658,
+          41.2947329
+        ]
+      },
+      "id": "node/11001546630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11036911867",
+        "amenity": "cafe",
+        "contact:phone": "+998 71 252 56 94",
+        "contact:website": "http://www.abnmbgroup.com",
+        "cuisine": "coffee_shop",
+        "name": "Bon!",
+        "opening_hours": "Mo-Su 07:30-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2776914,
+          41.2995659
+        ]
+      },
+      "id": "node/11036911867"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11036911873",
+        "amenity": "cafe",
+        "contact:phone": "+998 95 992 95 15",
+        "contact:website": "http://www.abnmbgroup.com",
+        "cuisine": "coffee_shop",
+        "name": "Bon!",
+        "opening_hours": "Mo-Su 08:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2850315,
+          41.3054747
+        ]
+      },
+      "id": "node/11036911873"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11133421705",
+        "addr:street": "Taras Shevchenko ko'chasi",
+        "amenity": "cafe",
+        "contact:email": "communitytashkent@gmail.com",
+        "contact:instagram": "https://instagram.com/community.tashkent",
+        "contact:phone": "+998333700333",
+        "contact:website": "https://cmnty.space",
+        "cuisine": "breakfast;coffee_shop;international",
+        "indoor_seating": "yes",
+        "name": "Community coffee bar",
+        "opening_hours": "Mo-Sa 08:00-23:00; Su 10:00-23:00",
+        "outdoor_seating": "yes",
+        "telegram": "https://t.me/communitycoffeebar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2761109,
+          41.3012007
+        ]
+      },
+      "id": "node/11133421705"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11137767305",
+        "addr:street": "Fidokor ko'chasi",
+        "amenity": "cafe",
+        "contact:email": "beansandbrews.uz@gmail.com",
+        "contact:facebook": "https://facebook.com/bnb.uz",
+        "contact:instagram": "https://instagram.com/bnb.uz",
+        "contact:phone": "+998 71 209 84 48",
+        "contact:twitter": "https://twitter.com/beans_and_brews",
+        "contact:website": "https://bnb.uz",
+        "cuisine": "breakfast;international",
+        "name": "B&B",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "telegram": "https://t.me/bnbuz_bot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2717759,
+          41.2947994
+        ]
+      },
+      "id": "node/11137767305"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11438553369",
+        "amenity": "cafe",
+        "cuisine": "turkish",
+        "name:en": "Bay Iskender Doner"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2697851,
+          41.3079622
+        ]
+      },
+      "id": "node/11438553369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11545864617",
+        "amenity": "cafe",
+        "contact:instagram": "https://instagram.com/kamolon_oilaviy_restoran",
+        "contact:phone": "+998 95 885 33 88",
+        "name": "Kamolon",
+        "opening_hours": "Mo-Su 09:00-06:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2729643,
+          41.2926648
+        ]
+      },
+      "id": "node/11545864617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11828398802",
+        "amenity": "cafe",
+        "contact:email": "info@bbch.uz",
+        "contact:instagram": "https://instagram.com/costacoffee_uzbekistan",
+        "contact:phone": "+998 78 129 77 00",
+        "contact:website": "https://costacoffee.2gis.biz",
+        "cuisine": "coffee_shop",
+        "name": "Costa Coffee",
+        "name:en": "Costa Coffee",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "operator": "BEST COFFEE CHAIN",
+        "telegram": "https://t.me/costacoffee_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2806139,
+          41.2975577
+        ]
+      },
+      "id": "node/11828398802"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11828398810",
+        "amenity": "cafe",
+        "contact:instagram": "https://instagram.com/winesday.uz",
+        "contact:phone": "+998 95 956 77 00",
+        "name": "Winesday",
+        "opening_hours": "Fr-Sa 09:00-01:00; Mo-Th,Su 09:00-00:00",
+        "operator": "Premium Coffe Shevchenko"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2808844,
+          41.2967644
+        ]
+      },
+      "id": "node/11828398810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11837409926",
+        "amenity": "cafe",
+        "cuisine": "regional"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2755408,
+          41.2913059
+        ]
+      },
+      "id": "node/11837409926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12691606626",
+        "addr:postcode": "100000",
+        "addr:street": "Abdurauf Fitrat ko'chasi",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "name": "O'zbegim taomlar",
+        "name:ru": "Tandir Milliy Taomlar",
+        "opening_hours": "Mo-Su 09:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3089743,
+          41.2721394
+        ]
+      },
+      "id": "node/12691606626"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12819621979",
+        "amenity": "cafe",
+        "contact:phone": "+998 95 1301441",
+        "name": "Cho'ng'ara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3133436,
+          41.2525581
+        ]
+      },
+      "id": "node/12819621979"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12901402507",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "The Xavva",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2729791,
+          41.2997459
+        ]
+      },
+      "id": "node/12901402507"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12973010403",
+        "amenity": "cafe",
+        "name": "Mazzali"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3114171,
+          41.245156
+        ]
+      },
+      "id": "node/12973010403"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12977819339",
+        "amenity": "cafe",
+        "cuisine": "bubble_tea",
+        "indoor_seating": "yes",
+        "name": "Mollie",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2761315,
+          41.3010752
+        ]
+      },
+      "id": "node/12977819339"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13019650824",
+        "amenity": "cafe",
+        "name": "Лаби Анхор",
+        "name:ru": "Лаби Анхор"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2852303,
+          41.293906
+        ]
+      },
+      "id": "node/13019650824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13094408014",
+        "amenity": "cafe",
+        "name": "Пельменная"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2682217,
+          41.3043817
+        ]
+      },
+      "id": "node/13094408014"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13197173301",
+        "addr:housenumber": "16",
+        "addr:street": "Nukus Street",
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "name": "Take a Bread"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2853598,
+          41.2969045
+        ]
+      },
+      "id": "node/13197173301"
+    }
+  ]
+}
