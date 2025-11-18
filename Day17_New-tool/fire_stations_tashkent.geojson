@@ -1,0 +1,430 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-11-16T06:46:44Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/8538848",
+        "amenity": "fire_station",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2190433,
+          41.3344558
+        ]
+      },
+      "id": "relation/8538848"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/9119386",
+        "amenity": "fire_station",
+        "name": "Пожарная часть №4",
+        "name:ru": "Пожарная часть №4",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3005118,
+          41.2912874
+        ]
+      },
+      "id": "relation/9119386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/10368057",
+        "amenity": "fire_station",
+        "name": "Пожарная часть №17",
+        "ref": "17",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2041071,
+          41.2528652
+        ]
+      },
+      "id": "relation/10368057"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/105245519",
+        "amenity": "fire_station",
+        "barrier": "wall",
+        "name": "Пожарное депо",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3371698,
+          41.2755067
+        ]
+      },
+      "id": "way/105245519"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/174080848",
+        "addr:housenumber": "63a",
+        "addr:street": "Nurafshon aylanma ko'chasi",
+        "amenity": "fire_station",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2192987,
+          41.334526
+        ]
+      },
+      "id": "way/174080848"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/396570361",
+        "amenity": "fire_station",
+        "name": "Пожарная часть №4",
+        "name:ru": "Пожарная часть №4",
+        "ref": "4",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2489876,
+          41.2918333
+        ]
+      },
+      "id": "way/396570361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/556083481",
+        "amenity": "fire_station",
+        "barrier": "fence",
+        "fence_type": "metal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1664138,
+          41.3393517
+        ]
+      },
+      "id": "way/556083481"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/639714122",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Пожарная часть",
+        "operator": "101",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1628056,
+          41.3085139
+        ]
+      },
+      "id": "way/639714122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/712670091",
+        "amenity": "fire_station",
+        "name": "ОПБ Бектемирского района (ПЧ-9)",
+        "name:ru": "ОПБ Бектемирского района (ПЧ-9)",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3667384,
+          41.2561843
+        ]
+      },
+      "id": "way/712670091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/961522850",
+        "amenity": "fire_station",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "Пожарная часть №8",
+        "name:ru": "Пожарная часть №8",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3747824,
+          41.339637
+        ]
+      },
+      "id": "way/961522850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1550250759",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2776186,
+          41.2655221
+        ]
+      },
+      "id": "node/1550250759"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1814575220",
+        "addr:street": "Полвонёр улица",
+        "amenity": "fire_station",
+        "name": "ОПБ Сергилийского района (ПЧ-8)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2223724,
+          41.197238
+        ]
+      },
+      "id": "node/1814575220"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1857835532",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.4574007,
+          41.409541
+        ]
+      },
+      "id": "node/1857835532"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2122554540",
+        "amenity": "fire_station",
+        "name": "Главное Управление Пожарной безопасности МВД РУз",
+        "name:ru": "Главное Управление Пожарной безопасности МВД РУз"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2742288,
+          41.329143
+        ]
+      },
+      "id": "node/2122554540"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4460732790",
+        "amenity": "fire_station",
+        "name": "Алмазар",
+        "name:ru": "Алмазар"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2191724,
+          41.3345149
+        ]
+      },
+      "id": "node/4460732790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5031484221",
+        "amenity": "fire_station",
+        "name": "Пожарная часть",
+        "name:ru": "Пожарная часть"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1730421,
+          41.2582884
+        ]
+      },
+      "id": "node/5031484221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5521408223",
+        "amenity": "fire_station",
+        "name": "Пожарная часть №4",
+        "name:ru": "Пожарная часть №4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3023102,
+          41.2561612
+        ]
+      },
+      "id": "node/5521408223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6380077685",
+        "addr:street": "Yuqori qoraqamish ko'chasi",
+        "amenity": "fire_station",
+        "name": "ОПБ Юнусабадского р-на (19-ВПБ часть)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2647129,
+          41.3729811
+        ]
+      },
+      "id": "node/6380077685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6380077785",
+        "addr:street": "Ahmad Donish ko'chasi",
+        "amenity": "fire_station",
+        "name": "ОПБ Алмазарского р-на",
+        "name:ru": "ОПБ Алмазарского р-на"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2653823,
+          41.3507613
+        ]
+      },
+      "id": "node/6380077785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6393717372",
+        "addr:street": "Jarqo'rg'on ko'chasi",
+        "amenity": "fire_station",
+        "name": "ОПБ Яшнаабадского района (ПЧ-15)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3370758,
+          41.2755127
+        ]
+      },
+      "id": "node/6393717372"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6441974685",
+        "addr:street": "Nilufar 2-tor ko'chasi",
+        "amenity": "fire_station",
+        "name": "ОПБ Сергилийского района (ПЧ-9)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2651976,
+          41.2030963
+        ]
+      },
+      "id": "node/6441974685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11514126094",
+        "addr:housenumber": "37",
+        "addr:street": "Qatortol 1-chi o'tish yo'li",
+        "amenity": "fire_station",
+        "name": "ОВПО-5 Чиланзарского р-на",
+        "name:ru": "ОВПО-5 Чиланзарского р-на",
+        "ref": "5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2089867,
+          41.2945113
+        ]
+      },
+      "id": "node/11514126094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11848513187",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.278156,
+          41.2601928
+        ]
+      },
+      "id": "node/11848513187"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12280301851",
+        "addr:housenumber": "17",
+        "amenity": "fire_station",
+        "name": "Управление пожарной безопасности ГУВД"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2745974,
+          41.3297207
+        ]
+      },
+      "id": "node/12280301851"
+    }
+  ]
+}
