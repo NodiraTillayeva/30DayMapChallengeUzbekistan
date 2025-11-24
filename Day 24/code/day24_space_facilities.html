@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF="8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzbekistan's Celestial Legacy</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- GLOBAL & BACKGROUND (Space-themed) --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            /* Deep Space Background */
+            background: #0a0e1a;
+            color: #e8f4f8;
+            overflow-x: hidden;
+        }
+        
+        .space-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Radial gradient for depth */
+            background: radial-gradient(ellipse at top, #151b2e 0%, #0a0e1a 50%, #000000 100%);
+            z-index: -1;
+        }
+        
+        /* Stars (Unchanged) */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 5s infinite ease-in-out;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.15; }
+            50% { opacity: 0.5; }
+        }
+        
+        /* --- HEADER --- */
+        .header {
+            background: linear-gradient(135deg, rgba(10, 15, 30, 0.98) 0%, rgba(5, 10, 20, 0.98) 100%);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(93, 173, 226, 0.25);
+            padding: 35px 50px;
+            position: relative;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .header-content {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #5dade2;
+            letter-spacing: 3px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        
+        .subtitle {
+            color: #7eb5d6;
+            font-size: 0.9rem;
+            letter-spacing: 1.5px;
+            font-weight: 300;
+        }
+        
+        /* --- MAIN LAYOUT --- */
+        .main-container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 30px 50px;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+        
+        /* --- LEFT PANEL (Discovery) --- */
+        .discovery-panel {
+            background: linear-gradient(145deg, rgba(15, 22, 40, 0.92) 0%, rgba(10, 15, 30, 0.95) 100%);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(93, 173, 226, 0.3);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+            position: sticky;
+            top: 30px;
+        }
+        
+        .panel-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #5dade2;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(93, 173, 226, 0.3);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .discovery-section {
+            margin-bottom: 30px;
+        }
+        
+        .section-label {
+            font-size: 0.8rem;
+            color: #5dade2;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .discovery-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            margin: 8px 0;
+            background: rgba(93, 173, 226, 0.08);
+            border-left: 3px solid #5dade2;
+            border-radius: 8px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .discovery-item:hover {
+            background: rgba(93, 173, 226, 0.15);
+            transform: translateX(5px);
+        }
+        
+        .discovery-icon {
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+        
+        .discovery-text {
+            font-size: 0.9rem;
+            color: #e8f4f8;
+            line-height: 1.4;
+        }
+        
+        .observatory-item {
+            padding: 12px;
+            margin: 10px 0;
+            background: rgba(174, 214, 241, 0.1);
+            border-left: 3px solid #aed6f1;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .observatory-item:hover {
+            background: rgba(174, 214, 241, 0.18);
+            transform: translateX(5px);
+        }
+        
+        .observatory-name {
+            font-weight: 600;
+            color: #aed6f1;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+        
+        .observatory-type {
+            font-size: 0.8rem;
+            color: #85c1e9;
+            opacity: 0.9;
+        }
+        
+        /* --- MAP SECTION (Plotly Container) --- */
+        .map-section {
+            background: linear-gradient(145deg, rgba(15, 22, 40, 0.82) 0%, rgba(10, 15, 30, 0.88) 100%);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(93, 173, 226, 0.25);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+            position: relative;
+        }
+        
+        .map-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 182, 193, 0.2);
+        }
+        
+        .map-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            color: #5dade2;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        
+        .map-controls {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .control-hint {
+            font-size: 0.75rem;
+            color: #7eb5d6;
+            background: rgba(93, 173, 226, 0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid rgba(93, 173, 226, 0.3);
+            font-family: 'Orbitron', monospace;
+            letter-spacing: 0.5px;
+        }
+        
+        #globe {
+            width: 100%;
+            height: 700px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        /* --- STATS CARDS (Bottom) --- */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(145deg, rgba(93, 173, 226, 0.12) 0%, rgba(93, 173, 226, 0.08) 100%);
+            border: 1px solid rgba(93, 173, 226, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .stat-card:hover {
+            background: linear-gradient(145deg, rgba(93, 173, 226, 0.18) 0%, rgba(93, 173, 226, 0.12) 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(93, 173, 226, 0.2);
+        }
+        
+        .stat-value {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #5dade2;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: #7eb5d6;
+            margin-top: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Info Box */
+        .info-box {
+            margin-top: 20px;
+            padding: 20px 30px;
+            background: rgba(255, 215, 0, 0.12);
+            border: 1px solid rgba(255, 215, 0, 0.35);
+            border-radius: 15px;
+            border-left: 4px solid #ffd700;
+        }
+        
+        .info-text {
+            font-size: 0.9rem;
+            color: #e8f4f8;
+            line-height: 1.7;
+            text-align: center;
+        }
+        
+        .info-highlight {
+            color: #ffd700;
+            font-weight: 600;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1400px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .discovery-panel {
+                position: relative;
+                top: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .main-container {
+                padding: 20px 25px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            #globe {
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="space-bg">
+        <div class="stars" id="stars"></div>
+    </div>
+    
+    <header class="header">
+        <div class="header-content">
+            <h1>🛰️ UZBEKISTAN'S CELESTIAL LEGACY</h1>
+            <p class="subtitle">Interactive 3D Earth View • Mapping 600 Years of Astronomical Excellence</p>
+        </div>
+    </header>
+    
+    <div class="main-container">
+        <aside class="discovery-panel">
+            <div class="panel-title">⚡ CELESTIAL DISCOVERIES</div>
+            
+            <div class="discovery-section">
+                <div class="section-label">🪨 NAMED ASTEROIDS</div>
+                <div class="discovery-item">
+                    <span class="discovery-icon" style="color:#ff4757;">🔴</span>
+                    <span class="discovery-text"><strong>(1381) Uzbekistania</strong></span>
+                </div>
+                <div class="discovery-item">
+                    <span class="discovery-icon" style="color:#ffa502;">🟠</span>
+                    <span class="discovery-text"><strong>(2170271) Samarkand</strong></span>
+                </div>
+                <div class="discovery-item">
+                    <span class="discovery-icon" style="color:#ffdd59;">🟡</span>
+                    <span class="discovery-text"><strong>(2439) Ulugbek</strong></span>
+                </div>
+            </div>
+            
+            <div class="discovery-section">
+                <div class="section-label">🌙 LUNAR FEATURES</div>
+                <div class="discovery-item">
+                    <span class="discovery-icon" style="color:#aed6f1;">🌙</span>
+                    <span class="discovery-text"><strong>Ulugh Beigh Crater</strong><br><small>Named after the astronomer-king</small></span>
+                </div>
+            </div>
+            
+            <div class="discovery-section">
+                <div class="section-label">🔭 OBSERVATORIES</div>
+                <div class="observatory-item">
+                    <div class="observatory-name">🏛️ Ulugh Beg Observatory</div>
+                    <div class="observatory-type">Historic Site • Samarkand, 1420s</div>
+                </div>
+                <div class="observatory-item">
+                    <div class="observatory-name">🛰️ Maidanak Observatory</div>
+                    <div class="observatory-type">Modern Facility • 2650m altitude</div>
+                </div>
+            </div>
+        </aside>
+        
+        <main class="map-section">
+            <div class="map-header">
+                <div class="map-title">🌍 UZBEKISTAN OBSERVATORIES</div>
+                <div class="map-controls">
+                    <span class="control-hint">🖱️ Drag to Rotate</span>
+                    <span class="control-hint">🔍 Scroll to Zoom</span>
+                </div>
+            </div>
+            
+            <div id="globe"></div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">80+</div>
+                    <div class="stat-label">Asteroids Discovered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">4</div>
+                    <div class="stat-label">Comets Found</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">1,018</div>
+                    <div class="stat-label">Stars Cataloged</div>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <p class="info-text">
+                    <span class="info-highlight">Ulug' Beg (1394-1449)</span>, Astronomer-King of Samarkand, created the most accurate star catalog between Ptolemy and Tycho Brahe. His legacy lives on in the stars — inspiring generations of astronomers and securing Uzbekistan's place in celestial history.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Generate realistic subtle stars
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            for (let i = 0; i < 120; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                
+                // Smaller, dimmer stars
+                const size = Math.random() < 0.95 ? 1 : 1.5;
+                star.style.width = size + 'px';
+                star.style.height = size + 'px';
+                
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 5 + 's';
+                star.style.opacity = Math.random() * 0.25 + 0.05;
+                
+                starsContainer.appendChild(star);
+            }
+        }
+        createStars();
+
+        // Data for observatories
+        const observatories = [
+            {
+                name: "Ulugh Beg Observatory",
+                country: "Uzbekistan",
+                type: "Historic Site",
+                lat: 39.6753,
+                lon: 66.8851,
+                details: "Built 1420s • 1,018 Stars Cataloged • Medieval Masterpiece",
+                color: "#ffb6c1", /* Light Pink/Coral for historic site */
+                symbol: 'star'
+            },
+            {
+                name: "Maidanak Observatory",
+                country: "Uzbekistan", 
+                type: "Modern Facility",
+                lat: 38.6761,
+                lon: 66.8967,
+                details: "Altitude 2650m • 80+ Asteroids Discovered • 4 Comets Found",
+                color: "#aed6f1", /* Light Blue for modern facility */
+                symbol: 'circle'
+            }
+        ];
+
+        // Celestial objects locations (Using slightly offset coordinates to distinguish from observatories)
+        const celestialObjects = [
+            {name: "(1381) Uzbekistania", lat: 39.7, lon: 66.8, type: "Asteroid", color: "#ff4757", size: 8, text: "Uzbekistania"},
+            {name: "(2170271) Samarkand", lat: 39.8, lon: 66.9, type: "Asteroid", color: "#ffa502", size: 8, text: "Samarkand"},
+            {name: "(2439) Ulugbek", lat: 39.75, lon: 67.0, type: "Asteroid", color: "#ffdd59", size: 8, text: "Ulugbek"},
+        ];
+
+        // Create traces
+        const traces = [];
+        
+        // 1. Observatory markers
+        observatories.forEach(obs => {
+            traces.push({
+                type: 'scattergeo',
+                mode: 'markers+text',
+                name: obs.name,
+                lon: [obs.lon],
+                lat: [obs.lat],
+                text: [obs.name],
+                textposition: 'top center',
+                textfont: {
+                    size: 11,
+                    color: obs.color,
+                    family: 'Orbitron, sans-serif'
+                },
+                marker: {
+                    size: 18,
+                    color: obs.color,
+                    symbol: obs.symbol,
+                    line: {
+                        width: 3,
+                        color: 'rgba(255, 255, 255, 0.9)'
+                    },
+                    opacity: 0.95
+                },
+                hovertext: `<b style="font-size: 14px; color: ${obs.color};">${obs.name}</b><br>` +
+                            `<span style="color: #e8f4f8;">📍 ${obs.country}</span><br>` +
+                            `<span style="color: #b8d4e8;">⚡ ${obs.type}</span><br><br>` +
+                            `<i style="color: #85c1e9;">${obs.details}</i>`,
+                hoverinfo: 'text',
+                hoverlabel: {
+                    bgcolor: 'rgba(15, 20, 35, 0.95)',
+                    bordercolor: obs.color,
+                    font: {
+                        family: 'Space Grotesk, sans-serif',
+                        size: 12,
+                        color: 'white'
+                    }
+                }
+            });
+        });
+
+        // 2. Celestial object markers (Asteroids)
+        celestialObjects.forEach(obj => {
+            traces.push({
+                type: 'scattergeo',
+                mode: 'markers',
+                name: obj.name,
+                lon: [obj.lon],
+                lat: [obj.lat],
+                marker: {
+                    size: obj.size,
+                    color: obj.color,
+                    symbol: 'circle',
+                    line: {
+                        width: 1,
+                        color: 'rgba(255, 255, 255, 0.6)'
+                    },
+                    opacity: 0.9
+                },
+                hovertext: `<b style="font-size: 14px; color: ${obj.color};">${obj.name}</b><br>` +
+                            `<span style="color: #e8f4f8;">Named Asteroid</span>`,
+                hoverinfo: 'text'
+            });
+        });
+
+
+        // --- PLOTLY LAYOUT (Implementing dark space aesthetic) ---
+        const layout = {
+            geo: {
+                projection: {
+                    type: 'orthographic', /* Use orthographic to mimic the 3D globe view */
+                    rotation: {
+                        lon: 66, /* Centered on Uzbekistan's longitude */
+                        lat: 39, /* Centered on Uzbekistan's latitude */
+                        roll: 0
+                    },
+                    scale: 3 /* Zoomed in on Central Asia */
+                },
+                showland: true,
+                /* Dark Blue/Grey Land and Water for Space/Night Theme */
+                landcolor: '#1c223a', 
+                coastlinecolor: '#5dade2',
+                coastlinewidth: 1.5,
+                showocean: true,
+                oceancolor: '#080a1c', 
+                showlakes: true,
+                lakecolor: '#0e122b',
+                showcountries: true,
+                countrycolor: '#34495e', /* Darker country borders */
+                countrywidth: 0.8,
+                bgcolor: 'rgba(0, 0, 0, 0)', /* Transparent background for Plotly chart to show CSS background */
+                showframe: false,
+                showcoastlines: true,
+                resolution: 50,
+                lonaxis: {
+                    showgrid: true,
+                    gridcolor: 'rgba(255, 255, 255, 0.1)',
+                    gridwidth: 0.5
+                },
+                lataxis: {
+                    showgrid: true,
+                    gridcolor: 'rgba(255, 255, 255, 0.1)',
+                    gridwidth: 0.5
+                }
+            },
+            showlegend: false,
+            margin: {
+                l: 0,
+                r: 0,
+                t: 10,
+                b: 0
+            },
+            height: 700,
+            paper_bgcolor: 'rgba(0, 0, 0, 0)',
+            plot_bgcolor: 'rgba(0, 0, 0, 0)',
+            font: {
+                color: '#e8f4f8',
+                family: 'Space Grotesk, sans-serif'
+            }
+        };
+
+        const config = {
+            displayModeBar: true,
+            displaylogo: false,
+            modeBarButtonsToRemove: ['lasso2d', 'select2d', 'toImage'],
+            scrollZoom: true,
+            responsive: true
+        };
+
+        // Create the globe
+        Plotly.newPlot('globe', traces, layout, config);
+    </script>
+</body>
+</html>
