@@ -1,3 +1,7 @@
+Day 20: Water- Charvak Reservoir Chlorophyll map (NDCI)
+
+Author: Tumaris Ramanova
+
 Created a map of Charvak Reservoir using 2024 Sentinel-2 imagery in Google Earth Engine to estimate chlorophyll levels (NDCI). Using NDWI to mask out land, I focused on water areas and calculated (Normalized Difference Chlorophyll Index) NDCI to measure algae growth. I made composites for the full year and June–December to capture seasonal changes, visualized as a color-coded map:
 
 🔹 Blue areas → low chlorophyll (cleaner water)
