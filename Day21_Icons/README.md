@@ -1,4 +1,10 @@
-Day 21: Icons #30DayMapChallenge 🛒
+Day 21: Icons  
+
+Korzinka supermarkets in Tashkent 🛒
+
+
+Author: Tumaris Ramanova
+
 
 
 Created a quick map showing Korzinka supermarkets in Tashkent - the city’s most popular supermarket chain! I used data from OSM and visualized it in carto.com . Each supermarket is represented with a shopping cart icon 🛒, making it easy to see the distribution of Korzinka across the city. It’s a fun way to turn simple point data into a visual story! 
