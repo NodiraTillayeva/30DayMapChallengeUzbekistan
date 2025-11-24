@@ -1,0 +1,111 @@
+// Charvak Reservoir Chlorophyll Estimation Using Sentinel-2A Imagery in Google Earth Engine
+
+// 1. Define the Study Area
+
+var waterBodyArea = ee.Geometry.Rectangle([69.90, 41.55, 70.18, 41.72]);
+
+// Center the map on the water body area
+Map.centerObject(waterBodyArea, 12);
+Map.addLayer(waterBodyArea, {}, 'Charvak Area', false)
+
+// 3. Define the Time Range
+var startYear = '2024-01-01';
+var endYear = '2024-12-31';
+
+// 2. Load and Filter Sentinel-2A Data
+
+var sentinelCollection = ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED")
+  .filterDate(startYear, endYear) // Select images Time frame
+  .filterBounds(waterBodyArea) // Filter images within the study area
+  .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 20)) // Remove cloudy images
+  .map(function(image) {
+    var scaledBands = image.select('B.*').multiply(0.0001); // Convert reflectance values
+    var ndwi = scaledBands.normalizedDifference(['B3', 'B8']).rename('NDWI'); // Compute NDWI
+    var waterMask = ndwi.gt(0.1); // Threshold NDWI to mask out land areas
+    var chlorophyllIndex = scaledBands.normalizedDifference(['B5', 'B4']).rename('NDCI'); // Compute NDCI
+
+    return chlorophyllIndex.updateMask(waterMask)
+      .copyProperties(image, ['system:time_start', 'system:time_end'])
+  });
+
+// Print details of the filtered Sentinel-2 collection
+print('Filtered Sentinel-2 Collection:', sentinelCollection);
+
+// 3. Visualize the Chlorophyll Index (NDCI)
+// Compute the median image to get a single-band composite
+var ndciComposite = sentinelCollection.mean().clip(waterBodyArea);
+
+// Add the computed NDCI as a layer on the map
+Map.addLayer(ndciComposite, 
+  {min: -1, max: 1, palette: ['blue', 'yellow', 'red']}, 
+  'Chlorophyll Index (NDCI)', false);
+
+// 4. Select Sentinel-2 image for a specific date range (e.g., June to December, 2024)
+var targetImage = sentinelCollection
+  .filterDate('2024-06-01', '2024-12-31')
+  .mean() // Ensure a single-band image
+  .clip(waterBodyArea);
+
+// Add the selected image to the map for visualization
+Map.addLayer(targetImage, 
+  {min: -1, max: 1, palette: ['blue', 'yellow', 'red']}, 
+  'Chlorophyll Index (NDCI) - June-December, 2024', false);
+  
+// Create a panel for the legend
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    padding: '8px 15px'
+  }
+});
+
+// Add a title to the legend
+var legendTitle = ui.Label({
+  value: 'Chlorophyll Index (NDCI)',
+  style: {fontWeight: 'bold', fontSize: '16px', margin: '0 0 8px 0'}
+});
+legend.add(legendTitle);
+
+// Colors and labels
+var palette = ['blue', 'yellow', 'red'];
+var names = ['Low', 'Medium', 'High'];
+
+// Add each color box and label to the legend
+for (var i = 0; i < palette.length; i++) {
+  var colorBox = ui.Label({
+    style: {
+      backgroundColor: palette[i],
+      padding: '8px',
+      margin: '0 0 4px 0'
+    }
+  });
+  
+  var description = ui.Label({
+    value: names[i],
+    style: {margin: '0 0 4px 6px'}
+  });
+  
+  var legendItem = ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  });
+  
+  legend.add(legendItem);
+}
+
+Map.add(legend);
+
+// Create a title label
+var title = ui.Label({
+  value: 'Charvak Reservoir Chlorophyll Map (NDCI) - 2024',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '20px',
+    color: 'black',
+    backgroundColor: 'white',
+    padding: '8px',
+    position: 'top-center'
+  }
+});
+
+Map.add(title);
