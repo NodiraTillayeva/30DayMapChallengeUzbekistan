@@ -144,13 +144,17 @@
             background: rgba(93, 173, 226, 0.08);
             border-left: 3px solid #5dade2;
             border-radius: 8px;
-            transition: all 0.3s;
+            /* UPDATED: Added box-shadow to transition for glow */
+            transition: all 0.3s, box-shadow 0.3s;
             cursor: pointer;
         }
         
+        /* UPDATED: Enhanced hover state with a "glow" */
         .discovery-item:hover {
-            background: rgba(93, 173, 226, 0.15);
+            background: rgba(93, 173, 226, 0.2);
             transform: translateX(5px);
+            box-shadow: 0 0 18px rgba(93, 173, 226, 0.6);
+            border-color: #aed6f1;
         }
         
         .discovery-icon {
@@ -170,12 +174,17 @@
             background: rgba(174, 214, 241, 0.1);
             border-left: 3px solid #aed6f1;
             border-radius: 8px;
-            transition: all 0.3s;
+            /* UPDATED: Added box-shadow to transition for glow */
+            transition: all 0.3s, box-shadow 0.3s;
+            cursor: pointer;
         }
         
+        /* UPDATED: Enhanced hover state with a "glow" */
         .observatory-item:hover {
             background: rgba(174, 214, 241, 0.18);
             transform: translateX(5px);
+            box-shadow: 0 0 18px rgba(174, 214, 241, 0.7);
+            border-color: #d6eaf8;
         }
         
         .observatory-name {
@@ -352,15 +361,15 @@
             
             <div class="discovery-section">
                 <div class="section-label">🪨 NAMED ASTEROIDS</div>
-                <div class="discovery-item">
+                <div class="discovery-item" data-name="(1381) Uzbekistania">
                     <span class="discovery-icon" style="color:#ff4757;">🔴</span>
                     <span class="discovery-text"><strong>(1381) Uzbekistania</strong></span>
                 </div>
-                <div class="discovery-item">
+                <div class="discovery-item" data-name="(2170271) Samarkand">
                     <span class="discovery-icon" style="color:#ffa502;">🟠</span>
                     <span class="discovery-text"><strong>(2170271) Samarkand</strong></span>
                 </div>
-                <div class="discovery-item">
+                <div class="discovery-item" data-name="(2439) Ulugbek">
                     <span class="discovery-icon" style="color:#ffdd59;">🟡</span>
                     <span class="discovery-text"><strong>(2439) Ulugbek</strong></span>
                 </div>
@@ -376,13 +385,21 @@
             
             <div class="discovery-section">
                 <div class="section-label">🔭 OBSERVATORIES</div>
-                <div class="observatory-item">
+                <div class="observatory-item" data-name="Ulugh Beg Observatory">
                     <div class="observatory-name">🏛️ Ulugh Beg Observatory</div>
                     <div class="observatory-type">Historic Site • Samarkand, 1420s</div>
                 </div>
-                <div class="observatory-item">
+                <div class="observatory-item" data-name="Maidanak Observatory">
                     <div class="observatory-name">🛰️ Maidanak Observatory</div>
                     <div class="observatory-type">Modern Facility • 2650m altitude</div>
+                </div>
+                 <div class="observatory-item" data-name="Fergana Observatory">
+                    <div class="observatory-name">🛰️ Fergana Observatory</div>
+                    <div class="observatory-type">Educational & Research</div>
+                </div>
+                 <div class="observatory-item" data-name="Tashkent State Pedagogical University Observatory">
+                    <div class="observatory-name">🛰️ TSPU Observatory</div>
+                    <div class="observatory-type">Educational • Tashkent</div>
                 </div>
             </div>
         </aside>
@@ -429,7 +446,6 @@
                 const star = document.createElement('div');
                 star.className = 'star';
                 
-                // Smaller, dimmer stars
                 const size = Math.random() < 0.95 ? 1 : 1.5;
                 star.style.width = size + 'px';
                 star.style.height = size + 'px';
@@ -465,14 +481,35 @@
                 details: "Altitude 2650m • 80+ Asteroids Discovered • 4 Comets Found",
                 color: "#aed6f1", /* Light Blue for modern facility */
                 symbol: 'circle'
+            },
+            {
+              name: "Fergana Observatory",
+              country: "Uzbekistan",
+              type: "Educational & Research",
+              lat: 40.378,  
+              lon: 71.784,
+              details: "Houses re-installed Grubb Parsons 48-cm reflecting telescope • Student education & research",
+              color: "#f5b041",
+              symbol: 'circle'
+            },
+            {
+            name: "Tashkent State Pedagogical University Observatory",
+            country: "Uzbekistan",
+            type: "Educational",
+            lat: 41.327,  
+            lon: 69.281,
+            details: "Celestron 14-inch telescope • Trains astronomy teachers and students",
+            color: "#58d68d",
+            symbol: 'circle'
             }
         ];
 
-        // Celestial objects locations (Using slightly offset coordinates to distinguish from observatories)
+
+        // UPDATED: Celestial objects locations (Spread out to avoid overlap)
         const celestialObjects = [
-            {name: "(1381) Uzbekistania", lat: 39.7, lon: 66.8, type: "Asteroid", color: "#ff4757", size: 8, text: "Uzbekistania"},
-            {name: "(2170271) Samarkand", lat: 39.8, lon: 66.9, type: "Asteroid", color: "#ffa502", size: 8, text: "Samarkand"},
-            {name: "(2439) Ulugbek", lat: 39.75, lon: 67.0, type: "Asteroid", color: "#ffdd59", size: 8, text: "Ulugbek"},
+            {name: "(1381) Uzbekistania", lat: 39.9, lon: 66.5, type: "Asteroid", color: "#ff4757", size: 8, text: "Uzbekistania"},
+            {name: "(2170271) Samarkand", lat: 39.7, lon: 67.0, type: "Asteroid", color: "#ffa502", size: 8, text: "Samarkand"},
+            {name: "(2439) Ulugbek", lat: 39.5, lon: 67.3, type: "Asteroid", color: "#ffdd59", size: 8, text: "Ulugbek"},
         ];
 
         // Create traces
@@ -558,7 +595,6 @@
                     scale: 3 /* Zoomed in on Central Asia */
                 },
                 showland: true,
-                /* Dark Blue/Grey Land and Water for Space/Night Theme */
                 landcolor: '#1c223a', 
                 coastlinecolor: '#5dade2',
                 coastlinewidth: 1.5,
@@ -567,9 +603,9 @@
                 showlakes: true,
                 lakecolor: '#0e122b',
                 showcountries: true,
-                countrycolor: '#34495e', /* Darker country borders */
+                countrycolor: '#34495e',
                 countrywidth: 0.8,
-                bgcolor: 'rgba(0, 0, 0, 0)', /* Transparent background for Plotly chart to show CSS background */
+                bgcolor: 'rgba(0, 0, 0, 0)', 
                 showframe: false,
                 showcoastlines: true,
                 resolution: 50,
@@ -596,7 +632,7 @@
             plot_bgcolor: 'rgba(0, 0, 0, 0)',
             font: {
                 color: '#e8f4f8',
-                family: 'Space Grotesk, sans-serif'
+                font: 'Space Grotesk, sans-serif'
             }
         };
 
@@ -610,6 +646,82 @@
 
         // Create the globe
         Plotly.newPlot('globe', traces, layout, config);
+
+
+        // --- 🌟 NEW: DYNAMIC INTERACTIONS 🌟 ---
+        
+        const globeEl = document.getElementById('globe');
+        let currentLon = layout.geo.projection.rotation.lon;
+        let isAnimating = true;
+
+        // // 1. GLOBE ROTATION
+        // function rotateGlobe() {
+        //     if (!isAnimating) return; // Pause if user is dragging
+            
+        //     currentLon = (currentLon + 0.05) % 360; // Increment longitude and wrap around
+            
+        //     Plotly.relayout('globe', 'geo.projection.rotation.lon', currentLon)
+        //         .then(() => {
+        //             requestAnimationFrame(rotateGlobe); // Request next frame
+        //         });
+        // }
+
+        // // Pause animation on drag
+        // globeEl.on('plotly_drag', () => {
+        //     isAnimating = false;
+        // });
+        
+        // // Resume animation on mouse up (after drag)
+        // globeEl.addEventListener('mouseup', () => {
+        //     if (!isAnimating) {
+        //         isAnimating = true;
+        //         rotateGlobe();
+        //     }
+        // });
+
+        // // Start the rotation
+        // rotateGlobe();
+
+
+        // 2. SIDEBAR HOVER/GLOW EFFECT
+        const allItems = document.querySelectorAll('.observatory-item, .discovery-item');
+        
+        // Combine all data sources in the *same order* they were added to traces
+        const traceData = [...observatories, ...celestialObjects];
+
+        allItems.forEach(item => {
+            const itemName = item.dataset.name;
+            if (!itemName) return;
+
+            // Find the corresponding trace index
+            const traceIndex = traceData.findIndex(d => d.name === itemName);
+            if (traceIndex === -1) return;
+
+            // Get original styles from the trace *creation* logic
+            const isObservatory = !!observatories.find(d => d.name === itemName);
+            const originalSize = isObservatory ? 18 : 8;
+            const originalLineWidth = isObservatory ? 3 : 1;
+            const originalLineColor = isObservatory ? 'rgba(255, 255, 255, 0.9)' : 'rgba(255, 255, 255, 0.6)';
+
+            // On mouse enter, highlight the map marker
+            item.addEventListener('mouseenter', () => {
+                Plotly.restyle('globe', {
+                    'marker.size': [originalSize * 1.6], // Enlarge
+                    'marker.line.width': [originalLineWidth + 2], // Thicken border
+                    'marker.line.color': ['#ffd700'] // Highlight color (gold)
+                }, [traceIndex]); // Apply only to the matching trace
+            });
+
+            // On mouse leave, revert to original styles
+            item.addEventListener('mouseleave', () => {
+                Plotly.restyle('globe', {
+                    'marker.size': [originalSize],
+                    'marker.line.width': [originalLineWidth],
+                    'marker.line.color': [originalLineColor]
+                }, [traceIndex]);
+            });
+        });
+
     </script>
 </body>
 </html>
