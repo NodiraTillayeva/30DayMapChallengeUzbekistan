@@ -1,4 +1,4 @@
-🎨 Day 24 | Theme: “Where Space Missions Come From”
+🎨 Day 24 | Theme: Uzbekistan's Celestial Legacy
 30 Day Map Challenge 2025 | Theme: Places and their names 
 Author: Mushtariy Akhmadjonova
 
@@ -8,3 +8,4 @@ Celestial namesakes include:
 🌙 Ulugh Beigh lunar crater
 🪨 Asteroids: (2439) Ulugbek, (1381) Uzbekistania, (2170271) Samarkand
 Five observatories. Centuries of stargazing. One legacy.
+
