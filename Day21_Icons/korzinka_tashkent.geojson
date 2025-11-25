@@ -1,0 +1,2833 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-11-24T17:37:15Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31975199",
+        "addr:housenumber": "1А",
+        "addr:street": "Sarabuston ko'chasi",
+        "alt_name": "Корзинка;Корзинка на туркменском",
+        "building": "supermarket",
+        "building:levels": "2",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998781401414",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:ru": "Корзинка - Туркменский",
+        "old_name": "Туркменский базар",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2635269,
+          41.301131
+        ]
+      },
+      "id": "way/31975199"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/32721942",
+        "addr:housenumber": "13",
+        "addr:place": "Жангох (Ц-15) массив",
+        "building": "yes",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:ru": "Корзинка Абай",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2544074,
+          41.3259529
+        ]
+      },
+      "id": "way/32721942"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/44300210",
+        "addr:city": "Ташкент, Узбекитсан",
+        "addr:housenumber": "1А",
+        "addr:place": "Chilonzor E mavzesi",
+        "addr:postcode": "100000",
+        "addr:street": "просп. Бунёдкор",
+        "building": "store",
+        "building:levels": "4",
+        "name": "Korzinka",
+        "old_name": "Metro",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2238264,
+          41.2912326
+        ]
+      },
+      "id": "way/44300210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/82898692",
+        "addr:place": "Sirg'ali 2 daxasi",
+        "addr:street": "Yangi sirg'ali ko'chasi",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "building": "yes",
+        "building:levels": "2",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2278492,
+          41.2131086
+        ]
+      },
+      "id": "way/82898692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/152784016",
+        "addr:street": "Qoratosh ko'chasi",
+        "building": "yes",
+        "building:levels": "2",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:ru": "Корзинка Караташ",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2331207,
+          41.316326
+        ]
+      },
+      "id": "way/152784016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/368240326",
+        "addr:postcode": "100000",
+        "addr:street": "Quloqtepa ko'chasi",
+        "building": "yes",
+        "building:levels": "3",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:ru": "Корзинка - Юнусабад",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2729782,
+          41.3729481
+        ]
+      },
+      "id": "way/368240326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/507455735",
+        "addr:housenumber": "93",
+        "addr:street": "Foziltepa ko'chasi",
+        "building": "yes",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1702851,
+          41.2929697
+        ]
+      },
+      "id": "way/507455735"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/818883300",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "building": "yes",
+        "building:levels": "3",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka Aviasozlar",
+        "name:ru": "Корзинка Авиазозлар",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3449542,
+          41.2889411
+        ]
+      },
+      "id": "way/818883300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1237985252",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "building": "yes",
+        "email": "info@korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "phone": "+998 78 140 14 14",
+        "shop": "supermarket",
+        "website": "https://korzinka.uz/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2392468,
+          41.3490934
+        ]
+      },
+      "id": "way/1237985252"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1578023106",
+        "addr:housenumber": "57",
+        "addr:street": "Kichik Halqa yo'li",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2731033,
+          41.3379766
+        ]
+      },
+      "id": "node/1578023106"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1807867306",
+        "addr:street": "Kichik Halqa yo'li",
+        "branch": "(Aeroport)",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka (Airport)",
+        "name:ru": "Корзинка (Аэропорт)",
+        "note": "Не менять тэги и название...",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2626588,
+          41.2699707
+        ]
+      },
+      "id": "node/1807867306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1891948039",
+        "addr:housenumber": "11 B",
+        "addr:street": "Navoiy shoh ko'chasi",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "internet_access": "wlan",
+        "level": "0",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2759176,
+          41.3183763
+        ]
+      },
+      "id": "node/1891948039"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3480507874",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "building": "store",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3864233,
+          41.3593282
+        ]
+      },
+      "id": "node/3480507874"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3725668715",
+        "brand": "Korzinka",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1569716,
+          41.2589766
+        ]
+      },
+      "id": "node/3725668715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4074608804",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "name:uz": "KORZINKA.UZ Sodiq Azimov kõchasi",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2866185,
+          41.3020509
+        ]
+      },
+      "id": "node/4074608804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4111759490",
+        "addr:city": "Toshkent",
+        "addr:housenumber": "9",
+        "addr:street": "Шохжахон улица",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "check_date:opening_hours": "2025-08-30",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:ru": "Корзинка (Ракат)",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2430728,
+          41.2879833
+        ]
+      },
+      "id": "node/4111759490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4253911591",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3635269,
+          41.3321398
+        ]
+      },
+      "id": "node/4253911591"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4298642205",
+        "addr:housenumber": "6",
+        "addr:street": "Bobur ko'chasi",
+        "check_date": "2023-02-24",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2494772,
+          41.2978599
+        ]
+      },
+      "id": "node/4298642205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4496283593",
+        "addr:street": "Ahmad Donish ko'chasi",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2959127,
+          41.3744682
+        ]
+      },
+      "id": "node/4496283593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4617839207",
+        "addr:city": "Ташкент",
+        "addr:housenumber": "7",
+        "addr:street": "Олтинтепа улица",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "internet_access": "wlan",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3283839,
+          41.3111501
+        ]
+      },
+      "id": "node/4617839207"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4697811691",
+        "addr:housenumber": "40",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka.uz",
+        "name:ru": "Корзинка Алайский",
+        "opening_hours": "Mo-Su 08:00-19:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2850299,
+          41.319117
+        ]
+      },
+      "id": "node/4697811691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5162627233",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "Aglesey Food",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3191421,
+          41.3721892
+        ]
+      },
+      "id": "node/5162627233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5263632823",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.212153,
+          41.2830713
+        ]
+      },
+      "id": "node/5263632823"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5475853221",
+        "brand": "Korzinka",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3430008,
+          41.3276071
+        ]
+      },
+      "id": "node/5475853221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5643126321",
+        "addr:street": "So'galli ota ko'chasi",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1647203,
+          41.262145
+        ]
+      },
+      "id": "node/5643126321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6334746285",
+        "name": "Korzinka Beruniy",
+        "name:en": "Korzinka Beruniy",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2061836,
+          41.3463872
+        ]
+      },
+      "id": "node/6334746285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6358688985",
+        "addr:housenumber": "13A",
+        "addr:street": "Sariko'l ko'chasi",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "payment:visa": "yes",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2872653,
+          41.2773024
+        ]
+      },
+      "id": "node/6358688985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6380077386",
+        "addr:housenumber": "19-Б",
+        "addr:street": "So'galli ota ko'chasi",
+        "name": "Korzinka.uz - Algoritm",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1586933,
+          41.266625
+        ]
+      },
+      "id": "node/6380077386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6380077485",
+        "name": "Korzinka.uz - Kamolon",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2388484,
+          41.3103035
+        ]
+      },
+      "id": "node/6380077485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6380077585",
+        "addr:street": "Kukcha Darvoza ko'chasi",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1619211,
+          41.3078855
+        ]
+      },
+      "id": "node/6380077585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6393717366",
+        "addr:housenumber": "15",
+        "addr:street": "Yunus Ota ko'chasi",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3113831,
+          41.3725646
+        ]
+      },
+      "id": "node/6393717366"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6393717370",
+        "addr:street": "Кургантепа улица",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2112737,
+          41.1993869
+        ]
+      },
+      "id": "node/6393717370"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6780909586",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2383149,
+          41.3091139
+        ]
+      },
+      "id": "node/6780909586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7016337686",
+        "addr:housenumber": "21a",
+        "addr:street": "Lutfiy ko'chasi",
+        "name": "Korzinka.uz - Oazis",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1859597,
+          41.2858778
+        ]
+      },
+      "id": "node/7016337686"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7115964485",
+        "addr:housenumber": "21a",
+        "addr:street": "Lutfiy ko'chasi",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1851399,
+          41.2851856
+        ]
+      },
+      "id": "node/7115964485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8261291814",
+        "addr:housenumber": "3A",
+        "addr:place": "Rioziy mavzesi",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "check_date": "2023-08-11",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "internet_access": "wlan",
+        "level": "1",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3301609,
+          41.312752
+        ]
+      },
+      "id": "node/8261291814"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8457001317",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3338024,
+          41.2404111
+        ]
+      },
+      "id": "node/8457001317"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8656471319",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1753693,
+          41.3360516
+        ]
+      },
+      "id": "node/8656471319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9047356636",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2059011,
+          41.346396
+        ]
+      },
+      "id": "node/9047356636"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9047356638",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.342156,
+          41.2993442
+        ]
+      },
+      "id": "node/9047356638"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9047356640",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.22371,
+          41.259885
+        ]
+      },
+      "id": "node/9047356640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9047356641",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.375405,
+          41.255542
+        ]
+      },
+      "id": "node/9047356641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9047356643",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2128935,
+          41.2073123
+        ]
+      },
+      "id": "node/9047356643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9749260990",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1959762,
+          41.2806131
+        ]
+      },
+      "id": "node/9749260990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9749260993",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2684609,
+          41.3413839
+        ]
+      },
+      "id": "node/9749260993"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9749260994",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2917353,
+          41.3067593
+        ]
+      },
+      "id": "node/9749260994"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9749260995",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2044392,
+          41.2120928
+        ]
+      },
+      "id": "node/9749260995"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9749260996",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.304323,
+          41.366011
+        ]
+      },
+      "id": "node/9749260996"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9749260997",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3142708,
+          41.3122082
+        ]
+      },
+      "id": "node/9749260997"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9749260998",
+        "addr:housenumber": "71",
+        "addr:place": "Киёт (Ц-5) массив",
+        "addr:street": "Sharof Rashidov ko'chasi",
+        "check_date": "2023-07-29",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "level": "0",
+        "name": "Korzinka",
+        "name:ru": "Корзинка",
+        "name:uz": "Korzinka",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2745113,
+          41.3262049
+        ]
+      },
+      "id": "node/9749260998"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9749261000",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.175592,
+          41.272332
+        ]
+      },
+      "id": "node/9749261000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9749261001",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1538984,
+          41.2638238
+        ]
+      },
+      "id": "node/9749261001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9749261004",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.323468,
+          41.335937
+        ]
+      },
+      "id": "node/9749261004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9749261006",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.238345,
+          41.347731
+        ]
+      },
+      "id": "node/9749261006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9749261007",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 15",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2804004,
+          41.3760892
+        ]
+      },
+      "id": "node/9749261007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9749261008",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3338612,
+          41.3552674
+        ]
+      },
+      "id": "node/9749261008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9843895319",
+        "branch": "Mahalla",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz/",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2924121,
+          41.3099879
+        ]
+      },
+      "id": "node/9843895319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207315102",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://instagram.com/korzinkauz;https://korzinka.uz;https://www.youtube.com/channel/UCTlK86ffEvRSangeKlZ8pzQ/featured",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2147147,
+          41.211431
+        ]
+      },
+      "id": "node/10207315102"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207315103",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.390083,
+          41.348889
+        ]
+      },
+      "id": "node/10207315103"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207315106",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2812881,
+          41.3282068
+        ]
+      },
+      "id": "node/10207315106"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207315108",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.349941,
+          41.273912
+        ]
+      },
+      "id": "node/10207315108"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207315109",
+        "contact:facebook": "https://www.facebook.com/korzinkauz/",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.176665,
+          41.277863
+        ]
+      },
+      "id": "node/10207315109"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207315110",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://instagram.com/korzinkauz;https://korzinka.uz;https://www.youtube.com/channel/UCTlK86ffEvRSangeKlZ8pzQ/featured",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2211359,
+          41.2234962
+        ]
+      },
+      "id": "node/10207315110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207315111",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://instagram.com/korzinkauz;https://korzinka.uz;https://www.youtube.com/channel/UCTlK86ffEvRSangeKlZ8pzQ/featured",
+        "name": "Korzinka",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2112815,
+          41.2711512
+        ]
+      },
+      "id": "node/10207315111"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207315112",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2744422,
+          41.2959657
+        ]
+      },
+      "id": "node/10207315112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207315113",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://instagram.com/korzinkauz;https://korzinka.uz;https://www.youtube.com/channel/UCTlK86ffEvRSangeKlZ8pzQ/featured",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2463595,
+          41.2696033
+        ]
+      },
+      "id": "node/10207315113"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207315114",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2231601,
+          41.3306093
+        ]
+      },
+      "id": "node/10207315114"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207315115",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.179264,
+          41.3220852
+        ]
+      },
+      "id": "node/10207315115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207315116",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://fb.com/korzinkauz",
+        "contact:instagram": "https://instagram.com/korzinkauz/",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1953914,
+          41.3296931
+        ]
+      },
+      "id": "node/10207315116"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207350517",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3594041,
+          41.3415169
+        ]
+      },
+      "id": "node/10207350517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207350519",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2076767,
+          41.223132
+        ]
+      },
+      "id": "node/10207350519"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10207350520",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1830641,
+          41.2625676
+        ]
+      },
+      "id": "node/10207350520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10277648693",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2883104,
+          41.3508822
+        ]
+      },
+      "id": "node/10277648693"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10277648694",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.facebook.com/korzinkabiz",
+        "contact:instagram": "https://www.instagram.com/korzinkabiz/",
+        "contact:phone": "+998 78 777 14 14;+998 93 123 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Sa 08:00-22:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkabiz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.214243,
+          41.241457
+        ]
+      },
+      "id": "node/10277648694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10575982073",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "name": "Korzinka",
+        "opening_hours": "Har kuni 08:00 dan 24:00 gacha",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2364717,
+          41.3484015
+        ]
+      },
+      "id": "node/10575982073"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10704075776",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "name": "Korzinka",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2262212,
+          41.3594774
+        ]
+      },
+      "id": "node/10704075776"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10829005994",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:facebook": "https://fb.com/korzinkauz",
+        "contact:instagram": "https://instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "contact:youtube": "https://www.youtube.com/@korzinkauzb/videos",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2028823,
+          41.2888856
+        ]
+      },
+      "id": "node/10829005994"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10829005996",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "contact:youtube": "https://www.youtube.com/@korzinkauzb/videos",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2650075,
+          41.3348117
+        ]
+      },
+      "id": "node/10829005996"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10965154691",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3586287,
+          41.2914274
+        ]
+      },
+      "id": "node/10965154691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10965154692",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2239925,
+          41.2911875
+        ]
+      },
+      "id": "node/10965154692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10965154693",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2232763,
+          41.3377549
+        ]
+      },
+      "id": "node/10965154693"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10965154694",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Fr 09:00-13:00,14:00-18:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2716876,
+          41.2777058
+        ]
+      },
+      "id": "node/10965154694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10965177409",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1708499,
+          41.270739
+        ]
+      },
+      "id": "node/10965177409"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11301929614",
+        "brand": "Korzinka",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2057238,
+          41.3635155
+        ]
+      },
+      "id": "node/11301929614"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11301929616",
+        "brand": "Korzinka",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1750824,
+          41.2983113
+        ]
+      },
+      "id": "node/11301929616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11301929618",
+        "brand": "Korzinka",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3379754,
+          41.3069786
+        ]
+      },
+      "id": "node/11301929618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11340981558",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2277708,
+          41.2044758
+        ]
+      },
+      "id": "node/11340981558"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11340999143",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.249723,
+          41.3314621
+        ]
+      },
+      "id": "node/11340999143"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11341009374",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "24/7",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2564161,
+          41.2958523
+        ]
+      },
+      "id": "node/11341009374"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11341014454",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1906878,
+          41.337728
+        ]
+      },
+      "id": "node/11341014454"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11357817856",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2802414,
+          41.3601115
+        ]
+      },
+      "id": "node/11357817856"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11357817857",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2739756,
+          41.3634793
+        ]
+      },
+      "id": "node/11357817857"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11357817858",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2628712,
+          41.3262588
+        ]
+      },
+      "id": "node/11357817858"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11357817859",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3766827,
+          41.2464382
+        ]
+      },
+      "id": "node/11357817859"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11357817860",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1643932,
+          41.3344118
+        ]
+      },
+      "id": "node/11357817860"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11357817861",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2140174,
+          41.3699007
+        ]
+      },
+      "id": "node/11357817861"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11455129821",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2656148,
+          41.3693963
+        ]
+      },
+      "id": "node/11455129821"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11843731624",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://fb.com/korzinkauz",
+        "contact:instagram": "https://instagram.com/korzinkauz",
+        "contact:linkedin": "https://linkedin.com/company/korzinka",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:twitter": "https://twitter.com/KorzinkaUzbek",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.292751,
+          41.337815
+        ]
+      },
+      "id": "node/11843731624"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11843731625",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://fb.com/korzinkauz",
+        "contact:instagram": "https://instagram.com/korzinkauz",
+        "contact:linkedin": "https://linkedin.com/company/korzinka",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:twitter": "https://twitter.com/KorzinkaUzbek",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3246424,
+          41.3275922
+        ]
+      },
+      "id": "node/11843731625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11929848379",
+        "addr:street": "Munis ko'chasi",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:ru": "Корзинка Куйлюк",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.310903,
+          41.2448519
+        ]
+      },
+      "id": "node/11929848379"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11931542774",
+        "addr:street": "Farg'ona Yo'li",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "building:levels": "2",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "name:en": "Korzinka.uz (Fayzabad)",
+        "name:ru": "korzinka.uz (Файзабад)",
+        "opening_hours": "24/7",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3197032,
+          41.2565989
+        ]
+      },
+      "id": "node/11931542774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12055184457",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://fb.com/korzinkauz",
+        "contact:instagram": "https://instagram.com/korzinkauz",
+        "contact:linkedin": "https://linkedin.com/company/korzinka",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:twitter": "https://twitter.com/KorzinkaUzbek",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2780739,
+          41.3342669
+        ]
+      },
+      "id": "node/12055184457"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12055184459",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://fb.com/korzinkauz",
+        "contact:instagram": "https://instagram.com/korzinkauz",
+        "contact:linkedin": "https://linkedin.com/company/korzinka",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:twitter": "https://twitter.com/KorzinkaUzbek",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2964363,
+          41.2902444
+        ]
+      },
+      "id": "node/12055184459"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12055184460",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://fb.com/korzinkauz",
+        "contact:instagram": "https://instagram.com/korzinkauz",
+        "contact:linkedin": "https://linkedin.com/company/korzinka",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:twitter": "https://twitter.com/KorzinkaUzbek",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "name:en": "Korzinka",
+        "name:ru": "Корзинка",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2950362,
+          41.3319588
+        ]
+      },
+      "id": "node/12055184460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12067789785",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "24/7",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3014217,
+          41.3165468
+        ]
+      },
+      "id": "node/12067789785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12553915516",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "24/7",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3462825,
+          41.3460678
+        ]
+      },
+      "id": "node/12553915516"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12553915517",
+        "contact:email": "info@korzinka.uz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "ANGLESEY FOOD",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1945956,
+          41.2139592
+        ]
+      },
+      "id": "node/12553915517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12827684101",
+        "addr:housenumber": "17",
+        "addr:street": "Asaka ko'chasi",
+        "contact:instagram": "korzinkauz",
+        "name": "Korzinka Mahalla",
+        "opening_hours": "24/7",
+        "phone": "+998781401414",
+        "shop": "supermarket",
+        "website": "https://korzinka.uz/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.300244,
+          41.3167291
+        ]
+      },
+      "id": "node/12827684101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12918677601",
+        "name": "Korzinka",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2745816,
+          41.3643348
+        ]
+      },
+      "id": "node/12918677601"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12995906560",
+        "brand": "Korzinka",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinkauzb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2047548,
+          41.3635238
+        ]
+      },
+      "id": "node/12995906560"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13154436324",
+        "addr:housenumber": "52",
+        "addr:street": "Себзар улица",
+        "brand": "Korzinka",
+        "brand:wikidata": "Q110120894",
+        "contact:email": "info@korzinka.uz",
+        "contact:facebook": "https://www.fb.com/korzinkauz",
+        "contact:instagram": "https://www.instagram.com/korzinkauz",
+        "contact:phone": "+998 78 140 14 14",
+        "contact:website": "https://korzinka.uz/",
+        "name": "Korzinka",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "operator": "«Anglesey Food»",
+        "shop": "supermarket",
+        "telegram": "https://t.me/korzinka_uz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.254675,
+          41.3365533
+        ]
+      },
+      "id": "node/13154436324"
+    }
+  ]
+}
