@@ -1,24 +1,61 @@
-🛰️ Day 25: Orbital Debris Density (Uzbekistan Airspace)
+# 30 Day Map Challenge – Uzbekistan Community Repository
+<img width="1970" height="1176" alt="image" src="https://github.com/user-attachments/assets/433b0bbb-3494-4221-af65-d25dc0074d38" />
 
-Project Summary
 
-An interactive, high-tech visualization for the 30 Day Map Challenge (Day 25: Movement). It maps the simulated density of Orbital Debris (space junk) over Uzbekistan airspace.
+Welcome to the **30 Day Map Challenge Uzbekistan Community Repository**! 🎉  
 
-The map uses **deck.gl** with the **H3 Hexagon Layer** to visualize debris concentration via extruded, color-coded hex cells (taller/redder = higher density/risk).
+This is a collaborative space where participants from **Uzbekistan** can share their maps, code, and workflows for the global [30 Day Map Challenge](https://30daymapchallenge.com/).  
+Our aim is to showcase local talent, datasets, and perspectives while building a community archive of creative geospatial work.  
 
-Key Features
+---
 
-* **Visualization:** 3D Hexbin aggregation (**H3 Lvl 3**) showing debris density.
-* **Risk Display:** Color-coded risk from Low (cyan) to Critical (red).
-* **Key Metrics:** Displays *Total LEO Objects* (36,500), *Objects Over Region* (4,183), and a *Collision Risk Index* (0.73).
-* **Interface:** Futuristic, low-light radar aesthetic.
+## 📅 Structure
+The repository is organized by day and theme:  
+/day01_points/
+/day02_lines/
+/day03_polygons/
+/day04_hexagons/
+/day05_journey/
+/dayXX_theme/
+/common-datasets/
 
-Technology
 
-* **Mapping:** `deck.gl` (WebGL), `MapLibre GL JS`.
-* **Geospatial:** `H3-JS` for hexagonal indexing.
-* **Data:** Simulated Orbital Debris derived from TLE principles.
+Each folder should include:  
+- **Map image**: `username_dayXX.png` or `.jpg`  
+- **Code**: Jupyter notebook, R script, or QGIS/ArcGIS project (inside `/code/`)  
+- **README.md**: Short description of dataset, tools, and method  
 
-Setup
-Open `day25.html` in a modern web browser. (Standalone HTML project).
+---
+
+## ✨ How to Contribute
+1. **Fork** this repository.  
+2. Add your map and code in the correct folder.  
+3. Commit your changes with a clear message (e.g., `Add day01 map by Nodira`).  
+4. Open a **Pull Request (PR)**.  
+
+---
+
+## 📌 Contribution Guidelines
+- Please **do not upload large raw datasets** (e.g., GeoTIFF, shapefiles). Instead, provide a link to the source.  
+- Maps should be your own work and respect data copyright rules.  
+- Be creative and have fun! 🌍  
+
+---
+
+## 📖 License
+- Code in this repository is released under the **MIT License**.  
+- Map images may be shared under **Creative Commons CC-BY 4.0**, with proper credit to authors.  
+
+---
+
+## 💡 Why this repo?
+By contributing, you are helping to:  
+- Build an open archive of geospatial creativity for **Uzbekistan**.  
+- Inspire others with different mapping techniques and tools.  
+- Strengthen the local mapping and open data community.  
+
+---
+
+👩‍💻 **Happy Mapping!**  
+Let’s make Uzbekistan visible in the global geospatial challenge 🌐✨
 
