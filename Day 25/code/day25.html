@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbital Debris Over Uzbekistan - Day 25 Hexagons</title>
+    <script src="https://unpkg.com/deck.gl@8.9.33/dist.min.js"></script>
+    <script src="https://unpkg.com/h3-js@4.1.0/dist/h3-js.umd.js"></script>
+    <script src="https://unpkg.com/maplibre-gl@3.3.1/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@3.3.1/dist/maplibre-gl.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-primary: #030810;
+            --bg-secondary: #0a1628;
+            --accent-cyan: #00f5ff;
+            --accent-orange: #ff6b35;
+            --accent-orange-bright: #ff8c42;
+            --accent-red: #ff2d55;
+            --accent-yellow: #ffd000;
+            --accent-green: #00ff88;
+            --text-primary: #ffffff;
+            --text-bright: #00ffcc;
+            --text-dim: #6a8a9a;
+            --grid-color: rgba(0, 245, 255, 0.06);
+            --glow-cyan: 0 0 20px rgba(0, 245, 255, 0.6), 0 0 40px rgba(0, 245, 255, 0.3);
+            --glow-orange: 0 0 15px rgba(255, 107, 53, 0.6), 0 0 30px rgba(255, 107, 53, 0.3);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            overflow: hidden;
+            height: 100vh;
+        }
+        
+        /* Radar grid background */
+        .radar-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 50% 50%, rgba(0, 245, 255, 0.02) 0%, transparent 70%),
+                linear-gradient(0deg, transparent 49.5%, var(--grid-color) 50%, transparent 50.5%),
+                linear-gradient(90deg, transparent 49.5%, var(--grid-color) 50%, transparent 50.5%);
+            background-size: 100% 100%, 60px 60px, 60px 60px;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        /* Scan line animation */
+        .scan-line {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
+            opacity: 0.3;
+            animation: scan 5s linear infinite;
+            pointer-events: none;
+            z-index: 2;
+        }
+        
+        @keyframes scan {
+            0% { top: 0; opacity: 0.3; }
+            50% { opacity: 0.15; }
+            100% { top: 100%; opacity: 0.3; }
+        }
+        
+        /* Debris particles */
+        .debris-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 3;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--accent-cyan);
+            border-radius: 50%;
+            box-shadow: 0 0 4px var(--accent-cyan);
+            animation: float-particle linear infinite;
+        }
+        
+        @keyframes float-particle {
+            0% { transform: translateX(-100px) translateY(0); opacity: 0; }
+            10% { opacity: 0.8; }
+            90% { opacity: 0.8; }
+            100% { transform: translateX(calc(100vw + 100px)) translateY(-80px); opacity: 0; }
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: linear-gradient(180deg, rgba(3, 8, 16, 0.98) 0%, rgba(3, 8, 16, 0.85) 80%, transparent 100%);
+            padding: 12px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .title-block h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--accent-cyan);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 0 0 15px rgba(0, 245, 255, 0.8), 0 0 30px rgba(0, 245, 255, 0.4);
+            margin-bottom: 3px;
+        }
+        
+        .title-block .subtitle {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.68rem;
+            color: var(--text-bright);
+            letter-spacing: 2px;
+            font-weight: 400;
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+        }
+        
+        .status-indicators {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+        }
+        
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--text-bright);
+            text-shadow: 0 0 8px rgba(0, 255, 204, 0.4);
+        }
+        
+        .status-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        .status-dot.live {
+            background: var(--accent-green);
+            box-shadow: 0 0 10px var(--accent-green);
+        }
+        
+        .status-dot.warning {
+            background: var(--accent-orange);
+            box-shadow: 0 0 10px var(--accent-orange);
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.85); }
+        }
+        
+        /* Map container */
+        #map-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        
+        #map {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        
+        #deck-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            background: transparent !important;
+        }
+        
+        #deck-canvas canvas {
+            background: transparent !important;
+        }
+        
+        .map-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(3, 8, 16, 0.35);
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .map-color-adjust {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, 
+                rgba(0, 40, 80, 0.15) 0%, 
+                rgba(0, 20, 40, 0.1) 50%,
+                rgba(0, 40, 80, 0.15) 100%
+            );
+            pointer-events: none;
+            z-index: 2;
+        }
+        
+        .map-vignette {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at 50% 50%,
+                transparent 30%,
+                rgba(3, 8, 16, 0.6) 100%
+            );
+            pointer-events: none;
+            z-index: 3;
+        }
+        
+        /* Left Panel - Stats */
+        .stats-panel {
+            position: fixed;
+            left: 15px;
+            top: 75px;
+            width: 240px;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .panel-card {
+            background: rgba(10, 22, 40, 0.92);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            border-radius: 3px;
+            padding: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .panel-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: var(--accent-cyan);
+            box-shadow: 0 0 8px var(--accent-cyan);
+        }
+        
+        .panel-card.warning::before {
+            background: var(--accent-orange);
+            box-shadow: 0 0 8px var(--accent-orange);
+        }
+        
+        .panel-card.danger::before {
+            background: var(--accent-red);
+            box-shadow: 0 0 8px var(--accent-red);
+        }
+        
+        .card-label {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.6rem;
+            color: var(--accent-cyan);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            text-shadow: 0 0 8px rgba(0, 245, 255, 0.5);
+        }
+        
+        .card-value {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            line-height: 1;
+            text-shadow: 0 0 15px rgba(0, 245, 255, 0.6);
+        }
+        
+        .panel-card.warning .card-value {
+            color: var(--accent-orange);
+            text-shadow: 0 0 15px rgba(255, 107, 53, 0.6);
+        }
+        
+        .panel-card.danger .card-value {
+            color: var(--accent-red);
+            text-shadow: 0 0 15px rgba(255, 45, 85, 0.6);
+        }
+        
+        .card-unit {
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            margin-top: 3px;
+        }
+        
+        /* Right Panel */
+        .info-panel {
+            position: fixed;
+            right: 15px;
+            top: 75px;
+            width: 230px;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .legend-card {
+            background: rgba(10, 22, 40, 0.92);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            border-radius: 3px;
+            padding: 12px;
+        }
+        
+        .legend-title {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.62rem;
+            color: var(--accent-orange);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid rgba(255, 107, 53, 0.3);
+            text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
+        }
+        
+        .legend-gradient {
+            height: 12px;
+            border-radius: 2px;
+            background: linear-gradient(90deg, 
+                #0a2463 0%,
+                #1e6091 25%,
+                #00f5ff 50%,
+                #ff8c42 75%,
+                #ff2d55 100%
+            );
+            margin-bottom: 6px;
+            box-shadow: 0 0 8px rgba(0, 245, 255, 0.3);
+        }
+        
+        .legend-labels {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.55rem;
+            color: var(--text-bright);
+        }
+        
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(0, 245, 255, 0.08);
+            font-size: 0.72rem;
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        
+        .info-label {
+            color: var(--text-dim);
+        }
+        
+        .info-value {
+            font-family: 'Share Tech Mono', monospace;
+            color: var(--accent-cyan);
+            text-shadow: 0 0 6px rgba(0, 245, 255, 0.4);
+        }
+        
+        /* LEO Traffic Classes */
+        .traffic-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 6px;
+        }
+        
+        .traffic-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.7rem;
+        }
+        
+        .traffic-icon {
+            width: 22px;
+            height: 22px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+        
+        .traffic-icon.operational {
+            background: rgba(0, 255, 136, 0.15);
+            border: 1px solid var(--accent-green);
+            box-shadow: 0 0 6px rgba(0, 255, 136, 0.3);
+        }
+        
+        .traffic-icon.fragmentation {
+            background: rgba(255, 107, 53, 0.15);
+            border: 1px solid var(--accent-orange);
+            box-shadow: 0 0 6px rgba(255, 107, 53, 0.3);
+        }
+        
+        .traffic-icon.rocket {
+            background: rgba(255, 45, 85, 0.15);
+            border: 1px solid var(--accent-red);
+            box-shadow: 0 0 6px rgba(255, 45, 85, 0.3);
+        }
+        
+        .traffic-info {
+            flex: 1;
+        }
+        
+        .traffic-name {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+        
+        .traffic-count {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.6rem;
+            color: var(--text-dim);
+        }
+        
+        /* Orbital Families Panel */
+        .orbital-families {
+            position: fixed;
+            bottom: 240px;
+            right: 15px;
+            width: 230px;
+            background: rgba(10, 22, 40, 0.92);
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            border-radius: 3px;
+            padding: 12px;
+            z-index: 100;
+        }
+        
+        .orbital-title {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.62rem;
+            color: var(--accent-orange);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
+        }
+        
+        .orbital-track-container {
+            position: relative;
+            height: 80px;
+            background: rgba(0, 20, 40, 0.5);
+            border-radius: 3px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 245, 255, 0.15);
+        }
+        
+        .orbital-track-container svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .orbit-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        
+        .orbit-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.55rem;
+            font-family: 'Share Tech Mono', monospace;
+        }
+        
+        .orbit-legend-dot {
+            width: 8px;
+            height: 3px;
+            border-radius: 1px;
+        }
+        
+        /* World Map Inset */
+        .world-inset {
+            position: fixed;
+            bottom: 80px;
+            right: 15px;
+            width: 230px;
+            height: 140px;
+            background: rgba(10, 22, 40, 0.95);
+            border: 1px solid rgba(0, 245, 255, 0.25);
+            border-radius: 3px;
+            z-index: 100;
+            overflow: hidden;
+            padding: 10px;
+        }
+        
+        .world-inset-title {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.55rem;
+            color: var(--accent-orange);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            text-shadow: 0 0 8px rgba(255, 107, 53, 0.5);
+        }
+        
+        .world-map-container {
+            width: 100%;
+            height: calc(100% - 20px);
+            position: relative;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        
+        #world-map-canvas {
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Uzbekistan Info Box */
+        .region-label {
+            position: fixed;
+            bottom: 80px;
+            left: 15px;
+            z-index: 100;
+            background: rgba(255, 107, 53, 0.08);
+            border: 1px solid rgba(255, 107, 53, 0.35);
+            border-left: 3px solid var(--accent-orange);
+            border-radius: 3px;
+            padding: 10px 14px;
+            max-width: 240px;
+            box-shadow: 0 0 15px rgba(255, 107, 53, 0.15);
+        }
+        
+        .region-label h3 {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.68rem;
+            color: var(--accent-orange);
+            letter-spacing: 1.5px;
+            margin-bottom: 5px;
+            text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
+        }
+        
+        .region-label p {
+            font-size: 0.68rem;
+            color: var(--text-dim);
+            line-height: 1.4;
+        }
+        
+        /* Bottom Panel - Coordinates */
+        .coords-panel {
+            position: fixed;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+            background: rgba(10, 22, 40, 0.92);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            border-radius: 3px;
+            padding: 8px 20px;
+            display: flex;
+            gap: 25px;
+            font-family: 'Share Tech Mono', monospace;
+        }
+        
+        .coord-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .coord-label {
+            font-size: 0.58rem;
+            color: var(--accent-orange);
+            letter-spacing: 1px;
+            text-shadow: 0 0 6px rgba(255, 107, 53, 0.4);
+        }
+        
+        .coord-value {
+            font-size: 0.78rem;
+            color: var(--accent-cyan);
+            text-shadow: 0 0 8px rgba(0, 245, 255, 0.5);
+        }
+        
+        /* Tooltip */
+        .hex-tooltip {
+            position: absolute;
+            z-index: 200;
+            background: rgba(3, 8, 16, 0.98);
+            border: 1px solid var(--accent-cyan);
+            border-radius: 3px;
+            padding: 10px 14px;
+            pointer-events: none;
+            font-family: 'Share Tech Mono', monospace;
+            box-shadow: 0 0 20px rgba(0, 245, 255, 0.4), 0 8px 30px rgba(0, 0, 0, 0.5);
+            min-width: 180px;
+        }
+        
+        .tooltip-title {
+            font-size: 0.62rem;
+            color: var(--accent-orange);
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            text-shadow: 0 0 8px rgba(255, 107, 53, 0.5);
+        }
+        
+        .tooltip-value {
+            font-size: 1.3rem;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+        }
+        
+        .tooltip-detail {
+            font-size: 0.62rem;
+            color: var(--text-dim);
+            margin-top: 3px;
+        }
+        
+        .tooltip-bar {
+            height: 3px;
+            background: rgba(0, 245, 255, 0.15);
+            border-radius: 2px;
+            margin-top: 8px;
+            overflow: hidden;
+        }
+        
+        .tooltip-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-orange));
+            border-radius: 2px;
+        }
+        
+        /* Corner decorations */
+        .corner-decor {
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(0, 245, 255, 0.25);
+            pointer-events: none;
+            z-index: 50;
+        }
+        
+        .corner-decor.top-left { top: 60px; left: 8px; border-right: none; border-bottom: none; }
+        .corner-decor.top-right { top: 60px; right: 8px; border-left: none; border-bottom: none; }
+        .corner-decor.bottom-left { bottom: 8px; left: 8px; border-right: none; border-top: none; }
+        .corner-decor.bottom-right { bottom: 8px; right: 8px; border-left: none; border-top: none; }
+    </style>
+</head>
+<body>
+    <div class="radar-bg"></div>
+    <div class="scan-line"></div>
+    <div class="debris-particles" id="particles"></div>
+    
+    <div class="corner-decor top-left"></div>
+    <div class="corner-decor top-right"></div>
+    <div class="corner-decor bottom-left"></div>
+    <div class="corner-decor bottom-right"></div>
+    
+    <header class="header">
+        <div class="title-block">
+            <h1>⬡ Orbital Debris Density</h1>
+            <p class="subtitle">Hexbin Analysis • Uzbekistan Airspace (37°N - 46°N)</p>
+        </div>
+        <div class="status-indicators">
+            <div class="status-item">
+                <span class="status-dot live"></span>
+                <span>TRACKING ACTIVE</span>
+            </div>
+            <div class="status-item">
+                <span class="status-dot warning"></span>
+                <span>HIGH DENSITY ZONES</span>
+            </div>
+        </div>
+    </header>
+    
+    <div id="map-container">
+        <div id="map"></div>
+        <div class="map-overlay"></div>
+        <div class="map-color-adjust"></div>
+        <div class="map-vignette"></div>
+        <div id="deck-canvas"></div>
+    </div>
+    
+    <aside class="stats-panel">
+        <div class="panel-card">
+            <div class="card-label">Total Tracked Objects</div>
+            <div class="card-value" id="total-objects">36,500</div>
+            <div class="card-unit">in Low Earth Orbit</div>
+        </div>
+        <div class="panel-card warning">
+            <div class="card-label">Objects Over Region</div>
+            <div class="card-value" id="region-objects">4,183</div>
+            <div class="card-unit">crossing 37°-46°N band</div>
+        </div>
+        <div class="panel-card danger">
+            <div class="card-label">Peak Density</div>
+            <div class="card-value" id="peak-density">7</div>
+            <div class="card-unit">objects per hex cell</div>
+        </div>
+        <div class="panel-card">
+            <div class="card-label">Collision Risk Index</div>
+            <div class="card-value" id="risk-index">0.73</div>
+            <div class="card-unit">normalized score</div>
+        </div>
+    </aside>
+    
+    <aside class="info-panel">
+        <div class="legend-card">
+            <div class="legend-title">Debris Density</div>
+            <div class="legend-gradient"></div>
+            <div class="legend-labels">
+                <span>Low</span>
+                <span>Medium</span>
+                <span>High</span>
+                <span>Critical</span>
+            </div>
+        </div>
+        <div class="legend-card">
+            <div class="legend-title">Data Parameters</div>
+            <div class="info-item">
+                <span class="info-label">Resolution</span>
+                <span class="info-value">H3 Lvl 3</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Altitude Range</span>
+                <span class="info-value">200-2000 km</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Inclination Filter</span>
+                <span class="info-value">&gt;37°</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Data Source</span>
+                <span class="info-value">CelesTrak TLE</span>
+            </div>
+        </div>
+        <div class="legend-card">
+            <div class="legend-title">LEO Traffic Classes</div>
+            <div class="traffic-legend">
+                <div class="traffic-item">
+                    <div class="traffic-icon operational">🛰</div>
+                    <div class="traffic-info">
+                        <div class="traffic-name">Operational Satellites</div>
+                        <div class="traffic-count">~8,200 active</div>
+                    </div>
+                </div>
+                <div class="traffic-item">
+                    <div class="traffic-icon fragmentation">💥</div>
+                    <div class="traffic-info">
+                        <div class="traffic-name">Fragmentation Debris</div>
+                        <div class="traffic-count">Fengyun/Iridium ~6,800</div>
+                    </div>
+                </div>
+                <div class="traffic-item">
+                    <div class="traffic-icon rocket">🚀</div>
+                    <div class="traffic-info">
+                        <div class="traffic-name">Rocket Bodies</div>
+                        <div class="traffic-count">~2,100 tracked</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Orbital Families Panel -->
+    <div class="orbital-families">
+        <div class="orbital-title">Orbital Inclination Tracks</div>
+        <div class="orbital-track-container">
+            <svg viewBox="0 0 210 80" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                    <linearGradient id="trackGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:transparent"/>
+                        <stop offset="30%" style="stop-color:#00f5ff"/>
+                        <stop offset="70%" style="stop-color:#00f5ff"/>
+                        <stop offset="100%" style="stop-color:transparent"/>
+                    </linearGradient>
+                    <linearGradient id="trackGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:transparent"/>
+                        <stop offset="30%" style="stop-color:#ff6b35"/>
+                        <stop offset="70%" style="stop-color:#ff6b35"/>
+                        <stop offset="100%" style="stop-color:transparent"/>
+                    </linearGradient>
+                    <linearGradient id="trackGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:transparent"/>
+                        <stop offset="30%" style="stop-color:#00ff88"/>
+                        <stop offset="70%" style="stop-color:#00ff88"/>
+                        <stop offset="100%" style="stop-color:transparent"/>
+                    </linearGradient>
+                    <linearGradient id="trackGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:transparent"/>
+                        <stop offset="30%" style="stop-color:#ffd000"/>
+                        <stop offset="70%" style="stop-color:#ffd000"/>
+                        <stop offset="100%" style="stop-color:transparent"/>
+                    </linearGradient>
+                </defs>
+                <!-- Earth curvature -->
+                <ellipse cx="105" cy="120" rx="100" ry="60" fill="none" stroke="rgba(0,245,255,0.2)" stroke-width="1"/>
+                <!-- Latitude markers -->
+                <text x="5" y="25" fill="#6a8a9a" font-size="7" font-family="Share Tech Mono">46°N</text>
+                <text x="5" y="65" fill="#6a8a9a" font-size="7" font-family="Share Tech Mono">37°N</text>
+                <line x1="25" y1="22" x2="200" y2="22" stroke="rgba(0,245,255,0.15)" stroke-width="0.5" stroke-dasharray="2,2"/>
+                <line x1="25" y1="62" x2="200" y2="62" stroke="rgba(0,245,255,0.15)" stroke-width="0.5" stroke-dasharray="2,2"/>
+                <!-- Orbital tracks with different inclinations -->
+                <path d="M -10,55 Q 60,15 105,40 T 220,25" stroke="url(#trackGrad1)" stroke-width="2" fill="none" opacity="0.9">
+                    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="2s" repeatCount="indefinite"/>
+                </path>
+                <path d="M -10,65 Q 70,25 105,45 T 220,35" stroke="url(#trackGrad2)" stroke-width="1.5" fill="none" opacity="0.8">
+                    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="2.5s" repeatCount="indefinite"/>
+                </path>
+                <path d="M -10,70 Q 80,40 105,50 T 220,45" stroke="url(#trackGrad3)" stroke-width="1.5" fill="none" opacity="0.7">
+                    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="3s" repeatCount="indefinite"/>
+                </path>
+                <path d="M -10,58 Q 50,5 105,35 T 220,15" stroke="url(#trackGrad4)" stroke-width="1.5" fill="none" opacity="0.8">
+                    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.8s" repeatCount="indefinite"/>
+                </path>
+                <!-- Moving satellites -->
+                <circle r="2" fill="#00f5ff">
+                    <animateMotion dur="4s" repeatCount="indefinite" path="M -10,55 Q 60,15 105,40 T 220,25"/>
+                </circle>
+                <circle r="1.5" fill="#ff6b35">
+                    <animateMotion dur="5s" repeatCount="indefinite" path="M -10,65 Q 70,25 105,45 T 220,35"/>
+                </circle>
+                <circle r="1.5" fill="#ffd000">
+                    <animateMotion dur="3.5s" repeatCount="indefinite" path="M -10,58 Q 50,5 105,35 T 220,15"/>
+                </circle>
+            </svg>
+        </div>
+        <div class="orbit-legend">
+            <div class="orbit-legend-item"><div class="orbit-legend-dot" style="background:#00f5ff"></div>ISS 51.6°</div>
+            <div class="orbit-legend-item"><div class="orbit-legend-dot" style="background:#ff6b35"></div>Molniya 63°</div>
+            <div class="orbit-legend-item"><div class="orbit-legend-dot" style="background:#00ff88"></div>Polar 82°</div>
+            <div class="orbit-legend-item"><div class="orbit-legend-dot" style="background:#ffd000"></div>SSO 97.5°</div>
+        </div>
+    </div>
+    
+    <!-- World Map Inset -->
+    <div class="world-inset">
+        <div class="world-inset-title">Global Position</div>
+        <div class="world-map-container">
+            <svg id="world-map-canvas" viewBox="-180 -90 360 180" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                    <radialGradient id="earthGlow" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" style="stop-color:#0a2040"/>
+                        <stop offset="100%" style="stop-color:#030810"/>
+                    </radialGradient>
+                    <linearGradient id="orbitGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:transparent"/>
+                        <stop offset="50%" style="stop-color:#ff6b35;stop-opacity:0.6"/>
+                        <stop offset="100%" style="stop-color:transparent"/>
+                    </linearGradient>
+                </defs>
+                <!-- Background -->
+                <rect x="-180" y="-90" width="360" height="180" fill="url(#earthGlow)"/>
+                <!-- Grid -->
+                <g stroke="rgba(0,245,255,0.1)" stroke-width="0.3" fill="none">
+                    <line x1="-180" y1="0" x2="180" y2="0"/>
+                    <line x1="0" y1="-90" x2="0" y2="90"/>
+                    <line x1="-180" y1="-37" x2="180" y2="-37" stroke="rgba(255,107,53,0.3)" stroke-dasharray="4,2"/>
+                    <line x1="-180" y1="-46" x2="180" y2="-46" stroke="rgba(255,107,53,0.3)" stroke-dasharray="4,2"/>
+                </g>
+                <!-- Latitude band highlight (37-46°N inverted for SVG) -->
+                <rect x="-180" y="-46" width="360" height="9" fill="rgba(255,107,53,0.1)"/>
+                <!-- Simplified continents -->
+                <g fill="rgba(0,245,255,0.15)" stroke="rgba(0,245,255,0.4)" stroke-width="0.5">
+                    <!-- North America -->
+                    <path d="M-160,-60 L-130,-70 L-100,-65 L-80,-50 L-85,-35 L-100,-25 L-115,-30 L-130,-25 L-145,-35 L-155,-50 Z"/>
+                    <!-- South America -->
+                    <path d="M-80,-25 L-65,-15 L-55,5 L-50,30 L-60,50 L-75,55 L-80,40 L-75,20 L-80,0 Z"/>
+                    <!-- Europe -->
+                    <path d="M-10,-65 L10,-70 L30,-65 L35,-55 L25,-45 L10,-45 L-5,-50 L-15,-55 Z"/>
+                    <!-- Africa -->
+                    <path d="M-15,-35 L20,-30 L35,-15 L40,10 L30,35 L10,35 L-10,20 L-20,-5 L-20,-25 Z"/>
+                    <!-- Asia -->
+                    <path d="M35,-70 L70,-75 L110,-65 L140,-55 L160,-45 L170,-35 L160,-20 L130,-15 L100,-20 L70,-25 L50,-35 L40,-45 L30,-55 Z"/>
+                    <!-- Australia -->
+                    <path d="M110,15 L140,10 L155,20 L150,35 L130,40 L115,35 L110,25 Z"/>
+                </g>
+                <!-- Orbital path ellipse -->
+                <ellipse cx="0" cy="0" rx="175" ry="55" fill="none" stroke="url(#orbitGradient)" stroke-width="1.5" transform="rotate(-20)">
+                    <animate attributeName="stroke-dashoffset" from="0" to="-30" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-dasharray" values="10,5;15,8;10,5" dur="4s" repeatCount="indefinite"/>
+                </ellipse>
+                <!-- Uzbekistan marker -->
+                <g transform="translate(64, -41)">
+                    <circle r="8" fill="none" stroke="#ff6b35" stroke-width="1">
+                        <animate attributeName="r" values="4;10;4" dur="2s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle r="3" fill="#ff6b35" opacity="0.9">
+                        <animate attributeName="r" values="2;4;2" dur="1.5s" repeatCount="indefinite"/>
+                    </circle>
+                </g>
+                <!-- Moving satellite on orbit -->
+                <circle r="2" fill="#00f5ff">
+                    <animateMotion dur="8s" repeatCount="indefinite">
+                        <mpath href="#orbitPath"/>
+                    </animateMotion>
+                </circle>
+                <ellipse id="orbitPath" cx="0" cy="0" rx="175" ry="55" fill="none" transform="rotate(-20)"/>
+            </svg>
+        </div>
+    </div>
+    
+    <div class="region-label">
+        <h3></h3> Uzbekistan Coverage</h3>
+        <p>All debris with orbital inclination &gt;37° crosses over Uzbekistan's territory. Maidanak Observatory contributes to tracking efforts.</p>
+    </div>
+    
+    <div class="coords-panel">
+        <div class="coord-item">
+            <span class="coord-label">LAT</span>
+            <span class="coord-value" id="lat-display">41.50°N</span>
+        </div>
+        <div class="coord-item">
+            <span class="coord-label">LON</span>
+            <span class="coord-value" id="lon-display">64.50°E</span>
+        </div>
+        <div class="coord-item">
+            <span class="coord-label">ZOOM</span>
+            <span class="coord-value" id="zoom-display">3.8x</span>
+        </div>
+    </div>
+    
+    <div class="hex-tooltip" id="tooltip" style="display: none;"></div>
+
+    <script>
+        // Accurate Uzbekistan GeoJSON boundary coordinates
+        const uzbekistanGeoJSON = {
+            "type": "Feature",
+            "properties": {"name": "Uzbekistan"},
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [[
+                    [66.518607, 37.362784], [66.54615, 37.974685], [65.215999, 38.402695],
+                    [64.170223, 38.892407], [63.518015, 39.363257], [62.37426, 40.053886],
+                    [61.882714, 41.084857], [61.547179, 41.26637], [60.465953, 41.220327],
+                    [60.083341, 41.425146], [59.976422, 42.223082], [58.629011, 42.751551],
+                    [57.78653, 42.170553], [56.932215, 41.826026], [57.096391, 41.32231],
+                    [55.968191, 41.308642], [55.928917, 44.995858], [58.503127, 45.586804],
+                    [58.689989, 45.500014], [60.239972, 44.784037], [61.05832, 44.405817],
+                    [62.0133, 43.504477], [63.185787, 43.650075], [64.900824, 43.728081],
+                    [66.098012, 42.99766], [66.023392, 41.994646], [66.510649, 41.987644],
+                    [66.714047, 41.168444], [67.985856, 41.135991], [68.259896, 40.662325],
+                    [68.632483, 40.668681], [69.070027, 41.384244], [70.388965, 42.081308],
+                    [70.962315, 42.266154], [71.259248, 42.167711], [70.420022, 41.519998],
+                    [71.157859, 41.143587], [71.870115, 41.3929], [73.055417, 40.866033],
+                    [71.774875, 40.145844], [71.014198, 40.244366], [70.601407, 40.218527],
+                    [70.45816, 40.496495], [70.666622, 40.960213], [69.329495, 40.727824],
+                    [69.011633, 40.086158], [68.536416, 39.533453], [67.701429, 39.580478],
+                    [67.44222, 39.140144], [68.176025, 38.901553], [68.392033, 38.157025],
+                    [67.83, 37.144994], [67.075782, 37.356144], [66.518607, 37.362784]
+                ]]
+            }
+        };
+        
+        // Create particles
+        function createParticles() {
+            const container = document.getElementById('particles');
+            for (let i = 0; i < 12; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDuration = (10 + Math.random() * 15) + 's';
+                particle.style.animationDelay = Math.random() * 10 + 's';
+                particle.style.opacity = 0.2 + Math.random() * 0.4;
+                const colors = ['#00f5ff', '#ff6b35', '#00ff88', '#ffd000'];
+                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.boxShadow = `0 0 4px ${particle.style.background}`;
+                container.appendChild(particle);
+            }
+        }
+        
+        // Generate debris data
+        function generateDebrisData() {
+            const hexData = [];
+            const h3 = window.h3;
+            
+            const inclinationBands = [
+                { inc: 51.6, weight: 0.15 },
+                { inc: 65, weight: 0.20 },
+                { inc: 74, weight: 0.12 },
+                { inc: 82, weight: 0.10 },
+                { inc: 97.5, weight: 0.25 },
+                { inc: 45, weight: 0.08 },
+                { inc: 55, weight: 0.10 }
+            ];
+            
+            const points = [];
+            
+            for (let i = 0; i < 15000; i++) {
+                let rand = Math.random();
+                let cumWeight = 0;
+                let selectedInc = 51.6;
+                
+                for (const band of inclinationBands) {
+                    cumWeight += band.weight;
+                    if (rand < cumWeight) {
+                        selectedInc = band.inc;
+                        break;
+                    }
+                }
+                
+                const maxLat = Math.min(selectedInc, 85);
+                const lat = (Math.random() * 2 - 1) * maxLat;
+                
+                if (lat < 20 || lat > 60) continue;
+                
+                const lon = 30 + Math.random() * 90;
+                
+                const clusterChance = Math.random();
+                let finalLat = lat;
+                let finalLon = lon;
+                
+                if (clusterChance < 0.15 && Math.abs(lat - 42) < 10) {
+                    finalLat = 42 + (Math.random() - 0.5) * 8;
+                    finalLon = lon + (Math.random() - 0.5) * 20;
+                }
+                
+                if (clusterChance > 0.85 && Math.abs(lat - 40) < 8) {
+                    finalLat = 40 + (Math.random() - 0.5) * 6;
+                    finalLon = lon + (Math.random() - 0.5) * 15;
+                }
+                
+                points.push([finalLat, finalLon]);
+            }
+            
+            const hexCounts = {};
+            const resolution = 3;
+            
+            for (const [lat, lon] of points) {
+                try {
+                    const hexId = h3.latLngToCell(lat, lon, resolution);
+                    hexCounts[hexId] = (hexCounts[hexId] || 0) + 1;
+                } catch (e) {}
+            }
+            
+            for (const [hexId, count] of Object.entries(hexCounts)) {
+                hexData.push({ hex: hexId, count: count });
+            }
+            
+            return hexData;
+        }
+        
+        // Color scale
+        function getColor(count, maxCount) {
+            const t = Math.min(count / maxCount, 1);
+            
+            if (t < 0.2) return [10, 36, 99, 200];
+            else if (t < 0.4) return [30, 96, 145, 220];
+            else if (t < 0.6) return [0, 245, 255, 235];
+            else if (t < 0.8) return [255, 140, 66, 245];
+            else return [255, 45, 85, 255];
+        }
+        
+        // Initialize
+        async function init() {
+            createParticles();
+            
+            const h3 = window.h3;
+            
+            // MapLibre with satellite imagery
+            const map = new maplibregl.Map({
+                container: 'map',
+                style: {
+                    version: 8,
+                    sources: {
+                        'satellite': {
+                            type: 'raster',
+                            tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'],
+                            tileSize: 256,
+                            attribution: 'ESRI World Imagery'
+                        }
+                    },
+                    layers: [
+                        { id: 'background', type: 'background', paint: { 'background-color': '#030810' } },
+                        {
+                            id: 'satellite',
+                            type: 'raster',
+                            source: 'satellite',
+                            paint: {
+                                'raster-opacity': 0.65,
+                                'raster-brightness-max': 0.55,
+                                'raster-brightness-min': 0.0,
+                                'raster-contrast': 0.25,
+                                'raster-saturation': -0.25
+                            }
+                        }
+                    ],
+                    glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf'
+                },
+                center: [64.5, 41.5],
+                zoom: 3.8,
+                pitch: 45,
+                bearing: -10,
+                antialias: true
+            });
+            
+            await new Promise(resolve => map.on('load', resolve));
+            
+            // Add country boundaries
+            map.addSource('countries', {
+                type: 'geojson',
+                data: 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
+            });
+            
+            map.addLayer({
+                id: 'country-boundaries',
+                type: 'line',
+                source: 'countries',
+                paint: {
+                    'line-color': 'rgba(0, 245, 255, 0.2)',
+                    'line-width': 0.8
+                }
+            });
+            
+            // Generate debris
+            const hexData = generateDebrisData();
+            const maxCount = Math.max(...hexData.map(d => d.count));
+            
+            document.getElementById('peak-density').textContent = maxCount;
+            document.getElementById('region-objects').textContent = 
+                hexData.reduce((sum, d) => sum + d.count, 0).toLocaleString();
+            
+            // Hex layer
+            const hexLayer = new deck.H3HexagonLayer({
+                id: 'h3-hexagon-layer',
+                data: hexData,
+                pickable: true,
+                wireframe: false,
+                filled: true,
+                extruded: true,
+                elevationScale: 1500,
+                getHexagon: d => d.hex,
+                getFillColor: d => getColor(d.count, maxCount),
+                getElevation: d => d.count,
+                opacity: 0.9,
+                coverage: 0.88,
+                material: {
+                    ambient: 0.5,
+                    diffuse: 0.8,
+                    shininess: 50,
+                    specularColor: [0, 245, 255]
+                },
+                onHover: (info) => updateTooltip(info, maxCount)
+            });
+            
+            // Uzbekistan boundary from accurate GeoJSON
+            const uzbekCoords = uzbekistanGeoJSON.geometry.coordinates[0];
+            
+            // Outer glow
+            const borderGlowOuter = new deck.PolygonLayer({
+                id: 'uzbekistan-glow-outer',
+                data: [{ contour: uzbekCoords }],
+                getPolygon: d => d.contour,
+                getFillColor: [0, 0, 0, 0],
+                getLineColor: [255, 107, 53, 40],
+                getLineWidth: 15000,
+                lineWidthMinPixels: 10,
+                pickable: false
+            });
+            
+            // Inner glow
+            const borderGlowInner = new deck.PolygonLayer({
+                id: 'uzbekistan-glow-inner',
+                data: [{ contour: uzbekCoords }],
+                getPolygon: d => d.contour,
+                getFillColor: [255, 107, 53, 8],
+                getLineColor: [255, 107, 53, 100],
+                getLineWidth: 6000,
+                lineWidthMinPixels: 5,
+                pickable: false
+            });
+            
+            // Main border
+            const borderLayer = new deck.PolygonLayer({
+                id: 'uzbekistan-border',
+                data: [{ contour: uzbekCoords }],
+                getPolygon: d => d.contour,
+                getFillColor: [0, 0, 0, 0],
+                getLineColor: [255, 107, 53, 220],
+                getLineWidth: 2000,
+                lineWidthMinPixels: 2,
+                pickable: false
+            });
+            
+            // Latitude bands
+            const latBandLayer = new deck.PathLayer({
+                id: 'lat-bands',
+                data: [
+                    { path: [[30, 37], [120, 37]] },
+                    { path: [[30, 46], [120, 46]] }
+                ],
+                getPath: d => d.path,
+                getColor: [0, 245, 255, 80],
+                getWidth: 1200,
+                widthMinPixels: 1,
+                getDashArray: [6, 4],
+                pickable: false
+            });
+            
+            // Orbital inclination path indicators
+            const orbitalPaths = [];
+            for (let i = 0; i < 6; i++) {
+                const startLon = 45 + i * 8;
+                orbitalPaths.push({
+                    path: [[startLon, 37], [startLon + 12, 46]],
+                    color: [255, 107, 53, 35]
+                });
+            }
+            
+            const orbitalPathLayer = new deck.PathLayer({
+                id: 'orbital-paths',
+                data: orbitalPaths,
+                getPath: d => d.path,
+                getColor: d => d.color,
+                getWidth: 800,
+                widthMinPixels: 1,
+                getDashArray: [3, 6],
+                pickable: false
+            });
+            
+            // deck.gl
+            const deckgl = new deck.DeckGL({
+                container: 'deck-canvas',
+                initialViewState: {
+                    longitude: 64.5,
+                    latitude: 41.5,
+                    zoom: 3.8,
+                    pitch: 45,
+                    bearing: -10
+                },
+                controller: true,
+                layers: [orbitalPathLayer, latBandLayer, borderGlowOuter, borderGlowInner, hexLayer, borderLayer],
+                onViewStateChange: ({viewState}) => {
+                    map.jumpTo({
+                        center: [viewState.longitude, viewState.latitude],
+                        zoom: viewState.zoom,
+                        pitch: viewState.pitch,
+                        bearing: viewState.bearing
+                    });
+                    
+                    document.getElementById('lat-display').textContent = viewState.latitude.toFixed(2) + '°N';
+                    document.getElementById('lon-display').textContent = viewState.longitude.toFixed(2) + '°E';
+                    document.getElementById('zoom-display').textContent = viewState.zoom.toFixed(1) + 'x';
+                }
+            });
+            
+            // Hex pulsing animation
+            let pulsePhase = 0;
+            setInterval(() => {
+                pulsePhase += 0.05;
+                
+                const updatedHexLayer = new deck.H3HexagonLayer({
+                    id: 'h3-hexagon-layer',
+                    data: hexData,
+                    pickable: true,
+                    wireframe: false,
+                    filled: true,
+                    extruded: true,
+                    elevationScale: 1500,
+                    getHexagon: d => d.hex,
+                    getFillColor: d => {
+                        const color = getColor(d.count, maxCount);
+                        const intensity = d.count / maxCount;
+                        if (intensity > 0.6) {
+                            const pulseAmount = Math.sin(pulsePhase + intensity * 3) * 25;
+                            return [
+                                Math.min(255, color[0] + pulseAmount),
+                                Math.min(255, color[1] + pulseAmount * 0.5),
+                                Math.min(255, color[2] + pulseAmount * 0.3),
+                                color[3]
+                            ];
+                        }
+                        return color;
+                    },
+                    getElevation: d => d.count,
+                    opacity: 0.88 + Math.sin(pulsePhase) * 0.08,
+                    coverage: 0.88,
+                    material: {
+                        ambient: 0.5,
+                        diffuse: 0.8,
+                        shininess: 50,
+                        specularColor: [0, 245, 255]
+                    },
+                    onHover: (info) => updateTooltip(info, maxCount)
+                });
+                
+                deckgl.setProps({
+                    layers: [orbitalPathLayer, latBandLayer, borderGlowOuter, borderGlowInner, updatedHexLayer, borderLayer]
+                });
+            }, 80);
+        }
+        
+        // Tooltip
+        function updateTooltip(info, maxCount) {
+            const tooltip = document.getElementById('tooltip');
+            
+            if (info.object) {
+                const density = info.object.count;
+                const percentage = ((density / maxCount) * 100).toFixed(1);
+                const level = density > maxCount * 0.8 ? 'CRITICAL' :
+                             density > maxCount * 0.6 ? 'HIGH' :
+                             density > maxCount * 0.4 ? 'MODERATE' : 'LOW';
+                
+                const levelColor = density > maxCount * 0.8 ? '#ff2d55' :
+                                  density > maxCount * 0.6 ? '#ff6b35' :
+                                  density > maxCount * 0.4 ? '#00f5ff' : '#00f5ff';
+                
+                tooltip.innerHTML = `
+                    <div class="tooltip-title">Hex Cell Analysis</div>
+                    <div class="tooltip-value">${density} <span style="font-size:0.7rem;color:#6a8a9a">objects</span></div>
+                    <div class="tooltip-detail">Risk Level: <span style="color:${levelColor};font-weight:600">${level}</span></div>
+                    <div class="tooltip-detail">Density: ${percentage}%</div>
+                    <div class="tooltip-bar">
+                        <div class="tooltip-bar-fill" style="width:${percentage}%"></div>
+                    </div>
+                `;
+                tooltip.style.display = 'block';
+                tooltip.style.left = Math.min(info.x + 12, window.innerWidth - 200) + 'px';
+                tooltip.style.top = Math.min(info.y + 12, window.innerHeight - 150) + 'px';
+            } else {
+                tooltip.style.display = 'none';
+            }
+        }
+        
+        window.addEventListener('load', init);
+    </script>
+</body>
+</html>
