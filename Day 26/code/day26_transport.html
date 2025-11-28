@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzbekistan's Gateway to Space | Day 26 Transport</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0e17;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        #map {
+            width: 100vw;
+            height: 100vh;
+            background: #0a0e17;
+        }
+
+        /* Custom map styling */
+        .leaflet-container {
+            background: #0a0e17;
+        }
+
+        /* Hide default Leaflet attribution styling */
+        .leaflet-control-attribution {
+            background: rgba(10, 14, 23, 0.8) !important;
+            color: #64748b !important;
+            font-size: 10px !important;
+            padding: 2px 8px !important;
+        }
+
+        .leaflet-control-attribution a {
+            color: #64748b !important;
+        }
+
+        /* ===== LEGEND PANEL ===== */
+        .legend-panel {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: linear-gradient(135deg, rgba(10, 14, 23, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 12px;
+            padding: 20px 24px;
+            min-width: 260px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 
+                        0 0 60px rgba(0, 212, 255, 0.1);
+            z-index: 1000;
+        }
+
+        .legend-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 14px;
+            font-weight: 700;
+            color: #00d4ff;
+            margin-bottom: 4px;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .legend-subtitle {
+            font-size: 11px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .legend-section {
+            margin-bottom: 16px;
+        }
+
+        .legend-section-title {
+            font-size: 10px;
+            font-weight: 600;
+            color: #e2e8f0;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .legend-color {
+            width: 32px;
+            height: 4px;
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .legend-color.dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px currentColor;
+        }
+
+        .legend-color.glow {
+            box-shadow: 0 0 8px currentColor;
+        }
+
+        .legend-label {
+            font-size: 11px;
+            color: #cbd5e1;
+            font-weight: 400;
+        }
+
+        .legend-footer {
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(100, 116, 139, 0.3);
+            font-size: 9px;
+            color: #64748b;
+        }
+
+        /* ===== INFO PANEL ===== */
+        .info-panel {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, rgba(10, 14, 23, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 12px;
+            padding: 20px 24px;
+            width: 280px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+                        0 0 60px rgba(0, 212, 255, 0.1);
+            z-index: 1000;
+        }
+
+        .info-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 12px;
+            font-weight: 700;
+            color: #00d4ff;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .info-text {
+            font-size: 11px;
+            color: #e2e8f0;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .info-stats {
+            background: rgba(0, 212, 255, 0.08);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 16px;
+        }
+
+        .info-stat {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            font-size: 10px;
+        }
+
+        .info-stat:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-stat-label {
+            color: #94a3b8;
+        }
+
+        .info-stat-value {
+            color: #00d4ff;
+            font-weight: 600;
+            font-family: 'Orbitron', monospace;
+        }
+
+        .info-math {
+            font-size: 10px;
+            color: #94a3b8;
+            line-height: 1.8;
+        }
+
+        .info-math span {
+            color: #fbbf24;
+        }
+
+        .info-tags {
+            margin-top: 16px;
+            font-size: 9px;
+            color: #f472b6;
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== TITLE OVERLAY ===== */
+        .title-overlay {
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            z-index: 1000;
+        }
+
+        .main-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 28px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #00d4ff 0%, #00ff88 50%, #00d4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+            text-shadow: 0 0 40px rgba(0, 212, 255, 0.5);
+            margin-bottom: 8px;
+        }
+
+        .sub-title {
+            font-size: 13px;
+            color: #94a3b8;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        /* ===== SCALE BAR ===== */
+        .scale-bar {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: rgba(10, 14, 23, 0.9);
+            border: 1px solid rgba(100, 116, 139, 0.3);
+            border-radius: 6px;
+            padding: 8px 12px;
+            z-index: 1000;
+        }
+
+        .scale-bar-line {
+            width: 100px;
+            height: 2px;
+            background: #64748b;
+            margin-bottom: 4px;
+            position: relative;
+        }
+
+        .scale-bar-line::before,
+        .scale-bar-line::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 6px;
+            background: #64748b;
+            top: -2px;
+        }
+
+        .scale-bar-line::before { left: 0; }
+        .scale-bar-line::after { right: 0; }
+
+        .scale-bar-text {
+            font-size: 9px;
+            color: #64748b;
+            text-align: center;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+
+        @keyframes glow {
+            0%, 100% { filter: drop-shadow(0 0 8px currentColor); }
+            50% { filter: drop-shadow(0 0 16px currentColor); }
+        }
+
+        .tashkent-marker {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        /* SVG Overlay Styles */
+        .route-line {
+            fill: none;
+            stroke-linecap: round;
+        }
+
+        .route-line.tier1 {
+            stroke: #00d4ff;
+            stroke-width: 2.5;
+            opacity: 0.9;
+        }
+
+        .route-line.tier2 {
+            stroke: #00a8cc;
+            stroke-width: 1.8;
+            opacity: 0.75;
+        }
+
+        .route-line.tier3 {
+            stroke: #0088aa;
+            stroke-width: 1.2;
+            opacity: 0.5;
+        }
+
+        .route-glow {
+            fill: none;
+            stroke: #00d4ff;
+            stroke-width: 8;
+            opacity: 0.15;
+            stroke-linecap: round;
+        }
+
+        .satellite-track {
+            fill: none;
+            stroke: #ff8c42;
+            stroke-width: 2;
+            opacity: 0.8;
+            stroke-dasharray: 8, 4;
+        }
+
+        .satellite-glow {
+            fill: none;
+            stroke: #ff8c42;
+            stroke-width: 6;
+            opacity: 0.2;
+        }
+
+        .geo-footprint {
+            fill: #8b5cf6;
+            fill-opacity: 0.08;
+            stroke: #8b5cf6;
+            stroke-width: 1.5;
+            stroke-opacity: 0.4;
+        }
+
+        /* Airport markers */
+        .airport-marker {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .airport-marker:hover {
+            transform: scale(1.3);
+        }
+
+        /* Tooltip */
+        .custom-tooltip {
+            background: rgba(10, 14, 23, 0.95);
+            border: 1px solid rgba(0, 212, 255, 0.5);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-family: 'Inter', sans-serif;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .custom-tooltip .city {
+            font-size: 13px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .custom-tooltip .code {
+            font-family: 'Orbitron', monospace;
+            font-size: 11px;
+            color: #00d4ff;
+        }
+
+        .custom-tooltip .distance {
+            font-size: 10px;
+            color: #94a3b8;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Title Overlay -->
+    <div class="title-overlay">
+        <div class="main-title">UZBEKISTAN'S GATEWAY TO SPACE</div>
+        <div class="sub-title">Transport Networks Above and Below</div>
+    </div>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- Legend Panel -->
+    <div class="legend-panel">
+        <div class="legend-title">
+            <span>🛰️</span> DAY 26 — TRANSPORT
+        </div>
+        <div class="legend-subtitle">#30DayMapChallenge</div>
+
+        <div class="legend-section">
+            <div class="legend-section-title">✈️ Aviation Corridors</div>
+            <div class="legend-item">
+                <div class="legend-color glow" style="background: #00d4ff;"></div>
+                <div class="legend-label">Major Routes (Tier 1)</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #00a8cc;"></div>
+                <div class="legend-label">Secondary Routes</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #0088aa; opacity: 0.6;"></div>
+                <div class="legend-label">Regional Connections</div>
+            </div>
+        </div>
+
+        <div class="legend-section">
+            <div class="legend-section-title">🛰️ Satellite Networks</div>
+            <div class="legend-item">
+                <div class="legend-color glow" style="background: #ff8c42;"></div>
+                <div class="legend-label">LEO Ground Tracks</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #8b5cf6; opacity: 0.6;"></div>
+                <div class="legend-label">GEO Coverage Zones</div>
+            </div>
+        </div>
+
+        <div class="legend-section">
+            <div class="legend-section-title">📍 Transport Hubs</div>
+            <div class="legend-item">
+                <div class="legend-color dot" style="background: #22ff88; color: #22ff88;"></div>
+                <div class="legend-label">Tashkent (TAS)</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color dot" style="background: #fbbf24; color: #fbbf24;"></div>
+                <div class="legend-label">Major Global Hubs</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color dot" style="background: #f472b6; color: #f472b6;"></div>
+                <div class="legend-label">Secondary Destinations</div>
+            </div>
+        </div>
+
+        <div class="legend-footer">
+            Tools: Leaflet.js, D3.js | Focus: Central Asia
+        </div>
+    </div>
+
+    <!-- Info Panel -->
+    <div class="info-panel">
+        <div class="info-title">DUAL TRANSPORT NETWORKS</div>
+        <div class="info-text">
+            When we think "transport," we imagine roads. But what about the highways 
+            <strong style="color: #00d4ff;">10 km above</strong> — and 
+            <strong style="color: #ff8c42;">500 km beyond</strong>?
+        </div>
+
+        <div class="info-stats">
+            <div class="info-stat">
+                <span class="info-stat-label">International Routes</span>
+                <span class="info-stat-value">15+</span>
+            </div>
+            <div class="info-stat">
+                <span class="info-stat-label">LEO Passes/Day</span>
+                <span class="info-stat-value">~14</span>
+            </div>
+            <div class="info-stat">
+                <span class="info-stat-label">GEO Satellites</span>
+                <span class="info-stat-value">6+</span>
+            </div>
+        </div>
+
+        <div class="info-math">
+            <strong style="color: #e2e8f0;">Same Math, Different Altitudes:</strong><br>
+            <span>→</span> Great circle navigation<br>
+            <span>→</span> Kepler's orbital laws<br>
+            <span>→</span> Ground station visibility
+        </div>
+
+        <div class="info-tags">
+            #Aerospace #Aviation #Satellites #Uzbekistan
+        </div>
+    </div>
+
+    <!-- Scale Bar -->
+    <div class="scale-bar">
+        <div class="scale-bar-line"></div>
+        <div class="scale-bar-text">~ 1000 km</div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- D3.js for great circle calculations -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v3.min.js"></script>
+
+    <script>
+        // ============================================================================
+        // DATA
+        // ============================================================================
+        
+        const TASHKENT = { lat: 41.2995, lon: 69.2401, code: 'TAS', name: 'Tashkent' };
+
+        const DESTINATIONS = {
+            // Tier 1 - Major Hubs
+            'IST': { lat: 41.2753, lon: 28.7519, name: 'Istanbul', tier: 1 },
+            'FRA': { lat: 50.0379, lon: 8.5622, name: 'Frankfurt', tier: 1 },
+            'LHR': { lat: 51.4700, lon: -0.4543, name: 'London', tier: 1 },
+            'DXB': { lat: 25.2532, lon: 55.3657, name: 'Dubai', tier: 1 },
+            'SVO': { lat: 55.9726, lon: 37.4146, name: 'Moscow', tier: 1 },
+            'PEK': { lat: 40.0799, lon: 116.5975, name: 'Beijing', tier: 1 },
+            'DEL': { lat: 28.5562, lon: 77.1025, name: 'Delhi', tier: 1 },
+            'ICN': { lat: 37.4602, lon: 126.4512, name: 'Seoul', tier: 1 },
+            
+            // Tier 2 - Secondary
+            'CDG': { lat: 49.0097, lon: 2.5479, name: 'Paris', tier: 2 },
+            'DOH': { lat: 25.2609, lon: 51.6138, name: 'Doha', tier: 2 },
+            'BKK': { lat: 13.6900, lon: 100.7501, name: 'Bangkok', tier: 2 },
+            'SIN': { lat: 1.3644, lon: 103.9915, name: 'Singapore', tier: 2 },
+            
+            // Tier 3 - Regional
+            'ALA': { lat: 43.3521, lon: 77.0405, name: 'Almaty', tier: 3 },
+            'GYD': { lat: 40.4675, lon: 50.0467, name: 'Baku', tier: 3 },
+            'LED': { lat: 59.8003, lon: 30.2625, name: 'St. Petersburg', tier: 3 }
+        };
+
+        // ============================================================================
+        // INITIALIZE MAP
+        // ============================================================================
+
+        const map = L.map('map', {
+            center: [38, 65],
+            zoom: 3,
+            minZoom: 2,
+            maxZoom: 8,
+            zoomControl: false,
+            attributionControl: true
+        });
+
+        // Dark tile layer (CartoDB Dark Matter)
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 19
+        }).addTo(map);
+
+        // Add zoom control to bottom right
+        L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+        // ============================================================================
+        // HELPER FUNCTIONS
+        // ============================================================================
+
+        // Calculate great circle path
+        function greatCirclePath(start, end, numPoints = 100) {
+            const interpolate = d3.geoInterpolate(
+                [start.lon, start.lat],
+                [end.lon, end.lat]
+            );
+            
+            const points = [];
+            for (let i = 0; i <= numPoints; i++) {
+                const point = interpolate(i / numPoints);
+                points.push([point[1], point[0]]); // [lat, lon] for Leaflet
+            }
+            return points;
+        }
+
+        // Calculate distance (Haversine)
+        function haversineDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371;
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                      Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return Math.round(R * c);
+        }
+
+        // ============================================================================
+        // GEO SATELLITE VISIBILITY LINKS
+        // ============================================================================
+
+        const GEO_SATELLITES = [
+            { name: 'TurkSat 5B', lon: 42.0 },
+            { name: 'EXPRESS-AM6', lon: 53.0 },
+            { name: 'INTELSAT-22', lon: 75.0 }
+        ];
+
+        GEO_SATELLITES.forEach(geo => {
+            const geoSubPoint = { lat: 0, lon: geo.lon, name: geo.name };
+            const path = greatCirclePath(TASHKENT, geoSubPoint, 50);
+
+            const linkStyle = {
+                color: '#8b5cf6',
+                weight: 1.5,
+                opacity: 0.7,
+                dashArray: '10, 5'
+            };
+            
+            L.polyline(path, linkStyle).addTo(map);
+
+            L.circleMarker([geoSubPoint.lat, geoSubPoint.lon], {
+                radius: 4,
+                fillColor: '#8b5cf6',
+                fillOpacity: 0.8,
+                color: '#0a0e17',
+                weight: 1
+            }).addTo(map)
+              .bindTooltip(createTooltip(geo.name, `${geo.lon}°E`, null), {
+                direction: 'top',
+                className: 'custom-tooltip-wrapper'
+            });
+        });
+
+       
+        // ============================================================================
+        // LEO SATELLITE TRACKS
+        // ============================================================================
+
+        // Simplified satellite ground tracks
+        const leoTracks = [
+            // Descending pass
+            { points: Array.from({length: 60}, (_, i) => {
+                const t = i / 60;
+                return [75 - t * 140, 50 + t * 35];
+            }), name: 'SENTINEL-2A' },
+            
+            // Ascending pass
+            { points: Array.from({length: 60}, (_, i) => {
+                const t = i / 60;
+                return [-50 + t * 110, 85 - t * 30];
+            }), name: 'LANDSAT-9' }
+        ];
+
+        leoTracks.forEach(track => {
+            // Glow
+            L.polyline(track.points, {
+                color: '#ff8c42',
+                weight: 6,
+                opacity: 0.2
+            }).addTo(map);
+            
+            // Track line
+            L.polyline(track.points, {
+                color: '#ff8c42',
+                weight: 2,
+                opacity: 0.8,
+                dashArray: '8, 4'
+            }).addTo(map);
+        });
+
+        // ============================================================================
+        // AVIATION ROUTES
+        // ============================================================================
+
+        const routeStyles = {
+            1: { color: '#00d4ff', weight: 2.5, opacity: 0.9 },
+            2: { color: '#00a8cc', weight: 1.8, opacity: 0.75 },
+            3: { color: '#0088aa', weight: 1.2, opacity: 0.5 }
+        };
+
+        // Draw routes
+        Object.entries(DESTINATIONS).forEach(([code, dest]) => {
+            const path = greatCirclePath(TASHKENT, dest);
+            const style = routeStyles[dest.tier];
+            const distance = haversineDistance(TASHKENT.lat, TASHKENT.lon, dest.lat, dest.lon);
+            
+            // Glow effect (for tier 1 only)
+            if (dest.tier === 1) {
+                L.polyline(path, {
+                    color: '#00d4ff',
+                    weight: 8,
+                    opacity: 0.12
+                }).addTo(map);
+            }
+            
+            // Main route line
+            const routeLine = L.polyline(path, {
+                color: style.color,
+                weight: style.weight,
+                opacity: style.opacity
+            }).addTo(map);
+        });
+
+        // ============================================================================
+        // AIRPORT MARKERS
+        // ============================================================================
+
+        const markerStyles = {
+            primary: { color: '#22ff88', radius: 8, glow: true },
+            1: { color: '#fbbf24', radius: 6 },
+            2: { color: '#f472b6', radius: 5 },
+            3: { color: '#60a5fa', radius: 4 }
+        };
+
+        // Custom tooltip
+        function createTooltip(name, code, distance) {
+            return `
+                <div class="custom-tooltip">
+                    <div class="city">${name}</div>
+                    <div class="code">${code}</div>
+                    ${distance ? `<div class="distance">${distance.toLocaleString()} km from TAS</div>` : ''}
+                </div>
+            `;
+        }
+
+        // Tashkent marker (with pulsing glow)
+        const tasGlow3 = L.circleMarker([TASHKENT.lat, TASHKENT.lon], {
+            radius: 35,
+            fillColor: '#22ff88',
+            fillOpacity: 0.08,
+            stroke: false
+        }).addTo(map);
+
+        const tasGlow2 = L.circleMarker([TASHKENT.lat, TASHKENT.lon], {
+            radius: 22,
+            fillColor: '#22ff88',
+            fillOpacity: 0.15,
+            stroke: false
+        }).addTo(map);
+
+        const tasGlow1 = L.circleMarker([TASHKENT.lat, TASHKENT.lon], {
+            radius: 14,
+            fillColor: '#22ff88',
+            fillOpacity: 0.3,
+            stroke: false
+        }).addTo(map);
+
+        const tasMarker = L.circleMarker([TASHKENT.lat, TASHKENT.lon], {
+            radius: 8,
+            fillColor: '#22ff88',
+            fillOpacity: 1,
+            color: '#ffffff',
+            weight: 2
+        }).addTo(map);
+
+        tasMarker.bindTooltip(createTooltip('Tashkent International', 'TAS', null), {
+            direction: 'top',
+            offset: [0, -10],
+            className: 'custom-tooltip-wrapper'
+        });
+
+        // Animate Tashkent glow
+        let glowPhase = 0;
+        setInterval(() => {
+            glowPhase += 0.1;
+            const scale = 1 + 0.15 * Math.sin(glowPhase);
+            tasGlow3.setRadius(35 * scale);
+            tasGlow2.setRadius(22 * scale);
+        }, 50);
+
+        // Destination markers
+        Object.entries(DESTINATIONS).forEach(([code, dest]) => {
+            const style = markerStyles[dest.tier];
+            const distance = haversineDistance(TASHKENT.lat, TASHKENT.lon, dest.lat, dest.lon);
+            
+            // Glow for tier 1
+            if (dest.tier === 1) {
+                L.circleMarker([dest.lat, dest.lon], {
+                    radius: style.radius + 6,
+                    fillColor: style.color,
+                    fillOpacity: 0.15,
+                    stroke: false
+                }).addTo(map);
+            }
+            
+            // Marker
+            const marker = L.circleMarker([dest.lat, dest.lon], {
+                radius: style.radius,
+                fillColor: style.color,
+                fillOpacity: 0.9,
+                color: '#0a0e17',
+                weight: 1
+            }).addTo(map);
+
+            marker.bindTooltip(createTooltip(dest.name, code, distance), {
+                direction: 'top',
+                offset: [0, -8],
+                className: 'custom-tooltip-wrapper'
+            });
+        });
+
+        // ============================================================================
+        // UZBEKISTAN BORDER HIGHLIGHT (Embedded GeoJSON - Prominent Glow)
+        // ============================================================================
+
+        // Detailed Uzbekistan border coordinates
+        const uzbekistanGeoJSON = {
+            "type": "Feature",
+            "properties": { "name": "Uzbekistan" },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [[
+                    [55.9683, 41.3084], [55.9289, 44.9949], [58.5031, 45.5868],
+                    [58.6891, 45.5001], [59.9423, 45.4354], [61.0082, 44.3939],
+                    [61.5181, 44.0765], [62.0163, 43.4748], [62.4763, 43.0071],
+                    [64.1707, 43.4791], [64.9008, 43.7288], [65.4962, 43.3095],
+                    [65.8030, 42.8769], [66.0989, 42.9977], [66.0230, 41.9947],
+                    [66.5107, 41.9877], [66.7142, 41.1684], [67.9856, 41.1360],
+                    [68.2593, 40.6623], [68.6325, 40.6687], [69.0700, 41.3844],
+                    [70.1682, 41.3844], [70.6920, 41.0214], [70.9526, 40.2389],
+                    [70.6668, 40.0602], [69.5644, 40.1032], [69.0128, 40.0865],
+                    [68.5366, 39.5331], [67.7014, 39.5808], [67.4422, 39.1403],
+                    [68.1764, 38.9015], [68.3923, 38.1570], [67.8268, 37.1449],
+                    [67.0758, 37.3563], [66.5186, 37.3627], [66.5469, 38.0008],
+                    [65.2159, 38.4027], [64.1708, 38.8924], [63.5184, 39.3632],
+                    [62.3748, 40.0539], [61.8829, 41.0848], [61.5470, 41.2664],
+                    [60.4654, 41.2203], [60.0834, 41.4252], [59.9763, 42.2232],
+                    [58.6291, 42.7519], [57.7864, 42.1709], [56.9322, 41.8263],
+                    [57.0963, 41.3223], [55.9683, 41.3084]
+                ]]
+            }
+        };
+
+        // Layer 1: Outer glow (very wide, subtle)
+        L.geoJSON(uzbekistanGeoJSON, {
+            style: {
+                color: '#22ff88',
+                weight: 25,
+                opacity: 0.06,
+                fillColor: '#22ff88',
+                fillOpacity: 0.02,
+                lineJoin: 'round'
+            }
+        }).addTo(map);
+
+        // Layer 2: Medium outer glow
+        L.geoJSON(uzbekistanGeoJSON, {
+            style: {
+                color: '#22ff88',
+                weight: 16,
+                opacity: 0.12,
+                fillOpacity: 0,
+                lineJoin: 'round'
+            }
+        }).addTo(map);
+
+        // Layer 3: Inner glow
+        L.geoJSON(uzbekistanGeoJSON, {
+            style: {
+                color: '#22ff88',
+                weight: 8,
+                opacity: 0.25,
+                fillOpacity: 0,
+                lineJoin: 'round'
+            }
+        }).addTo(map);
+
+        // Layer 4: Main border line (crisp, prominent)
+        L.geoJSON(uzbekistanGeoJSON, {
+            style: {
+                color: '#22ff88',
+                weight: 3,
+                opacity: 0.95,
+                fillOpacity: 0,
+                lineJoin: 'round'
+            }
+        }).addTo(map);
+
+        // Layer 5: Bright core highlight
+        L.geoJSON(uzbekistanGeoJSON, {
+            style: {
+                color: '#aaffcc',
+                weight: 1.2,
+                opacity: 1,
+                fillOpacity: 0,
+                lineJoin: 'round'
+            }
+        }).addTo(map);
+
+    
+        // ============================================================================
+        // ADD CITY LABELS (Optional - for major destinations)
+        // ============================================================================
+
+        const labelStyle = {
+            className: 'city-label',
+            permanent: true,
+            direction: 'right',
+            offset: [10, 0]
+        };
+
+        // Only label Tashkent
+        L.marker([TASHKENT.lat, TASHKENT.lon], {
+            icon: L.divIcon({
+                className: 'city-label-icon',
+                html: `<span style="
+                    font-family: 'Orbitron', monospace;
+                    font-size: 11px;
+                    color: #22ff88;
+                    text-shadow: 0 0 10px #22ff88;
+                    white-space: nowrap;
+                    margin-left: 15px;
+                ">TASHKENT</span>`,
+                iconSize: [100, 20],
+                iconAnchor: [-5, 10]
+            })
+        }).addTo(map);
+
+        console.log('🛰️ Map loaded successfully!');
+        console.log('✈️ Routes:', Object.keys(DESTINATIONS).length);
+        console.log('📍 Centered on Central Asia');
+    </script>
+</body>
+</html>
