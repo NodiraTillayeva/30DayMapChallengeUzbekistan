@@ -207,10 +207,10 @@
 </a>
 </td>
 <td width="20%" align="center">
-<a href="./Day 24">
+<a href="./Day 24 Places and Names">
 <img src="https://img.shields.io/badge/Day%2024-✅-success?style=for-the-badge" alt="Day 24"/><br/>
 <b>Places & Names</b><br/>
-<img src="./Day 24/day24_Mushtariy.png" width="150"/>
+<img src="./Day 24 Places and Names/day24_Mushtariy.png" width="150"/>
 </a>
 </td>
 <td width="20%" align="center">
@@ -224,10 +224,10 @@
 
 <tr>
 <td width="20%" align="center">
-<a href="./Day 26">
+<a href="./Day 26 Transport">
 <img src="https://img.shields.io/badge/Day%2026-✅-success?style=for-the-badge" alt="Day 26"/><br/>
 <b>Transport</b><br/>
-<img src="./Day 26/transport.jpg" width="150"/>
+<img src="./Day 26 Transport/transport.jpg" width="150"/>
 </a>
 </td>
 <td width="20%" align="center">
@@ -238,17 +238,17 @@
 </a>
 </td>
 <td width="20%" align="center">
-<a href="./Day 28">
+<a href="./Day 28 Black and White">
 <img src="https://img.shields.io/badge/Day%2028-✅-success?style=for-the-badge" alt="Day 28"/><br/>
 <b>Black & White</b><br/>
-<img src="./Day 28/black.jpg" width="150"/>
+<img src="./Day 28 Black and White/black.jpg" width="150"/>
 </a>
 </td>
 <td width="20%" align="center">
-<a href="./Day 29">
+<a href="./Day 29 Raster">
 <img src="https://img.shields.io/badge/Day%2029-✅-success?style=for-the-badge" alt="Day 29"/><br/>
 <b>Raster</b><br/>
-<img src="./Day 29/raster.jpg" width="150"/>
+<img src="./Day 29 Raster/raster.jpg" width="150"/>
 </a>
 </td>
 <td width="20%" align="center">
