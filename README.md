@@ -4,7 +4,7 @@
 
 ### 🗺️ Showcasing Uzbekistan's Geospatial Creativity 🗺️
 
-[![Progress](https://img.shields.io/badge/Progress-28%2F30%20Days-success?style=for-the-badge)](https://github.com)
+[![Progress](https://img.shields.io/badge/Progress-30%2F30%20Days%20COMPLETE!-brightgreen?style=for-the-badge)](https://github.com)
 [![Contributors](https://img.shields.io/github/contributors/yourusername/yourrepo?style=for-the-badge)](https://github.com)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
@@ -19,9 +19,9 @@
 | Week 1 | Week 2 | Week 3 | Week 4 | Week 5 |
 |:------:|:------:|:------:|:------:|:------:|
 | ✅ ✅ ✅ ✅ ✅ | ✅ ✅ | ✅ ✅ ✅ ✅ ✅ | ✅ ✅ | ✅ ✅ ✅ ✅ ✅ |
-| ✅ ✅ | ✅ ✅ ⬜ | ✅ ✅ ✅ | ✅ ⬜ |  |
+| ✅ ✅ | ✅ ✅ ✅ | ✅ ✅ ✅ | ✅ ✅ |  |
 
-**28 out of 30 days completed** 🎉
+**30 out of 30 days completed!** 🎉🎊✨
 
 </div>
 
@@ -214,8 +214,11 @@
 </a>
 </td>
 <td width="20%" align="center">
-<img src="https://img.shields.io/badge/Day%2025-⬜-lightgrey?style=for-the-badge" alt="Day 25"/><br/>
-<b>Coming Soon</b>
+<a href="./Day 25 Hexagons">
+<img src="https://img.shields.io/badge/Day%2025-✅-success?style=for-the-badge" alt="Day 25"/><br/>
+<b>Hexagons</b><br/>
+<img src="./Day 25 Hexagons/day25.png" width="150"/>
+</a>
 </td>
 </tr>
 
@@ -249,8 +252,11 @@
 </a>
 </td>
 <td width="20%" align="center">
-<img src="https://img.shields.io/badge/Day%2030-⬜-lightgrey?style=for-the-badge" alt="Day 30"/><br/>
-<b>Coming Soon</b>
+<a href="./Day 30 Makeover">
+<img src="https://img.shields.io/badge/Day%2030-✅-success?style=for-the-badge" alt="Day 30"/><br/>
+<b>Makeover</b><br/>
+<img src="./Day 30 Makeover/day30_post.png" width="150"/>
+</a>
 </td>
 </tr>
 </table>
