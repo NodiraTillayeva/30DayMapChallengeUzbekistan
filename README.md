@@ -2,11 +2,9 @@
 
 <div align="center">
 
-<img width="1970" height="500" alt="30 Day Map Challenge Banner" src="https://github.com/user-attachments/assets/433b0bbb-3494-4221-af65-d25dc0074d38" />
-
 ### 🗺️ Showcasing Uzbekistan's Geospatial Creativity 🗺️
 
-[![Progress](https://img.shields.io/badge/Progress-23%2F30%20Days-success?style=for-the-badge)](https://github.com)
+[![Progress](https://img.shields.io/badge/Progress-28%2F30%20Days-success?style=for-the-badge)](https://github.com)
 [![Contributors](https://img.shields.io/github/contributors/yourusername/yourrepo?style=for-the-badge)](https://github.com)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
@@ -21,9 +19,9 @@
 | Week 1 | Week 2 | Week 3 | Week 4 | Week 5 |
 |:------:|:------:|:------:|:------:|:------:|
 | ✅ ✅ ✅ ✅ ✅ | ✅ ✅ | ✅ ✅ ✅ ✅ ✅ | ✅ ✅ | ✅ ✅ ✅ ✅ ✅ |
-| ✅ ✅ | ⬜ ⬜ ⬜ | ⬜ ⬜ ⬜ | ⬜ ⬜ |  |
+| ✅ ✅ | ✅ ✅ ⬜ | ✅ ✅ ✅ | ✅ ⬜ |  |
 
-**23 out of 30 days completed** 🎉
+**28 out of 30 days completed** 🎉
 
 </div>
 
@@ -94,13 +92,15 @@
 <td width="20%" align="center">
 <a href="./Day 09 Analog">
 <img src="https://img.shields.io/badge/Day%2009-✅-success?style=for-the-badge" alt="Day 09"/><br/>
-<b>Analog</b>
+<b>Analog</b><br/>
+<img src="./Day 09 Analog/analog.jpg" width="150"/>
 </a>
 </td>
 <td width="20%" align="center">
 <a href="./Day 10 Air">
 <img src="https://img.shields.io/badge/Day%2010-✅-success?style=for-the-badge" alt="Day 10"/><br/>
-<b>Air</b>
+<b>Air</b><br/>
+<img src="./Day 10 Air/air.jpg" width="150"/>
 </a>
 </td>
 </tr>
@@ -116,7 +116,8 @@
 <td width="20%" align="center">
 <a href="./Day 12  Map from 2125">
 <img src="https://img.shields.io/badge/Day%2012-✅-success?style=for-the-badge" alt="Day 12"/><br/>
-<b>Map from 2125</b>
+<b>Map from 2125</b><br/>
+<img src="./Day 12  Map from 2125/Digital twin/digitaltwin.gif" width="150"/>
 </a>
 </td>
 <td width="20%" align="center">
@@ -130,7 +131,8 @@
 <td width="20%" align="center">
 <a href="./Day 14 Open Street Maps">
 <img src="https://img.shields.io/badge/Day%2014-✅-success?style=for-the-badge" alt="Day 14"/><br/>
-<b>Open Street Maps</b>
+<b>Open Street Maps</b><br/>
+<img src="./Day 14 Open Street Maps/City Functionality/functionality.jpg" width="150"/>
 </a>
 </td>
 <td width="20%" align="center">
@@ -154,7 +156,8 @@
 <td width="20%" align="center">
 <a href="./Day 17 New-tool">
 <img src="https://img.shields.io/badge/Day%2017-✅-success?style=for-the-badge" alt="Day 17"/><br/>
-<b>New Tool</b>
+<b>New Tool</b><br/>
+<img src="./Day 17 New-tool/newtool.jpg" width="150"/>
 </a>
 </td>
 <td width="20%" align="center">
@@ -167,13 +170,15 @@
 <td width="20%" align="center">
 <a href="./Day 19 Projections">
 <img src="https://img.shields.io/badge/Day%2019-✅-success?style=for-the-badge" alt="Day 19"/><br/>
-<b>Projections</b>
+<b>Projections</b><br/>
+<img src="./Day 19 Projections/projections.jpg" width="150"/>
 </a>
 </td>
 <td width="20%" align="center">
 <a href="./Day 20 Water">
 <img src="https://img.shields.io/badge/Day%2020-✅-success?style=for-the-badge" alt="Day 20"/><br/>
-<b>Water</b>
+<b>Water</b><br/>
+<img src="./Day 20 Water/water.jpg" width="150"/>
 </a>
 </td>
 </tr>
@@ -195,8 +200,11 @@
 </a>
 </td>
 <td width="20%" align="center">
-<img src="https://img.shields.io/badge/Day%2023-⬜-lightgrey?style=for-the-badge" alt="Day 23"/><br/>
-<b>Coming Soon</b>
+<a href="./Day 23 - Process">
+<img src="https://img.shields.io/badge/Day%2023-✅-success?style=for-the-badge" alt="Day 23"/><br/>
+<b>Process</b><br/>
+<img src="./Day 23 - Process/process.jpg" width="150"/>
+</a>
 </td>
 <td width="20%" align="center">
 <a href="./Day 24">
@@ -213,20 +221,32 @@
 
 <tr>
 <td width="20%" align="center">
-<img src="https://img.shields.io/badge/Day%2026-⬜-lightgrey?style=for-the-badge" alt="Day 26"/><br/>
-<b>Coming Soon</b>
+<a href="./Day 26">
+<img src="https://img.shields.io/badge/Day%2026-✅-success?style=for-the-badge" alt="Day 26"/><br/>
+<b>Transport</b><br/>
+<img src="./Day 26/transport.jpg" width="150"/>
+</a>
 </td>
 <td width="20%" align="center">
-<img src="https://img.shields.io/badge/Day%2027-⬜-lightgrey?style=for-the-badge" alt="Day 27"/><br/>
-<b>Coming Soon</b>
+<a href="./Day 27 Boundaries">
+<img src="https://img.shields.io/badge/Day%2027-✅-success?style=for-the-badge" alt="Day 27"/><br/>
+<b>Boundaries</b><br/>
+<img src="./Day 27 Boundaries/boundaries.jpg" width="150"/>
+</a>
 </td>
 <td width="20%" align="center">
-<img src="https://img.shields.io/badge/Day%2028-⬜-lightgrey?style=for-the-badge" alt="Day 28"/><br/>
-<b>Coming Soon</b>
+<a href="./Day 28">
+<img src="https://img.shields.io/badge/Day%2028-✅-success?style=for-the-badge" alt="Day 28"/><br/>
+<b>Black & White</b><br/>
+<img src="./Day 28/black.jpg" width="150"/>
+</a>
 </td>
 <td width="20%" align="center">
-<img src="https://img.shields.io/badge/Day%2029-⬜-lightgrey?style=for-the-badge" alt="Day 29"/><br/>
-<b>Coming Soon</b>
+<a href="./Day 29">
+<img src="https://img.shields.io/badge/Day%2029-✅-success?style=for-the-badge" alt="Day 29"/><br/>
+<b>Raster</b><br/>
+<img src="./Day 29/raster.jpg" width="150"/>
+</a>
 </td>
 <td width="20%" align="center">
 <img src="https://img.shields.io/badge/Day%2030-⬜-lightgrey?style=for-the-badge" alt="Day 30"/><br/>
