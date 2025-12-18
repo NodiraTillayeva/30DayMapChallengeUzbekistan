@@ -255,7 +255,7 @@
 <a href="./Day 30 Makeover">
 <img src="https://img.shields.io/badge/Day%2030-✅-success?style=for-the-badge" alt="Day 30"/><br/>
 <b>Makeover</b><br/>
-<img src="./Day 30 Makeover/day30_post.png" width="150"/>
+<img src="./Day 30 Makeover/aral_sea_timelapse.gif" width="150"/>
 </a>
 </td>
 </tr>
@@ -263,17 +263,102 @@
 
 ---
 
-## 🌟 Featured Maps
+## 🌟 Featured Maps - Showcasing Technical Diversity
 
 <details open>
-<summary><b>📍 Day 01 - Points (Multiple Contributors)</b></summary>
+<summary><b>🌊 Day 30 - Aral Sea Environmental Catastrophe (Google Earth Engine + Landsat)</b></summary>
 <br/>
 
-**Art Locations in Tashkent**
-<img src="./Day 01 Points/Art locations/artlocations.jpg" width="600"/>
+**40-Year Timelapse: The Shrinking Aral Sea (1984-2024)**
+<img src="./Day 30 Makeover/aral_sea_timelapse.gif" width="600"/>
 
-**WiFi Hotspot Locations**
-<img src="./Day 01 Points/Wifi Locations/wifilocations.png" width="600"/>
+**Tools:** Google Earth Engine (JavaScript API)
+**Data:** Landsat Collection 2 (TM, ETM+, OLI) - 30m resolution
+**Techniques:** Multi-sensor time-series analysis, NDWI water masking, 3-year median composites, cloud masking, change detection overlays
+
+Visualizing one of Earth's greatest environmental disasters with 41 frames showing the loss of over 90% of the water body.
+</details>
+
+<details>
+<summary><b>🌍 Day 10 - Air Quality: NO₂ Pollution (Google Earth Engine + Sentinel-5P)</b></summary>
+<br/>
+
+<img src="./Day 10 Air/air.jpg" width="600"/>
+
+**Tools:** Google Earth Engine
+**Data:** Sentinel-5P TROPOMI (atmospheric monitoring)
+**Techniques:** Atmospheric data processing, NO₂ concentration averaging, pollution gradient visualization
+
+Mapping nitrogen dioxide levels across Uzbekistan using cutting-edge atmospheric sensors.
+</details>
+
+<details>
+<summary><b>🌾 Day 03 - Land Use Change Detection (ArcGIS Pro + Sentinel-2)</b></summary>
+<br/>
+
+<img src="./Day 03 polygons/LULC_Comparsion_2017_2025.jpg" width="600"/>
+
+**Tools:** ArcGIS Pro
+**Data:** Sentinel-2 10-meter LULC imagery
+**Techniques:** Multi-temporal analysis, change detection, polygon classification
+
+Comparing land use/land cover changes in Karakalpakstan between 2017 and 2024, revealing decreased crop, flooded vegetation, and water areas near the Aral Sea.
+</details>
+
+<details>
+<summary><b>🔥 Day 08 - Urban Heat Island Analysis (ArcGIS Pro + Landsat 9)</b></summary>
+<br/>
+
+**Urban Heat Island - Tashkent**
+<img src="./Day 08 Urban/Urban Heat Island Tashkent.png" width="600"/>
+
+**Land Surface Temperature - Tashkent**
+<img src="./Day 08 Urban/Land Surface Temperature Tashkent.png" width="600"/>
+
+**Tools:** ArcGIS Pro
+**Data:** Landsat 9 thermal bands
+**Techniques:** Land Surface Temperature (LST) derivation, thermal band processing, UHI zone identification
+
+Analyzing urban heat distribution across Tashkent using thermal remote sensing.
+</details>
+
+<details>
+<summary><b>💧 Day 22 - Transboundary Water Resources (Google Earth Engine + Natural Earth)</b></summary>
+<br/>
+
+<img src="./Day 22 Natural Earth/day22_transboundary_waters .png" width="600"/>
+
+**Tools:** Google Earth Engine, Natural Earth Data
+**Data:** Natural Earth (rivers, boundaries), UN FAO AQUASTAT, World Bank
+**Techniques:** Geopolitical water resource analysis, transboundary flow visualization
+
+Key finding: 80% of Uzbekistan's water originates in neighboring countries (Kyrgyzstan and Tajikistan).
+</details>
+
+<details>
+<summary><b>👥 Day 16 - Population Density Grid (Python + Kontur Population)</b></summary>
+<br/>
+
+<img src="./Day 16 Cell/Population density/Grid_DensityMap.jpg" width="600"/>
+
+**Tools:** Python (GeoPandas, Matplotlib)
+**Data:** Kontur Population Dataset (2023)
+**Techniques:** Grid-based spatial aggregation, density heatmap generation
+
+High-resolution population density visualization using H3 hexagonal grid system.
+</details>
+
+<details>
+<summary><b>🗺️ Day 04 - Interactive Web Map (Leaflet.js + OpenStreetMap)</b></summary>
+<br/>
+
+<img src="./Day 04 MyData/tumaristravel.jpg" width="600"/>
+
+**Tools:** Leaflet.js, HTML/CSS/JavaScript
+**Data:** OpenStreetMap, Custom travel data
+**Techniques:** Interactive web mapping, custom markers and popups, client-side rendering
+
+Personal travel data visualization across European cities with interactive features.
 </details>
 
 <details>
@@ -283,61 +368,10 @@
 **Syrdarya Burn Severity**
 <img src="./Day 15 Fire/Syrdarya/Burn Severity Syrdarya.png" width="600"/>
 
-**Monthly Fires 2025**
+**Monthly Fires 2025 - Temporal Analysis**
 <img src="./Day 15 Fire/Monthly Fires 2025/temporal_analysis_comprehensive.png" width="600"/>
-</details>
 
-<details>
-<summary><b>🏙️ Day 08 - Urban Heat Analysis (Multiple Maps)</b></summary>
-<br/>
-
-**Urban Heat Island - Tashkent**
-<img src="./Day 08 Urban/Urban Heat Island Tashkent.png" width="600"/>
-
-**Land Surface Temperature - Tashkent**
-<img src="./Day 08 Urban/Land Surface Temperature Tashkent.png" width="600"/>
-</details>
-
-<details>
-<summary><b>⚡ Day 13 - 10 Minute Maps (Multiple Contributors)</b></summary>
-<br/>
-
-**Google Maps Builder**
-<img src="./Day 13 10 minute map/Google Maps Builder/Day 13.gif" width="600"/>
-
-Interactive map creation and Mirabad district cafe mapping.
-</details>
-
-<details>
-<summary><b>🌌 Day 24 - Celestial Legacy</b></summary>
-<br/>
-<img src="./Day 24/day24_Mushtariy.png" width="600"/>
-
-600 years of Uzbekistan's astronomical heritage from Ulugh Beg to modern observatories.
-</details>
-
-<details>
-<summary><b>👥 Day 16 - Population Density</b></summary>
-<br/>
-<img src="./Day 16 Cell/Population density/Grid_DensityMap.jpg" width="600"/>
-
-Grid-based population density visualization.
-</details>
-
-<details>
-<summary><b>📐 Day 03 - Polygons: Land Use Change</b></summary>
-<br/>
-<img src="./Day 03 polygons/LULC_Comparsion_2017_2025.jpg" width="600"/>
-
-Comparing land use and land cover changes in Karakalpakstan (2017 vs 2024).
-</details>
-
-<details>
-<summary><b>🗺️ Day 04 - My Data: Personal Travel</b></summary>
-<br/>
-<img src="./Day 04 MyData/tumaristravel.jpg" width="600"/>
-
-Personal travel and location data visualization.
+Multi-contributor analysis showcasing different approaches to fire monitoring and burn severity assessment.
 </details>
 
 ---
@@ -416,16 +450,100 @@ Each day folder can follow these structures:
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## 🛠️ GIS Tools, Frameworks & Datasets
 
-Our community members have used various tools including:
+Our community showcased technical diversity by using a wide range of professional geospatial tools and datasets:
 
-- 🐍 **Python** (GeoPandas, Matplotlib, Folium, Rasterio)
-- 📊 **R** (ggplot2, sf, tmap)
-- 🗺️ **QGIS** / **ArcGIS**
-- 🌐 **Google Earth Engine**
-- 📡 **Remote Sensing** (Landsat, Sentinel, MODIS)
-- 🗃️ **OpenStreetMap**
+### 🌐 **Cloud-Based GIS Platforms**
+- **Google Earth Engine (GEE)** - JavaScript API for large-scale geospatial analysis
+  - Used in: Days 10, 22, 30
+  - Capabilities: Multi-sensor time-series analysis, atmospheric data processing, cloud computing
+- **Carto** - Cloud-based interactive mapping and spatial analysis
+  - Used in: Day 17
+  - Capabilities: Fast visualization, spatial SQL, interactive dashboards
+
+### 🖥️ **Desktop GIS Software**
+- **ArcGIS Pro** - Professional GIS analysis and cartography
+  - Used in: Days 3, 8
+  - Capabilities: Thermal analysis, land use change detection, LST derivation
+- **QGIS** - Open-source desktop GIS
+  - Used in: Day 11
+  - Capabilities: Data processing, cartographic styling, OSM integration
+
+### 💻 **Programming & Web Mapping**
+- **Python** - Geospatial programming and analysis
+  - Used in: Days 16, 18
+  - Libraries: GeoPandas, Matplotlib, Rasterio, Folium
+- **Leaflet.js** - JavaScript library for interactive web maps
+  - Used in: Day 4
+  - Capabilities: Client-side rendering, custom markers, popups
+- **JavaScript** - Web-based mapping applications
+  - Used in: Days 4, 13, 30
+
+### 🎨 **Design Tools**
+- **Canva** - Graphic design and map styling
+  - Used in: Day 11
+
+---
+
+### 📡 **Satellite Data & Remote Sensing**
+
+#### Multi-Spectral Imagery
+- **Landsat Collection 2** (30m resolution)
+  - Landsat 5 (TM), Landsat 7 (ETM+), Landsat 8 (OLI), Landsat 9
+  - Used in: Days 8, 30
+  - Bands: Thermal (LST), Visible, NIR, SWIR
+
+- **Sentinel-2** (10m resolution)
+  - ESA Copernicus Program
+  - Used in: Day 3
+  - Capabilities: High-resolution land cover classification
+
+#### Atmospheric Monitoring
+- **Sentinel-5P TROPOMI**
+  - Atmospheric composition monitoring
+  - Used in: Day 10
+  - Parameters: NO₂, CO, O₃, CH₄, SO₂
+
+---
+
+### 🗺️ **Vector Data Sources**
+
+- **OpenStreetMap (OSM)**
+  - Community-driven geographic data
+  - Used in: Days 4, 11, 14, 17
+  - Accessed via: Overpass Turbo API, Carto, Leaflet
+
+- **Natural Earth Data**
+  - Public domain map dataset
+  - Used in: Day 22
+  - Scales: 1:10m, 1:50m, 1:110m
+
+- **Kontur Population Dataset**
+  - High-resolution population data (2023)
+  - Used in: Day 16
+  - Format: H3 hexagonal grid
+
+---
+
+### 📊 **Statistical & Geopolitical Data**
+
+- **UN FAO AQUASTAT** - Water resources statistics
+  - Used in: Day 22
+
+- **World Bank Open Data** - Regional development indicators
+  - Used in: Day 22
+
+---
+
+### 🔧 **Analysis Techniques Employed**
+
+- ✅ **Remote Sensing:** NDWI calculation, thermal band processing, change detection
+- ✅ **Time-Series Analysis:** Multi-year environmental monitoring, trend detection
+- ✅ **Spatial Analysis:** Grid-based aggregation, density mapping, buffer analysis
+- ✅ **Atmospheric Science:** Pollution mapping, concentration averaging
+- ✅ **Cartography:** Minimalist design, interactive web maps, storytelling
+- ✅ **Data Integration:** Multi-source fusion, API integration, cloud masking
 
 ---
 
