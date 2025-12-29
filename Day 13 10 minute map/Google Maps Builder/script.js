@@ -116,7 +116,7 @@ async function calculateAndDisplayRoute() {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "X-Goog-Api-Key": "AIzaSyDF3RJmx0XaFDHY8lit6olqhysNdIXBmT0",
+                "X-Goog-Api-Key": "hahahahahahha",
                 "X-Goog-FieldMask": "routes.polyline.encodedPolyline"
             },
             body: JSON.stringify(request)

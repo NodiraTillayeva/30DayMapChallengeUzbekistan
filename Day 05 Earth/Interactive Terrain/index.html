@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 - Earth: Uzbekistan Terrain Visualization</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        #info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        #info h1 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        #info p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        #controls p {
+            margin: 5px 0;
+            font-size: 12px;
+        }
+
+        #stats {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            font-size: 12px;
+        }
+
+        #canvas-container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .legend {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 3px;
+            border: 1px solid rgba(255,255,255,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <h1>🗺️ Uzbekistan Terrain</h1>
+        <p><strong>Day 5 - Earth</strong></p>
+        <p>Interactive 3D visualization of Uzbekistan's diverse topography</p>
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: #1a5f1a;"></div>
+                <span>Lowlands (< 500m)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #8b7355;"></div>
+                <span>Hills (500-2000m)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #d4a574;"></div>
+                <span>Mountains (> 2000m)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ffffff;"></div>
+                <span>Peaks (> 4000m)</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="stats">
+        <strong>Terrain Statistics</strong><br>
+        Max Elevation: 4,643m (Khazret Sultan)<br>
+        Min Elevation: -12m (Aral Sea basin)<br>
+        Trees: <span id="tree-count">0</span><br>
+        Peak Markers: <span id="peak-count">0</span>
+    </div>
+
+    <div id="controls">
+        <strong>🎮 Controls</strong>
+        <p>🖱️ Left Click + Drag: Rotate</p>
+        <p>🖱️ Right Click + Drag: Pan</p>
+        <p>🖱️ Scroll: Zoom</p>
+        <p>📍 Red Markers: Mountain Peaks</p>
+        <p>🌲 Green Objects: Vegetation</p>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+    <script>
+        // Scene setup
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x87ceeb);
+        scene.fog = new THREE.Fog(0x87ceeb, 100, 500);
+
+        const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(0, 60, 100);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.minDistance = 30;
+        controls.maxDistance = 300;
+        controls.maxPolarAngle = Math.PI / 2.1;
+
+        // Lighting
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+        scene.add(ambientLight);
+
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+        directionalLight.position.set(50, 100, 50);
+        directionalLight.castShadow = true;
+        directionalLight.shadow.mapSize.width = 2048;
+        directionalLight.shadow.mapSize.height = 2048;
+        directionalLight.shadow.camera.near = 0.5;
+        directionalLight.shadow.camera.far = 500;
+        scene.add(directionalLight);
+
+        // Simplified elevation data for Uzbekistan (120x80 grid)
+        // Higher values in east/southeast (mountains), lower in west
+        function generateUzbekistanTerrain(width, height) {
+            const data = [];
+            for (let y = 0; y < height; y++) {
+                for (let x = 0; x < width; x++) {
+                    // Normalized coordinates
+                    const nx = x / width;
+                    const ny = y / height;
+
+                    // Tian Shan mountains in southeast
+                    const mountainEast = Math.pow(Math.max(0, nx - 0.5), 2) * Math.pow(Math.max(0, ny - 0.3), 2) * 400;
+
+                    // Pamir-Alay in south
+                    const mountainSouth = Math.pow(Math.max(0, 1 - ny), 2) * Math.pow(Math.max(0, nx - 0.4), 1.5) * 300;
+
+                    // Some noise for natural look
+                    const noise = Math.random() * 5;
+
+                    // Desert plains in west (lower elevation)
+                    const plains = 5 + noise;
+
+                    // Combine terrains
+                    const elevation = plains + mountainEast + mountainSouth;
+
+                    data.push(Math.min(elevation, 120)); // Cap at 120 for visualization
+                }
+            }
+            return data;
+        }
+
+        // Create terrain mesh
+        const terrainWidth = 120;
+        const terrainHeight = 80;
+        const terrainData = generateUzbekistanTerrain(terrainWidth, terrainHeight);
+
+        const geometry = new THREE.PlaneGeometry(200, 140, terrainWidth - 1, terrainHeight - 1);
+        const vertices = geometry.attributes.position.array;
+
+        // Apply elevation data
+        for (let i = 0; i < terrainData.length; i++) {
+            vertices[i * 3 + 2] = terrainData[i];
+        }
+
+        geometry.computeVertexNormals();
+
+        // Color terrain based on elevation
+        const colors = new Float32Array(vertices.length);
+        for (let i = 0; i < vertices.length / 3; i++) {
+            const elevation = vertices[i * 3 + 2];
+            let color;
+
+            if (elevation < 15) {
+                // Lowlands - green
+                color = new THREE.Color(0x1a5f1a);
+            } else if (elevation < 40) {
+                // Low mountains - brown/tan
+                color = new THREE.Color(0x8b7355);
+            } else if (elevation < 80) {
+                // High mountains - sandy/rocky
+                color = new THREE.Color(0xd4a574);
+            } else {
+                // Peaks - white/snow
+                color = new THREE.Color(0xf0f0f0);
+            }
+
+            colors[i * 3] = color.r;
+            colors[i * 3 + 1] = color.g;
+            colors[i * 3 + 2] = color.b;
+        }
+
+        geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+        const material = new THREE.MeshStandardMaterial({
+            vertexColors: true,
+            flatShading: false,
+            roughness: 0.8,
+            metalness: 0.2
+        });
+
+        const terrain = new THREE.Mesh(geometry, material);
+        terrain.rotation.x = -Math.PI / 2;
+        terrain.receiveShadow = true;
+        scene.add(terrain);
+
+        // Create simple tree function
+        function createTree(x, z, height = 5) {
+            const tree = new THREE.Group();
+
+            // Trunk
+            const trunkGeometry = new THREE.CylinderGeometry(0.3, 0.4, height * 0.4, 8);
+            const trunkMaterial = new THREE.MeshStandardMaterial({ color: 0x4a2511 });
+            const trunk = new THREE.Mesh(trunkGeometry, trunkMaterial);
+            trunk.position.y = height * 0.2;
+            trunk.castShadow = true;
+            tree.add(trunk);
+
+            // Foliage (3 cone layers)
+            const foliageMaterial = new THREE.MeshStandardMaterial({ color: 0x1a5f1a });
+
+            for (let i = 0; i < 3; i++) {
+                const foliageGeometry = new THREE.ConeGeometry(1.2 - i * 0.2, height * 0.3, 8);
+                const foliage = new THREE.Mesh(foliageGeometry, foliageMaterial);
+                foliage.position.y = height * 0.4 + i * height * 0.15;
+                foliage.castShadow = true;
+                tree.add(foliage);
+            }
+
+            tree.position.set(x, 0, z);
+            return tree;
+        }
+
+        // Add trees on lower elevations
+        let treeCount = 0;
+        for (let i = 0; i < 80; i++) {
+            const x = (Math.random() - 0.5) * 180;
+            const z = (Math.random() - 0.5) * 120;
+
+            // Sample elevation at this position
+            const gridX = Math.floor(((x / 200) + 0.5) * terrainWidth);
+            const gridY = Math.floor(((z / 140) + 0.5) * terrainHeight);
+            const index = gridY * terrainWidth + gridX;
+            const elevation = terrainData[index] || 0;
+
+            // Only place trees on lower elevations
+            if (elevation < 30 && elevation > 5) {
+                const tree = createTree(x, z, 3 + Math.random() * 2);
+                tree.position.y = elevation;
+                scene.add(tree);
+                treeCount++;
+            }
+        }
+
+        document.getElementById('tree-count').textContent = treeCount;
+
+        // Add mountain peak markers
+        function createPeakMarker(x, z, height, label) {
+            const group = new THREE.Group();
+
+            // Marker pole
+            const poleGeometry = new THREE.CylinderGeometry(0.2, 0.2, 8, 8);
+            const poleMaterial = new THREE.MeshStandardMaterial({ color: 0xff0000 });
+            const pole = new THREE.Mesh(poleGeometry, poleMaterial);
+            pole.position.y = 4;
+            group.add(pole);
+
+            // Flag
+            const flagGeometry = new THREE.PlaneGeometry(4, 2);
+            const flagMaterial = new THREE.MeshStandardMaterial({
+                color: 0xff0000,
+                side: THREE.DoubleSide
+            });
+            const flag = new THREE.Mesh(flagGeometry, flagMaterial);
+            flag.position.set(2, 8, 0);
+            group.add(flag);
+
+            group.position.set(x, height, z);
+            return group;
+        }
+
+        // Add peak markers on highest points
+        let peakCount = 0;
+        const peaks = [];
+
+        for (let i = 0; i < terrainData.length; i++) {
+            if (terrainData[i] > 100) {
+                const x = (i % terrainWidth) / terrainWidth;
+                const y = Math.floor(i / terrainWidth) / terrainHeight;
+                const worldX = (x - 0.5) * 200;
+                const worldZ = (y - 0.5) * 140;
+                peaks.push({ x: worldX, z: worldZ, height: terrainData[i] });
+            }
+        }
+
+        // Place markers on tallest peaks (limit to top 5)
+        peaks.sort((a, b) => b.height - a.height);
+        for (let i = 0; i < Math.min(5, peaks.length); i++) {
+            const peak = peaks[i];
+            const marker = createPeakMarker(peak.x, peak.z, peak.height);
+            scene.add(marker);
+            peakCount++;
+        }
+
+        document.getElementById('peak-count').textContent = peakCount;
+
+        // Add grid for reference
+        const gridHelper = new THREE.GridHelper(200, 40, 0x888888, 0x444444);
+        gridHelper.position.y = -1;
+        scene.add(gridHelper);
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();
+
+            // Gentle flag animation
+            scene.traverse((object) => {
+                if (object.geometry && object.geometry.type === 'PlaneGeometry' &&
+                    object.material.color.getHex() === 0xff0000) {
+                    object.rotation.y = Math.sin(Date.now() * 0.002) * 0.3;
+                }
+            });
+
+            renderer.render(scene, camera);
+        }
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        animate();
+    </script>
+</body>
+</html>
