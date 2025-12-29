@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzbekistan 3D Explorer - Model Spawner</title>
+
+    <!-- CesiumJS from CDN -->
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.111/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.111/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <h1>Uzbekistan 3D Explorer</h1>
+            <p>Select a location, spawn a model, explore!</p>
+        </div>
+
+        <!-- Uzbekistan Locations -->
+        <div class="sidebar-section">
+            <h3>Uzbekistan Locations</h3>
+            <button class="location-btn" data-location="tashkent">Tashkent</button>
+            <button class="location-btn" data-location="samarkand">Samarkand</button>
+            <button class="location-btn" data-location="bukhara">Bukhara</button>
+            <button class="location-btn" data-location="fergana">Fergana Valley</button>
+            <button class="location-btn" data-location="kyzylkum">Kyzylkum Desert</button>
+            <button class="location-btn" data-location="aral">Aral Sea</button>
+            <button class="location-btn" data-location="khiva">Khiva</button>
+            <button class="location-btn" data-location="nukus">Nukus</button>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- 3D Models -->
+        <div class="sidebar-section">
+            <h3>Spawn 3D Model</h3>
+            <button class="model-btn" data-model="aircraft">Aircraft</button>
+            <button class="model-btn" data-model="drone">Drone</button>
+            <button class="model-btn" data-model="balloon">Hot Air Balloon</button>
+            <button class="model-btn" data-model="vehicle">Ground Vehicle</button>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Controls -->
+        <div class="sidebar-section">
+            <h3>Scene Controls</h3>
+
+            <!-- Shadows Toggle -->
+            <div class="control-item">
+                <label class="toggle-container">
+                    <input type="checkbox" id="shadowsToggle" checked>
+                    <span class="toggle-label">Shadows</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Action Buttons -->
+        <div class="sidebar-section">
+            <button class="action-btn clear-btn" id="clearModelsBtn">Clear All Models</button>
+            <button class="action-btn reset-btn" id="resetViewBtn">Reset View</button>
+        </div>
+    </div>
+
+    <!-- Status Panel (Top Right) -->
+    <div id="statusPanel">
+        <h3>Current Status</h3>
+        <div class="status-row">
+            <span class="status-label">Selected Model:</span>
+            <span class="status-value" id="statusModel">None</span>
+        </div>
+        <div class="status-row">
+            <span class="status-label">Selected Location:</span>
+            <span class="status-value" id="statusLocation">None</span>
+        </div>
+        <div class="status-row">
+            <span class="status-label">Latitude:</span>
+            <span class="status-value" id="statusLat">—</span>
+        </div>
+        <div class="status-row">
+            <span class="status-label">Longitude:</span>
+            <span class="status-value" id="statusLon">—</span>
+        </div>
+        <div class="status-row">
+            <span class="status-label">Camera Height:</span>
+            <span class="status-value" id="statusHeight">—</span>
+        </div>
+        <div class="status-row">
+            <span class="status-label">Total Models:</span>
+            <span class="status-value" id="statusCount">0</span>
+        </div>
+    </div>
+
+    <!-- Cesium Container -->
+    <div id="cesiumContainer"></div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay">
+        <div class="loading-spinner"></div>
+        <p>Loading Uzbekistan Explorer...</p>
+    </div>
+
+    <!-- Instructions Popup (First Time) -->
+    <div id="instructionsPopup" class="hidden">
+        <div class="popup-content">
+            <h2>Welcome to Uzbekistan 3D Explorer!</h2>
+            <ol>
+                <li>Click a <strong>location</strong> button to fly there</li>
+                <li>Click a <strong>model</strong> button to spawn it at that location</li>
+                <li>Use mouse to rotate, zoom, and tilt the globe</li>
+                <li>Toggle 3D buildings, shadows, and terrain</li>
+            </ol>
+            <button id="closeInstructionsBtn">Got it!</button>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

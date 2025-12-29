@@ -1,0 +1,28 @@
+# Optional local model files (too large for git)
+assets/models/*.glb
+
+# Keep directory structure
+!assets/models/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.bak
+
+# Node modules (if ever used)
+node_modules/
