@@ -1,17 +1,31 @@
-#30DayMapChallenge | Day 2 - Lines
+# Day 02: Lines
 
-Quick and simple map for today!
-For today’s theme, I focused on Karakalpakstan’s transportation network in northwestern Uzbekistan 🇺🇿
+## Overview
+Transportation network visualization for Karakalpakstan, northwestern Uzbekistan.
 
-This map visualizes the region’s railways, national highways, and local roads.
-All datasets were obtained from OpenStreetMap (via Overpass Turbo) and processed in QGIS. Layers were clipped to the Karakalpakstan boundary for a clearer view of the network.
+![Transportation Map](Transportation%20Map%20Karakalpakstan.png)
 
-🗺️ Theme: Lines
+## Data Sources
+- **Railways:** OpenStreetMap (railway lines)
+- **National Highways:** Major road network
+- **Local Roads:** Secondary road network
+- **Settlements:** Main population centers
+- **Water Bodies:** Lakes and water features
 
-📍 Region: Karakalpakstan, Uzbekistan
+## Methodology
+1. Downloaded OSM data via Overpass Turbo
+2. Clipped all layers to Karakalpakstan boundary
+3. Styled transportation network by hierarchy
+4. Processed and visualized in QGIS
 
-💾 Data: OpenStreetMap (Overpass Turbo)
+## Datasets
+- `Railway_Karakalpakstan.geojson` - Rail network
+- `Highways_Karakalpakstan.geojson` - Major roads
+- `Local_Roads_Karakalpakstan.geojson` - Local roads
+- `Main_Settlements_Karakalpak.geojson` - Cities and towns
+- `Lakes_Karakalpakstan.geojson` - Water bodies
+- `KarakalpakstanArea.geojson` - Regional boundary
 
-🧭 Tools: QGIS
-
-
+## Tools Used
+- QGIS - Data processing and cartography
+- Overpass Turbo - OSM data extraction

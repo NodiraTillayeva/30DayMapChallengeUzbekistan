@@ -63,22 +63,27 @@
 <td width="20%" align="center">
 <a href="./Day 05 Earth">
 <img src="https://img.shields.io/badge/Day%2005-✅-success?style=for-the-badge" alt="Day 05"/><br/>
-<b>Earth</b>
+<b>Earth</b><br/>
+<img src="./Day 05 Earth/day5Showcase.jpg" width="150"/>
 </a>
 </td>
 </tr>
 
 <tr>
 <td width="20%" align="center">
-<a href="./Day 06 Dimensions">
+<a href="./Day 06 Dimension">
 <img src="https://img.shields.io/badge/Day%2006-✅-success?style=for-the-badge" alt="Day 06"/><br/>
-<b>Dimensions</b>
+<b>Dimension</b><br/>
+<img src="./Day 06 Dimension/dimension.png" width="150"/><br/>
+<sub>📊 Khorezm Settlement Analysis</sub>
 </a>
 </td>
 <td width="20%" align="center">
 <a href="./Day 07 Accessibility">
 <img src="https://img.shields.io/badge/Day%2007-✅-success?style=for-the-badge" alt="Day 07"/><br/>
-<b>Accessibility</b>
+<b>Accessibility</b><br/>
+<img src="./Day 07 Accessibility/accessibility_map.png" width="150"/><br/>
+<sub>♿ Wheelchair Access Analysis</sub>
 </a>
 </td>
 <td width="20%" align="center">
@@ -255,7 +260,7 @@
 <a href="./Day 30 Makeover">
 <img src="https://img.shields.io/badge/Day%2030-✅-success?style=for-the-badge" alt="Day 30"/><br/>
 <b>Makeover</b><br/>
-<img src="./Day 30 Makeover/aral_sea_timelapse.gif" width="150"/>
+<img src="./Day 30 Makeover/showcase_aral.gif" width="150"/>
 </a>
 </td>
 </tr>
@@ -378,172 +383,64 @@ Multi-contributor analysis showcasing different approaches to fire monitoring an
 
 ## 📖 About This Repository
 
-Welcome to the **30 Day Map Challenge Uzbekistan Community Repository**!
+A collaborative space where Uzbekistan's GIS community shares maps, code, and workflows for the global [30 Day Map Challenge](https://30daymapchallenge.com/). This repository showcases local talent, datasets, and perspectives while building a community archive of creative geospatial work.
 
-This is a collaborative space where participants from **Uzbekistan** share their maps, code, and workflows for the global [30 Day Map Challenge](https://30daymapchallenge.com/).
-Our aim is to showcase local talent, datasets, and perspectives while building a community archive of creative geospatial work.
-
-### 🤝 Multiple Contributors Welcome!
-
-Many days feature **multiple maps from different contributors**! Each day's folder may contain subfolders for different participants or multiple approaches to the same theme. This diversity showcases the creativity and varied perspectives of our community.
-
-### 🎯 Why This Repository?
-
-By contributing, you are helping to:
-- 🗺️ Build an open archive of geospatial creativity for **Uzbekistan**
-- 💡 Inspire others with different mapping techniques and tools
-- 🤝 Strengthen the local mapping and open data community
-- 🌐 Make Uzbekistan visible in the global geospatial challenge
+**Multiple contributors welcome!** Many days feature different approaches to the same theme, showcasing the creativity and varied perspectives of our community.
 
 ---
 
 ## 📅 Repository Structure
 
-Each day folder can follow these structures:
-
-**Single Contributor:**
 ```
-/day01_points/
+/dayXX_theme/
 ├── README.md              # Description, datasets, and methods
-├── author_day01.png       # Final map image
-└── /code/                 # Scripts, notebooks, or project files
-    ├── map.ipynb
-    └── requirements.txt
+├── map.png               # Final map image
+└── /code/                # Scripts, notebooks, or project files
 ```
 
-**Multiple Contributors (Recommended):**
-```
-/day01_points/
-├── /contributor1_name/
-│   ├── README.md
-│   ├── map.png
-│   └── /code/
-└── /contributor2_name/
-    ├── README.md
-    ├── map.png
-    └── /code/
-```
-
-### What to Include:
-- **Map image**: `username_dayXX.png` or `.jpg`
-- **Code**: Jupyter notebook, R script, Python, or QGIS/ArcGIS project
-- **README.md**: Short description of dataset, tools, and method
-- **Subfolder**: If adding to an existing day, create your own subfolder with your name/username
+For multiple contributors, create subfolders: `/dayXX_theme/contributor_name/`
 
 ---
 
 ## ✨ How to Contribute
 
 1. **Fork** this repository
-2. Add your map and code in the correct day folder
-3. Follow the folder structure guidelines above
-4. Commit with a clear message (e.g., `Add day15 fire map by YourName`)
-5. Open a **Pull Request (PR)**
+2. Add your map and code in the appropriate day folder
+3. Follow the folder structure above
+4. Open a **Pull Request**
 
-### 📌 Contribution Guidelines
-
-- ✅ Maps should be your own work and respect data copyright
-- ✅ Provide links to datasets instead of uploading large files
-- ✅ Include a brief README in your day folder
-- ✅ Be creative and have fun! 🌍
-- ❌ Do not upload large raw datasets (GeoTIFF, shapefiles, etc.)
+**Guidelines:**
+- ✅ Include map image, code, and brief README
+- ✅ Provide dataset links (don't upload large files)
+- ✅ Credit data sources and respect copyright
+- ❌ No large raw datasets (GeoTIFF, shapefiles, etc.)
 
 ---
 
-## 🛠️ GIS Tools, Frameworks & Datasets
+## 🛠️ Tools & Technologies Used
 
-Our community showcased technical diversity by using a wide range of professional geospatial tools and datasets:
+### **Cloud GIS Platforms**
+- **Google Earth Engine** - Large-scale geospatial analysis (Days 10, 22, 30)
+- **Carto** - Interactive mapping and spatial analysis (Day 17)
 
-### 🌐 **Cloud-Based GIS Platforms**
-- **Google Earth Engine (GEE)** - JavaScript API for large-scale geospatial analysis
-  - Used in: Days 10, 22, 30
-  - Capabilities: Multi-sensor time-series analysis, atmospheric data processing, cloud computing
-- **Carto** - Cloud-based interactive mapping and spatial analysis
-  - Used in: Day 17
-  - Capabilities: Fast visualization, spatial SQL, interactive dashboards
+### **Desktop GIS**
+- **ArcGIS Pro** - Professional analysis and cartography (Days 3, 8)
+- **QGIS** - Open-source GIS (Day 11)
 
-### 🖥️ **Desktop GIS Software**
-- **ArcGIS Pro** - Professional GIS analysis and cartography
-  - Used in: Days 3, 8
-  - Capabilities: Thermal analysis, land use change detection, LST derivation
-- **QGIS** - Open-source desktop GIS
-  - Used in: Day 11
-  - Capabilities: Data processing, cartographic styling, OSM integration
+### **Programming & Web Mapping**
+- **Python** - GeoPandas, Matplotlib, Rasterio, Folium (Days 16, 18)
+- **Leaflet.js** - Interactive web maps (Day 4)
+- **JavaScript** - Web mapping applications (Days 4, 13, 30)
+- **Cesium.js** - 3D geospatial visualization platform
+- **Sketchfab** - 3D model viewer and sharing platform
 
-### 💻 **Programming & Web Mapping**
-- **Python** - Geospatial programming and analysis
-  - Used in: Days 16, 18
-  - Libraries: GeoPandas, Matplotlib, Rasterio, Folium
-- **Leaflet.js** - JavaScript library for interactive web maps
-  - Used in: Day 4
-  - Capabilities: Client-side rendering, custom markers, popups
-- **JavaScript** - Web-based mapping applications
-  - Used in: Days 4, 13, 30
+### **Data Sources**
+- **Satellite:** Landsat (30m), Sentinel-2 (10m), Sentinel-5P (atmospheric)
+- **Vector:** OpenStreetMap, Natural Earth, Kontur Population
+- **Statistical:** UN FAO AQUASTAT, World Bank Open Data
 
-### 🎨 **Design Tools**
-- **Canva** - Graphic design and map styling
-  - Used in: Day 11
-
----
-
-### 📡 **Satellite Data & Remote Sensing**
-
-#### Multi-Spectral Imagery
-- **Landsat Collection 2** (30m resolution)
-  - Landsat 5 (TM), Landsat 7 (ETM+), Landsat 8 (OLI), Landsat 9
-  - Used in: Days 8, 30
-  - Bands: Thermal (LST), Visible, NIR, SWIR
-
-- **Sentinel-2** (10m resolution)
-  - ESA Copernicus Program
-  - Used in: Day 3
-  - Capabilities: High-resolution land cover classification
-
-#### Atmospheric Monitoring
-- **Sentinel-5P TROPOMI**
-  - Atmospheric composition monitoring
-  - Used in: Day 10
-  - Parameters: NO₂, CO, O₃, CH₄, SO₂
-
----
-
-### 🗺️ **Vector Data Sources**
-
-- **OpenStreetMap (OSM)**
-  - Community-driven geographic data
-  - Used in: Days 4, 11, 14, 17
-  - Accessed via: Overpass Turbo API, Carto, Leaflet
-
-- **Natural Earth Data**
-  - Public domain map dataset
-  - Used in: Day 22
-  - Scales: 1:10m, 1:50m, 1:110m
-
-- **Kontur Population Dataset**
-  - High-resolution population data (2023)
-  - Used in: Day 16
-  - Format: H3 hexagonal grid
-
----
-
-### 📊 **Statistical & Geopolitical Data**
-
-- **UN FAO AQUASTAT** - Water resources statistics
-  - Used in: Day 22
-
-- **World Bank Open Data** - Regional development indicators
-  - Used in: Day 22
-
----
-
-### 🔧 **Analysis Techniques Employed**
-
-- ✅ **Remote Sensing:** NDWI calculation, thermal band processing, change detection
-- ✅ **Time-Series Analysis:** Multi-year environmental monitoring, trend detection
-- ✅ **Spatial Analysis:** Grid-based aggregation, density mapping, buffer analysis
-- ✅ **Atmospheric Science:** Pollution mapping, concentration averaging
-- ✅ **Cartography:** Minimalist design, interactive web maps, storytelling
-- ✅ **Data Integration:** Multi-source fusion, API integration, cloud masking
+### **Techniques**
+Remote sensing (NDWI, LST), time-series analysis, spatial analysis, atmospheric monitoring, web mapping, change detection
 
 ---
 
@@ -551,23 +448,19 @@ Our community showcased technical diversity by using a wide range of professiona
 
 A huge thanks to all the amazing mappers who contributed to this challenge! 🎉
 
-<!-- Add contributor avatars here -->
-
 ---
 
 ## 📜 License
 
-- **Code**: Released under the [MIT License](LICENSE)
-- **Map Images**: Shared under [Creative Commons CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-  (Please credit the original authors when sharing)
+- **Code**: [MIT License](LICENSE)
+- **Map Images**: [Creative Commons CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) - Please credit authors when sharing
 
 ---
 
-## 🔗 Useful Links
+## 🔗 Links
 
 - 🌐 [Official 30 Day Map Challenge](https://30daymapchallenge.com/)
 - 🐦 [#30DayMapChallenge on Twitter](https://twitter.com/search?q=%2330DayMapChallenge)
-- 📚 [Common Datasets](./common-datasets/)
 
 ---
 

@@ -1,9 +1,37 @@
-Day 3: Polygons | #30DayMapChallenge 
+# Day 03: Polygons
 
-For today’s theme, I compared Land Use/Land Cover (LULC) changes in Karakalpakstan between 2017 and 2024.
+## Overview
+Land Use/Land Cover (LULC) change analysis for Karakalpakstan, showing environmental changes from 2017 to 2024.
 
-Using Sentinel-2 10-meter LULC imagery, I processed and visualized the data in ArcGIS Pro. The comparison shows that crop, flooded vegetation, and water areas have decreased over time and of course the most visible changes near the Aral Sea. 
+## Comparison
 
-Data: Sentinel-2
+### 2017 LULC
+![LULC 2017](LULC_2017_Karakalpakstan.jpg)
 
-Tool: ArcGIS Pro
+### 2024 LULC
+![LULC 2024](LULC_2024_Karakalpakstan.jpg)
+
+### Side-by-Side Comparison
+![LULC Comparison](LULC_Comparsion_2017_2025.jpg)
+
+### Animated Change
+![LULC Animation](LULC_GIF.gif)
+
+## Key Findings
+- ⬇️ **Decreased:** Crop areas, flooded vegetation, water bodies
+- 🏜️ **Most visible changes:** Near the Aral Sea region
+- 📊 **Resolution:** 10-meter Sentinel-2 imagery
+
+## Land Cover Classes
+- Water
+- Crops
+- Built Area
+- Flooded Vegetation
+- Rangeland
+- Trees
+- Bare Ground
+
+## Data & Tools
+**Data:** Sentinel-2 10m LULC (2017, 2024)
+**Processing:** ArcGIS Pro
+**Analysis:** Polygon-based land cover classification

@@ -1,10 +1,46 @@
-Day 4: My Data | #30DayMapChallenge
+# Day 04: My Data
 
+## Overview
+Interactive web map visualizing personal travel data - European cities visited.
 
-For today’s theme, I created an interactive map showing the European cities I’ve visited.
-The map was built with Leaflet.js, using OpenStreetMap as the basemap. Each city marker includes coordinates and popups with images.
+![Travel Map](tumaristravel.jpg)
 
-Creating this map was a fun way to visualize my own travel data and practice web mapping!
+## Features
+- 📍 **Custom markers** for each visited city
+- 🖼️ **Photo popups** with city images
+- 🗺️ **Interactive** - Click markers to view details
+- 📊 **Personal dataset** - Real travel data
 
-<img width="1486" height="904" alt="image" src="https://github.com/user-attachments/assets/daa772fb-c839-4ad1-938a-8c2f76cd46cf" />
+## Technical Implementation
 
+**Web Map Stack:**
+```javascript
+// Leaflet.js initialization
+const map = L.map('map').setView([50.0, 10.0], 4);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+// Add city markers with popups
+cities.forEach(city => {
+    L.marker([city.lat, city.lon])
+        .bindPopup(`<img src="${city.image}"/><br/><b>${city.name}</b>`)
+        .addTo(map);
+});
+```
+
+## Data Structure
+- City name
+- Latitude/Longitude coordinates
+- Photo URL
+- Visit date (optional)
+
+## Tools Used
+- **Leaflet.js** - Interactive web mapping
+- **OpenStreetMap** - Basemap tiles
+- **JavaScript** - Custom marker logic
+- **HTML/CSS** - Page structure and styling
+
+## Files
+- `index.html` - Main web page
+- `script.js` - Map logic and city data
+- `style.css` - Custom styling
+- `tumaristravel.jpg` - Showcase image

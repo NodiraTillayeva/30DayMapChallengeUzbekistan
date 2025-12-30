@@ -3,7 +3,12 @@
     "allow": [
       "Bash(dir:*)",
       "Bash(del:*)",
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(ogr2ogr:*)",
+      "Bash(python:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(done)"
     ]
   }
 }

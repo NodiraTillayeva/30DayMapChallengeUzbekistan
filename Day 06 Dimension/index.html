@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Settlement Patterns - Uzbekistan Spatial Analysis</title>
+
+    <!-- MapLibre GL JS -->
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet">
+
+    <!-- Turf.js for spatial analysis -->
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <h1>Khorezm Region Settlement Analysis</h1>
+        <p class="subtitle">Settlement Patterns within Administrative Boundaries - Day 6: Dimension</p>
+        <p class="subtitle" style="font-size: 0.85em; opacity: 0.8;">📍 Data focused on Khiva city vicinity within Khorezm</p>
+    </div>
+
+    <!-- Control Panel - Hidden, auto-loads -->
+    <div id="controlPanel" style="display: none;">
+        <div class="panel-section">
+            <h3>Layer Visibility</h3>
+            <label class="toggle-label">
+                <input type="checkbox" id="boundaryToggle" checked>
+                <span>Regional Boundary</span>
+            </label>
+            <label class="toggle-label">
+                <input type="checkbox" id="settlementsToggle" checked>
+                <span>Settlements</span>
+            </label>
+        </div>
+    </div>
+
+    <!-- Statistics Panel -->
+    <div id="statsPanel">
+        <h4>Khorezm Region</h4>
+        <div class="stat-row">
+            <span class="stat-label">Region Area:</span>
+            <span class="stat-value" id="statArea">—</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">Settlements:</span>
+            <span class="stat-value" id="statSettlements">—</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">Density:</span>
+            <span class="stat-value" id="statDensity">—</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">NNI (Dispersion):</span>
+            <span class="stat-value" id="statNNI">—</span>
+        </div>
+    </div>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="hidden">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p id="loadingText">Loading data...</p>
+            <p id="loadingSubtext"></p>
+        </div>
+    </div>
+
+    <!-- Methodology Modal -->
+    <div id="methodologyModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Methodology</h2>
+            <div class="method-section">
+                <h3>Study Area: Khorezm Region</h3>
+                <p>Analysis is performed within the official administrative boundaries of Khorezm Region (Xorazm viloyati), Uzbekistan.</p>
+                <p><strong>Boundary Display:</strong> Full Khorezm region (from uz.shp shapefile)</p>
+                <p><strong>Data Collection:</strong> Focused on Khiva city vicinity (60.2-61.0°E, 41.2-41.7°N) to avoid OSM API timeout</p>
+                <p>The boundary polygon is simplified to reduce complexity while maintaining accuracy (~500m tolerance).</p>
+                <p>All metrics are calculated for settlements located within the data collection area and regional boundary.</p>
+            </div>
+            <div class="method-section">
+                <h3>Settlement Density (ρ)</h3>
+                <p><strong>Formula:</strong> ρ = N / A</p>
+                <p>Where N = total settlements, A = region area (km²)</p>
+                <p>Number of settlements per square kilometer within the regional boundaries.</p>
+                <p><strong>Interpretation:</strong></p>
+                <ul>
+                    <li>High (>2): Dense settlement pattern</li>
+                    <li>Medium (0.5-2): Moderate settlement</li>
+                    <li>Low (<0.5): Sparse settlement</li>
+                </ul>
+            </div>
+            <div class="method-section">
+                <h3>Nearest Neighbor Index (NNI)</h3>
+                <p><strong>Formula:</strong> NNI = D̄<sub>obs</sub> / D̄<sub>exp</sub></p>
+                <p>Ratio of observed to expected nearest-neighbor distances under Complete Spatial Randomness (CSR).</p>
+                <p><strong>Interpretation:</strong></p>
+                <ul>
+                    <li>NNI < 1: Clustered settlement pattern</li>
+                    <li>NNI ≈ 1: Random distribution</li>
+                    <li>NNI > 1: Dispersed/regular pattern</li>
+                </ul>
+            </div>
+            <div class="method-section">
+                <h3>Data Sources</h3>
+                <p><strong>Administrative Boundary:</strong> Uzbekistan regions shapefile (uz.shp) - Khorezm Region (ID: UZXO)</p>
+                <p><strong>Settlements:</strong> OpenStreetMap nodes with place=village</p>
+                <p><strong>Data Collection Area:</strong> Focused on Khiva city vicinity (60.3-60.7°E, 41.3-41.5°N) to avoid API timeout</p>
+                <p><strong>Polygon Simplification:</strong> Turf.js simplify with 0.005° tolerance (~500m) for cleaner boundaries</p>
+                <p><strong>Auto-load:</strong> Data loads automatically on page load</p>
+                <p><strong>Note:</strong> OSM settlement data coverage varies. Results are indicative and based on community-contributed data.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Button -->
+    <button id="helpBtn" class="help-btn">?</button>
+
+    <!-- Main JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
