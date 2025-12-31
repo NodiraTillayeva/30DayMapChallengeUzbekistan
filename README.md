@@ -122,14 +122,14 @@
 <a href="./Day 12  Map from 2125">
 <img src="https://img.shields.io/badge/Day%2012-✅-success?style=for-the-badge" alt="Day 12"/><br/>
 <b>Map from 2125</b><br/>
-<img src="./Day 12  Map from 2125/Digital twin/digitaltwin.gif" width="150"/>
+<img src="./Day 12  Map from 2125/Digital twin/preview.png" width="150"/>
 </a>
 </td>
 <td width="20%" align="center">
 <a href="./Day 13 10 minute map">
 <img src="https://img.shields.io/badge/Day%2013-✅-success?style=for-the-badge" alt="Day 13"/><br/>
 <b>10 Minute Map</b><br/>
-<img src="./Day 13 10 minute map/Google Maps Builder/Day 13.gif" width="150"/><br/>
+<img src="./Day 13 10 minute map/Google Maps Builder/preview.png" width="150"/><br/>
 <sub>⚡ Google Maps + Mirabad Cafes</sub>
 </a>
 </td>
@@ -260,7 +260,7 @@
 <a href="./Day 30 Makeover">
 <img src="https://img.shields.io/badge/Day%2030-✅-success?style=for-the-badge" alt="Day 30"/><br/>
 <b>Makeover</b><br/>
-<img src="./Day 30 Makeover/showcase_aral.gif" width="150"/>
+<img src="./Day 29 Raster/raster.jpg" width="150"/>
 </a>
 </td>
 </tr>
