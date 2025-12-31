@@ -5,7 +5,7 @@
 ### 🗺️ Showcasing Uzbekistan's Geospatial Creativity 🗺️
 
 [![Progress](https://img.shields.io/badge/Progress-30%2F30%20Days%20COMPLETE!-brightgreen?style=for-the-badge)](https://github.com)
-[![Contributors](https://img.shields.io/github/contributors/yourusername/yourrepo?style=for-the-badge)](https://github.com)
+[![Contributors](https://img.shields.io/github/contributors/NodiraTillayeva/30DayMapChallengeUzbekistan?style=for-the-badge)](https://github.com)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
 </div>
