@@ -3,7 +3,7 @@
 ## Overview
 Futuristic vision - Digital Twin 3D visualization of Uzbekistan cities in the year 2125.
 
-![Digital Twin](Digital%20twin/digitaltwin.gif)
+![Digital Twin](Digital%20twin/preview.png)
 
 ## Concept
 Imagining future urban landscapes with 3D city models, smart infrastructure, and digital representations of physical environments.

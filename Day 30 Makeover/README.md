@@ -6,9 +6,9 @@ Professional enhancement of the Aral Sea environmental catastrophe visualization
 ## Visualizations
 
 ### Timelapse Animation
-![Aral Sea Timelapse](showcase_aral.gif)
+![Aral Sea Timelapse](../Day%2029%20Raster/raster.jpg)
 
-*Full resolution (11MB):* [aral_sea_timelapse.gif](aral_sea_timelapse.gif)
+*Animated versions:* [showcase_aral.gif](showcase_aral.gif) (2.6MB) | [aral_sea_timelapse.gif](aral_sea_timelapse.gif) (11MB)
 
 ### Before & After Comparison
 ![Pre-1984](day30_pre.png) ![Post-2024](day30_post.png)

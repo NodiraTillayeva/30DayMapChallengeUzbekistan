@@ -21,7 +21,7 @@ Quick-to-create maps showcasing rapid web mapping capabilities - cafes in Miraba
 - `mirabad_boundary.geojson` - District boundary
 
 ### 2. Google Maps Builder
-![Maps Builder](Google%20Maps%20Builder/Day%2013.gif)
+![Maps Builder](Google%20Maps%20Builder/preview.png)
 
 **Concept:** Rapid map creation tool using Google Maps API
 **Features:**
