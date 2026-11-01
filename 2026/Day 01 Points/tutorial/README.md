@@ -8,6 +8,8 @@ In this tutorial you'll make a map of every fire that NASA satellites spotted in
 
 ![What you'll make](images/07-satellite-basemap.jpg)
 
+📄 **Printable PDF:** [English](pdf/Day01_Tutorial_EN.pdf) · [Русский](pdf/Day01_Tutorial_RU.pdf) · [Oʻzbekcha](pdf/Day01_Tutorial_UZ.pdf)
+
 ---
 
 ## 🛰️ Part 0 – Meet the data: NASA FIRMS fire detections
