@@ -12,19 +12,17 @@
 
 ---
 
-## ⚡ Quick Start: Add Your Map
+## ⚡ Quick Start: Add Your Map (no coding needed)
 
-```bash
-git clone https://github.com/NodiraTillayeva/30DayMapChallengeUzbekistan.git
-cd 30DayMapChallengeUzbekistan
-git checkout -b day04-clusters-yourname          # your own branch
-# put your files in: 2026/Day 04 Clusters/YourName/
-git add "2026/Day 04 Clusters/YourName"
-git commit -m "Day 04 Clusters: <short description> (YourName)"
-git push -u origin day04-clusters-yourname       # then open the Pull Request link GitHub shows
-```
+Everything happens on the GitHub website. All you need is a free [GitHub account](https://github.com/signup).
 
-No access yet? Ask Nodira to add you, or fork the repo. Full guide and fixes for common errors: [How to Add Your Map](#-new-here-how-to-add-your-map).
+1. On your computer, make a folder **named after you** (e.g. `Aziza`) and put your map image (plus any code or notes) inside it.
+2. Here on GitHub, open **`2026`** → the folder for your day (e.g. **`Day 04 Clusters`**).
+3. Click **Add file** → **Upload files**, then **drag your whole folder** into the page.
+4. At the bottom, write a short message (e.g. *"Day 04 Clusters – Aziza"*) and click **Propose changes** (or **Commit changes**).
+5. On the next page, click **Create pull request**. Done! 🎉 We'll check it and add it.
+
+Stuck? See the [detailed step-by-step guide](#-new-here-how-to-add-your-map), or message Nodira.
 
 ---
 
@@ -453,24 +451,61 @@ A collaborative space where Uzbekistan's GIS community shares maps, code, and wo
 
 ## 🚀 New Here? How to Add Your Map
 
-You only need [Git](https://git-scm.com/downloads) and a GitHub account. Do steps 1–2 once, and steps 3–6 for every map.
+You don't need to install anything. Everything is done in your web browser on github.com.
 
-**1. Get access.** Ask Nodira to add you as a collaborator. Accept the email invite. If you don't have access, **fork** the repo on GitHub and clone your fork instead.
+**Before your first map (once only)**
+- Create a free account at [github.com/signup](https://github.com/signup) and send your username to Nodira.
+- You'll get an email invitation. Click **Accept invitation**.
+- No invitation yet? You can still follow the steps below. GitHub will make a personal copy (a "fork") for you automatically and send your map to us for review.
 
-**2. Clone the repository**
+**Every time you add a map**
+
+**1. Prepare your folder.** On your computer, create a folder with **your name** (e.g. `Aziza`). Put inside it:
+   - your final map image (`.png` or `.jpg`)
+   - optionally: your code, notebook or QGIS/ArcGIS project
+   - optionally: a short text file `README.md` saying what you mapped, which data you used and which tools
+
+**2. Open your day's folder on GitHub.** At the top of this page, click the **`2026`** folder, then click your day (e.g. **`Day 04 Clusters`**).
+
+**3. Upload.** Click the **Add file** button (top right) → **Upload files**. Drag your whole folder from your computer into the box. GitHub keeps the folder name, so your files end up in `2026/Day 04 Clusters/Aziza/`.
+
+**4. Save your upload.** Scroll down to the box at the bottom:
+   - In the first line, write a short description, e.g. `Day 04 Clusters – Aziza`
+   - If you see a choice, pick **"Create a new branch for this commit and start a pull request"**
+   - Click the green **Commit changes** / **Propose changes** button
+
+**5. Send it for review.** On the next page, click the green **Create pull request** button. That's it! A maintainer will review it and add it to the gallery.
+
+**Want to fix something later?** Go to your file, click the **pencil ✏️ icon** to edit text, or upload a new version with the same file name. Then follow steps 4–5 again.
+
+**Common problems**
+- **"File is too big"**: the website accepts files up to 25 MB. Export your map smaller (e.g. 150–300 dpi) and don't upload raw data. Put a link to the data source in your README instead.
+- **Can't drag a folder** (some browsers): first click **Add file → Create new file**, type `Aziza/README.md` as the name (the `/` creates your folder), write a sentence about your map, then save. Open your new folder and upload your files into it.
+- **Don't see the Add file button**: make sure you're logged in to GitHub.
+- Anything else: message Nodira. Don't worry, you can't break anything. Every change is reviewed first.
+
+**Guidelines:**
+- ✅ Include the map image and a short description
+- ✅ Link to datasets instead of uploading them, and credit data sources
+- ❌ No large raw datasets (GeoTIFF, shapefiles, etc.)
+
+<details>
+<summary><b>Prefer the command line? (for Git users)</b></summary>
+
+**1. Clone the repository**
 ```bash
 git clone https://github.com/NodiraTillayeva/30DayMapChallengeUzbekistan.git
 cd 30DayMapChallengeUzbekistan
 ```
 
-**3. Get the latest changes and create your own branch**
+**2. Get the latest changes and create your own branch**
 ```bash
 git checkout main
 git pull
 git checkout -b day04-clusters-yourname
 ```
 
-**4. Add your work** in the right day folder, inside a subfolder with your name:
+**3. Add your work** in the right day folder, inside a subfolder with your name:
 ```
 2026/
 └── Day 04 Clusters/
@@ -481,24 +516,21 @@ git checkout -b day04-clusters-yourname
         └── code/              # notebooks, scripts, project files
 ```
 
-**5. Commit and push**
+**4. Commit and push**
 ```bash
 git add "2026/Day 04 Clusters/YourName"
 git commit -m "Day 04 Clusters: <short description> (YourName)"
 git push -u origin day04-clusters-yourname
 ```
 
-**6. Open a Pull Request.** GitHub prints a link after the push. Open it, click **Create pull request**, and the maintainers will review and merge it.
+**5. Open a Pull Request.** GitHub prints a link after the push. Open it, click **Create pull request**, and the maintainers will review and merge it.
 
 **Common problems**
 - `rejected ... fetch first`: someone pushed before you. Run `git pull --rebase`, then push again.
-- `Permission denied`: you're not a collaborator yet. Fork the repo (see step 1).
+- `Permission denied`: you're not a collaborator yet. Fork the repo and clone your fork.
 - Committed a huge file by mistake: don't push. Ask in the group chat before going further.
 
-**Guidelines:**
-- ✅ Include the map image, code, and a short README
-- ✅ Link to datasets instead of uploading them, and credit data sources
-- ❌ No large raw datasets (GeoTIFF, shapefiles, etc.). GitHub blocks files over 100 MB.
+</details>
 
 ---
 
