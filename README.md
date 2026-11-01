@@ -30,6 +30,8 @@ Stuck? See the [detailed step-by-step guide](#-new-here-how-to-add-your-map), or
 
 Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026/). Each day has its own folder in [`2026/`](./2026) with the theme description.
 
+📘 **Start here:** [Day 01 tutorial – Fires Seen From Space](<./2026/Day 01 Points/tutorial/README.md>). It's a beginner-friendly walkthrough with screenshots, using NASA satellite data, with no coding needed.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
