@@ -12,6 +12,22 @@
 
 ---
 
+## ⚡ Quick Start: Add Your Map
+
+```bash
+git clone https://github.com/NodiraTillayeva/30DayMapChallengeUzbekistan.git
+cd 30DayMapChallengeUzbekistan
+git checkout -b day04-clusters-yourname          # your own branch
+# put your files in: 2026/Day 04 Clusters/YourName/
+git add "2026/Day 04 Clusters/YourName"
+git commit -m "Day 04 Clusters: <short description> (YourName)"
+git push -u origin day04-clusters-yourname       # then open the Pull Request link GitHub shows
+```
+
+No access yet? Ask Nodira to add you, or fork the repo. Full guide and fixes for common errors: [How to Add Your Map](#-new-here-how-to-add-your-map).
+
+---
+
 ## 🗓️ 2026 Challenge (in progress)
 
 Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026/). Each day has its own folder in [`2026/`](./2026) with the theme description.
