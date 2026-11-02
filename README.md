@@ -32,6 +32,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 📘 **Start here:** [Day 01 tutorial – Fires Seen From Space](<./2026/Day 01 Points/tutorial/README.md>). It's a beginner-friendly walkthrough with screenshots, using NASA satellite data, with no coding needed.
 
+🐍 **Day 02 tutorial:** [Lines inside your region](<./2026/Day 02 Lines/tutorial/README.md>). Your first Python map in Google Colab: region boundaries, rivers, roads and railways from OpenStreetMap.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
