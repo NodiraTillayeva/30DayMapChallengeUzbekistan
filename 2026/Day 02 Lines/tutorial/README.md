@@ -6,6 +6,8 @@ You will draw the regions of Uzbekistan, turn their edges into **boundary lines*
 
 ⏱️ About 20 minutes · 💻 Any computer with a browser · 🔑 A Google account (Gmail)
 
+📄 **Printable PDF:** [English](pdf/Day02_Tutorial_EN.pdf) · [Русский](pdf/Day02_Tutorial_RU.pdf) · [Oʻzbekcha](pdf/Day02_Tutorial_UZ.pdf)
+
 | Ferghana, `night` | Uzbekistan, `pastel` | Khorezm, `mint` |
 |:---:|:---:|:---:|
 | ![](images/variation-f.png) | ![](images/variation-a.png) | ![](images/variation-c.png) |
@@ -31,18 +33,75 @@ You will draw the regions of Uzbekistan, turn their edges into **boundary lines*
 
 ---
 
-## 🚀 Part 1 · Open the notebook in Colab
+## 🚀 Part 1 · Launch the tutorial
 
-**Google Colab** lets you run Python code in your browser for free. A *notebook* is a page that mixes text and code.
+**Google Colab** lets you run Python code in your browser for free. A *notebook* is a page that mixes text and code. You don't need to install anything.
+
+### Option A · One click (recommended)
 
 1. Click this button: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NodiraTillayeva/30DayMapChallengeUzbekistan/blob/main/2026/Day%2002%20Lines/tutorial/day02_lines.ipynb)
+   (or copy this address into your browser: `colab.research.google.com/github/NodiraTillayeva/30DayMapChallengeUzbekistan/blob/main/2026/Day%2002%20Lines/tutorial/day02_lines.ipynb`)
 2. The notebook opens. Click **Sign in** (top right) and log in with your Google account. You need to sign in to run code.
 
 ![Colab with the notebook open](images/colab1_open.png)
 
+3. **Keep your own copy (recommended).** Click **Copy to Drive** in the toolbar. Colab opens your personal copy, saved in your Google Drive in the folder *Colab Notebooks*. Work in that copy: your changes are saved and you can come back to it later. Without a copy, your changes disappear when you close the tab.
+
+![The Copy to Drive button](images/colab4_copy.png)
+
+### Option B · Open it from Colab yourself
+
+1. Go to [colab.research.google.com](https://colab.research.google.com) and sign in.
+2. In the window that opens, choose the **GitHub** tab (or **File → Open notebook → GitHub**).
+3. Paste `NodiraTillayeva/30DayMapChallengeUzbekistan`, press Enter, and click **`2026/Day 02 Lines/tutorial/day02_lines.ipynb`**.
+
+### Option C · On your own computer (for people who already use Python)
+
+1. Download the notebook: open [`day02_lines.ipynb`](day02_lines.ipynb) on GitHub and click the **Download raw file** button (⬇, top right of the file).
+2. Open it in Jupyter, JupyterLab or VS Code. You need the packages `geopandas` and `matplotlib` (`pip install geopandas matplotlib`).
+3. It reads the data from the internet, like in Colab. To work offline, download the data (Part 2) and change `BASE` in the first cell to your data folder, e.g. `BASE = "data/"`.
+
 ---
 
-## ▶️ Part 2 · How to run a cell
+## 📥 Part 2 · Get the datasets
+
+**In Colab you don't need to download anything.** The notebook reads all the data from this project on GitHub by itself (that's what the `BASE = "https://..."` line in Step 0 does).
+
+Download the data only if you want to use it in another program, such as **QGIS**, **kepler.gl** or **ArcGIS**, or to work offline.
+
+### All files at once
+
+⬇️ **[Download day02_lines_data.zip](https://github.com/NodiraTillayeva/30DayMapChallengeUzbekistan/raw/main/2026/Day%2002%20Lines/tutorial/data/day02_lines_data.zip)** (2.2 MB). It contains the four files below and a `README.md`. Unzip it (right-click → *Extract all* on Windows, double-click on Mac).
+
+### One file at a time
+
+| File | What's inside | Size |
+|---|---|---|
+| [`uzbekistan_regions.geojson`](data/uzbekistan_regions.geojson) | the 14 regions (column `region`) | 0.1 MB |
+| [`waterways.geojson`](data/waterways.geojson) | 33,793 rivers, canals, drains and streams (column `kind`) | 8.0 MB |
+| [`railways.geojson`](data/railways.geojson) | 13,091 railway lines | 1.9 MB |
+| [`roads.geojson`](data/roads.geojson) | 23,232 main roads: `motorway`, `trunk`, `primary`, `secondary` | 3.6 MB |
+
+Click a file name, then click the **Download raw file** button (⬇) at the top right of the page:
+
+![The Download raw file button on GitHub](images/github_download.png)
+
+### How to open the files
+
+- **QGIS:** drag the `.geojson` file into the QGIS window, or use *Layer → Add Layer → Add Vector Layer*.
+- **kepler.gl:** open [kepler.gl/demo](https://kepler.gl/demo) and drag the file in (like in the Day 01 tutorial).
+- **Python:** `gpd.read_file("waterways.geojson")`.
+- **geojson.io:** for a quick look at the small regions file, drag it into [geojson.io](https://geojson.io).
+
+### The original, full-size data
+
+Our files are simplified copies. The originals are free:
+- **OpenStreetMap for Uzbekistan:** [download.geofabrik.de/asia/uzbekistan.html](https://download.geofabrik.de/asia/uzbekistan.html) → *uzbekistan-latest-free.shp.zip* (about 270 MB). Use the layers `gis_osm_waterways_free_1`, `gis_osm_railways_free_1` and `gis_osm_roads_free_1`.
+- **Region boundaries:** `2025/Boundaries/uz.shp` in this repository (from simplemaps.com).
+
+---
+
+## ▶️ Part 3 · How to run a cell
 
 The notebook is made of **cells**. Text cells explain things. Grey boxes are **code cells**.
 
@@ -58,19 +117,19 @@ Run the first cell (Step 0). When you see **`Ready! ✅`** under it, you're set.
 
 ---
 
-## 🗺️ Part 3 · Draw the regions (Step 1)
+## 🗺️ Part 4 · Draw the regions (Step 1)
 
 Run the two cells of **Step 1**. The first one reads the boundary file and shows it as a table with 14 rows. The second one draws it:
 
 ![The 14 regions](images/step1_regions.png)
 
-## 〰️ Part 4 · Turn the regions into lines (Step 2)
+## 〰️ Part 5 · Turn the regions into lines (Step 2)
 
 Run **Step 2**. `.boundary` keeps only the edges of each region, so the filled shapes become **lines**:
 
 ![Boundary lines](images/step2_boundaries.png)
 
-## 💧 Part 5 · Load the rivers and canals (Step 3)
+## 💧 Part 6 · Load the rivers and canals (Step 3)
 
 Run the two cells of **Step 3**. The first one tells you how many lines there are of each kind. The second draws them all:
 
@@ -78,7 +137,7 @@ Run the two cells of **Step 3**. The first one tells you how many lines there ar
 
 Look how many canals there are, especially in the Ferghana Valley, Khorezm and Bukhara! Most of Uzbekistan's water flows through irrigation canals.
 
-## ✂️ Part 6 · Keep only the lines inside your region (Step 4)
+## ✂️ Part 7 · Keep only the lines inside your region (Step 4)
 
 This is the main skill of today: **clipping**.
 
@@ -88,7 +147,7 @@ In the Step 4 cell, change `MY_REGION = "Ferghana"` to your region and run it. R
 
 ![Lines clipped to Ferghana](images/step4_clip.png)
 
-## 🎨 Part 7 · Make it cute (Step 5)
+## 🎨 Part 8 · Make it cute (Step 5)
 
 Now find the **settings cell** in Step 5 and change the four settings:
 
@@ -124,7 +183,7 @@ Change the settings and run the two cells again. Some combinations to try:
 
 ---
 
-## 💾 Part 8 · Save and share your map
+## 💾 Part 9 · Save and share your map
 
 1. Run the cell in **Step 6**. Your map downloads as **`my_day02_map.png`** (check your *Downloads* folder).
 2. Make a folder named after **your map's topic**, e.g. `Canals of Khorezm`. Put your map inside, plus a short `README.md` with **your name**, the data (OpenStreetMap) and the tool (Python in Colab).
@@ -138,8 +197,8 @@ Change the settings and run the two cells again. Some combinations to try:
 | What you see | What to do |
 |---|---|
 | `NameError: name 'gpd' is not defined` (or `'regions'`, `'lines'`) | You skipped a cell. Run all the cells from the top again, in order. Or click **Runtime → Run all**. |
-| `AssertionError: Check the spelling of REGION!` (or `MY_REGION`) | The region name has a typo. Copy it exactly from the list in Part 6, including capital letters and quotes. |
-| `AssertionError: LINES must be ...` or `PALETTE must be ...` | Use one of the values from the table in Part 7, e.g. `"night"`, not `"blue"`. |
+| `AssertionError: Check the spelling of REGION!` (or `MY_REGION`) | The region name has a typo. Copy it exactly from the list in Part 7, including capital letters and quotes. |
+| `AssertionError: LINES must be ...` or `PALETTE must be ...` | Use one of the values from the table in Part 8, e.g. `"night"`, not `"blue"`. |
 | `SyntaxError` | A quote `"` is missing. Every text value needs quotes on both sides: `"Samarkand"`. |
 | The download doesn't start | Allow pop-ups for Colab, or click the 📁 **Files** icon on the left, find `my_day02_map.png`, click **⋮ → Download**. |
 | It asks me to sign in | Click **Sign in** (top right). Colab needs a Google account to run code. |
