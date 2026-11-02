@@ -256,8 +256,8 @@ Here's what some of the combinations look like:
 
 ## 📤 Part 7 – Share your map
 
-1. Give your downloaded image a clear name, e.g. `day01_fires_by_season_Aziza.png`.
-2. Upload it to **`2026/Day 01 Points/YourName/`** in this repository. The [Quick Start in the main README](../../../README.md#-quick-start-add-your-map-no-coding-needed) shows how, with no coding needed.
+1. Make a folder named after **your map's topic**, e.g. `Fires by season`. Put your image inside, plus a short `README.md` with **your name**, the data and the tools you used.
+2. Upload the whole folder to **`2026/Day 01 Points/`** in this repository. The [Quick Start in the main README](../../../README.md#-quick-start-add-your-map-no-coding-needed) shows how, with no coding needed.
 3. Post it with **#30DayMapChallenge** and say which choices you made (e.g. *"colored by season, Fergana Valley, dark background"*).
 
 ---

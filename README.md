@@ -16,10 +16,10 @@
 
 Everything happens on the GitHub website. All you need is a free [GitHub account](https://github.com/signup).
 
-1. On your computer, make a folder **named after you** (e.g. `Aziza`) and put your map image (plus any code or notes) inside it.
+1. On your computer, make a folder **named after your map's topic** (e.g. `Fires in Samarkand`). Put your map image inside, plus a short `README.md` with **your name** and what you mapped (code and notes are optional).
 2. Here on GitHub, open **`2026`** → the folder for your day (e.g. **`Day 04 Clusters`**).
 3. Click **Add file** → **Upload files**, then **drag your whole folder** into the page.
-4. At the bottom, write a short message (e.g. *"Day 04 Clusters – Aziza"*) and click **Propose changes** (or **Commit changes**).
+4. At the bottom, write a short message (e.g. *"Day 04 Clusters – Fires in Samarkand"*) and click **Propose changes** (or **Commit changes**).
 5. On the next page, click **Create pull request**. Done! 🎉 We'll check it and add it.
 
 Stuck? See the [detailed step-by-step guide](#-new-here-how-to-add-your-map), or message Nodira.
@@ -462,17 +462,24 @@ You don't need to install anything. Everything is done in your web browser on gi
 
 **Every time you add a map**
 
-**1. Prepare your folder.** On your computer, create a folder with **your name** (e.g. `Aziza`). Put inside it:
+**1. Prepare your folder.** On your computer, create a folder named after **what your map shows** (e.g. `Fires in Samarkand`), not after yourself. Put inside it:
    - your final map image (`.png` or `.jpg`)
+   - a short text file `README.md` with **your name**, what you mapped, which data you used and which tools. You can copy this:
+     ```
+     # Fires in Samarkand
+     Author: Aziza Karimova (GitHub: your-username)
+     Data: NASA FIRMS, 2025
+     Tools: kepler.gl
+     One or two sentences about what the map shows.
+     ```
    - optionally: your code, notebook or QGIS/ArcGIS project
-   - optionally: a short text file `README.md` saying what you mapped, which data you used and which tools
 
 **2. Open your day's folder on GitHub.** At the top of this page, click the **`2026`** folder, then click your day (e.g. **`Day 04 Clusters`**).
 
-**3. Upload.** Click the **Add file** button (top right) → **Upload files**. Drag your whole folder from your computer into the box. GitHub keeps the folder name, so your files end up in `2026/Day 04 Clusters/Aziza/`.
+**3. Upload.** Click the **Add file** button (top right) → **Upload files**. Drag your whole folder from your computer into the box. GitHub keeps the folder name, so your files end up in `2026/Day 04 Clusters/Fires in Samarkand/`.
 
 **4. Save your upload.** Scroll down to the box at the bottom:
-   - In the first line, write a short description, e.g. `Day 04 Clusters – Aziza`
+   - In the first line, write a short description, e.g. `Day 04 Clusters – Fires in Samarkand`
    - If you see a choice, pick **"Create a new branch for this commit and start a pull request"**
    - Click the green **Commit changes** / **Propose changes** button
 
@@ -482,12 +489,12 @@ You don't need to install anything. Everything is done in your web browser on gi
 
 **Common problems**
 - **"File is too big"**: the website accepts files up to 25 MB. Export your map smaller (e.g. 150–300 dpi) and don't upload raw data. Put a link to the data source in your README instead.
-- **Can't drag a folder** (some browsers): first click **Add file → Create new file**, type `Aziza/README.md` as the name (the `/` creates your folder), write a sentence about your map, then save. Open your new folder and upload your files into it.
+- **Can't drag a folder** (some browsers): first click **Add file → Create new file**, type `Fires in Samarkand/README.md` as the name (the `/` creates your folder), write your name and a sentence about your map, then save. Open your new folder and upload your files into it.
 - **Don't see the Add file button**: make sure you're logged in to GitHub.
 - Anything else: message Nodira. Don't worry, you can't break anything. Every change is reviewed first.
 
 **Guidelines:**
-- ✅ Include the map image and a short description
+- ✅ Name the folder after your map's topic, and put your name in its README
 - ✅ Link to datasets instead of uploading them, and credit data sources
 - ❌ No large raw datasets (GeoTIFF, shapefiles, etc.)
 
@@ -504,25 +511,25 @@ cd 30DayMapChallengeUzbekistan
 ```bash
 git checkout main
 git pull
-git checkout -b day04-clusters-yourname
+git checkout -b day04-fires-samarkand
 ```
 
-**3. Add your work** in the right day folder, inside a subfolder with your name:
+**3. Add your work** in the right day folder, inside a subfolder named after your map's topic:
 ```
 2026/
 └── Day 04 Clusters/
     ├── README.md              # theme description (already there)
-    └── YourName/
-        ├── README.md          # what you mapped, data sources, tools
+    └── Fires in Samarkand/
+        ├── README.md          # your name, what you mapped, data sources, tools
         ├── map.png            # final map image (keep it under ~5 MB)
         └── code/              # notebooks, scripts, project files
 ```
 
 **4. Commit and push**
 ```bash
-git add "2026/Day 04 Clusters/YourName"
-git commit -m "Day 04 Clusters: <short description> (YourName)"
-git push -u origin day04-clusters-yourname
+git add "2026/Day 04 Clusters/Fires in Samarkand"
+git commit -m "Day 04 Clusters: Fires in Samarkand (YourName)"
+git push -u origin day04-fires-samarkand
 ```
 
 **5. Open a Pull Request.** GitHub prints a link after the push. Open it, click **Create pull request**, and the maintainers will review and merge it.
