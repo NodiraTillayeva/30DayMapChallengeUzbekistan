@@ -2,7 +2,7 @@
 
 | File | What it is | Lines | Source |
 |---|---|---|---|
-| `uzbekistan_regions.geojson` | 14 regions of Uzbekistan (column `region`) | | simplemaps.com, simplified (from `2025/Boundaries/uz.shp`) |
+| `uzbekistan_regions.geojson` | 14 regions of Uzbekistan (column `region`) | | simplemaps.com, simplified (from `Boundaries/uz.shp`) |
 | `waterways.geojson` | rivers, canals, drains and streams (column `kind`) | 33,793 | OpenStreetMap via Geofabrik, 2 Nov 2026 |
 | `railways.geojson` | railway lines (`kind` = `rail`) | 13,091 | OpenStreetMap via Geofabrik, 2 Nov 2026 |
 | `roads.geojson` | main roads: `motorway`, `trunk`, `primary`, `secondary` | 23,232 | OpenStreetMap via Geofabrik, 2 Nov 2026 |

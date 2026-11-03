@@ -279,5 +279,5 @@ Here's what some of the combinations look like:
 ## 📚 Data credits
 
 - **Fire detections:** NASA FIRMS, MODIS Collection 6.1 active fire / hotspot detections (MCD14ML), Terra & Aqua, Uzbekistan 2025. [firms.modaps.eosdis.nasa.gov](https://firms.modaps.eosdis.nasa.gov/). doi: [10.5067/FIRMS/MODIS/MCD14ML](https://doi.org/10.5067/FIRMS/MODIS/MCD14ML)
-- **Region names:** added using the region boundaries in [`2025/Boundaries`](../../../2025/Boundaries) (source: simplemaps.com). Points just outside the border were matched to the nearest region.
+- **Region names:** added using the region boundaries in [`Boundaries`](../../../Boundaries) (source: simplemaps.com). Points just outside the border were matched to the nearest region.
 - **Readable columns** (`fire_type`, `day_night`, `season`, `month`, `confidence_level`) were made from the original FIRMS codes: `type`, `daynight`, `acq_date` and `confidence` (Low < 30, Nominal 30–80, High > 80).

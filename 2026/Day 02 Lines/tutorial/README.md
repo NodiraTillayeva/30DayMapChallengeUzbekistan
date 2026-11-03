@@ -97,7 +97,7 @@ Click a file name, then click the **Download raw file** button (⬇) at the top 
 
 Our files are simplified copies. The originals are free:
 - **OpenStreetMap for Uzbekistan:** [download.geofabrik.de/asia/uzbekistan.html](https://download.geofabrik.de/asia/uzbekistan.html) → *uzbekistan-latest-free.shp.zip* (about 270 MB). Use the layers `gis_osm_waterways_free_1`, `gis_osm_railways_free_1` and `gis_osm_roads_free_1`.
-- **Region boundaries:** `2025/Boundaries/uz.shp` in this repository (from simplemaps.com).
+- **Region boundaries:** `Boundaries/uz.shp` in this repository (from simplemaps.com).
 
 ---
 
@@ -209,5 +209,5 @@ Change the settings and run the two cells again. Some combinations to try:
 ## 📎 Credits
 
 - Lines: © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright) (ODbL), downloaded from [Geofabrik](https://download.geofabrik.de/asia/uzbekistan.html) on 2 November 2026 and simplified. See [`data/README.md`](data/README.md).
-- Region boundaries: [simplemaps.com](https://simplemaps.com), from `2025/Boundaries` in this repository.
+- Region boundaries: [simplemaps.com](https://simplemaps.com), from `Boundaries` in this repository.
 - Tools: [Google Colab](https://colab.research.google.com), [GeoPandas](https://geopandas.org), [Matplotlib](https://matplotlib.org).
