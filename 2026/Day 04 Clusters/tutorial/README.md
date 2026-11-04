@@ -63,6 +63,79 @@ To download one file from GitHub: click its name, then the **Download raw file**
 
 ---
 
+## 📡 Where does the data come from? Get your own from OpenStreetMap
+
+Our cafés come from **[OpenStreetMap](https://www.openstreetmap.org)** (OSM), the free world map made by volunteers. You can download any kind of place from it yourself: schools, pharmacies, mosques, bus stops, parks… Here are two ways.
+
+| | **A · Overpass Turbo** | **B · Geofabrik** |
+|---|---|---|
+| Best for | one city, one or a few kinds of places | the whole country, many layers at once |
+| How | type a search in the browser | download one big zip file |
+| Size | small (about 1 MB for Tashkent's cafés) | big (about 260 MB for Uzbekistan) |
+
+### A · Overpass Turbo (in the browser)
+
+1. Open **[overpass-turbo.eu](https://overpass-turbo.eu)** and click **Wizard** at the top. (Don't worry if the map shows another city: the search will move it.)
+
+![Overpass Turbo with the Wizard button](images/o01_home.jpg)
+
+2. Type what you want and where, then click **build and run query**:
+
+```
+(amenity=cafe or amenity=restaurant or amenity=fast_food) in Tashkent
+```
+
+![The Query Wizard](images/o02_wizard.jpg)
+
+3. Wait a few seconds. The places appear on the map (click 🔍 **zoom to data** on the left of the map if you don't see them). The text on the left is the real query the Wizard wrote for you, in the **Overpass** language.
+
+![The results on the map](images/o03_result.jpg)
+
+4. Click **Export** → next to **GeoJSON** click **download**. You get a file called `export.geojson`.
+
+![The Export window](images/o04_export.jpg)
+
+5. Drag `export.geojson` into QGIS. QGIS asks which part to add, because OSM stores some places as **points** and others as **building outlines** (polygons). Choose the **Point** layer (or both, and turn the polygons into points with **Vector → Geometry Tools → Centroids**).
+
+**What should I type?** In OSM every thing has a **tag**, `key=value`. Some useful ones:
+
+| You want | Type in the Wizard |
+|---|---|
+| cafés | `amenity=cafe` |
+| schools | `amenity=school` |
+| pharmacies | `amenity=pharmacy` |
+| mosques | `amenity=place_of_worship and religion=muslim` |
+| bus stops | `highway=bus_stop` |
+| parks | `leisure=park` |
+| hotels | `tourism=hotel` |
+| supermarkets | `shop=supermarket` |
+
+Then add ` in ` and a city: `in Samarkand`, `in Bukhara`, `in Namangan`. To find the tag for anything else, search the [OSM wiki Map features](https://wiki.openstreetmap.org/wiki/Map_features) page or click a place on [openstreetmap.org](https://www.openstreetmap.org) with the **?** (Query features) tool.
+
+> 💡 If Overpass Turbo says the server is busy or the query timed out, wait a minute and click **Run** again, or search a smaller city.
+
+### B · Geofabrik (the whole country)
+
+1. Open **[download.geofabrik.de/asia/uzbekistan.html](https://download.geofabrik.de/asia/uzbekistan.html)** and click **uzbekistan-latest-free.shp.zip**.
+
+![Geofabrik's Uzbekistan page](images/g01_geofabrik.jpg)
+
+2. Unzip it. You get many layers as shapefiles: `gis_osm_roads_free_1` (roads), `gis_osm_waterways_free_1` (rivers), `gis_osm_buildings_a_free_1` (buildings), `gis_osm_pois_free_1` (points of interest: cafés, shops, schools…) and more.
+3. Drag `gis_osm_pois_free_1.shp` into QGIS. The column `fclass` says what each point is.
+4. To keep only cafés, restaurants and fast food: right-click the layer → **Filter…** and type:
+
+```
+"fclass" IN ('cafe', 'restaurant', 'fast_food')
+```
+
+5. To keep only Tashkent: **Vector → Geoprocessing Tools → Clip**, with the points as **Input layer** and `tashkent_districts` as **Overlay layer**.
+
+This is exactly how the tutorial file was made (some places are drawn as buildings in OSM, so they were also turned into points from the `gis_osm_pois_a_free_1` layer).
+
+> ⚖️ **Always credit the data:** *© OpenStreetMap contributors*. OSM is free to use under the [ODbL licence](https://www.openstreetmap.org/copyright) as long as you say where it comes from.
+
+---
+
 ## 🖥️ Part 3 · Meet QGIS
 
 Open QGIS. You see the start screen:
@@ -248,10 +321,10 @@ The new layer **Count** has a column `NUMPOINTS`. Colour it: **Symbology** → *
 
 ## 🌈 Make it yours: ideas
 
-- **Other places:** the same steps work for any points. Try `school`, `pharmacy` or `supermarket` from OpenStreetMap ([Geofabrik](https://download.geofabrik.de/asia/uzbekistan.html), layer `gis_osm_pois_free_1`) or the fire points from the [Day 01 tutorial](../../Day%2001%20Points/tutorial/README.md).
+- **Other places:** the same steps work for any points. Download schools, pharmacies or supermarkets yourself (see [Get your own from OpenStreetMap](#-where-does-the-data-come-from-get-your-own-from-openstreetmap)) or use the fire points from the [Day 01 tutorial](../../Day%2001%20Points/tutorial/README.md).
 - **Only cafés:** right-click the layer → **Filter…** → `"kind" = 'cafe'`, then run DBSCAN again.
 - **Night mode:** remove the OpenStreetMap layer, set the background to dark (**Project → Properties → General → Background color**) and use a glowing colour ramp like *Magma* for the heatmap.
-- **Your city:** Samarkand, Bukhara or Namangan? Download the points for Uzbekistan from Geofabrik and zoom to your city.
+- **Your city:** Samarkand, Bukhara or Namangan? Use the Overpass Turbo Wizard with `in Samarkand` and repeat the steps. In Part 8, pick the UTM zone for your city: **EPSG:32642** for Tashkent, Samarkand, Namangan and Fergana; **EPSG:32641** for Bukhara, Navoi and Urgench; **EPSG:32640** for Nukus; **EPSG:32643** for Andijan.
 
 ---
 
