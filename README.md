@@ -34,6 +34,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🐍 **Day 02 tutorial:** [Lines inside your region](<./2026/Day 02 Lines/tutorial/README.md>). Your first Python map in Google Colab: region boundaries, rivers, roads and railways from OpenStreetMap.
 
+🟪 **Day 03 tutorial:** [How many people live in each region?](<./2026/Day 03 Polygons/tutorial/README.md>). Population density and dot maps with Mapshaper, in your browser with no account or installation.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
