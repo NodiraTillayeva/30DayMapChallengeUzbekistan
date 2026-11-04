@@ -36,6 +36,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🟪 **Day 03 tutorial:** [How many people live in each region?](<./2026/Day 03 Polygons/tutorial/README.md>). Population density and dot maps with Mapshaper, in your browser with no account or installation.
 
+🫧 **Day 04 tutorial:** [Where do Tashkent's cafés gather?](<./2026/Day 04 Clusters/tutorial/README.md>). Heatmaps and DBSCAN clusters in QGIS, the free desktop map program.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
