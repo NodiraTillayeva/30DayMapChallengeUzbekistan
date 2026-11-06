@@ -38,6 +38,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🫧 **Day 04 tutorial:** [Where do Tashkent's cafés gather?](<./2026/Day 04 Clusters/tutorial/README.md>). Heatmaps and DBSCAN clusters in QGIS, the free desktop map program.
 
+👁️ **Day 05 tutorial:** [What can you see from the Tashkent TV Tower?](<./2026/Day 05 Senses Sight/tutorial/README.md>). Viewsheds from Copernicus satellite elevation data with GDAL, your first steps in the terminal, shown on Sentinel-2 imagery in QGIS.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 

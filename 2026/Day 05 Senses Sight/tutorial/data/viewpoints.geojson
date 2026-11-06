@@ -1,0 +1,4 @@
+{"type":"FeatureCollection","name":"viewpoints","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[
+{"type":"Feature","properties":{"name":"Tashkent TV Tower","name_uz":"Toshkent teleminorasi","name_ru":"Ташкентская телебашня","ground_m":477,"x_utm42":523843,"y_utm42":4577162},"geometry":{"type":"Point","coordinates":[69.2850,41.3456]}},
+{"type":"Feature","properties":{"name":"Big Chimgan","name_uz":"Katta Chimyon","name_ru":"Большой Чимган","ground_m":3294,"x_utm42":588336,"y_utm42":4594272},"geometry":{"type":"Point","coordinates":[70.0583,41.4952]}}
+]}
