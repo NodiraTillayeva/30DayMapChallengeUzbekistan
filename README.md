@@ -40,6 +40,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 👁️ **Day 05 tutorial:** [What can you see from the Tashkent TV Tower?](<./2026/Day 05 Senses Sight/tutorial/README.md>). Viewsheds from Copernicus satellite elevation data with GDAL, your first steps in the terminal, shown on Sentinel-2 imagery in QGIS.
 
+🗺️ **Day 06 tutorial:** [Put a 1913 map of Tashkent on today's city](<./2026/Day 06 Vintage/tutorial/README.md>). Georeference an old city plan in your browser with Allmaps, then slide between 1913 and today on Sentinel-2 images and OpenStreetMap.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 

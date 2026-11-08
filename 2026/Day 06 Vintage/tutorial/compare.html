@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tashkent 1913 / Today</title>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<style>
+  /* ---------------------------------------------------------------
+     Swipe map: the old map on the left, today on the right.
+     To show YOUR georeferenced map, paste its XYZ map tiles link
+     from Allmaps Editor (Export) into OLD_MAP_TILES below.
+     --------------------------------------------------------------- */
+  html, body { margin: 0; height: 100%; background: #efe4cc; font-family: Georgia, "Times New Roman", serif; }
+  .map { position: absolute; inset: 0; }
+  #old { clip-path: inset(0 50% 0 0); }
+  #bar { position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; margin-left: -2px; background: #3b2a1a; cursor: ew-resize; z-index: 5; }
+  #bar span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 34px; height: 34px; border-radius: 50%;
+              background: #f6ecd6; border: 3px solid #3b2a1a; display: grid; place-items: center; font: bold 15px Georgia, serif; color: #3b2a1a; }
+  .tag { position: absolute; top: 14px; z-index: 4; padding: 6px 12px; background: rgba(246,236,214,.94); border: 2px solid #3b2a1a;
+         font-size: 17px; letter-spacing: .5px; color: #3b2a1a; pointer-events: none; }
+  #tag-old { left: 14px; } #tag-new { right: 14px; }
+  .panel { position: absolute; left: 14px; bottom: 26px; z-index: 6; background: rgba(246,236,214,.95); border: 2px solid #3b2a1a;
+           padding: 8px 12px; font-size: 14px; color: #3b2a1a; display: flex; gap: 14px; align-items: center; flex-wrap: wrap; max-width: calc(100% - 60px); }
+  .panel label { display: flex; gap: 5px; align-items: center; cursor: pointer; }
+  .panel button { font: inherit; background: #fff8e8; border: 1px solid #3b2a1a; padding: 2px 8px; cursor: pointer; }
+</style>
+</head>
+<body>
+<div id="new" class="map"></div>
+<div id="old" class="map"></div>
+<div id="bar"><span>⇔</span></div>
+<div class="tag" id="tag-old">Tashkent · 1913</div>
+<div class="tag" id="tag-new">Tashkent · today</div>
+<div class="panel">
+  <label><input type="radio" name="base" value="sat" checked> Satellite (Sentinel-2, 2024)</label>
+  <label><input type="radio" name="base" value="streets"> Streets (OpenStreetMap)</label>
+  <button data-go="city">Whole city</button><button data-go="square">Amir Timur Square</button><button data-go="old">Old town</button>
+</div>
+<script>
+// Your old map: paste the "XYZ map tiles" link from Allmaps Editor > Export here.
+// This default draws the tutorial's saved copy of the georeference (data/tashkent-1913.georef.json),
+// so it keeps working even if someone changes the shared map in Allmaps Editor.
+const OLD_MAP_TILES = 'https://allmaps.xyz/{z}/{x}/{y}@2x.png?url=' + encodeURIComponent(
+  'https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/main/2026/Day%2006%20Vintage/tutorial/data/tashkent-1913.georef.json');
+const VIEWS = { city: { center: [69.2797, 41.3114], zoom: 13.6 }, square: { center: [69.2797, 41.3114], zoom: 16 }, old: { center: [69.2352, 41.3252], zoom: 15.3 } };
+
+const SAT = { version: 8, sources: { s2: { type: 'raster', tileSize: 256, maxzoom: 15,
+  tiles: ['https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg'],
+  attribution: '<a href="https://s2maps.eu">Sentinel-2 cloudless 2024 by EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024)' } },
+  layers: [{ id: 's2', type: 'raster', source: 's2' }] };
+const STREETS = 'https://tiles.openfreemap.org/styles/liberty';
+const OLD = { version: 8, sources: { old: { type: 'raster', tileSize: 256, tiles: [OLD_MAP_TILES],
+  attribution: 'Plan of Tashkent, 1913 (Vl. Pirogovsky), public domain · georeferenced with <a href="https://allmaps.org">Allmaps</a>' } },
+  layers: [{ id: 'paper', type: 'background', paint: { 'background-color': '#efe4cc' } }, { id: 'old', type: 'raster', source: 'old' }] };
+
+// optional link settings, e.g. compare.html#view=square&split=0.6&base=streets
+const opt = Object.fromEntries(new URLSearchParams(location.hash.slice(1)));
+const start = VIEWS[opt.view] || VIEWS.city;
+const now = new maplibregl.Map({ container: 'new', style: opt.base === 'streets' ? STREETS : SAT, ...start, preserveDrawingBuffer: true,
+  attributionControl: { compact: true, customAttribution: 'Plan of Tashkent 1913 (Vl. Pirogovsky, public domain), georeferenced with <a href="https://allmaps.org">Allmaps</a>' } });
+const old = new maplibregl.Map({ container: 'old', style: OLD, ...start, attributionControl: false, interactive: false, preserveDrawingBuffer: true });
+now.on('move', () => old.jumpTo({ center: now.getCenter(), zoom: now.getZoom(), bearing: now.getBearing(), pitch: now.getPitch() }));
+
+// swipe bar
+const bar = document.getElementById('bar'), oldDiv = document.getElementById('old');
+function setSplit(x) {
+  const w = window.innerWidth; x = Math.max(0, Math.min(w, x));
+  bar.style.left = x + 'px'; oldDiv.style.clipPath = `inset(0 ${w - x}px 0 0)`;
+}
+let dragging = false;
+bar.addEventListener('pointerdown', e => { dragging = true; bar.setPointerCapture(e.pointerId); });
+bar.addEventListener('pointermove', e => { if (dragging) setSplit(e.clientX); });
+bar.addEventListener('pointerup', () => { dragging = false; });
+window.addEventListener('resize', () => setSplit(parseFloat(bar.style.left) || window.innerWidth / 2));
+setSplit(window.innerWidth * (parseFloat(opt.split) || 0.5));
+if (opt.base === 'streets') document.querySelector('input[value=streets]').checked = true;
+
+document.querySelectorAll('input[name=base]').forEach(r => r.onchange = () => now.setStyle(r.value === 'sat' ? SAT : STREETS));
+document.querySelectorAll('[data-go]').forEach(b => b.onclick = () => now.flyTo({ ...VIEWS[b.dataset.go], duration: 2000 }));
+</script>
+</body>
+</html>
