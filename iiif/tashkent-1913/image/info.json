@@ -1,0 +1,36 @@
+{
+ "@context": "http://iiif.io/api/image/2/context.json",
+ "@id": "https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/main/iiif/tashkent-1913/image",
+ "protocol": "http://iiif.io/api/image",
+ "width": 5720,
+ "height": 4316,
+ "profile": [
+  "http://iiif.io/api/image/2/level0.json"
+ ],
+ "tiles": [
+  {
+   "width": 512,
+   "scaleFactors": [
+    1,
+    2,
+    4,
+    8,
+    16
+   ]
+  }
+ ],
+ "sizes": [
+  {
+   "width": 358,
+   "height": 270
+  },
+  {
+   "width": 715,
+   "height": 540
+  },
+  {
+   "width": 1430,
+   "height": 1079
+  }
+ ]
+}

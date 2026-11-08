@@ -1,0 +1,113 @@
+{
+ "@context": "http://iiif.io/api/presentation/3/context.json",
+ "id": "https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/main/iiif/tashkent-1913/manifest.json",
+ "type": "Manifest",
+ "label": {
+  "en": [
+   "Plan of the City of Tashkent, 1 April 1913 (Vl. Pirogovsky)"
+  ],
+  "ru": [
+   "План города Ташкента, составлен по 1 апреля 1913 года (изд. Вл. Пироговского)"
+  ]
+ },
+ "summary": {
+  "en": [
+   "Russian-era city plan of Tashkent with the old town, the Russian new town and the electric tram lines. Public domain. Scan from Wikimedia Commons, re-hosted as static IIIF tiles for the 30 Day Map Challenge Uzbekistan Day 06 tutorial."
+  ]
+ },
+ "metadata": [
+  {
+   "label": {
+    "en": [
+     "Date"
+    ]
+   },
+   "value": {
+    "none": [
+     "1913"
+    ]
+   }
+  },
+  {
+   "label": {
+    "en": [
+     "Publisher"
+    ]
+   },
+   "value": {
+    "none": [
+     "Vl. Pirogovsky"
+    ]
+   }
+  },
+  {
+   "label": {
+    "en": [
+     "Scale"
+    ]
+   },
+   "value": {
+    "en": [
+     "100 sazhens to the inch (about 1:8,400)"
+    ]
+   }
+  },
+  {
+   "label": {
+    "en": [
+     "Source"
+    ]
+   },
+   "value": {
+    "none": [
+     "https://commons.wikimedia.org/wiki/File:Tashkent-1913-map.jpg"
+    ]
+   }
+  }
+ ],
+ "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+ "items": [
+  {
+   "id": "https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/main/iiif/tashkent-1913/canvas/1",
+   "type": "Canvas",
+   "width": 5720,
+   "height": 4316,
+   "label": {
+    "en": [
+     "Plan of the City of Tashkent, 1 April 1913 (Vl. Pirogovsky)"
+    ],
+    "ru": [
+     "План города Ташкента, составлен по 1 апреля 1913 года (изд. Вл. Пироговского)"
+    ]
+   },
+   "items": [
+    {
+     "id": "https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/main/iiif/tashkent-1913/canvas/1/page",
+     "type": "AnnotationPage",
+     "items": [
+      {
+       "id": "https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/main/iiif/tashkent-1913/canvas/1/page/image",
+       "type": "Annotation",
+       "motivation": "painting",
+       "target": "https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/main/iiif/tashkent-1913/canvas/1",
+       "body": {
+        "id": "https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/main/iiif/tashkent-1913/image/full/1430,/0/default.jpg",
+        "type": "Image",
+        "format": "image/jpeg",
+        "width": 5720,
+        "height": 4316,
+        "service": [
+         {
+          "@id": "https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/main/iiif/tashkent-1913/image",
+          "@type": "ImageService2",
+          "profile": "http://iiif.io/api/image/2/level0.json"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
