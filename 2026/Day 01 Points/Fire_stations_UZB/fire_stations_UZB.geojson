@@ -1,0 +1,1868 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-11-02T16:22:59Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "relation/8538848",
+      "properties": {
+        "@id": "relation/8538848",
+        "amenity": "fire_station",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2190433,
+          41.3344558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "relation/9119386",
+      "properties": {
+        "@id": "relation/9119386",
+        "amenity": "fire_station",
+        "name": "Пожарная часть №4",
+        "name:ru": "Пожарная часть №4",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.300526,
+          41.2912874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "relation/9796470",
+      "properties": {
+        "@id": "relation/9796470",
+        "amenity": "fire_station",
+        "name": "10-son yong'in qutqaruv qismi",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.1707027,
+          39.7381566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "relation/10368057",
+      "properties": {
+        "@id": "relation/10368057",
+        "amenity": "fire_station",
+        "name": "Пожарная часть №17",
+        "ref": "17",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2041071,
+          41.2528652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/105245519",
+      "properties": {
+        "@id": "way/105245519",
+        "amenity": "fire_station",
+        "barrier": "wall",
+        "name": "Пожарное депо",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3371698,
+          41.2755067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/152222923",
+      "properties": {
+        "@id": "way/152222923",
+        "amenity": "fire_station",
+        "building": "yes",
+        "check_date": "2026-10-14",
+        "name": "Yong'inga qarshi qism",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.4237257,
+          39.7738576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/159956786",
+      "properties": {
+        "@id": "way/159956786",
+        "amenity": "fire_station",
+        "building": "yes",
+        "source": "Bing",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.0061173,
+          41.5197992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/170123888",
+      "properties": {
+        "@id": "way/170123888",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2504944,
+          40.2145198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/174080848",
+      "properties": {
+        "@id": "way/174080848",
+        "addr:housenumber": "63a",
+        "addr:street": "Nurafshon aylanma ko'chasi",
+        "amenity": "fire_station",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2192987,
+          41.334526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/187477473",
+      "properties": {
+        "@id": "way/187477473",
+        "building": "yes",
+        "name": "Пожарная охрана",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.04785,
+          41.1093584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/187477526",
+      "properties": {
+        "@id": "way/187477526",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.0477978,
+          41.1092776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/203712935",
+      "properties": {
+        "@id": "way/203712935",
+        "amenity": "fire_station",
+        "name": "Yong'in xafvsizligi boshqarmasi",
+        "name:ru": "Пожарная станция",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.9260287,
+          39.6701879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/206885939",
+      "properties": {
+        "@id": "way/206885939",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.7573894,
+          40.4468176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/221202202",
+      "properties": {
+        "@id": "way/221202202",
+        "amenity": "fire_station",
+        "name:ru": "Управление пожарной безопасности УВД Ферганской области",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.7740228,
+          40.3963445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/228690062",
+      "properties": {
+        "@id": "way/228690062",
+        "amenity": "fire_station",
+        "name": "Пожарная часть",
+        "name:ru": "Пожарная часть",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.6166089,
+          40.854099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/242443064",
+      "properties": {
+        "@id": "way/242443064",
+        "amenity": "fire_station",
+        "name": "Yong'in Xavfsizligi Boshqarmasi",
+        "name:ru": "Управление пожарной безопасности УВД Джизакской области",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.8401281,
+          40.1267921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/243913228",
+      "properties": {
+        "@id": "way/243913228",
+        "amenity": "fire_station",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.0901757,
+          41.1172601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/257406092",
+      "properties": {
+        "@id": "way/257406092",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.5616028,
+          40.8384573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/265391801",
+      "properties": {
+        "@id": "way/265391801",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "СПАСОП",
+        "operator": "Международный аэропорт \"Самарканд\"",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.9750534,
+          39.6986263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/291155866",
+      "properties": {
+        "@id": "way/291155866",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.6056283,
+          40.9945745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/328329057",
+      "properties": {
+        "@id": "way/328329057",
+        "amenity": "fire_station",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.5558898,
+          39.7344851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/382468455",
+      "properties": {
+        "@id": "way/382468455",
+        "addr:city": "Nókis",
+        "addr:country": "UZ",
+        "addr:housenumber": "72",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "addr:street": "Beruniy kóshesi",
+        "amenity": "fire_station",
+        "check_date": "2025-06-03",
+        "name": "Qaraqalpaqstan Respublikası IIM órtke qarsı qáwipsizlik basqarması",
+        "name:en": "Fire Department of the Ministry of Internal Affairs of the Republic of Karakalpakstan",
+        "name:ru": "Управление пожарной безопасности МВД РК",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.6328103,
+          42.448807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/384148272",
+      "properties": {
+        "@id": "way/384148272",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.0726652,
+          40.5139509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/390944949",
+      "properties": {
+        "@id": "way/390944949",
+        "addr:city": "Nókis",
+        "addr:country": "UZ",
+        "addr:housenumber": "67",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "addr:street": "Ǵarezsizlik kóshesi",
+        "amenity": "fire_station",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "№2 qalalıq órt qáwipsizlik hám qutqarıw deposı",
+        "name:en": "Fire and rescue depot №2",
+        "name:ru": "Пожарно-спасательное депо №2",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.6121004,
+          42.4604062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/392111153",
+      "properties": {
+        "@id": "way/392111153",
+        "addr:city": "Nókis",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "amenity": "fire_station",
+        "building": "yes",
+        "building:levels": "1",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.6195953,
+          42.4854487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/396570361",
+      "properties": {
+        "@id": "way/396570361",
+        "amenity": "fire_station",
+        "name": "Пожарная часть №4",
+        "name:ru": "Пожарная часть №4",
+        "ref": "4",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2489876,
+          41.2918333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/421224799",
+      "properties": {
+        "@id": "way/421224799",
+        "amenity": "fire_station",
+        "name": "Пожарное депо",
+        "name:ru": "Пожарное депо",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.6358003,
+          38.4874645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/450709607",
+      "properties": {
+        "@id": "way/450709607",
+        "addr:street": "Университетская улица",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Пожарная станция",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3655576,
+          41.3873951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/494271819",
+      "properties": {
+        "@id": "way/494271819",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "addr:street": "Jipek Joli ko'shesi",
+        "amenity": "fire_station",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "Управление пожарной безопасности МВД РК Ходжейлинского района",
+        "name:ru": "Управление пожарной безопасности МВД РК Ходжейлинского района",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.4404277,
+          42.4103807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/496470240",
+      "properties": {
+        "@id": "way/496470240",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.9534583,
+          38.4059573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/556083481",
+      "properties": {
+        "@id": "way/556083481",
+        "amenity": "fire_station",
+        "barrier": "fence",
+        "fence_type": "metal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1664138,
+          41.3393517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/604094779",
+      "properties": {
+        "@id": "way/604094779",
+        "addr:region": "Andijon Viloyati",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "г. Асака",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2389221,
+          40.6469125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/612279538",
+      "properties": {
+        "@id": "way/612279538",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.9385846,
+          41.6271933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/628849444",
+      "properties": {
+        "@id": "way/628849444",
+        "addr:city": "Ширин",
+        "addr:postcode": "120219",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Городская пожарная служба",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1011873,
+          40.2325994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/639714122",
+      "properties": {
+        "@id": "way/639714122",
+        "amenity": "fire_station",
+        "name": "Пожарная часть",
+        "operator": "101",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1627818,
+          41.3086143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/706682670",
+      "properties": {
+        "@id": "way/706682670",
+        "amenity": "fire_station",
+        "name": "Пожарная часть",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.0575702,
+          41.006081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/712670091",
+      "properties": {
+        "@id": "way/712670091",
+        "amenity": "fire_station",
+        "name": "ОПБ Бектемирского района (ПЧ-9)",
+        "name:ru": "ОПБ Бектемирского района (ПЧ-9)",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3667384,
+          41.2561843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/718116410",
+      "properties": {
+        "@id": "way/718116410",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "amenity": "fire_station",
+        "name": "Qalalıq órt qáwipsizlik hám qutqarıw deposı",
+        "name:en": "Fire and rescue depot",
+        "name:ru": "Пожарно-спасательное депо",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.58484,
+          42.4596478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/762165703",
+      "properties": {
+        "@id": "way/762165703",
+        "amenity": "fire_station",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "OXUNBOBOEV POJARNI",
+        "name:uz-Cyrl": "ОХУНБАБАЕВ ПАЖАРНИ",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          60.7627841,
+          41.4819837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/770987676",
+      "properties": {
+        "@id": "way/770987676",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.5520282,
+          42.5841576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/828076613",
+      "properties": {
+        "@id": "way/828076613",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "amenity": "fire_station",
+        "name:ru": "Пожарное депо",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.5910749,
+          42.3362826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/920700679",
+      "properties": {
+        "@id": "way/920700679",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.9748656,
+          39.6702848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/961522850",
+      "properties": {
+        "@id": "way/961522850",
+        "amenity": "fire_station",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "Пожарная часть №8",
+        "name:ru": "Пожарная часть №8",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3747824,
+          41.339637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/972858736",
+      "properties": {
+        "@id": "way/972858736",
+        "amenity": "fire_station",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.0143159,
+          41.1612274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1032001388",
+      "properties": {
+        "@id": "way/1032001388",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Yong'inga qarshi kurashish jamiyati",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.9027877,
+          38.2678411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1060230723",
+      "properties": {
+        "@id": "way/1060230723",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.4664306,
+          42.4025575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1106450144",
+      "properties": {
+        "@id": "way/1106450144",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.0486791,
+          40.5397811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1134717267",
+      "properties": {
+        "@id": "way/1134717267",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.8088644,
+          38.8313883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1151952014",
+      "properties": {
+        "@id": "way/1151952014",
+        "amenity": "fire_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.3654521,
+          40.1353116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1349777557",
+      "properties": {
+        "@id": "way/1349777557",
+        "amenity": "fire_station",
+        "name": "Navoiy shahar 2-son O't o'chirish bo'ilimi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.3708837,
+          40.0829639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1350021701",
+      "properties": {
+        "@id": "way/1350021701",
+        "amenity": "fire_station",
+        "barrier": "fence",
+        "landuse": "commercial",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.3524585,
+          40.0984607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1388453872",
+      "properties": {
+        "@id": "way/1388453872",
+        "amenity": "fire_station",
+        "name": "Pojarniy",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          60.5251005,
+          41.7086353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1396254360",
+      "properties": {
+        "@id": "way/1396254360",
+        "amenity": "fire_station",
+        "building": "industrial",
+        "name": "Fire Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.2180154,
+          43.151003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1408201379",
+      "properties": {
+        "@id": "node/1408201379",
+        "amenity": "fire_station",
+        "name": "Пожарная часть"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.7939554,
+          41.5679766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1550250759",
+      "properties": {
+        "@id": "node/1550250759",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2776186,
+          41.2655221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1814575220",
+      "properties": {
+        "@id": "node/1814575220",
+        "addr:street": "Полвонёр улица",
+        "amenity": "fire_station",
+        "name": "ОПБ Сергилийского района (ПЧ-8)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2223724,
+          41.197238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1857835532",
+      "properties": {
+        "@id": "node/1857835532",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.4574007,
+          41.409541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2122554540",
+      "properties": {
+        "@id": "node/2122554540",
+        "amenity": "fire_station",
+        "name": "Главное Управление Пожарной безопасности МВД РУз",
+        "name:ru": "Главное Управление Пожарной безопасности МВД РУз"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2742288,
+          41.329143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2514953091",
+      "properties": {
+        "@id": "node/2514953091",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.6410404,
+          38.8265693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4208718789",
+      "properties": {
+        "@id": "node/4208718789",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2037136,
+          41.4032264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4216698081",
+      "properties": {
+        "@id": "node/4216698081",
+        "historic": "memorial",
+        "name": "Пожарник"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2508572,
+          40.2142065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4237025093",
+      "properties": {
+        "@id": "node/4237025093",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.6586859,
+          41.0046361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4419147290",
+      "properties": {
+        "@id": "node/4419147290",
+        "addr:street": "Alisher Navoiy Shox ko'chasi",
+        "amenity": "fire_station",
+        "name": "Пожарная",
+        "name:ru": "Пожарная"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.3562103,
+          40.7771181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4460732790",
+      "properties": {
+        "@id": "node/4460732790",
+        "amenity": "fire_station",
+        "name": "Алмазар",
+        "name:ru": "Алмазар"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2191724,
+          41.3345149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4699056514",
+      "properties": {
+        "@id": "node/4699056514",
+        "amenity": "fire_station",
+        "name": "Bo'ka TIIB YOHB",
+        "name:ru": "Bo'ka TIIB YOHB",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1940766,
+          40.8170359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4751354915",
+      "properties": {
+        "@id": "node/4751354915",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.2614428,
+          37.2287616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4751354919",
+      "properties": {
+        "@id": "node/4751354919",
+        "amenity": "hunting_stand",
+        "name": "Пожарная часть",
+        "name:ru": "Пожарная часть"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.2615762,
+          37.2290652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4928498221",
+      "properties": {
+        "@id": "node/4928498221",
+        "amenity": "fire_station",
+        "name": "Пожарная часть",
+        "name:en": "Fire station",
+        "name:ru": "Пожарная часть"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.0487765,
+          40.5427809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4960333324",
+      "properties": {
+        "@id": "node/4960333324",
+        "amenity": "fire_station",
+        "name": "Управление пожарной безопасности Навоийской области",
+        "name:ru": "Управление пожарной безопасности Навоийской области"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.3744034,
+          40.1266676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5011332961",
+      "properties": {
+        "@id": "node/5011332961",
+        "addr:city": "Uchqo'rg'on",
+        "amenity": "fire_station",
+        "name": "Пожар"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.0860808,
+          41.1223321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5031484221",
+      "properties": {
+        "@id": "node/5031484221",
+        "amenity": "fire_station",
+        "name": "Пожарная часть",
+        "name:ru": "Пожарная часть"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1730421,
+          41.2582884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5086980322",
+      "properties": {
+        "@id": "node/5086980322",
+        "amenity": "fire_station",
+        "name": "Пожарная служба",
+        "name:ru": "Пожарная служба"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.3656261,
+          40.1354796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5197714726",
+      "properties": {
+        "@id": "node/5197714726",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3595515,
+          41.0358549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5521408223",
+      "properties": {
+        "@id": "node/5521408223",
+        "amenity": "fire_station",
+        "name": "Пожарная часть №4",
+        "name:ru": "Пожарная часть №4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3023102,
+          41.2561612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5662710821",
+      "properties": {
+        "@id": "node/5662710821",
+        "addr:street": "Turkiston ko'chasi",
+        "amenity": "fire_station",
+        "name": "Yong’in o’chirish bo’limi",
+        "name:ru": "Городская пожарная часть",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.9424918,
+          40.5315192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5701721849",
+      "properties": {
+        "@id": "node/5701721849",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "amenity": "fire_station",
+        "name": "Shımbay rayonı ayrıqsha jaǵdaylar bólimi",
+        "name:ru": "Отделение чрезвычайных ситуаций Чимбайского района"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.7777378,
+          42.9251829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6200731256",
+      "properties": {
+        "@id": "node/6200731256",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "amenity": "fire_station",
+        "name": "Moynaq rayonı órt qáwipsizligi basqarması"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.0242007,
+          43.7595475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6373788053",
+      "properties": {
+        "@id": "node/6373788053",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "amenity": "fire_station",
+        "name": "Órt qáwipsizlik deposı",
+        "name:ru": "Пожарное депо"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.6543884,
+          42.4680256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6380077685",
+      "properties": {
+        "@id": "node/6380077685",
+        "addr:street": "Yuqori qoraqamish ko'chasi",
+        "amenity": "fire_station",
+        "name": "ОПБ Юнусабадского р-на (19-ВПБ часть)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2647129,
+          41.3729811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6380077785",
+      "properties": {
+        "@id": "node/6380077785",
+        "addr:street": "Ahmad Donish ko'chasi",
+        "amenity": "fire_station",
+        "name": "ОПБ Алмазарского р-на",
+        "name:ru": "ОПБ Алмазарского р-на"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2653823,
+          41.3507613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6393717372",
+      "properties": {
+        "@id": "node/6393717372",
+        "addr:street": "Jarqo'rg'on ko'chasi",
+        "amenity": "fire_station",
+        "name": "ОПБ Яшнаабадского района (ПЧ-15)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.3370758,
+          41.2755127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6441974685",
+      "properties": {
+        "@id": "node/6441974685",
+        "addr:street": "Nilufar 2-tor ko'chasi",
+        "amenity": "fire_station",
+        "name": "ОПБ Сергилийского района (ПЧ-9)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2651976,
+          41.2030963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6510281589",
+      "properties": {
+        "@id": "node/6510281589",
+        "amenity": "fire_station",
+        "name": "Oʻt oʻchirish",
+        "name:ru": "Пожарная часть"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.8748685,
+          40.6402981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6618490980",
+      "properties": {
+        "@id": "node/6618490980",
+        "amenity": "fire_station",
+        "name": "10-son yong'in qutqaruv qismi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.1704559,
+          39.738664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6765726285",
+      "properties": {
+        "@id": "node/6765726285",
+        "amenity": "fire_station",
+        "name": "Yong'in xavfsizligi boshqarmasi",
+        "name:ru": "Пожарная охрана НГМК"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.3524149,
+          40.098256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6783394886",
+      "properties": {
+        "@id": "node/6783394886",
+        "addr:postcode": "106507",
+        "addr:street": "Гурумсарай",
+        "amenity": "fire_station",
+        "name": "Гурумсарай пожарная часть",
+        "opening_hours": "24/7",
+        "phone": "1234567"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.9268484,
+          40.8010381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6828626517",
+      "properties": {
+        "@id": "node/6828626517",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "amenity": "fire_station",
+        "name:en": "Tahtakupir Fire Station",
+        "name:ru": "Пожарное депо Тахтакупир"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          60.2596838,
+          43.0368556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6842715166",
+      "properties": {
+        "@id": "node/6842715166",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "amenity": "fire_station",
+        "name:en": "Fire Department",
+        "name:ru": "Пожарная часть"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.0180551,
+          42.8283043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6843693471",
+      "properties": {
+        "@id": "node/6843693471",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "amenity": "fire_station",
+        "name:en": "Fire station",
+        "name:ru": "Пожарное депо"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.5597593,
+          42.3198625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6865657085",
+      "properties": {
+        "@id": "node/6865657085",
+        "amenity": "fire_station",
+        "name": "7-sonli yong‘in xavfsizligi qismi",
+        "name:ru": "Отряд пожарной безопасности №7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.5883038,
+          41.4894485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6887567685",
+      "properties": {
+        "@id": "node/6887567685",
+        "addr:street": "Zarafshon-Uchquduq road",
+        "amenity": "fire_station",
+        "name": "НГМК 2-пожарная часть",
+        "opening_hours": "24/7",
+        "phone": "+998795723275"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.1955343,
+          41.5815201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7029053472",
+      "properties": {
+        "@id": "node/7029053472",
+        "name": "Yong'in xavsizligi boshqarmasi",
+        "office": "administrative"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.2684596,
+          37.2244414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7305087685",
+      "properties": {
+        "@id": "node/7305087685",
+        "addr:housenumber": "6",
+        "addr:street": "Istiqbol-2",
+        "amenity": "fire_station",
+        "name": "УЧС Зангиатинского района",
+        "phone": "+998709754505"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1283834,
+          41.2292656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7444374954",
+      "properties": {
+        "@id": "node/7444374954",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.9424926,
+          42.6337476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7616334413",
+      "properties": {
+        "@id": "node/7616334413",
+        "addr:country": "UZ",
+        "addr:region": "Qaraqalpaqstan Respublikası",
+        "amenity": "fire_station",
+        "name:ru": "Пожарная депо"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.6243323,
+          42.7640024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8374076198",
+      "properties": {
+        "@id": "node/8374076198",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.8135246,
+          40.2744843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8548548638",
+      "properties": {
+        "@id": "node/8548548638",
+        "amenity": "fire_station",
+        "name": "6-sonli Yong'in Kutkaruv Kismi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.9751212,
+          39.6702075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9004368628",
+      "properties": {
+        "@id": "node/9004368628",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.0142295,
+          41.1614097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10181693012",
+      "properties": {
+        "@id": "node/10181693012",
+        "amenity": "fire_station",
+        "name": "Пожарная часть"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.7378368,
+          40.3132501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10564929111",
+      "properties": {
+        "@id": "node/10564929111",
+        "amenity": "fire_station",
+        "name:ru": "Пожарная часть АО \"Тахиаташ ТЭС\""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.5600232,
+          42.3228324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11514126094",
+      "properties": {
+        "@id": "node/11514126094",
+        "addr:housenumber": "37",
+        "addr:street": "Qatortol 1-chi o'tish yo'li",
+        "amenity": "fire_station",
+        "name": "ОВПО-5 Чиланзарского р-на",
+        "name:ru": "ОВПО-5 Чиланзарского р-на",
+        "ref": "5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2089867,
+          41.2945113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11848513187",
+      "properties": {
+        "@id": "node/11848513187",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.278156,
+          41.2601928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12050627946",
+      "properties": {
+        "@id": "node/12050627946",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.7713672,
+          39.0632986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12223180402",
+      "properties": {
+        "@id": "node/12223180402",
+        "amenity": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          61.0717294,
+          41.3221254
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12280301851",
+      "properties": {
+        "@id": "node/12280301851",
+        "addr:housenumber": "17",
+        "amenity": "fire_station",
+        "name": "Управление пожарной безопасности",
+        "name:ru": "Управление пожарной безопасности"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2745974,
+          41.3297207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13650329702",
+      "properties": {
+        "@id": "node/13650329702",
+        "amenity": "fire_station",
+        "phone": "712731155"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2089782,
+          41.2946395
+        ]
+      }
+    }
+  ]
+}
