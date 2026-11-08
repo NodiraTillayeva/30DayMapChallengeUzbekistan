@@ -1,0 +1,186 @@
+{
+ "id": "https://annotations.allmaps.org/images/4040347a32a702f2",
+ "type": "AnnotationPage",
+ "@context": "http://www.w3.org/ns/anno.jsonld",
+ "items": [
+  {
+   "id": "https://annotations.allmaps.org/maps/e8198c3dd88359a4",
+   "type": "Annotation",
+   "@context": [
+    "http://iiif.io/api/extension/georef/1/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+   ],
+   "created": "2026-11-08T13:13:01.310Z",
+   "modified": "2026-11-08T13:13:01.310Z",
+   "motivation": "georeferencing",
+   "target": {
+    "type": "SpecificResource",
+    "source": {
+     "id": "https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/main/iiif/tashkent-1913/image",
+     "type": "ImageService2",
+     "height": 4316,
+     "width": 5720,
+     "partOf": [
+      {
+       "id": "https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/main/iiif/tashkent-1913/canvas/1",
+       "type": "Canvas",
+       "label": {
+        "en": [
+         "Plan of the City of Tashkent, 1 April 1913 (Vl. Pirogovsky)"
+        ],
+        "ru": [
+         "План города Ташкента, составлен по 1 апреля 1913 года (изд. Вл. Пироговского)"
+        ]
+       },
+       "partOf": [
+        {
+         "id": "https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/main/iiif/tashkent-1913/manifest.json",
+         "type": "Manifest",
+         "label": {
+          "en": [
+           "Plan of the City of Tashkent, 1 April 1913 (Vl. Pirogovsky)"
+          ],
+          "ru": [
+           "План города Ташкента, составлен по 1 апреля 1913 года (изд. Вл. Пироговского)"
+          ]
+         }
+        }
+       ]
+      }
+     ]
+    },
+    "selector": {
+     "type": "SvgSelector",
+     "value": "<svg width=\"5720\" height=\"4316\"><polygon points=\"98,122 92,4200 5602,4200 5596,122\" /></svg>"
+    }
+   },
+   "body": {
+    "type": "FeatureCollection",
+    "transformation": {
+     "type": "polynomial",
+     "options": {
+      "order": 1
+     }
+    },
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        3249,
+        2021
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        69.27949,
+        41.31145
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        378,
+        1252
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        69.23601,
+        41.32343
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4225,
+        1643
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        69.295584,
+        41.314732
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4433,
+        3235
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        69.29541,
+        41.29589
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        2383,
+        2926
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        69.263831,
+        41.301709
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        3285,
+        1100
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        69.2821,
+        41.32212
+       ]
+      }
+     }
+    ],
+    "_allmaps": {
+     "id": "https://annotations.allmaps.org/maps/e8198c3dd88359a4",
+     "version": "https://annotations.allmaps.org/maps/e8198c3dd88359a4@a292fd4b2622d176",
+     "image": {
+      "id": "https://annotations.allmaps.org/images/4040347a32a702f2",
+      "version": "https://annotations.allmaps.org/images/4040347a32a702f2@0552c6ea465eb1f5",
+      "canvases": [
+       {
+        "id": "https://annotations.allmaps.org/canvases/496ea786fddaa9da",
+        "manifests": [
+         {
+          "id": "https://annotations.allmaps.org/manifests/c8de26f48e8e04cd"
+         }
+        ]
+       }
+      ]
+     },
+     "scale": 0.759549,
+     "area": 38905811.36
+    }
+   }
+  }
+ ]
+}
