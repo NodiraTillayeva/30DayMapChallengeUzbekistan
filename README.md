@@ -42,6 +42,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🗺️ **Day 06 tutorial:** [Put a 1913 map of Tashkent on today's city](<./2026/Day 06 Vintage/tutorial/README.md>). Georeference an old city plan in your browser with Allmaps, then slide between 1913 and today on Sentinel-2 images and OpenStreetMap.
 
+🛰️ **Day 07 tutorial:** [The Aral Sea from space, in 10 minutes](<./2026/Day 07 10 minute map/tutorial/README.md>). Compare 2000 and 2026 and download real satellite images with NASA Worldview, in your browser.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
