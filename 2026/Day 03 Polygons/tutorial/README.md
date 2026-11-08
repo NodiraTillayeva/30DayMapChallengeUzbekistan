@@ -12,8 +12,6 @@ You will load the 14 regions of Uzbekistan as **polygons**, measure their **area
 |:---:|:---:|:---:|
 | ![](images/variation-a.png) | ![](images/variation-b.png) | ![](images/variation-c.png) |
 
----
-
 ## 📚 Part 0 · The ideas you need
 
 **Polygon.** A closed shape that covers an area: a region, a lake, a park. Our file has one polygon for each of the 14 regions (12 regions, Karakalpakstan and Tashkent City).
@@ -27,8 +25,6 @@ You will load the 14 regions of Uzbekistan as **polygons**, measure their **area
 **Choropleth.** A map where each polygon is coloured by its number. Darker = more people per km².
 
 **Mapshaper** ([mapshaper.org](https://mapshaper.org)) is a free, open-source map tool that runs in your browser. Your files stay on your computer: nothing is uploaded to a server.
-
----
 
 ## 📥 Part 1 · Get the data
 
@@ -45,8 +41,6 @@ To download one file from GitHub: click its name, then click the **Download raw 
 
 The population numbers are official figures from the **Statistics Agency of Uzbekistan** ([stat.uz](https://stat.uz/en/press-center/news-of-committee/66574-zbekiston-a-olisi-38-2-mlndan-oshdi-4)). Together they add up to the country total: **38,236,704 people**.
 
----
-
 ## 🗺️ Part 2 · Open Mapshaper and load the regions
 
 1. Go to **[mapshaper.org](https://mapshaper.org)**. You see the **Import files** window.
@@ -57,8 +51,6 @@ The population numbers are official figures from the **Statistics Agency of Uzbe
 3. The regions appear on the right. On the left, the **Layers** list shows one layer, `uzbekistan_regions`, with **14 polygons**.
 
 ![The 14 regions are loaded](images/s02_regions.png)
-
----
 
 ## ⌨️ Part 3 · Your first command
 
@@ -76,8 +68,6 @@ Mapshaper describes the layer: it is a **polygon** layer with **14 records** (ro
 
 > 💡 You can type `tips` in the console for help, and use the ↑ arrow key to bring back the previous command. If you make a mistake, the **↶ undo** button at the bottom of the map takes back the last change.
 
----
-
 ## ✂️ Part 4 · How detailed is a border? (Simplify)
 
 Every border is made of thousands of little points. Let's see what happens with fewer of them.
@@ -93,8 +83,6 @@ Every border is made of thousands of little points. Let's see what happens with 
 3. **Drag the slider all the way back to the left (100%)** before you continue, so your areas are measured on the full, detailed borders. Then click **Simplify** again to close it.
 
 Simplifying makes files smaller and maps faster. For a whole-country map, 10–20% usually still looks great.
-
----
 
 ## 📐 Part 5 · Measure each polygon's area
 
@@ -113,8 +101,6 @@ What happened:
 
 > ✏️ The quotes `' '` around the formula are important. Copy the commands exactly.
 
----
-
 ## 👥 Part 6 · Add the population table
 
 1. Click **Layers**, then **Add files** (above the layer list) and choose `population_2026.csv`.
@@ -130,8 +116,6 @@ What happened:
 ![Two layers](images/s06_csv.png)
 
 > 💡 The map turns into a column of empty boxes: Mapshaper is showing the new table layer, which has rows but no shapes. That's normal. The first command in Part 7 switches back to the polygons (or click `uzbekistan_regions` in the list).
-
----
 
 ## 🔗 Part 7 · Join and calculate the density
 
@@ -174,8 +158,6 @@ Samarkand has the **most people**, but Andijon is the most **crowded** region: 8
 
 *The areas are measured from our boundary file, so they differ a little from official figures. Tashkent City's border in this file is older and smaller than today's city, so its density comes out higher than official statistics.*
 
----
-
 ## 🎨 Part 8 · Colour the polygons (choropleth)
 
 ```
@@ -191,8 +173,6 @@ Samarkand has the **most people**, but Andijon is the most **crowded** region: 8
 
 Try other palettes! Replace `OrRd` with `PuRd`, `BuPu`, `YlGnBu`, `PuBuGn`, `Greens` or `Purples` and run the command again. You can also write your own colours: `colors=#FDE2E4,#FAB5C1,#F48AA3,#D65A85,#8E2C5C`.
 
----
-
 ## 🌐 Part 9 · A better shape for Uzbekistan (projection)
 
 The map so far uses longitude and latitude directly, which stretches the country sideways. A **projection** draws the round Earth on a flat page. This one keeps the true sizes of areas:
@@ -204,8 +184,6 @@ The map so far uses longitude and latitude directly, which stretches the country
 ![The map in a new projection](images/s09_proj.png)
 
 Uzbekistan now looks the way it does on a globe.
-
----
 
 ## 🏷️ Part 10 · Borders and labels
 
@@ -224,8 +202,6 @@ Uzbekistan now looks the way it does on a globe.
 - `-points inner` puts one point **inside** each polygon, a good place for its label.
 - The label is the region name, a new line (`\n`) and the density.
 
----
-
 ## ⚫ Part 11 · A dot map: every dot is people
 
 A choropleth shows *density*. A **dot map** shows *how many*: each dot is 20,000 people, scattered randomly inside its region.
@@ -239,8 +215,6 @@ A choropleth shows *density*. A **dot map** shows *how many*: each dot is 20,000
 
 The Ferghana Valley fills up with dots, and the desert stays almost empty. To hide a layer, click its 👁 eye in the **Layers** list.
 
----
-
 ## 💾 Part 12 · Export your map
 
 1. Click **Export** (top right).
@@ -251,8 +225,6 @@ The Ferghana Valley fills up with dots, and the desert stays almost empty. To hi
 
 The file downloads as `output.svg` (or `.png`). Open it in **Canva**, **Figma** or **Inkscape** to add a **title**, a **legend** for the colours, and the data source.
 
----
-
 ## 🌈 Make it yours: ideas
 
 - **Your palette:** change `colors=` in Part 8, or use the night look: a dark background in Canva with `colors=PuBuGn`.
@@ -261,15 +233,11 @@ The file downloads as `output.svg` (or `.png`). Open it in **Canva**, **Figma** 
 - **Only your region:** before Part 8, type `-filter 'region == "Samarkand"'` to keep just one polygon (`-filter` deletes the others, so use ↶ undo to bring them back).
 - **Challenge:** Tashkent City's 12 districts are in [`Boundaries/Tashkent_boundaries.geojson`](../../../Boundaries). Can you find their populations on [stat.uz](https://stat.uz) and make a district map?
 
----
-
 ## 💾 Share your map
 
 1. Make a folder named after **your map's topic**, e.g. `Crowded Ferghana Valley`. Put your map inside, plus a short `README.md` with **your name**, the data (stat.uz, simplemaps.com) and the tool (Mapshaper).
 2. Upload the folder to **`2026/Day 03 Polygons/`** in this repository. The [Quick Start in the main README](../../../README.md#-quick-start-add-your-map-no-coding-needed) shows how, with no coding needed.
 3. Post it with **#30DayMapChallenge** and credit the **Statistics Agency of Uzbekistan** for the population data.
-
----
 
 ## 🆘 Something went wrong?
 
@@ -283,8 +251,6 @@ The file downloads as `output.svg` (or `.png`). Open it in **Canva**, **Figma** 
 | The map shows empty boxes | The table layer is active. Click `uzbekistan_regions` in the **Layers** list. |
 | A label or point is missing | The slider in Part 4 isn't back at 100%. Click **Simplify** and drag the slider all the way left. |
 | Everything is broken | Reload the page and start again from Part 2. It only takes a few minutes. |
-
----
 
 ## 📎 Credits
 

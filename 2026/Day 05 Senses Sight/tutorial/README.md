@@ -13,8 +13,6 @@ You will download free **satellite elevation data** (Copernicus DEM), glue the t
 | ![](images/final-a-ground.jpg) | ![](images/final-b-deck.jpg) | ![](images/final-c-chimgan.jpg) |
 | **264 km²** visible | **1,662 km²** visible | **2,100 km²** visible |
 
----
-
 ## 📚 Part 0 · The ideas you need
 
 **Elevation model (DEM).** A raster (a grid of pixels) where every pixel stores a height in metres. Ours is the **Copernicus DEM GLO-30**: one pixel every 30 m, measured from space by two German radar satellites, **TerraSAR-X** and **TanDEM-X**, flying side by side between 2011 and 2015. It is a *surface* model: it includes buildings and trees, which is exactly what blocks your view.
@@ -26,8 +24,6 @@ You will download free **satellite elevation data** (Copernicus DEM), glue the t
 **The terminal.** A window where you type commands instead of clicking buttons. Each GDAL command is one line: the **tool name**, some **options** that start with `-`, then the **input** and **output** files. Example: `gdaldem hillshade dem_utm.tif hillshade.tif`.
 
 **Projection.** The tiles come in degrees (longitude, latitude). Viewsheds need **metres**, so we reproject to **UTM zone 42N** (EPSG:32642), the metre-based system for Tashkent, just like on Day 04.
-
----
 
 ## 💾 Part 1 · Install GDAL and open the terminal
 
@@ -72,8 +68,6 @@ gdalinfo --version
 
 If you see `GDAL 3.…`, you're ready. If you see *command not found*, look at [Something went wrong?](#-something-went-wrong).
 
----
-
 ## 📥 Part 2 · Get the satellite elevation data
 
 The Copernicus DEM is free and lives on Amazon's open-data service, **no account needed**. The world is cut into tiles of 1° × 1°, and each tile is named after its **lower-left corner**: `N41_00_E069` covers 41–42° north and 69–70° east. Tashkent sits at about 41.3° N, 69.3° E.
@@ -105,8 +99,6 @@ The Copernicus DEM is free and lives on Amazon's open-data service, **no account
 
 > 💡 **Another city?** Pick the tiles by the lower-left corner of the 1° square your place is in. Samarkand (39.65° N, 66.96° E) is `N39_00_E066`, Bukhara is `N39_00_E064`, Khiva is `N41_00_E060`. Change both numbers in the link.
 
----
-
 ## 🔍 Part 3 · Look inside a tile (`gdalinfo`)
 
 `gdalinfo` tells you everything about a raster file without opening it:
@@ -122,8 +114,6 @@ Read the highlighted lines:
 - **EPSG 4326**: coordinates are in degrees (longitude, latitude).
 - **Pixel Size = 0.000277…**: one pixel is 1/3600 of a degree, about 30 m.
 - **Type=Float32**: every pixel is a decimal number, the height in metres.
-
----
 
 ## 🧩 Part 4 · Glue the tiles and switch to metres (`gdalbuildvrt`, `gdalwarp`)
 
@@ -152,8 +142,6 @@ gdalwarp -te 68.5 40.8 71.0 42.0 -te_srs EPSG:4326 -t_srs EPSG:32642 -tr 30 30 -
 
 After about 15 seconds you have **`dem_utm.tif`**: 7,030 × 4,505 pixels, from the Syrdarya to the mountains behind Charvak.
 
----
-
 ## 📍 Part 5 · Ask a pixel a question (`gdallocationinfo`)
 
 How high is the ground under the TV Tower (41.3456° N, 69.2850° E)? And the top of Big Chimgan (41.4952° N, 70.0583° E)? The `-wgs84` option lets you type longitude and latitude:
@@ -168,8 +156,6 @@ gdallocationinfo -wgs84 dem_utm.tif 70.0583 41.4952
 The tower stands on **477 m**, the summit of Big Chimgan is **3,294 m** (the official height is 3,309 m: a 30 m pixel is an average, so sharp peaks come out a little lower).
 
 > ⚠️ Longitude comes **first** (x, then y). If you swap them you'll ask about a place in the Indian Ocean.
-
----
 
 ## 🔢 Part 6 · From degrees to metres for one point (`gdaltransform`)
 
@@ -189,8 +175,6 @@ Write them down (rounded):
 | Tashkent TV Tower | **523843** | **4577162** |
 | Big Chimgan | **588336** | **4594272** |
 
----
-
 ## ⛰️ Part 7 · A shaded relief (`gdaldem hillshade`)
 
 Heights are hard to see as plain grey. A **hillshade** lights the terrain as if the sun shone from several directions, so ridges and valleys pop out:
@@ -202,8 +186,6 @@ gdaldem hillshade -multidirectional -z 2 dem_utm.tif hillshade.tif
 `-multidirectional` uses light from several directions, and `-z 2` makes the hills look twice as tall (helpful in the flat city).
 
 ![gdaldem hillshade](images/t07_hillshade.jpg)
-
----
 
 ## 👁️ Part 8 · The viewshed (`gdal_viewshed`)
 
@@ -229,8 +211,6 @@ gdal_viewshed -ox 523843 -oy 4577162 -oz 97 -md 60000 dem_utm.tif view_deck.tif
 
 Each one takes less than a second. GDAL also bends the line of sight a little to take the **curvature of the Earth** and the bending of light in the air into account, so far-away places are handled correctly.
 
----
-
 ## 📐 Part 9 · How much can you see? (`gdalinfo -stats`)
 
 Each viewshed is a square of 4,001 × 4,001 pixels (60 km in every direction), with **255** for visible and **0** for hidden. Ask GDAL for the average (the **mean**):
@@ -255,8 +235,6 @@ Turn the mean into square kilometres:
 
 From the ground, buildings and trees hide almost everything around you; you only see the far mountain slopes that face Tashkent. From the deck you see **six times more**.
 
----
-
 ## 🏔️ Part 10 · The view from Big Chimgan, and can they see each other?
 
 Climb Big Chimgan (on the computer):
@@ -280,8 +258,6 @@ gdallocationinfo -valonly -wgs84 chimgan_to_tower.tif 69.2850 41.3456
 ![255 means yes](images/t11_eachother.jpg)
 
 **255 = yes!** On a clear day, people on the observation deck and on the summit of Big Chimgan can see each other.
-
----
 
 ## 🛰️ Part 11 · Put it on Sentinel-2 satellite imagery (QGIS)
 
@@ -321,8 +297,6 @@ Repeat step 4 with `view_ground.tif` and `view_chimgan.tif` to make the other tw
 
 > 💡 Want a title, a legend and a scale bar? Use **Print Layout** exactly as in Day 04, Part 12.
 
----
-
 ## 🌈 Make it yours: ideas
 
 - **Minarets were watchtowers.** Compute the view from the top of the **Kalon Minaret** in Bukhara (45.6 m, about 39.7759° N, 64.4146° E, UTM zone 41N **EPSG:32641**, tile `N39_00_E064`) or the **Islam Khoja Minaret** in Khiva (57 m, about 41.3774° N, 60.3600° E, EPSG:32641, tile `N41_00_E060`).
@@ -331,15 +305,11 @@ Repeat step 4 with `view_ground.tif` and `view_chimgan.tif` to make the other tw
 - **Where can you see the tower from?** Flip the question: put the observer on the ground everywhere and the target at the top. Running `gdal_viewshed -ox 523843 -oy 4577162 -oz 375 -tz 1.7 …` shows every place where a person (1.7 m) can see the tip of the 375 m tower: that's how far the tower works as a landmark.
 - **Other cities, other UTM zones:** Nukus EPSG:32640 · Bukhara, Navoi, Urgench, Khiva EPSG:32641 · Tashkent, Samarkand, Namangan, Fergana EPSG:32642 · Andijan EPSG:32643.
 
----
-
 ## 💾 Share your map
 
 Export your map (Part 11), add a title, and post it with **#30DayMapChallenge #30DayMapChallengeUzbekistan**. Please credit the data:
 
 > Elevation: Copernicus DEM GLO-30 © DLR e.V. 2010–2014 and © Airbus Defence and Space GmbH 2014–2018, provided under COPERNICUS by the European Union and ESA. Imagery: EOxCloudless https://cloudless.eox.at by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2024).
-
----
 
 ## 🆘 Something went wrong?
 
@@ -353,8 +323,6 @@ Export your map (Part 11), add a title, and post it with **#30DayMapChallenge #3
 | The viewshed is all black | Check the order: `-ox` is the x (523843), `-oy` the y (4577162). |
 | The XYZ layer is blank in QGIS | Check your internet connection and that the URL has `{z}/{y}/{x}` exactly. |
 | Copy-pasted commands fail | Paste each command as **one line**. Make sure no "smart quotes" (“ ”) sneaked in. |
-
----
 
 ## 📎 Credits
 

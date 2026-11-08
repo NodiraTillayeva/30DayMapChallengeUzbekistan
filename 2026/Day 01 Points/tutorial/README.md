@@ -10,8 +10,6 @@ In this tutorial you'll make a map of every fire that NASA satellites spotted in
 
 📄 **Printable PDF:** [English](pdf/Day01_Tutorial_EN.pdf) · [Русский](pdf/Day01_Tutorial_RU.pdf) · [Oʻzbekcha](pdf/Day01_Tutorial_UZ.pdf)
 
----
-
 ## 🛰️ Part 0 – Meet the data: NASA FIRMS fire detections
 
 **Where does it come from?**
@@ -51,8 +49,6 @@ We prepared the 2025 data for Uzbekistan as one table: [`data/fires_uzbekistan_2
 - 🌾 **March** had the most detections of any month (924). Many farmers burn fields in early spring.
 - 🏭 **2,000 of the 4,649 points** are gas flares or industry, not wildfires.
 - 🌙 About **1 in 3** detections happened **at night**.
-
----
 
 ## Part 1 – Download the data
 
@@ -113,8 +109,6 @@ NASA's file has **no** `region`, `season` or `month` columns. We added those. Wi
 
 </details>
 
----
-
 ## Part 2 – Load the data into kepler.gl
 
 **Step 2.** Open **[kepler.gl/demo](https://kepler.gl/demo)**. An **"Add Data To Map"** window opens by itself. **Drag your downloaded file** from the Downloads folder into the dotted box, or click **browse your files** and choose it.
@@ -146,8 +140,6 @@ https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/ma
 >
 > ❌ If a pop-up about "DuckDB" or a survey shows up, close it with its **×**. Otherwise it will appear in your final image.
 
----
-
 ## Part 3 – Put a satellite photo underneath
 
 **Step 5.** Click the **map icon** (the 4th tab at the top of the left panel). Then click the **Map Style** box, which says *DarkMatter*.
@@ -163,8 +155,6 @@ https://raw.githubusercontent.com/NodiraTillayeva/30DayMapChallengeUzbekistan/ma
 ![Satellite background](images/07-satellite-basemap.jpg)
 
 > 🎨 Not a fan of the satellite look? *Dark*, *Light* or *Voyager* also look great. Choosing a different background is an easy way to make your map yours.
-
----
 
 ## Part 4 – Color the points by category
 
@@ -198,8 +188,6 @@ Right now the points are colored by brightness. Let's color them by something mo
 
 > 🔢 **Lots of categories?** (`region` has 14!) Change **Steps** from 6 to **12** so the colors don't repeat.
 
----
-
 ## Part 5 – Add a legend and save your map as an image
 
 **Step 14.** Click the **legend button** on the right side of the map. A small box now explains your colors. *Gas flare / industry* and *Vegetation fire* now show up as clearly different colors.
@@ -215,8 +203,6 @@ Right now the points are colored by brightness. Let's color them by something mo
 ![Export and download](images/16-export-download.jpg)
 
 🎉 **You've made a map from satellite data!**
-
----
 
 ## 🎨 Part 6 – Make it yours
 
@@ -252,15 +238,11 @@ Here's what some of the combinations look like:
 - **🕵️ Solve the mystery:** about **1,700 hotspots** are stacked on almost the same spot near **38.05° N, 67.30° E** in Surkhandarya. They all look like one dot! Zoom in there on the satellite background. What do you think is burning all year round?
 - **Compare years:** download another year from NASA ([Option B](#option-b--download-straight-from-nasa-firms)), e.g. 2015 vs 2025, and load both files. Each becomes its own layer.
 
----
-
 ## 📤 Part 7 – Share your map
 
 1. Make a folder named after **your map's topic**, e.g. `Fires by season`. Put your image inside, plus a short `README.md` with **your name**, the data and the tools you used.
 2. Upload the whole folder to **`2026/Day 01 Points/`** in this repository. The [Quick Start in the main README](../../../README.md#-quick-start-add-your-map-no-coding-needed) shows how, with no coding needed.
 3. Post it with **#30DayMapChallenge** and say which choices you made (e.g. *"colored by season, Fergana Valley, dark background"*).
-
----
 
 ## 🆘 Something went wrong?
 
@@ -273,8 +255,6 @@ Here's what some of the combinations look like:
 | Colors look too similar | Use a **Qualitative** palette (Steps 11–13). |
 | The map is blank or gray | Wait a few seconds for the background to load, or zoom in and out once. |
 | I closed the tab and lost everything | Nothing is saved online. Just drag your file in again (Step 2); it only takes a minute to get back. |
-
----
 
 ## 📚 Data credits
 

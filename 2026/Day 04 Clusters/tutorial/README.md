@@ -12,8 +12,6 @@ You will put **2,408 cafés, restaurants and fast-food places** from OpenStreetM
 |:---:|:---:|:---:|
 | ![](images/final-a-heatmap.jpg) | ![](images/final-b-clusters.jpg) | ![](images/final-c-districts.jpg) |
 
----
-
 ## 📚 Part 0 · The ideas you need
 
 **Points.** Each café is one point with a location and a few columns (`name`, `kind`).
@@ -30,8 +28,6 @@ Places that are too far from any group are **noise**: they don't belong to a clu
 
 **Projection.** Our data uses degrees (longitude and latitude). DBSCAN needs **metres**, so we reproject the points into a metre-based system first.
 
----
-
 ## 💾 Part 1 · Install QGIS
 
 1. Go to **[qgis.org/download](https://qgis.org/download/)**. The page first asks for a donation. QGIS is free: click **Skip it and go to download**.
@@ -46,8 +42,6 @@ Places that are too far from any group are **noise**: they don't belong to a clu
 
 > 💡 The screenshots in this tutorial come from QGIS 3.34 on a Mac. Newer versions (3.44 and later) look almost the same. On Windows the menus (**Project**, **View**, **Layer**, **Vector**…) are at the top of the QGIS window, and on a Mac they are at the top of the screen.
 
----
-
 ## 📥 Part 2 · Get the data
 
 Download both files into one folder:
@@ -60,8 +54,6 @@ Download both files into one folder:
 ⬇️ Or both at once: **[day04_clusters_data.zip](https://github.com/NodiraTillayeva/30DayMapChallengeUzbekistan/raw/main/2026/Day%2004%20Clusters/tutorial/data/day04_clusters_data.zip)**, then unzip it.
 
 To download one file from GitHub: click its name, then the **Download raw file** button (⬇) at the top right.
-
----
 
 ## 📡 Where does the data come from? Get your own from OpenStreetMap
 
@@ -134,8 +126,6 @@ This is exactly how the tutorial file was made (some places are drawn as buildin
 
 > ⚖️ **Always credit the data:** *© OpenStreetMap contributors*. OSM is free to use under the [ODbL licence](https://www.openstreetmap.org/copyright) as long as you say where it comes from.
 
----
-
 ## 🖥️ Part 3 · Meet QGIS
 
 Open QGIS. You see the start screen:
@@ -148,8 +138,6 @@ The four parts you will use:
 - **Map** (centre): the map itself. Scroll to zoom, hold the mouse button and drag to move.
 - **Processing Toolbox** (right): hundreds of tools with a search box. If you don't see it, open **Processing → Toolbox**.
 
----
-
 ## 🗺️ Part 4 · Add a background map
 
 In the **Browser**, click the small arrow next to **XYZ Tiles**, then **double-click OpenStreetMap**.
@@ -159,8 +147,6 @@ In the **Browser**, click the small arrow next to **XYZ Tiles**, then **double-c
 The world map appears. Zoom in to Tashkent with the mouse wheel, or wait for Part 5: once the districts are loaded, right-click `tashkent_districts` → **Zoom to Layer** jumps straight there.
 
 ![OpenStreetMap zoomed to Tashkent](images/q03_osm.jpg)
-
----
 
 ## 📍 Part 5 · Add the cafés and districts
 
@@ -176,8 +162,6 @@ The world map appears. Zoom in to Tashkent with the mouse wheel, or wait for Par
 
 > 💡 If the districts cover the map in one colour: double-click `tashkent_districts` → **Symbology** → click **Simple Fill** → set **Fill style** to *No Brush*. Now only the borders are drawn.
 
----
-
 ## 🎨 Part 6 · Colour the places by kind
 
 1. **Double-click** `tashkent_food_places` in the Layers panel. The **Layer Properties** window opens.
@@ -191,8 +175,6 @@ The world map appears. Zoom in to Tashkent with the mouse wheel, or wait for Par
 Cafés, restaurants and fast food now have their own colours:
 
 ![Places coloured by kind](images/q07_categorized.jpg)
-
----
 
 ## 🔥 Part 7 · A heatmap: see the hotspots
 
@@ -208,8 +190,6 @@ The hottest spot is the **city centre**. Smaller hotspots appear along big stree
 
 > 💡 To make the background quieter: double-click `OpenStreetMap` → **Transparency** → set **Global Opacity** to about 50%.
 
----
-
 ## 📏 Part 8 · From degrees to metres (reproject)
 
 DBSCAN measures distance in the units of the layer. Our points are in **degrees**, so "300" would mean 300 degrees, almost the whole Earth! Let's convert them to **metres**.
@@ -223,8 +203,6 @@ DBSCAN measures distance in the units of the layer. Our points are in **degrees*
 4. Click **Run**, then **Close**. A new layer called **Reprojected** appears.
 
 ![The Reproject layer tool](images/q11_reproject.jpg)
-
----
 
 ## 🫧 Part 9 · Find the clusters (DBSCAN)
 
@@ -250,8 +228,6 @@ QGIS found **46 clusters**. Together they contain **1,159 of the 2,408 places** 
 
 > 🧪 **Experiment:** run DBSCAN again with `200` or `500` metres. With 200 m you get smaller, tighter clusters; with 500 m the centre turns into one giant cluster of more than a thousand places. There is no single "right" answer: choose what tells your story best.
 
----
-
 ## 🔷 Part 10 · Draw a shape around each cluster
 
 1. In the Processing Toolbox, search `minimum bounding` and double-click **Minimum bounding geometry**.
@@ -272,8 +248,6 @@ A convex hull is like a rubber band stretched around the points of each cluster.
 4. Make the shapes see-through: double-click the layer → **Symbology** → set the fill colour's **opacity** to about 30%.
 
 ![Cluster shapes](images/q17_hulls.jpg)
-
----
 
 ## 🏙️ Part 11 · How many places in each district?
 
@@ -303,8 +277,6 @@ The new layer **Count** has a column `NUMPOINTS`. Colour it: **Symbology** → *
 
 **Yunusobod** has the most places, but the small central districts **Mirobod** and **Yakkasaroy** are the most crowded: almost 18 places on every km².
 
----
-
 ## 🖨️ Part 12 · Make a printable map (Print Layout)
 
 1. **Project → New Print Layout**, give it a name (e.g. `Clusters map`) and click **OK**. A new window opens with an empty page.
@@ -317,8 +289,6 @@ The new layer **Count** has a column `NUMPOINTS`. Colour it: **Symbology** → *
 
 > 💡 In the legend's **Item Properties**, untick **Auto update** to remove layers you don't want (like the 46 cluster numbers). Always add the source: *Data © OpenStreetMap contributors*.
 
----
-
 ## 🌈 Make it yours: ideas
 
 - **Other places:** the same steps work for any points. Download schools, pharmacies or supermarkets yourself (see [Get your own from OpenStreetMap](#-where-does-the-data-come-from-get-your-own-from-openstreetmap)) or use the fire points from the [Day 01 tutorial](../../Day%2001%20Points/tutorial/README.md).
@@ -326,15 +296,11 @@ The new layer **Count** has a column `NUMPOINTS`. Colour it: **Symbology** → *
 - **Night mode:** remove the OpenStreetMap layer, set the background to dark (**Project → Properties → General → Background color**) and use a glowing colour ramp like *Magma* for the heatmap.
 - **Your city:** Samarkand, Bukhara or Namangan? Use the Overpass Turbo Wizard with `in Samarkand` and repeat the steps. In Part 8, pick the UTM zone for your city: **EPSG:32642** for Tashkent, Samarkand, Namangan and Fergana; **EPSG:32641** for Bukhara, Navoi and Urgench; **EPSG:32640** for Nukus; **EPSG:32643** for Andijan.
 
----
-
 ## 💾 Share your map
 
 1. Make a folder named after **your map's topic**, e.g. `Coffee clusters of Tashkent`. Put your map inside, plus a short `README.md` with **your name**, the data (OpenStreetMap) and the tool (QGIS).
 2. Upload the folder to **`2026/Day 04 Clusters/`** in this repository. The [Quick Start in the main README](../../../README.md#-quick-start-add-your-map-no-coding-needed) shows how, with no coding needed.
 3. Post it with **#30DayMapChallenge** and credit **© OpenStreetMap contributors**.
-
----
 
 ## 🆘 Something went wrong?
 
@@ -347,8 +313,6 @@ The new layer **Count** has a column `NUMPOINTS`. Colour it: **Symbology** → *
 | A tool says the layer is not valid | Make sure you chose the right **Input layer** in the drop-down at the top of the tool. |
 | macOS says QGIS can't be opened | Right-click QGIS in *Applications* → **Open** → **Open**. You only need to do this once. |
 | My layer disappeared | Check the ✓ next to it in the Layers panel, then right-click it → **Zoom to Layer**. |
-
----
 
 ## 📎 Credits
 

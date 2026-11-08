@@ -12,8 +12,6 @@ You will draw the regions of Uzbekistan, turn their edges into **boundary lines*
 |:---:|:---:|:---:|
 | ![](images/variation-f.png) | ![](images/variation-a.png) | ![](images/variation-c.png) |
 
----
-
 ## 📚 Part 0 · Two ideas you need
 
 **Boundaries.** A boundary file stores the outline of each region. In this tutorial we use the **14 regions** of Uzbekistan (12 regions, Karakalpakstan and Tashkent City).
@@ -30,8 +28,6 @@ You will draw the regions of Uzbekistan, turn their edges into **boundary lines*
 | `waterways.geojson` | ~34,000 rivers, canals, drains and mountain streams |
 | `railways.geojson` | ~13,000 railway lines |
 | `roads.geojson` | ~23,000 main roads |
-
----
 
 ## 🚀 Part 1 · Launch the tutorial
 
@@ -60,8 +56,6 @@ You will draw the regions of Uzbekistan, turn their edges into **boundary lines*
 1. Download the notebook: open [`day02_lines.ipynb`](day02_lines.ipynb) on GitHub and click the **Download raw file** button (⬇, top right of the file).
 2. Open it in Jupyter, JupyterLab or VS Code. You need the packages `geopandas` and `matplotlib` (`pip install geopandas matplotlib`).
 3. It reads the data from the internet, like in Colab. To work offline, download the data (Part 2) and change `BASE` in the first cell to your data folder, e.g. `BASE = "data/"`.
-
----
 
 ## 📥 Part 2 · Get the datasets
 
@@ -99,8 +93,6 @@ Our files are simplified copies. The originals are free:
 - **OpenStreetMap for Uzbekistan:** [download.geofabrik.de/asia/uzbekistan.html](https://download.geofabrik.de/asia/uzbekistan.html) → *uzbekistan-latest-free.shp.zip* (about 270 MB). Use the layers `gis_osm_waterways_free_1`, `gis_osm_railways_free_1` and `gis_osm_roads_free_1`.
 - **Region boundaries:** `Boundaries/uz.shp` in this repository (from simplemaps.com).
 
----
-
 ## ▶️ Part 3 · How to run a cell
 
 The notebook is made of **cells**. Text cells explain things. Grey boxes are **code cells**.
@@ -114,8 +106,6 @@ The first time, Colab shows **"Warning: This notebook was not authored by Google
 Run the first cell (Step 0). When you see **`Ready! ✅`** under it, you're set.
 
 > 💡 Always run the cells **in order, from top to bottom**. Each cell uses what the cells above it created.
-
----
 
 ## 🗺️ Part 4 · Draw the regions (Step 1)
 
@@ -166,8 +156,6 @@ Then run the settings cell **and** the big cell under it. Your map appears:
 
 Rivers are drawn thick, canals medium, and small ditches thin, so the big rivers stand out. For large areas the lines automatically get thinner so they don't blur together.
 
----
-
 ## 🌈 Make it yours: ideas
 
 Change the settings and run the two cells again. Some combinations to try:
@@ -181,16 +169,12 @@ Change the settings and run the two cells again. Some combinations to try:
 - Change a colour: in `PALETTES`, replace a colour code like `"#3A6EA5"` with any colour from [htmlcolorcodes.com](https://htmlcolorcodes.com).
 - Compare two regions: make one map for a river region (Khorezm) and one for a mountain region (Surkhandarya).
 
----
-
 ## 💾 Part 9 · Save and share your map
 
 1. Run the cell in **Step 6**. Your map downloads as **`my_day02_map.png`** (check your *Downloads* folder).
 2. Make a folder named after **your map's topic**, e.g. `Canals of Khorezm`. Put your map inside, plus a short `README.md` with **your name**, the data (OpenStreetMap) and the tool (Python in Colab).
 3. Upload the folder to **`2026/Day 02 Lines/`** in this repository. The [Quick Start in the main README](../../../README.md#-quick-start-add-your-map-no-coding-needed) shows how, with no coding needed.
 4. Post it with **#30DayMapChallenge** and credit **© OpenStreetMap contributors**.
-
----
 
 ## 🆘 Something went wrong?
 
@@ -203,8 +187,6 @@ Change the settings and run the two cells again. Some combinations to try:
 | The download doesn't start | Allow pop-ups for Colab, or click the 📁 **Files** icon on the left, find `my_day02_map.png`, click **⋮ → Download**. |
 | It asks me to sign in | Click **Sign in** (top right). Colab needs a Google account to run code. |
 | Everything is broken | Click **Runtime → Restart session**, then **Runtime → Run all**. |
-
----
 
 ## 📎 Credits
 

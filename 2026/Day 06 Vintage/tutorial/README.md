@@ -13,8 +13,6 @@
 - How to read an old map against today's satellite images and streets.
 - How to share the result as a link, as map tiles for QGIS or MapLibre, and as a swipe map.
 
----
-
 ## Part 0. Five ideas before you start
 
 1. **A scan is just a picture.** A scanned paper map is a photo: it knows nothing about where on Earth it is. Its "coordinates" are only pixels, like "3249 pixels from the left, 2021 from the top".
@@ -22,8 +20,6 @@
 3. **Three points are the minimum.** With 3 or more points, the computer works out how to stretch, rotate and move the old map so that all points line up as well as possible. More points, spread out over the whole map, give a better fit.
 4. **A mask** is an outline around the part of the scan you want to keep. It cuts away the white paper border.
 5. **IIIF** (say "triple-eye-eff") is a standard way for libraries to put large images online in small tiles, so you can zoom in without downloading a huge file. Allmaps only opens maps that are online in IIIF. You don't need to know more than that today: we prepared the link for you.
-
----
 
 ## Part 1. Meet the map
 
@@ -38,8 +34,6 @@ What to look for:
 The labels use the spelling from before the 1918 Russian spelling reform, so you'll see letters like **ъ** at the ends of words and **і**: *Базаръ* is "Bazaar".
 
 > **Why the map lives in our repository.** Wikimedia Commons doesn't offer IIIF, so Allmaps can't open the Commons copy. We cut the scan into IIIF tiles with a small Python script ([data/make_iiif.py](data/make_iiif.py)) and put them in this repository, in the [iiif/tashkent-1913](../../../iiif/tashkent-1913) folder. You can do the same for any scan you are allowed to share.
-
----
 
 ## Part 2. Open the map in Allmaps Editor
 
@@ -62,8 +56,6 @@ The labels use the spelling from before the 1918 Russian spelling reform, so you
 > - If the map gets broken, Part 4 shows how to put back our 6 good points in one paste.
 > - The page you build in Part 8 uses a saved copy, so it keeps working whatever happens to the shared map.
 
----
-
 ## Part 3. Draw the mask
 
 The mask cuts away the paper border, so only the map itself is pinned to the city.
@@ -75,8 +67,6 @@ The mask cuts away the paper border, so only the map itself is pinned to the cit
    ![Click the corners of the frame](images/a03_mask.jpg)
 
 4. If the map already has a mask (a pink outline), you don't need a new one. To change it, drag its corners.
-
----
 
 ## Part 4. Place the control points
 
@@ -123,8 +113,6 @@ This is the heart of georeferencing. The old map is on the left and today's map 
 > 69.263831,41.301709,2383,-2926,1,0,0,0
 > ```
 
----
-
 ## Part 5. Check the result
 
 1. Click **Results** at the top. The old map now lies on top of today's city.
@@ -148,8 +136,6 @@ This is the heart of georeferencing. The old map is on the left and today's map 
 
 With our 6 points the polynomial fit is off by only about **3 pixels** on the old map, which is under 10 metres on the ground. You can see it in [the final square map](images/final-b-square.jpg): the 1913 ring and today's ring road lie on top of each other.
 
----
-
 ## Part 6. Share your georeferenced map
 
 Click **Export** at the top right (**1**). Each line has a copy button on its right.
@@ -162,8 +148,6 @@ Click **Export** at the top right (**1**). Each line has a copy button on its ri
 
 Our georeferenced map in the Allmaps Viewer: **[open it](https://viewer.allmaps.org/?url=https://annotations.allmaps.org/images/4040347a32a702f2)**.
 
----
-
 ## Part 7. Explore in Allmaps Viewer
 
 Open your **View in Allmaps Viewer** link. Click the **drop** icon at the bottom and drag the slider down to make the old map see-through. You'll see both cities at once.
@@ -175,8 +159,6 @@ Things to look for:
 - The black **bazaar** on the left lies exactly where **Chorsu** market and metro are today.
 - The **Ankhor canal** still flows in the same bed.
 - Large parts of the 1913 town were rebuilt after the earthquake of 1966. Where do the old streets disappear?
-
----
 
 ## Part 8. Make a vintage swipe map
 
@@ -195,8 +177,6 @@ We made a small web page, [compare.html](compare.html), with a slider between 19
 
 To make a picture for your #30DayMapChallenge post, set up the view you like and take a screenshot.
 
----
-
 ## Part 9 (bonus). Use the old map in QGIS
 
 In Day 05 you added satellite images to QGIS as an **XYZ Tiles** layer. The old map works the same way.
@@ -207,8 +187,6 @@ In Day 05 you added satellite images to QGIS as an **XYZ Tiles** layer. The old 
 4. Right-click the old map layer → **Properties** → **Transparency**, and set **Opacity** to about 60%.
 
 Now you can draw on top of it: for example, trace the 1913 tram lines as a new line layer and compare them with today's metro.
-
----
 
 ## Ideas for your own map
 
@@ -227,8 +205,6 @@ And add the credit for whatever modern map you show:
 
 or
 > © OpenStreetMap contributors
-
----
 
 ## Troubleshooting
 
