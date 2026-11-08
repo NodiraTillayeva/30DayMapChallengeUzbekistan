@@ -44,6 +44,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🛰️ **Day 07 tutorial:** [The Aral Sea from space, in 10 minutes](<./2026/Day 07 10 minute map/tutorial/README.md>). Compare 2000 and 2026 and download real satellite images with NASA Worldview, in your browser.
 
+🌊 **Day 08 tutorial:** [If the Aral Sea came back](<./2026/Day 08 Utopia/tutorial/README.md>). Fill the basin to its 1960 level with the QGIS Raster Calculator and lay it over NASA satellite images.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
