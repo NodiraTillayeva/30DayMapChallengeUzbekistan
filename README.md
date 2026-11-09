@@ -46,6 +46,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🌊 **Day 08 tutorial:** [If the Aral Sea came back](<./2026/Day 08 Utopia/tutorial/README.md>). Fill the basin to its 1960 level with the QGIS Raster Calculator and lay it over NASA satellite images.
 
+🏙️ **Day 09 tutorial:** [City or countryside? Ask the satellite](<./2026/Day 09 Urban-rural/tutorial/README.md>). Similarity search with AlphaEarth satellite embeddings in Google Earth Engine.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
