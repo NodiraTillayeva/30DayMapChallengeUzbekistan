@@ -17,14 +17,63 @@
 2. **Similar places have similar numbers.** To compare two places, multiply their 64 numbers pair by pair and add them up (a **dot product**). The answer is close to **1** for very similar places and lower for different ones.
 3. **Earth Engine does the work in the cloud.** Tashkent alone has millions of pixels. Earth Engine computes them on Google's computers and only sends you the picture.
 
-## Part 1. Get access to Earth Engine (once, about 5 minutes)
+## Part 1. Get access to Earth Engine (once, about 10 minutes)
 
-1. Go to **[code.earthengine.google.com](https://code.earthengine.google.com)** and sign in with a Google account.
-2. If it's your first time, Earth Engine asks you to register a **Cloud project**. Choose:
-   - **Unpaid usage**, project type **Academia & Research** (or Education);
-   - **Create a new Google Cloud Project**, with a name like `gee-30daymap-uz`;
-   - the free **Community Tier**.
-3. Accept the terms. The **Code Editor** opens: scripts on the left, the code in the middle, the console on the right and the map at the bottom.
+Earth Engine is free for students, teachers and researchers, but you need a Google account and a **Cloud project** registered for **noncommercial** use. You do this only once.
+
+### 1a. Open the Earth Engine page in Google Cloud
+
+1. Sign in to your Google account, then open **[console.cloud.google.com/earth-engine](https://console.cloud.google.com/earth-engine/welcome)**.
+2. You see **Welcome to Earth Engine**. If you don't have a project yet, click **Select a project** at the top (**1**) → **New project**. If you already have one, choose it there and go straight to **Register** (**2**).
+
+   ![Welcome to Earth Engine](images/a01_welcome.jpg)
+
+### 1b. Create a project
+
+1. **Project name:** type a short name, for example `gee-30daymap-uz` (**1**). Google makes a **Project ID** from it, which you can't change later.
+2. Leave **Parent resource** as **No organisation**, then click **Create** (**2**). Wait a few seconds until the project is ready, and make sure it's selected at the top of the page.
+
+   ![New Project](images/a02_project.jpg)
+
+### 1c. Register the project for noncommercial use
+
+On the Earth Engine page, click **Register**. A form with five steps opens.
+
+**Step 1: Select your organisation type.** Open the list (**1**), choose **Public or private academic institution (including department, staff, students)**, and click **Next** (**2**). Teachers and trainers can also choose **Earth Engine trainer or trainee**.
+
+![Organisation type](images/a03_orgtype.jpg)
+
+**Step 2: Check non-commercial eligibility.**
+- Type the name of your university or school (**1**).
+- *Will you receive any payment … from commercial entities?* Choose **No** (**2**).
+
+![Eligibility, first questions](images/a04_eligible1.jpg)
+
+- *How would you describe your use of Earth Engine?* **Scientific research**.
+- *What is your research question?* Write one sentence about your project (**1**), for example: *How do cities and the countryside differ across Uzbekistan?*
+- *Geographic scope:* **Regional**, and type **Uzbekistan, Central Asia**.
+- *Have you previously published work …?* **No**.
+- Click **Check eligibility**. When the message says **you are eligible for non-commercial Earth Engine use** (**2**), click **Next** (**3**).
+
+![Eligible for noncommercial use](images/a05_eligible2.jpg)
+
+**Step 3: Choose your plan.** Choose the free **Community tier** (it may already be chosen for you), then click **Next**.
+
+![Community tier](images/a06_plan.jpg)
+
+**Step 4: Describe your work.** You can leave the three checkboxes empty. In *Will you use Earth Engine for any of the following?* open the list, tick **Classroom or education**, click **OK** (**1**), then **Next** (**2**).
+
+![Describe your work](images/a07_describe.jpg)
+
+**Step 5: Review summary.** Check your answers and click the blue **Register** button at the bottom.
+
+![Review summary](images/a08_review.jpg)
+
+> Our screenshots were taken with a project that was already registered, so they show a grey note at the top, *This project is already registered*. You won't see it on a new project.
+
+### 1d. Open the Code Editor
+
+Go to **[code.earthengine.google.com](https://code.earthengine.google.com)**. If it asks for a project, choose the one you just registered. The **Code Editor** opens: scripts on the left, the code in the middle, the console on the right and the map at the bottom.
 
 > **Free, but not unlimited.** The Community Tier gives every noncommercial project a monthly amount of computing time. This tutorial uses only a small part of it. If you see a yellow message about quota, the map still works, just more slowly.
 
