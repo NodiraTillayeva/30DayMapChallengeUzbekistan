@@ -48,6 +48,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🏙️ **Day 09 tutorial:** [City or countryside? Ask the satellite](<./2026/Day 09 Urban-rural/tutorial/README.md>). Similarity search with AlphaEarth satellite embeddings in Google Earth Engine.
 
+🔊 **Day 11 tutorial:** [A map you can listen to](<./2026/Day 11 Senses Sound/tutorial/README.md>). Put sounds from Uzbekistan and your own recordings in map popups with folium in Google Colab.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
