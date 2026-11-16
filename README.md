@@ -52,6 +52,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 ☀️ **Day 12 tutorial:** [Where is the sun and the wind strongest?](<./2026/Day 12 Power/tutorial/README.md>). Map the Global Solar and Wind Atlases with rasterio in Google Colab and check where the new solar and wind farms stand.
 
+🌳 **Day 13 tutorial:** [Trees and heat in Tashkent](<./2026/Day 13 Interactions/tutorial/README.md>). Landsat surface temperature and NDVI from the Microsoft Planetary Computer (STAC) in Google Colab: the greener, the cooler.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
