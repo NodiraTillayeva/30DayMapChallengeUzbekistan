@@ -50,6 +50,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🔊 **Day 11 tutorial:** [A map you can listen to](<./2026/Day 11 Senses Sound/tutorial/README.md>). Put sounds from Uzbekistan and your own recordings in map popups with folium in Google Colab.
 
+☀️ **Day 12 tutorial:** [Where is the sun and the wind strongest?](<./2026/Day 12 Power/tutorial/README.md>). Map the Global Solar and Wind Atlases with rasterio in Google Colab and check where the new solar and wind farms stand.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
