@@ -12,7 +12,7 @@ I selected maps from different years and created a timelapse animation to visual
 
 ### 🎞️ Historical Map Timelapse
 
-![New York City Historical Topographic Maps](./New_york_Central_Park.gif)
+![New York City Historical Topographic Maps](./New_york_Central_Parkk.gif)
 
 **Workflow:**
 - Explored historical USGS topographic map editions.
