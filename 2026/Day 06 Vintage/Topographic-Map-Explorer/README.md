@@ -27,6 +27,9 @@ The map was published in **1985** and represents the geographical situation as o
 
 Using **ArcGIS Pro**, I georeferenced the historical map and focused on the urban area of Nukus. I then compared the historical map with a modern OpenStreetMap (OSM) basemap to explore changes in the city's urban landscape.
 
+
+![New York City Historical Topographic Maps](./nukus_plan_compare.gif)
+
 **Workflow:**
 - Used a scanned Soviet-era topographic map.
 - Georeferenced the historical map in ArcGIS Pro.
