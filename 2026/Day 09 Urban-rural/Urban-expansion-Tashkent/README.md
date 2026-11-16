@@ -41,6 +41,4 @@ The visualization was created using two main tools:
 
 To explore the spatial and temporal dynamics of urban expansion in Tashkent over the past five decades using satellite-derived built-up surface data.
 
----
-
-**#30DayMapChallenge #Day09 #Urban #UrbanExpansion #Tashkent #Uzbekistan #GIS #RemoteSensing #GoogleEarthEngine #Python #GeospatialAnalysis #Cartography**
+Author: Tumaris Ramanova
