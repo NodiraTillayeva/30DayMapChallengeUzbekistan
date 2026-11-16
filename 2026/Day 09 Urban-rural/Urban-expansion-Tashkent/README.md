@@ -16,7 +16,7 @@ The results reveal substantial expansion of the built-up footprint, with urban d
 
 The animation combines historical urban development maps with a synchronized statistical graph, illustrating both the spatial expansion of the city and changes in its total built-up surface area over time.
 
-<!-- Add your animation or GIF here -->
+![Urban Expansion of Tashkent (1975–2025)](./Urban_expansion_Tashkent.gif)
 
 ## 🛠️ Behind the Map
 
