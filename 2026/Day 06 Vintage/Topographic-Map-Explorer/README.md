@@ -10,6 +10,10 @@ Using the [USGS Historical Topographic Map Explorer](https://livingatlas.arcgis.
 
 I selected maps from different years and created a timelapse animation to visualize changes in the mapped landscape over time.
 
+### 🎞️ Historical Map Timelapse
+
+![New York City Historical Topographic Maps](./New_york_Central_Park.gif)
+
 **Workflow:**
 - Explored historical USGS topographic map editions.
 - Selected maps representing different time periods.
