@@ -56,6 +56,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🏠 **Day 14 tutorial:** [Every building in Uzbekistan](<./2026/Day 14 Borgesian map/tutorial/README.md>). 7 million buildings from Overture Maps with DuckDB and SQL in Google Colab: a map with no base map, only houses.
 
+🔴 **Day 15 tutorial:** [Uzbekistan in colours your eyes can't see](<./2026/Day 15 Inside out/tutorial/README.md>). False-colour Sentinel-2 maps in the Google Earth Engine Code Editor: red fields, black lakes, a blue Tashkent.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
