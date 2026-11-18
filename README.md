@@ -54,6 +54,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🌳 **Day 13 tutorial:** [Trees and heat in Tashkent](<./2026/Day 13 Interactions/tutorial/README.md>). Landsat surface temperature and NDVI from the Microsoft Planetary Computer (STAC) in Google Colab: the greener, the cooler.
 
+🏠 **Day 14 tutorial:** [Every building in Uzbekistan](<./2026/Day 14 Borgesian map/tutorial/README.md>). 7 million buildings from Overture Maps with DuckDB and SQL in Google Colab: a map with no base map, only houses.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
