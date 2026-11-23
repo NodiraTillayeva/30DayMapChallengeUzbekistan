@@ -58,6 +58,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🔴 **Day 15 tutorial:** [Uzbekistan in colours your eyes can't see](<./2026/Day 15 Inside out/tutorial/README.md>). False-colour Sentinel-2 maps in the Google Earth Engine Code Editor: red fields, black lakes, a blue Tashkent.
 
+📸 **Day 16 tutorial:** [Tashkent through strangers' eyes](<./2026/Day 16 Collaborative map/tutorial/README.md>). 107,288 Mapillary street photos by 47 people, mapped in Google Colab by who took them, plus a guide to map your own streets with friends.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
