@@ -60,6 +60,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 📸 **Day 16 tutorial:** [Tashkent through strangers' eyes](<./2026/Day 16 Collaborative map/tutorial/README.md>). 107,288 Mapillary street photos by 47 people, mapped in Google Colab by who took them, plus a guide to map your own streets with friends.
 
+🌙 **Day 17 tutorial:** [Uzbekistan at night](<./2026/Day 17 Light and Dark/tutorial/README.md>). NASA Black Marble night lights from 2012 to 2025, mapped in Google Colab: see which regions lit up, zoom into Tashkent, and make a glowing poster.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
