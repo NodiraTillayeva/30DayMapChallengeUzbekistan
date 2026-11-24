@@ -62,6 +62,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🌙 **Day 17 tutorial:** [Uzbekistan at night](<./2026/Day 17 Light and Dark/tutorial/README.md>). NASA Black Marble night lights from 2012 to 2025, mapped in Google Colab: see which regions lit up, zoom into Tashkent, and make a glowing poster.
 
+☁️ **Day 18 tutorial:** [A satellite picture with no holes](<./2026/Day 18 NULL/tutorial/README.md>). Check, filter and mask clouds in Sentinel-2 with Google Earth Engine, fill the NULL holes with a spring composite, and see through the clouds with Sentinel-1 radar.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
