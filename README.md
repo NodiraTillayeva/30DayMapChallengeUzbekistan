@@ -64,6 +64,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 ☁️ **Day 18 tutorial:** [A satellite picture with no holes](<./2026/Day 18 NULL/tutorial/README.md>). Check, filter and mask clouds in Sentinel-2 with Google Earth Engine, fill the NULL holes with a spring composite, and see through the clouds with Sentinel-1 radar.
 
+👃 **Day 19 tutorial:** [Air you can smell, seen from space](<./2026/Day 19 Senses Smell/tutorial/README.md>). Map NO₂ and SO₂ over Uzbekistan with Sentinel-5P in Google Earth Engine: which cities smell the most, how a plume drifts with the wind, and why winter smells stronger than summer.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
