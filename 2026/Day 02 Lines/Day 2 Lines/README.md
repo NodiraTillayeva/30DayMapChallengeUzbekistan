@@ -1,4 +1,5 @@
-
+Author: Umidjon Khabibullaev
+Day 2 of 30 Day Map Challenge Uzbekistan
 
 rivers_and_canals_tashkent_city.png - 
 
