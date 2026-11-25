@@ -66,6 +66,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 👃 **Day 19 tutorial:** [Air you can smell, seen from space](<./2026/Day 19 Senses Smell/tutorial/README.md>). Map NO₂ and SO₂ over Uzbekistan with Sentinel-5P in Google Earth Engine: which cities smell the most, how a plume drifts with the wind, and why winter smells stronger than summer.
 
+⬢ **Day 20 tutorial:** [45 years of cities, in bestagons](<./2026/Day 20 Hexagons/tutorial/README.md>). Pour satellite-mapped buildings from 1975 to 2020 into H3 hexagons in Google Colab: watch the cities grow, compare the regions, and build a 3D hexagon map.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
