@@ -68,6 +68,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 ⬢ **Day 20 tutorial:** [45 years of cities, in bestagons](<./2026/Day 20 Hexagons/tutorial/README.md>). Pour satellite-mapped buildings from 1975 to 2020 into H3 hexagons in Google Colab: watch the cities grow, compare the regions, and build a 3D hexagon map.
 
+🗺️ **Day 21 tutorial:** [Old city, new city](<./2026/Day 21 OpenStreetMap/tutorial/README.md>). Download OpenStreetMap buildings with osmnx in Google Colab: compare Khiva, Chilanzar and Tashkent City by building size, and find the buildings OSM still knows little about.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
