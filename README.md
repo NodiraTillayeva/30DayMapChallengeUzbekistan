@@ -70,6 +70,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🗺️ **Day 21 tutorial:** [Old city, new city](<./2026/Day 21 OpenStreetMap/tutorial/README.md>). Download OpenStreetMap buildings with osmnx in Google Colab: compare Khiva, Chilanzar and Tashkent City by building size, and find the buildings OSM still knows little about.
 
+📐 **Day 22 tutorial:** [How big is Uzbekistan, really?](<./2026/Day 22 Projections/tutorial/README.md>). See what the Mercator projection does to sizes in Google Colab: move Uzbekistan to the equator, Scandinavia and Greenland, draw Tissot circles, and find out which region a web map stretches the most.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
