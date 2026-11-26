@@ -72,6 +72,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 📐 **Day 22 tutorial:** [How big is Uzbekistan, really?](<./2026/Day 22 Projections/tutorial/README.md>). See what the Mercator projection does to sizes in Google Colab: move Uzbekistan to the equator, Scandinavia and Greenland, draw Tissot circles, and find out which region a web map stretches the most.
 
+💧 **Day 23 tutorial:** [The water Tashkent drinks, seen from space](<./2026/Day 23 Senses Taste/tutorial/README.md>). Follow the Charvak reservoir with Sentinel-2 in Google Colab: find the water, measure how muddy it is, see where the mud comes from, and watch the reservoir fill from spring to autumn.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
