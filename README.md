@@ -74,6 +74,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 💧 **Day 23 tutorial:** [The water Tashkent drinks, seen from space](<./2026/Day 23 Senses Taste/tutorial/README.md>). Follow the Charvak reservoir with Sentinel-2 in Google Colab: find the water, measure how muddy it is, see where the mud comes from, and watch the reservoir fill from spring to autumn.
 
+🌧️ **Day 24 tutorial:** [Where does a raindrop go?](<./2026/Day 24 Network/tutorial/README.md>). Turn the rivers of Central Asia into a network with networkx in Google Colab: follow raindrops downstream, draw the basin of the Chirchik, and find out which countries the water of the Amu Darya and the Syr Darya comes from.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
