@@ -76,6 +76,8 @@ Official themes: [30daymapchallenge.com/2026](https://30daymapchallenge.com/2026
 
 🌧️ **Day 24 tutorial:** [Where does a raindrop go?](<./2026/Day 24 Network/tutorial/README.md>). Turn the rivers of Central Asia into a network with networkx in Google Colab: follow raindrops downstream, draw the basin of the Chirchik, and find out which countries the water of the Amu Darya and the Syr Darya comes from.
 
+⛰️ **Day 25 tutorial:** [Is this a map? Chimgan in 3D](<./2026/Day 25 Is this a map/tutorial/README.md>). Turn satellite heights into a 3D map with plotly in Google Colab: rotate Chimgan and Charvak with your mouse, stretch the mountains, lay a Sentinel-2 picture on top, and draw the same mountains with lines only.
+
 <details>
 <summary><b>See all 30 themes for 2026</b></summary>
 
