@@ -1,5 +1,6 @@
 # Satellite Heat Detections in Uzbekistan, 2020–2025
 
+Author: Umidjon Khaibibullaev
 Day 1 · **Points** · [30DayMapChallenge Uzbekistan](https://github.com/NodiraTillayeva/30DayMapChallengeUzbekistan)
 
 I used NASA MODIS satellite detections to map where heat sources were detected in Uzbekistan from 2020 to 2025. I built the map in Power BI and compared 2025 with the median annual detection count from 2020–2024.
